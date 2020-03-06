@@ -1,0 +1,2 @@
+verilog work "netgen/par/mux2to1_timesim.v"
+verilog work "muxtest.v"

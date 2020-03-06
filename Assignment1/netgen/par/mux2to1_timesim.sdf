@@ -1,0 +1,70 @@
+(DELAYFILE
+  (SDFVERSION "3.0")
+  (DESIGN "mux2to1")
+  (DATE "Fri Mar 06 17:15:34 2020")
+  (VENDOR "Xilinx")
+  (PROGRAM "Xilinx SDF Writer")
+  (VERSION "P.20131013")
+  (DIVIDER /)
+  (VOLTAGE 0.95)
+  (TEMPERATURE 85)
+  (TIMESCALE 1 ps)
+  (CELL (CELLTYPE "X_IBUF_INTERMDISABLE_TPWRGT")
+    (INSTANCE s_IBUF)
+      (DELAY
+        (ABSOLUTE
+          (PORT I ( 0 )( 0 ))
+          (IOPATH I O ( 809 )( 809 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_LUT6")
+    (INSTANCE t1)
+      (DELAY
+        (ABSOLUTE
+          (PORT ADR0 ( 1012 )( 1012 ))
+          (PORT ADR2 ( 762 )( 762 ))
+          (PORT ADR4 ( 698 )( 698 ))
+          (IOPATH ADR0 O ( 97 )( 97 ))
+          (IOPATH ADR2 O ( 97 )( 97 ))
+          (IOPATH ADR4 O ( 97 )( 97 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_IBUF_INTERMDISABLE_TPWRGT")
+    (INSTANCE a0_IBUF)
+      (DELAY
+        (ABSOLUTE
+          (PORT I ( 0 )( 0 ))
+          (IOPATH I O ( 821 )( 821 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_OBUF")
+    (INSTANCE t_OBUF)
+      (DELAY
+        (ABSOLUTE
+          (PORT I ( 0 )( 0 ))
+          (IOPATH I O ( 2253 )( 2253 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_IBUF_INTERMDISABLE_TPWRGT")
+    (INSTANCE a1_IBUF)
+      (DELAY
+        (ABSOLUTE
+          (PORT I ( 0 )( 0 ))
+          (IOPATH I O ( 837 )( 837 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE NlwBufferBlock_t_OBUF\/I)
+      (DELAY
+        (PATHPULSE (50))
+        (ABSOLUTE
+          (IOPATH I O ( 1198 )( 1198 ))
+        )
+      )
+  )
+)

@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "simprims_ver" -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/VLSI/Assignment1/muxtest_isim_par.exe" -prj "D:/VLSI/Assignment1/muxtest_par.prj" "work.muxtest" "work.glbl" 
