@@ -1,0 +1,2 @@
+verilog work "netgen/par/leftrightshift_timesim.v"
+verilog work "leftrightshift_test.v"

@@ -1,0 +1,29 @@
+Command line:
+   leftrightshift_test_isim_par.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  55602
+
+Sat Mar 07 16:35:26 2020
+
+
+ Elaboration Time: 0.109375 sec
+
+ Current Memory Usage: 5172.72 Meg
+
+ Total Signals          : 2467
+ Total Nets             : 1443
+ Total Signal Drivers   : 1432
+ Total Blocks           : 505
+ Total Primitive Blocks : 357
+ Total Processes        : 1569
+ Total Traceable Variables  : 1441
+ Total Scalar Nets and Variables : 52543
+Total Line Count : 4098
+
+ Total Simulation Time: 0.453125 sec
+
+ Current Memory Usage: 5487.29 Meg
+
+Sat Mar 07 16:36:23 2020
+

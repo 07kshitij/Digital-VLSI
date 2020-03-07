@@ -1,12 +1,5 @@
-xst -intstyle ise -ifn "D:/studies/6th sem/VLSI lab/DigiVLSI/Digital-VLSI/Assignment1/leftrightshift.xst" -ofn "D:/studies/6th sem/VLSI lab/DigiVLSI/Digital-VLSI/Assignment1/leftrightshift.syr" 
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 "leftrightshift.ngc" leftrightshift.ngd  
-map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o leftrightshift_map.ncd leftrightshift.ngd leftrightshift.pcf 
-par -w -intstyle ise -ol high -mt off leftrightshift_map.ncd leftrightshift.ncd leftrightshift.pcf 
-trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml leftrightshift.twx leftrightshift.ncd -o leftrightshift.twr leftrightshift.pcf 
-xst -intstyle ise -ifn "D:/studies/6th sem/VLSI lab/DigiVLSI/Digital-VLSI/Assignment1/leftrightshift.xst" -ofn "D:/studies/6th sem/VLSI lab/DigiVLSI/Digital-VLSI/Assignment1/leftrightshift.syr" 
-xst -intstyle ise -ifn "D:/studies/6th sem/VLSI lab/DigiVLSI/Digital-VLSI/Assignment1/leftrightshift.xst" -ofn "D:/studies/6th sem/VLSI lab/DigiVLSI/Digital-VLSI/Assignment1/leftrightshift.syr" 
-xst -intstyle ise -ifn "D:/studies/6th sem/VLSI lab/DigiVLSI/Digital-VLSI/Assignment1/leftrightshift.xst" -ofn "D:/studies/6th sem/VLSI lab/DigiVLSI/Digital-VLSI/Assignment1/leftrightshift.syr" 
-ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 "leftrightshift.ngc" leftrightshift.ngd  
+xst -intstyle ise -ifn "D:/VLSI/Assignment1/leftrightshift.xst" -ofn "D:/VLSI/Assignment1/leftrightshift.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 leftrightshift.ngc leftrightshift.ngd  
 map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o leftrightshift_map.ncd leftrightshift.ngd leftrightshift.pcf 
 par -w -intstyle ise -ol high -mt off leftrightshift_map.ncd leftrightshift.ncd leftrightshift.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml leftrightshift.twx leftrightshift.ncd -o leftrightshift.twr leftrightshift.pcf 

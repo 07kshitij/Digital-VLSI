@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.12 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.13 secs
  
 --> Reading design: leftrightshift.prj
 
@@ -105,7 +105,7 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Parsing                                  *
 =========================================================================
-Analyzing Verilog file "D:\studies\6th sem\VLSI lab\DigiVLSI\Digital-VLSI\Assignment1\mux2to1.v" into library work
+Analyzing Verilog file "D:\VLSI\Assignment1\mux2to1.v" into library work
 Parsing module <mux2to1>.
 Parsing module <muxlayer1>.
 Parsing module <muxlayer2>.
@@ -143,55 +143,55 @@ Elaborating module <muxlayer1>.
 =========================================================================
 
 Synthesizing Unit <leftrightshift>.
-    Related source file is "D:\studies\6th sem\VLSI lab\DigiVLSI\Digital-VLSI\Assignment1\mux2to1.v".
+    Related source file is "D:\VLSI\Assignment1\mux2to1.v".
     Summary:
 	no macro.
 Unit <leftrightshift> synthesized.
 
 Synthesizing Unit <flipmux>.
-    Related source file is "D:\studies\6th sem\VLSI lab\DigiVLSI\Digital-VLSI\Assignment1\mux2to1.v".
+    Related source file is "D:\VLSI\Assignment1\mux2to1.v".
     Summary:
 	no macro.
 Unit <flipmux> synthesized.
 
 Synthesizing Unit <mux2to1>.
-    Related source file is "D:\studies\6th sem\VLSI lab\DigiVLSI\Digital-VLSI\Assignment1\mux2to1.v".
+    Related source file is "D:\VLSI\Assignment1\mux2to1.v".
     Summary:
 	no macro.
 Unit <mux2to1> synthesized.
 
 Synthesizing Unit <leftshift>.
-    Related source file is "D:\studies\6th sem\VLSI lab\DigiVLSI\Digital-VLSI\Assignment1\mux2to1.v".
+    Related source file is "D:\VLSI\Assignment1\mux2to1.v".
     Summary:
 	no macro.
 Unit <leftshift> synthesized.
 
 Synthesizing Unit <muxlayer16>.
-    Related source file is "D:\studies\6th sem\VLSI lab\DigiVLSI\Digital-VLSI\Assignment1\mux2to1.v".
+    Related source file is "D:\VLSI\Assignment1\mux2to1.v".
     Summary:
 	no macro.
 Unit <muxlayer16> synthesized.
 
 Synthesizing Unit <muxlayer8>.
-    Related source file is "D:\studies\6th sem\VLSI lab\DigiVLSI\Digital-VLSI\Assignment1\mux2to1.v".
+    Related source file is "D:\VLSI\Assignment1\mux2to1.v".
     Summary:
 	no macro.
 Unit <muxlayer8> synthesized.
 
 Synthesizing Unit <muxlayer4>.
-    Related source file is "D:\studies\6th sem\VLSI lab\DigiVLSI\Digital-VLSI\Assignment1\mux2to1.v".
+    Related source file is "D:\VLSI\Assignment1\mux2to1.v".
     Summary:
 	no macro.
 Unit <muxlayer4> synthesized.
 
 Synthesizing Unit <muxlayer2>.
-    Related source file is "D:\studies\6th sem\VLSI lab\DigiVLSI\Digital-VLSI\Assignment1\mux2to1.v".
+    Related source file is "D:\VLSI\Assignment1\mux2to1.v".
     Summary:
 	no macro.
 Unit <muxlayer2> synthesized.
 
 Synthesizing Unit <muxlayer1>.
-    Related source file is "D:\studies\6th sem\VLSI lab\DigiVLSI\Digital-VLSI\Assignment1\mux2to1.v".
+    Related source file is "D:\VLSI\Assignment1\mux2to1.v".
     Summary:
 	no macro.
 Unit <muxlayer1> synthesized.
@@ -348,12 +348,12 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 7.00 secs
-Total CPU time to Xst completion: 7.23 secs
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.79 secs
  
 --> 
 
-Total memory usage is 4626928 kilobytes
+Total memory usage is 4625136 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    0 (   0 filtered)
