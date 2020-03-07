@@ -1,0 +1,28 @@
+Command line:
+   leftshift_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51054
+
+Sat Mar 07 14:32:23 2020
+
+
+ Elaboration Time: 0.0625 sec
+
+ Current Memory Usage: 5164.81 Meg
+
+ Total Signals          : 681
+ Total Nets             : 242
+ Total Signal Drivers   : 166
+ Total Blocks           : 167
+ Total Primitive Blocks : 161
+ Total Processes        : 167
+ Total Traceable Variables  : 18
+ Total Scalar Nets and Variables : 322
+
+ Total Simulation Time: 0.4375 sec
+
+ Current Memory Usage: 4692.95 Meg
+
+Sat Mar 07 14:49:34 2020
+

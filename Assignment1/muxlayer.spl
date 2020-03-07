@@ -1,0 +1,10 @@
+[Inputs]
+s
+=lsb[31:0]=
+=msb[31:0]=
+[Outputs]
+=b[31:0]=
+[BiDir]
+[ATTRIBUTES]
+VeriModel muxlayer
+

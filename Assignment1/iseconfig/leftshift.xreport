@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2020-03-07T06:24:57</DateModified>
+  <DateModified>2020-03-07T13:24:12</DateModified>
   <ModuleName>leftshift</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>D:/VLSI/Assignment1/iseconfig/leftshift.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/VLSI/Assignment1</ImplementationReportsDirectory>
+  <SummaryTimeStamp>2020-03-07T13:23:15</SummaryTimeStamp>
+  <SavedFilePath>D:/studies/6th sem/VLSI lab/DigiVLSI/Digital-VLSI/Assignment1/iseconfig/leftshift.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>D:/studies/6th sem/VLSI lab/DigiVLSI/Digital-VLSI/Assignment1\</ImplementationReportsDirectory>
   <DateInitialized>2020-03-07T06:24:57</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>
