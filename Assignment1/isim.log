@@ -1,5 +1,5 @@
 ISim log file
-Running: D:\studies\6th sem\VLSI lab\DigiVLSI\Digital-VLSI\Assignment1\leftshift_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/studies/6th sem/VLSI lab/DigiVLSI/Digital-VLSI/Assignment1/leftshift_isim_beh.wdb 
+Running: D:\studies\6th sem\VLSI lab\DigiVLSI\Digital-VLSI\Assignment1\leftrightshift_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/studies/6th sem/VLSI lab/DigiVLSI/Digital-VLSI/Assignment1/leftrightshift_isim_beh.wdb 
 ISim P.20131013 (signature 0x7708f090)
 This is a Full version of ISim.
 Time resolution is 1 ps
@@ -8,26 +8,10 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-# isim force add /leftshift/shift 1 -radix bin
-/leftshift/shift: Array length and the input lengths are different
-
-# isim force add /leftshift/num 1011 -radix bin
-/leftshift/num: Array length and the input lengths are different
-
+# isim force add /leftrightshift/control 1 -radix bin -value 0 -radix bin -time 250 ns -repeat 500 ns
+# isim force add /leftrightshift/control 1 -radix bin -value 0 -radix bin -time 250 ns -repeat 500 ns
+# isim force add /leftrightshift/shift 5 -radix unsigned
+# isim force add /leftrightshift/shift 5 -radix unsigned
+# isim force add /leftrightshift/num 50 -radix unsigned
+# isim force add /leftrightshift/num 50 -radix unsigned
 # run 1.00us
-# run all
-# isim force add /leftshift/num 1011 -radix bin
-/leftshift/num: Array length and the input lengths are different
-
-# isim force add /leftshift/num 11 -radix unsigned
-# isim force add /leftshift/num 11 -radix unsigned
-# isim force add /leftshift/shift 1 -radix unsigned
-# isim force add /leftshift/shift 1 -radix unsigned
-# run all
-# run 1.00us
-# isim force add /leftshift/shift 5 -radix unsigned
-# isim force add /leftshift/shift 5 -radix unsigned
-# isim force add /leftshift/num 48 -radix unsigned
-# isim force add /leftshift/num 48 -radix unsigned
-# run 1.00us
-# run all

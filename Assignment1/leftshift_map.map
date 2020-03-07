@@ -10,7 +10,7 @@ Target Device  : xc7a100t
 Target Package : csg324
 Target Speed   : -3
 Mapper Version : artix7 -- $Revision: 1.55 $
-Mapped Date    : Sat Mar 07 14:40:27 2020
+Mapped Date    : Sat Mar 07 14:56:19 2020
 
 WARNING:LIT:701 - PAD symbol "shift<4>" has an undefined IOSTANDARD.
 WARNING:LIT:702 - PAD symbol "shift<4>" is not constrained (LOC) to a specific
@@ -487,8 +487,8 @@ Specific Feature Utilization:
 Average Fanout of Non-Clock Nets:                3.62
 
 Peak Memory Usage:  4998 MB
-Total REAL time to MAP completion:  18 secs 
-Total CPU time to MAP completion:   18 secs 
+Total REAL time to MAP completion:  17 secs 
+Total CPU time to MAP completion:   17 secs 
 
 Mapping completed.
 See MAP report file "leftshift_map.mrp" for details.
