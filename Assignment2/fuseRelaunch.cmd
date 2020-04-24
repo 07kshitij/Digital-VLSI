@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "simprims_ver" -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/VLSI/Assignment2/half_adder_test_isim_par.exe" -prj "D:/VLSI/Assignment2/half_adder_test_par.prj" "work.half_adder_test" "work.glbl" 

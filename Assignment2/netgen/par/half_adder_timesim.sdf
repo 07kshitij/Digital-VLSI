@@ -1,0 +1,99 @@
+(DELAYFILE
+  (SDFVERSION "3.0")
+  (DESIGN "half_adder")
+  (DATE "Fri Apr 24 18:41:01 2020")
+  (VENDOR "Xilinx")
+  (PROGRAM "Xilinx SDF Writer")
+  (VERSION "P.20131013")
+  (DIVIDER /)
+  (VOLTAGE 0.95)
+  (TEMPERATURE 85)
+  (TIMESCALE 1 ps)
+  (CELL (CELLTYPE "X_OBUF")
+    (INSTANCE sum_OBUF)
+      (DELAY
+        (ABSOLUTE
+          (PORT I ( 0 )( 0 ))
+          (IOPATH I O ( 2253 )( 2253 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_IBUF_INTERMDISABLE_TPWRGT")
+    (INSTANCE a_IBUF)
+      (DELAY
+        (ABSOLUTE
+          (PORT I ( 0 )( 0 ))
+          (IOPATH I O ( 821 )( 821 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_IBUF_INTERMDISABLE_TPWRGT")
+    (INSTANCE b_IBUF)
+      (DELAY
+        (ABSOLUTE
+          (PORT I ( 0 )( 0 ))
+          (IOPATH I O ( 837 )( 837 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE carry_out_OBUF\/carry_out_OBUF_AMUX_Delay)
+      (DELAY
+        (PATHPULSE (50))
+        (ABSOLUTE
+          (IOPATH I O ( 142 )( 142 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_LUT6")
+    (INSTANCE carry_out1)
+      (DELAY
+        (ABSOLUTE
+          (PORT ADR2 ( 762 )( 762 ))
+          (PORT ADR4 ( 698 )( 698 ))
+          (PORT ADR5 ( 0 )( 0 ))
+          (IOPATH ADR2 O ( 97 )( 97 ))
+          (IOPATH ADR4 O ( 97 )( 97 ))
+          (IOPATH ADR5 O ( 97 )( 97 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_LUT5")
+    (INSTANCE Mxor_sum_xo\<0\>1)
+      (DELAY
+        (ABSOLUTE
+          (PORT ADR2 ( 762 )( 762 ))
+          (PORT ADR4 ( 698 )( 698 ))
+          (IOPATH ADR2 O ( 111 )( 111 ))
+          (IOPATH ADR4 O ( 105 )( 105 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_OBUF")
+    (INSTANCE carry_out_OBUF)
+      (DELAY
+        (ABSOLUTE
+          (PORT I ( 0 )( 0 ))
+          (IOPATH I O ( 2245 )( 2245 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE NlwBufferBlock_sum_OBUF\/I)
+      (DELAY
+        (PATHPULSE (50))
+        (ABSOLUTE
+          (IOPATH I O ( 1216 )( 1216 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE NlwBufferBlock_carry_out_OBUF\/I)
+      (DELAY
+        (PATHPULSE (50))
+        (ABSOLUTE
+          (IOPATH I O ( 1198 )( 1198 ))
+        )
+      )
+  )
+)

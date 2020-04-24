@@ -130,6 +130,8 @@
     <transform xil_pn:end_ts="1583578075" xil_pn:in_ck="-856338311637206515" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="6930311595971892373" xil_pn:start_ts="1583578067">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="leftrightshift.bld"/>
@@ -172,7 +174,7 @@
       <outfile xil_pn:name="netgen/par/leftrightshift_timesim.sdf"/>
       <outfile xil_pn:name="netgen/par/leftrightshift_timesim.v"/>
     </transform>
-    <transform xil_pn:end_ts="1583579116" xil_pn:in_ck="-4556890360403275081" xil_pn:name="TRAN_copyPost-ParAbstractToPreSimulation" xil_pn:start_ts="1583579116">
+    <transform xil_pn:end_ts="1583794888" xil_pn:in_ck="-4556890360403275081" xil_pn:name="TRAN_copyPost-ParAbstractToPreSimulation" xil_pn:start_ts="1583794888">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="leftrightshift_test.v"/>
@@ -180,9 +182,12 @@
       <outfile xil_pn:name="netgen/par/leftrightshift_timesim.sdf"/>
       <outfile xil_pn:name="netgen/par/leftrightshift_timesim.v"/>
     </transform>
-    <transform xil_pn:end_ts="1583579124" xil_pn:in_ck="8392522262593182316" xil_pn:name="TRAN_ISimulatePostPlace&amp;RouteModelRunFuse" xil_pn:prop_ck="4385732646618768041" xil_pn:start_ts="1583579116">
+    <transform xil_pn:end_ts="1583794894" xil_pn:in_ck="8392522262593182316" xil_pn:name="TRAN_ISimulatePostPlace&amp;RouteModelRunFuse" xil_pn:prop_ck="4385732646618768041" xil_pn:start_ts="1583794888">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
@@ -190,9 +195,13 @@
       <outfile xil_pn:name="leftrightshift_test_par.prj"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1583579125" xil_pn:in_ck="-2818106787975214199" xil_pn:name="TRAN_ISimulatePostPlace&amp;RouteModel" xil_pn:prop_ck="7116598813833671534" xil_pn:start_ts="1583579124">
+    <transform xil_pn:end_ts="1583794894" xil_pn:in_ck="-2818106787975214199" xil_pn:name="TRAN_ISimulatePostPlace&amp;RouteModel" xil_pn:prop_ck="7116598813833671534" xil_pn:start_ts="1583794894">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="leftrightshift_test_isim_par.wdb"/>

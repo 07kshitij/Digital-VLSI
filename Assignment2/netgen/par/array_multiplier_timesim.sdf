@@ -1,0 +1,59 @@
+(DELAYFILE
+  (SDFVERSION "3.0")
+  (DESIGN "array_multiplier")
+  (DATE "Fri Apr 24 18:21:11 2020")
+  (VENDOR "Xilinx")
+  (PROGRAM "Xilinx SDF Writer")
+  (VERSION "P.20131013")
+  (DIVIDER /)
+  (VOLTAGE 0.95)
+  (TEMPERATURE 85)
+  (TIMESCALE 1 ps)
+  (CELL (CELLTYPE "X_OBUF")
+    (INSTANCE c_OBUF)
+      (DELAY
+        (ABSOLUTE
+          (PORT I ( 0 )( 0 ))
+          (IOPATH I O ( 2257 )( 2257 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_LUT6")
+    (INSTANCE c1)
+      (DELAY
+        (ABSOLUTE
+          (PORT ADR0 ( 1012 )( 1012 ))
+          (PORT ADR4 ( 694 )( 694 ))
+          (IOPATH ADR0 O ( 97 )( 97 ))
+          (IOPATH ADR4 O ( 97 )( 97 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_IBUF_INTERMDISABLE_TPWRGT")
+    (INSTANCE a_IBUF)
+      (DELAY
+        (ABSOLUTE
+          (PORT I ( 0 )( 0 ))
+          (IOPATH I O ( 809 )( 809 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_IBUF_INTERMDISABLE_TPWRGT")
+    (INSTANCE b_IBUF)
+      (DELAY
+        (ABSOLUTE
+          (PORT I ( 0 )( 0 ))
+          (IOPATH I O ( 817 )( 817 ))
+        )
+      )
+  )
+  (CELL (CELLTYPE "X_BUF")
+    (INSTANCE NlwBufferBlock_c_OBUF\/I)
+      (DELAY
+        (PATHPULSE (50))
+        (ABSOLUTE
+          (IOPATH I O ( 1090 )( 1090 ))
+        )
+      )
+  )
+)
