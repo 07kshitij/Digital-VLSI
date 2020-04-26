@@ -4,7 +4,7 @@
 // Company: 
 // Engineer:
 //
-// Create Date:   17:47:35 04/24/2020
+// Create Date:   16:34:03 04/26/2020
 // Design Name:   array_multiplier
 // Module Name:   D:/VLSI/Assignment2/array_multiplier_test.v
 // Project Name:  Assignment2
@@ -31,6 +31,12 @@ module array_multiplier_test;
 
 	// Outputs
 	wire [12:0] c;
+//	wire [6:0] p;
+//	wire [6:0] q;
+//	wire [6:0] r;
+//	wire [6:0] s;
+//	wire [6:0] tt;
+//	wire [6:0] u;
 
 	// Instantiate the Unit Under Test (UUT)
 	array_multiplier uut (
@@ -38,15 +44,33 @@ module array_multiplier_test;
 		.a(a), 
 		.b(b), 
 		.c(c)
+//		.p(p),
+//		.q(q),
+//		.r(r),
+//		.s(s),
+//		.tt(tt),
+//		.u(u)
 	);
 
 	initial begin
 		// Initialize Inputs
-		t = 0;
-		a = 0;
-		b = 0;
 
 		// Wait 100 ns for global reset to finish
+		t = 1; a = -3; b = 3;
+		#100;
+		t = 1; a = -2; b = -3;
+		#100;
+		t = 1; a = -2; b = 3;
+		#100;
+		t = 1; a = 2; b = -2;
+		#100;
+		t = 1; a = 2; b = 2;
+		#100;
+		t = 0; a = 2; b = 5;
+		#100;
+		t = 0; a = -2; b = -2;
+		#100;
+		t = 0; a = -2; b = 2;
 		#100;
         
 		// Add stimulus here

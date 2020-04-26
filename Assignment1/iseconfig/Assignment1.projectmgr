@@ -184,7 +184,7 @@
       <CurrentItem>Simulate Post-Place &amp; Route Model</CurrentItem>
    </ItemView>
    <SourceProcessView>000000ff0000000000000002000000d30000007201000000050100000002</SourceProcessView>
-   <CurrentView>Implementation</CurrentView>
+   <CurrentView>Behavioral Simulation</CurrentView>
    <ItemView engineview="PostRouteSim" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
