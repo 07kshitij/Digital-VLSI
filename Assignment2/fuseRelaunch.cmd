@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/VLSI/Assignment2/array_multiplier_test_isim_beh.exe" -prj "D:/VLSI/Assignment2/array_multiplier_test_beh.prj" "work.array_multiplier_test" "work.glbl" 
+-intstyle "ise" -incremental -lib "simprims_ver" -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/VLSI/Assignment2/array_multiplier_test_isim_par.exe" -prj "D:/VLSI/Assignment2/array_multiplier_test_par.prj" "work.array_multiplier_test" "work.glbl" 

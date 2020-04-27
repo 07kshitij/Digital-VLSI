@@ -21,7 +21,8 @@
 
 module array_multiplier(input t, input [6:0] a, input [5:0] b, output [12:0] c);
 	wire [6:0] p, q, r, s, tt, u;
-	// , output[6:0] p, output[6:0] q, output[6:0] r, output[6:0] s, output[6:0] tt, output[6:0] u
+
+	// Each layer of Multiplication with each bit of b stored in the corres. wires
 	layer_multiply layer0(.t(t), .a(a), .b(b[0]), .c(p));
 	layer_multiply layer1(.t(t), .a(a), .b(b[1]), .c(q));
 	layer_multiply layer2(.t(t), .a(a), .b(b[2]), .c(r));
@@ -31,12 +32,7 @@ module array_multiplier(input t, input [6:0] a, input [5:0] b, output [12:0] c);
 
 	// Layer 1 of ADDITION --- y0
 	assign c[0] = p[0]; // bit0 DONE
-	always @*
-		$display("c0 = %b", c[0]);
-//	assign c[1] = p[1];
-//	assign c[2] = p[2];
-//	assign c[3] = p[3];
-//	assign c[4] = p[4];
+
 	wire [6:0] temp_1;
 
 	assign temp_1[0] = p[1];
@@ -67,10 +63,6 @@ module array_multiplier(input t, input [6:0] a, input [5:0] b, output [12:0] c);
 	full_adder f7(.carry_in(carrys1[5]), .a(temp_1[6]), .b(q[6]), .sum(sums1[6]), .carry_out(carrys1[6]));
 
 	assign c[1] = sums1[0]; // bit1 DONE
-
-	always @*
-		$display("c1 = %b", c[1]);
-
 	
 	wire [6:0] temp_2;
 
@@ -94,9 +86,7 @@ module array_multiplier(input t, input [6:0] a, input [5:0] b, output [12:0] c);
 	full_adder f12(.carry_in(carrys2[4]), .a(temp_2[5]), .b(r[5]), .sum(sums2[5]), .carry_out(carrys2[5]));
 	full_adder f13(.carry_in(carrys2[5]), .a(temp_2[6]), .b(r[6]), .sum(sums2[6]), .carry_out(carrys2[6]));
 
-	assign c[2] = sums2[0];
-	always @*
-		$display("c2 = %b", c[2]);
+	assign c[2] = sums2[0]; // bit2 DONE
 
 	wire [6:0] temp_3;
 
@@ -107,14 +97,6 @@ module array_multiplier(input t, input [6:0] a, input [5:0] b, output [12:0] c);
 	assign temp_3[4] = sums2[5];
 	assign temp_3[5] = sums2[6];
 	assign temp_3[6] = carrys2[6];
-
-//	assign c[3] = sums[1];
-//	assign c[4] = sums[2];
-//	assign c[5] = sums[3];
-//	assign c[6] = sums[4];
-//	assign c[7] = sums[5];
-//	assign c[8] = sums[6];
-//	assign c[9] = carrys[6];
 	
 	// Layer 4 of ADDITION --- y3
 	wire [6:0] carrys3;
@@ -129,8 +111,6 @@ module array_multiplier(input t, input [6:0] a, input [5:0] b, output [12:0] c);
 	full_adder f19(.carry_in(carrys3[5]), .a(temp_3[6]), .b(s[6]), .sum(sums3[6]), .carry_out(carrys3[6]));
 
 	assign c[3] = sums3[0]; // bit3 DONE
-	always @*
-		$display("c3 = %b", c[3]);
 
 	wire [6:0] temp_4;
 
@@ -141,14 +121,6 @@ module array_multiplier(input t, input [6:0] a, input [5:0] b, output [12:0] c);
 	assign temp_4[4] = sums3[5];
 	assign temp_4[5] = sums3[6];
 	assign temp_4[6] = carrys3[6];
-	
-//	assign c[4] = sums[1];
-//	assign c[5] = sums[2];
-//	assign c[6] = sums[3];
-//	assign c[7] = sums[4];
-//	assign c[8] = sums[5];
-//	assign c[9] = sums[6];
-//	assign c[10] = carrys[6];
 
 	// Layer 5 of ADDITION --- y4
 	wire [6:0] carrys4;
@@ -163,8 +135,6 @@ module array_multiplier(input t, input [6:0] a, input [5:0] b, output [12:0] c);
 	full_adder f25(.carry_in(carrys4[5]), .a(temp_4[6]), .b(tt[6]), .sum(sums4[6]), .carry_out(carrys4[6]));
 
 	assign c[4] = sums4[0]; // bit4 DONE
-	always @*
-		$display("c4 = %b", c[4]);
 
 	wire [6:0] temp_5;
 
@@ -175,14 +145,6 @@ module array_multiplier(input t, input [6:0] a, input [5:0] b, output [12:0] c);
 	assign temp_5[4] = sums4[5];
 	assign temp_5[5] = sums4[6];
 	assign temp_5[6] = carrys4[6];
-
-//	assign c[5] = sums[1];
-//	assign c[6] = sums[2];
-//	assign c[7] = sums[3];
-//	assign c[8] = sums[4];
-//	assign c[9] = sums[5];
-//	assign c[10] = sums[6];
-//	assign c[11] = carrys[6];
 
 	// Layer 6 of ADDITON --- y5
 	wire [6:0] carrys5;
@@ -203,8 +165,9 @@ module array_multiplier(input t, input [6:0] a, input [5:0] b, output [12:0] c);
 	assign c[9] = sums5[4];
 	assign c[10] = sums5[5];
 	assign c[11] = sums5[6];
-	
-	reg useless_carry;
+
+	// Extra 1 added to the carry of last stage in case of SIGNED INTEGERS
+	wire useless_carry;
 	half_adder h7(.a(t), .b(carrys5[6]), .sum(c[12]), .carry_out(useless_carry));
 	
 endmodule

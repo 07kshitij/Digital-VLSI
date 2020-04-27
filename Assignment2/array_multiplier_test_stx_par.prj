@@ -1,0 +1,2 @@
+verilog isim_temp "netgen/par/array_multiplier_timesim.v"
+verilog isim_temp "array_multiplier_test.v"

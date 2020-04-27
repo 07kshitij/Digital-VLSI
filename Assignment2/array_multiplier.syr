@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.39 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.39 secs
  
 --> Reading design: array_multiplier.prj
 
@@ -106,10 +106,11 @@ Slice Utilization Ratio Delta      : 5
 *                          HDL Parsing                                  *
 =========================================================================
 Analyzing Verilog file "D:\VLSI\Assignment2\array_multiplier.v" into library work
+Parsing module <array_multiplier>.
+Parsing module <layer_multiply>.
+Parsing module <layer_multiply_and_flip>.
 Parsing module <full_adder>.
 Parsing module <half_adder>.
-Parsing module <logical_and>.
-Parsing module <array_multiplier>.
 
 =========================================================================
 *                            HDL Elaboration                            *
@@ -117,21 +118,53 @@ Parsing module <array_multiplier>.
 
 Elaborating module <array_multiplier>.
 
+Elaborating module <layer_multiply>.
+
+Elaborating module <layer_multiply_and_flip>.
+
+Elaborating module <half_adder>.
+
+Elaborating module <full_adder>.
+WARNING:HDLCompiler:1127 - "D:\VLSI\Assignment2\array_multiplier.v" Line 169: Assignment to useless_carry ignored, since the identifier is never used
+
 =========================================================================
 *                           HDL Synthesis                               *
 =========================================================================
 
 Synthesizing Unit <array_multiplier>.
     Related source file is "D:\VLSI\Assignment2\array_multiplier.v".
-WARNING:Xst:647 - Input <t> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "D:\VLSI\Assignment2\array_multiplier.v" line 169: Output port <carry_out> of the instance <h7> is unconnected or connected to loadless signal.
     Summary:
 	no macro.
 Unit <array_multiplier> synthesized.
 
+Synthesizing Unit <layer_multiply>.
+    Related source file is "D:\VLSI\Assignment2\array_multiplier.v".
+    Summary:
+Unit <layer_multiply> synthesized.
+
+Synthesizing Unit <layer_multiply_and_flip>.
+    Related source file is "D:\VLSI\Assignment2\array_multiplier.v".
+    Summary:
+Unit <layer_multiply_and_flip> synthesized.
+
+Synthesizing Unit <half_adder>.
+    Related source file is "D:\VLSI\Assignment2\array_multiplier.v".
+    Summary:
+Unit <half_adder> synthesized.
+
+Synthesizing Unit <full_adder>.
+    Related source file is "D:\VLSI\Assignment2\array_multiplier.v".
+    Summary:
+Unit <full_adder> synthesized.
+
 =========================================================================
 HDL Synthesis Report
 
-Found no macro
+Macro Statistics
+# Xors                                                 : 80
+ 1-bit xor2                                            : 80
+
 =========================================================================
 
 =========================================================================
@@ -142,7 +175,10 @@ Found no macro
 =========================================================================
 Advanced HDL Synthesis Report
 
-Found no macro
+Macro Statistics
+# Xors                                                 : 80
+ 1-bit xor2                                            : 80
+
 =========================================================================
 
 =========================================================================
@@ -182,11 +218,15 @@ Top Level Output File Name         : array_multiplier.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 1
-#      LUT2                        : 1
-# IO Buffers                       : 3
-#      IBUF                        : 2
-#      OBUF                        : 1
+# BELS                             : 70
+#      LUT2                        : 9
+#      LUT3                        : 10
+#      LUT4                        : 9
+#      LUT5                        : 8
+#      LUT6                        : 34
+# IO Buffers                       : 27
+#      IBUF                        : 14
+#      OBUF                        : 13
 
 Device utilization summary:
 ---------------------------
@@ -195,19 +235,19 @@ Selected Device : 7a100tcsg324-3
 
 
 Slice Logic Utilization: 
- Number of Slice LUTs:                    1  out of  63400     0%  
-    Number used as Logic:                 1  out of  63400     0%  
+ Number of Slice LUTs:                   70  out of  63400     0%  
+    Number used as Logic:                70  out of  63400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:      1
-   Number with an unused Flip Flop:       1  out of      1   100%  
-   Number with an unused LUT:             0  out of      1     0%  
-   Number of fully used LUT-FF pairs:     0  out of      1     0%  
+ Number of LUT Flip Flop pairs used:     70
+   Number with an unused Flip Flop:      70  out of     70   100%  
+   Number with an unused LUT:             0  out of     70     0%  
+   Number of fully used LUT-FF pairs:     0  out of     70     0%  
    Number of unique control sets:         0
 
 IO Utilization: 
- Number of IOs:                           4
- Number of bonded IOBs:                   3  out of    210     1%  
+ Number of IOs:                          27
+ Number of bonded IOBs:                  27  out of    210    12%  
 
 Specific Feature Utilization:
 
@@ -242,7 +282,7 @@ Speed Grade: -3
    Minimum period: No path found
    Minimum input arrival time before clock: No path found
    Maximum output required time after clock: No path found
-   Maximum combinational path delay: 0.757ns
+   Maximum combinational path delay: 8.080ns
 
 Timing Details:
 ---------------
@@ -250,22 +290,32 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default path analysis
-  Total number of paths / destination ports: 2 / 1
+  Total number of paths / destination ports: 35531 / 13
 -------------------------------------------------------------------------
-Delay:               0.757ns (Levels of Logic = 3)
-  Source:            a (PAD)
-  Destination:       c (PAD)
+Delay:               8.080ns (Levels of Logic = 13)
+  Source:            a<3> (PAD)
+  Destination:       c<12> (PAD)
 
-  Data Path: a to c
+  Data Path: a<3> to c<12>
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             1   0.001   0.379  a_IBUF (a_IBUF)
-     LUT2:I0->O            1   0.097   0.279  c1 (c_OBUF)
-     OBUF:I->O                 0.000          c_OBUF (c)
+     IBUF:I->O            15   0.001   0.444  a_3_IBUF (a_3_IBUF)
+     LUT2:I0->O            2   0.097   0.698  layer0/c<3>1 (p<3>)
+     LUT6:I0->O            3   0.097   0.521  f3/carry_out1 (carrys1<2>)
+     LUT6:I3->O            3   0.097   0.703  f5/carry_out1 (carrys1<4>)
+     LUT6:I0->O            2   0.097   0.698  f6/Mxor_sum_xo<0>1 (sums1<5>)
+     LUT6:I0->O            3   0.097   0.521  f11/Mxor_sum_xo<0>1 (sums2<4>)
+     LUT4:I1->O            2   0.097   0.384  f16/carry_out1 (carrys3<3>)
+     LUT6:I4->O            2   0.097   0.688  f18/carry_out1 (carrys3<5>)
+     LUT5:I0->O            3   0.097   0.703  f19/carry_out1 (carrys3<6>)
+     LUT6:I0->O            2   0.097   0.688  f25/Mxor_sum_xo<0>1 (sums4<6>)
+     LUT5:I0->O            2   0.097   0.688  f30/carry_out1 (carrys5<5>)
+     LUT6:I1->O            1   0.097   0.279  h7/Mxor_sum_xo<0>1 (c_12_OBUF)
+     OBUF:I->O                 0.000          c_12_OBUF (c<12>)
     ----------------------------------------
-    Total                      0.757ns (0.098ns logic, 0.659ns route)
-                                       (13.0% logic, 87.0% route)
+    Total                      8.080ns (1.068ns logic, 7.012ns route)
+                                       (13.2% logic, 86.8% route)
 
 =========================================================================
 
@@ -275,14 +325,14 @@ Cross Clock Domains Report:
 =========================================================================
 
 
-Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 7.95 secs
+Total REAL time to Xst completion: 11.00 secs
+Total CPU time to Xst completion: 11.28 secs
  
 --> 
 
-Total memory usage is 4626204 kilobytes
+Total memory usage is 4626184 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)
-Number of infos    :    0 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
 

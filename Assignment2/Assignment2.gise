@@ -35,14 +35,17 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="array_multiplier.ngc"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="array_multiplier.ngd"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="array_multiplier.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="array_multiplier.pad"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="array_multiplier.par" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="array_multiplier.pcf" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="array_multiplier.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="array_multiplier.ptwx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="array_multiplier.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="array_multiplier.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="array_multiplier.twr" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="array_multiplier.twx" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="array_multiplier.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="array_multiplier.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="array_multiplier.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="array_multiplier_envsettings.html"/>
     <file xil_pn:fileType="FILE_NCD" xil_pn:name="array_multiplier_guide.ncd" xil_pn:origination="imported"/>
@@ -51,14 +54,24 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="array_multiplier_map.mrp" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="array_multiplier_map.ncd" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="array_multiplier_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="array_multiplier_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="array_multiplier_ngdbuild.xrpt"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="array_multiplier_pad.csv" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="array_multiplier_pad.txt" xil_pn:subbranch="Par"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="array_multiplier_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="array_multiplier_par.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="array_multiplier_stx_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="array_multiplier_stx_par.prj"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="array_multiplier_summary.html"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="array_multiplier_test_beh.prj"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="array_multiplier_summary.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="array_multiplier_test_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="array_multiplier_test_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="array_multiplier_test_isim_beh.wdb"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="array_multiplier_test_stx_beh.prj"/>
+    <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="array_multiplier_test_isim_par.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="array_multiplier_test_isim_par.wdb"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="array_multiplier_test_par.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="array_multiplier_test_stx_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="array_multiplier_test_stx_par.prj"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="array_multiplier_usage.xml"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="array_multiplier_xst.xrpt"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="full_adder.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="full_adder.cmd_log"/>
@@ -122,8 +135,6 @@
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="half_adder_summary.html"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="half_adder_summary.xml"/>
     <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="half_adder_test_isim_par.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="half_adder_test_isim_par.wdb"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="half_adder_test_par.prj"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="half_adder_test_stx_par.prj"/>
     <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="half_adder_usage.xml"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="half_adder_xst.xrpt"/>
@@ -132,7 +143,7 @@
       <branch xil_pn:name="BehavioralSim"/>
       <branch xil_pn:name="PostRouteSimulation"/>
     </file>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="netgen"/>
     <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/par/array_multiplier_timesim.nlf"/>
     <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_SDF" xil_pn:name="netgen/par/array_multiplier_timesim.sdf"/>
@@ -164,6 +175,10 @@
     <transform xil_pn:end_ts="1587910667" xil_pn:in_ck="2137256310418643075" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1587910667">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="array_multiplier.v"/>
       <outfile xil_pn:name="array_multiplier_test.v"/>
       <outfile xil_pn:name="full_adder_test.v"/>
@@ -184,6 +199,11 @@
     <transform xil_pn:end_ts="1587910669" xil_pn:in_ck="2137256310418643075" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1587910669">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="array_multiplier.v"/>
       <outfile xil_pn:name="array_multiplier_test.v"/>
       <outfile xil_pn:name="full_adder_test.v"/>
@@ -192,14 +212,15 @@
     <transform xil_pn:end_ts="1587910672" xil_pn:in_ck="2137256310418643075" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="3744707595016449541" xil_pn:start_ts="1587910669">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
       <outfile xil_pn:name="array_multiplier_test_beh.prj"/>
       <outfile xil_pn:name="array_multiplier_test_isim_beh.exe"/>
-      <outfile xil_pn:name="fuse.log"/>
-      <outfile xil_pn:name="isim"/>
-      <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
     <transform xil_pn:end_ts="1587910672" xil_pn:in_ck="-5163747070957752729" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="2982110479016169192" xil_pn:start_ts="1587910672">
@@ -209,25 +230,115 @@
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
+      <status xil_pn:value="OutputRemoved"/>
       <outfile xil_pn:name="array_multiplier_test_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
-      <outfile xil_pn:name="isim.log"/>
     </transform>
     <transform xil_pn:end_ts="1587731035" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1587731035">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1587733791" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="8767413467133179388" xil_pn:start_ts="1587733791">
+    <transform xil_pn:end_ts="1587940960" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-7922385025562317094" xil_pn:start_ts="1587940960">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
-    <transform xil_pn:end_ts="1587733862" xil_pn:in_ck="-8172101131570549385" xil_pn:name="TRAN_copyPost-ParAbstractToPreSimulation" xil_pn:start_ts="1587733862">
+    <transform xil_pn:end_ts="1587940960" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="6532658446676910274" xil_pn:start_ts="1587940960">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="InputChanged"/>
+    </transform>
+    <transform xil_pn:end_ts="1587940960" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1587940960">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1587940960" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="2649738256211590908" xil_pn:start_ts="1587940960">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1587940960" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="3206529612922900429" xil_pn:start_ts="1587940960">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1587940960" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="4017218533787966796" xil_pn:start_ts="1587940960">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1587989666" xil_pn:in_ck="5292038689187706313" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="2175166939311827967" xil_pn:start_ts="1587989653">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="array_multiplier.lso"/>
+      <outfile xil_pn:name="array_multiplier.ngc"/>
+      <outfile xil_pn:name="array_multiplier.ngr"/>
+      <outfile xil_pn:name="array_multiplier.prj"/>
+      <outfile xil_pn:name="array_multiplier.stx"/>
+      <outfile xil_pn:name="array_multiplier.syr"/>
+      <outfile xil_pn:name="array_multiplier.xst"/>
+      <outfile xil_pn:name="array_multiplier_stx_beh.prj"/>
+      <outfile xil_pn:name="array_multiplier_stx_par.prj"/>
+      <outfile xil_pn:name="array_multiplier_test_beh.prj"/>
+      <outfile xil_pn:name="array_multiplier_test_par.prj"/>
+      <outfile xil_pn:name="array_multiplier_test_stx_beh.prj"/>
+      <outfile xil_pn:name="array_multiplier_test_stx_par.prj"/>
+      <outfile xil_pn:name="array_multiplier_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1587940968" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="3183909033045282215" xil_pn:start_ts="1587940968">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1587989675" xil_pn:in_ck="-7416928821978807677" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="1883879638804071027" xil_pn:start_ts="1587989666">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="array_multiplier.bld"/>
+      <outfile xil_pn:name="array_multiplier.ngd"/>
+      <outfile xil_pn:name="array_multiplier_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1587989700" xil_pn:in_ck="-2966265815546192954" xil_pn:name="TRANEXT_map_virtex7" xil_pn:prop_ck="2100985583056581773" xil_pn:start_ts="1587989675">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="array_multiplier.pcf"/>
+      <outfile xil_pn:name="array_multiplier_map.map"/>
+      <outfile xil_pn:name="array_multiplier_map.mrp"/>
+      <outfile xil_pn:name="array_multiplier_map.ncd"/>
+      <outfile xil_pn:name="array_multiplier_map.ngm"/>
+      <outfile xil_pn:name="array_multiplier_map.xrpt"/>
+      <outfile xil_pn:name="array_multiplier_summary.xml"/>
+      <outfile xil_pn:name="array_multiplier_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1587989731" xil_pn:in_ck="1069912073246429521" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="-2283627392121029586" xil_pn:start_ts="1587989700">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="array_multiplier.ncd"/>
+      <outfile xil_pn:name="array_multiplier.pad"/>
+      <outfile xil_pn:name="array_multiplier.par"/>
+      <outfile xil_pn:name="array_multiplier.ptwx"/>
+      <outfile xil_pn:name="array_multiplier.unroutes"/>
+      <outfile xil_pn:name="array_multiplier.xpi"/>
+      <outfile xil_pn:name="array_multiplier_pad.csv"/>
+      <outfile xil_pn:name="array_multiplier_pad.txt"/>
+      <outfile xil_pn:name="array_multiplier_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1587989745" xil_pn:in_ck="-157972305945684678" xil_pn:name="TRAN_postParSimModel" xil_pn:prop_ck="7252582855342733506" xil_pn:start_ts="1587989731">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="netgen"/>
+      <outfile xil_pn:name="netgen/par/array_multiplier_timesim.nlf"/>
+      <outfile xil_pn:name="netgen/par/array_multiplier_timesim.sdf"/>
+      <outfile xil_pn:name="netgen/par/array_multiplier_timesim.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1587989745" xil_pn:in_ck="-4698394403475596065" xil_pn:name="TRAN_copyPost-ParAbstractToPreSimulation" xil_pn:start_ts="1587989745">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="array_multiplier_test.v"/>
       <outfile xil_pn:name="full_adder_test.v"/>
       <outfile xil_pn:name="half_adder_test.v"/>
       <outfile xil_pn:name="netgen/par/array_multiplier_timesim.sdf"/>
@@ -237,26 +348,29 @@
       <outfile xil_pn:name="netgen/par/half_adder_timesim.sdf"/>
       <outfile xil_pn:name="netgen/par/half_adder_timesim.v"/>
     </transform>
-    <transform xil_pn:end_ts="1587733865" xil_pn:in_ck="3962520279310677978" xil_pn:name="TRAN_ISimulatePostPlace&amp;RouteModelRunFuse" xil_pn:prop_ck="-7617957566262893393" xil_pn:start_ts="1587733862">
+    <transform xil_pn:end_ts="1587989749" xil_pn:in_ck="-4067141741566160318" xil_pn:name="TRAN_ISimulatePostPlace&amp;RouteModelRunFuse" xil_pn:prop_ck="-5356944477107716763" xil_pn:start_ts="1587989745">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
-      <outfile xil_pn:name="half_adder_test_isim_par.exe"/>
-      <outfile xil_pn:name="half_adder_test_par.prj"/>
+      <outfile xil_pn:name="array_multiplier_test_isim_par.exe"/>
+      <outfile xil_pn:name="array_multiplier_test_par.prj"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1587733865" xil_pn:in_ck="437757484907470800" xil_pn:name="TRAN_ISimulatePostPlace&amp;RouteModel" xil_pn:prop_ck="-8376021893619088249" xil_pn:start_ts="1587733865">
+    <transform xil_pn:end_ts="1587989749" xil_pn:in_ck="1980966034874377847" xil_pn:name="TRAN_ISimulatePostPlace&amp;RouteModel" xil_pn:prop_ck="6760706525179185160" xil_pn:start_ts="1587989749">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
-      <outfile xil_pn:name="half_adder_test_isim_par.wdb"/>
+      <outfile xil_pn:name="array_multiplier_test_isim_par.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+    </transform>
+    <transform xil_pn:end_ts="1587989731" xil_pn:in_ck="-157972305945684678" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1587989719">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="array_multiplier.twr"/>
+      <outfile xil_pn:name="array_multiplier.twx"/>
     </transform>
   </transforms>
 

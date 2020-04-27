@@ -1,24 +1,26 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/VLSI/Assignment2/array_multiplier_test_isim_beh.exe -prj D:/VLSI/Assignment2/array_multiplier_test_beh.prj work.array_multiplier_test work.glbl 
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib simprims_ver -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o D:/VLSI/Assignment2/array_multiplier_test_isim_par.exe -prj D:/VLSI/Assignment2/array_multiplier_test_par.prj work.array_multiplier_test work.glbl 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 8
 Turning on mult-threading, number of parallel sub-compilation jobs: 16 
 Determining compilation order of HDL files
-Analyzing Verilog file "D:/VLSI/Assignment2/array_multiplier.v" into library work
+Analyzing Verilog file "D:/VLSI/Assignment2/netgen/par/array_multiplier_timesim.v" into library work
 Analyzing Verilog file "D:/VLSI/Assignment2/array_multiplier_test.v" into library work
-Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
 Starting static elaboration
-WARNING:HDLCompiler:329 - "D:/VLSI/Assignment2/array_multiplier.v" Line 208: Target <useless_carry> of concurrent assignment or output port connection should be a net type.
 Completed static elaboration
-Compiling module layer_multiply
-Compiling module layer_multiply_and_flip
-Compiling module half_adder
-Compiling module full_adder
+Compiling module X_LUT6(INIT=64'b1111110011101100...
+Compiling module X_BUF
+Compiling module X_LUT5(INIT=32'b0101101011110000...
+Compiling module X_IPAD
+Compiling module X_ZERO
+Compiling module X_IBUF_INTERMDISABLE_TPWRGT(LOC=...
+Compiling module X_OPAD
+Compiling module X_OBUF
 Compiling module array_multiplier
 Compiling module array_multiplier_test
 Compiling module glbl
 Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
-Compiled 7 Verilog Units
-Built simulation executable D:/VLSI/Assignment2/array_multiplier_test_isim_beh.exe
-Fuse Memory Usage: 28664 KB
-Fuse CPU Usage: 390 ms
+Compiled 142 Verilog Units
+Built simulation executable D:/VLSI/Assignment2/array_multiplier_test_isim_par.exe
+Fuse Memory Usage: 34028 KB
+Fuse CPU Usage: 812 ms

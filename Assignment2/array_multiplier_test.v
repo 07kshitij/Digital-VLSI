@@ -31,12 +31,6 @@ module array_multiplier_test;
 
 	// Outputs
 	wire [12:0] c;
-//	wire [6:0] p;
-//	wire [6:0] q;
-//	wire [6:0] r;
-//	wire [6:0] s;
-//	wire [6:0] tt;
-//	wire [6:0] u;
 
 	// Instantiate the Unit Under Test (UUT)
 	array_multiplier uut (
@@ -44,12 +38,6 @@ module array_multiplier_test;
 		.a(a), 
 		.b(b), 
 		.c(c)
-//		.p(p),
-//		.q(q),
-//		.r(r),
-//		.s(s),
-//		.tt(tt),
-//		.u(u)
 	);
 
 	initial begin
@@ -68,9 +56,13 @@ module array_multiplier_test;
 		#100;
 		t = 0; a = 2; b = 5;
 		#100;
-		t = 0; a = -2; b = -2;
+		t = 0; a = 0; b = 1;
 		#100;
-		t = 0; a = -2; b = 2;
+		t = 0; a = 0; b = -1;
+		#100;
+		t = 1; a = 0; b = 1;
+		#100;
+		t = 1; a = 0; b = -1;
 		#100;
         
 		// Add stimulus here

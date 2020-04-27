@@ -1,0 +1,29 @@
+Command line:
+   array_multiplier_test_isim_par.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50013
+
+Mon Apr 27 17:45:51 2020
+
+
+ Elaboration Time: 0.078125 sec
+
+ Current Memory Usage: 5164.34 Meg
+
+ Total Signals          : 1290
+ Total Nets             : 771
+ Total Signal Drivers   : 765
+ Total Blocks           : 258
+ Total Primitive Blocks : 169
+ Total Processes        : 839
+ Total Traceable Variables  : 754
+ Total Scalar Nets and Variables : 24716
+Total Line Count : 2306
+
+ Total Simulation Time: 0.671875 sec
+
+ Current Memory Usage: 5007.05 Meg
+
+Mon Apr 27 17:47:09 2020
+

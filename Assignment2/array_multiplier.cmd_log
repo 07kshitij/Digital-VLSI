@@ -13,3 +13,29 @@ map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -re
 par -w -intstyle ise -ol high -mt off array_multiplier_map.ncd array_multiplier.ncd array_multiplier.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml array_multiplier.twx array_multiplier.ncd -o array_multiplier.twr array_multiplier.pcf 
 netgen -intstyle ise -s 3  -pcf array_multiplier.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim array_multiplier.ncd array_multiplier_timesim.v 
+xst -intstyle ise -ifn "D:/VLSI/Assignment2/array_multiplier.xst" -ofn "D:/VLSI/Assignment2/array_multiplier.syr" 
+xst -intstyle ise -ifn "D:/VLSI/Assignment2/array_multiplier.xst" -ofn "D:/VLSI/Assignment2/array_multiplier.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 array_multiplier.ngc array_multiplier.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o array_multiplier_map.ncd array_multiplier.ngd array_multiplier.pcf 
+par -w -intstyle ise -ol high -mt off array_multiplier_map.ncd array_multiplier.ncd array_multiplier.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml array_multiplier.twx array_multiplier.ncd -o array_multiplier.twr array_multiplier.pcf 
+netgen -intstyle ise -s 3  -pcf array_multiplier.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim array_multiplier.ncd array_multiplier_timesim.v 
+netgen -intstyle ise -s 3  -pcf array_multiplier.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim array_multiplier.ncd array_multiplier_timesim.v 
+xst -intstyle ise -ifn "D:/VLSI/Assignment2/array_multiplier.xst" -ofn "D:/VLSI/Assignment2/array_multiplier.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 array_multiplier.ngc array_multiplier.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o array_multiplier_map.ncd array_multiplier.ngd array_multiplier.pcf 
+par -w -intstyle ise -ol high -mt off array_multiplier_map.ncd array_multiplier.ncd array_multiplier.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml array_multiplier.twx array_multiplier.ncd -o array_multiplier.twr array_multiplier.pcf 
+netgen -intstyle ise -s 3  -pcf array_multiplier.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim array_multiplier.ncd array_multiplier_timesim.v 
+xst -intstyle ise -ifn "D:/VLSI/Assignment2/array_multiplier.xst" -ofn "D:/VLSI/Assignment2/array_multiplier.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 array_multiplier.ngc array_multiplier.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o array_multiplier_map.ncd array_multiplier.ngd array_multiplier.pcf 
+par -w -intstyle ise -ol high -mt off array_multiplier_map.ncd array_multiplier.ncd array_multiplier.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml array_multiplier.twx array_multiplier.ncd -o array_multiplier.twr array_multiplier.pcf 
+netgen -intstyle ise -s 3  -pcf array_multiplier.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim array_multiplier.ncd array_multiplier_timesim.v 
+xst -intstyle ise -ifn "D:/VLSI/Assignment2/array_multiplier.xst" -ofn "D:/VLSI/Assignment2/array_multiplier.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 array_multiplier.ngc array_multiplier.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o array_multiplier_map.ncd array_multiplier.ngd array_multiplier.pcf 
+par -w -intstyle ise -ol high -mt off array_multiplier_map.ncd array_multiplier.ncd array_multiplier.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml array_multiplier.twx array_multiplier.ncd -o array_multiplier.twr array_multiplier.pcf 
+netgen -intstyle ise -s 3  -pcf array_multiplier.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim array_multiplier.ncd array_multiplier_timesim.v 

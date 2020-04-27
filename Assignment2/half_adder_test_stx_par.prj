@@ -1,1 +1,2 @@
+verilog isim_temp "netgen/par/half_adder_timesim.v"
 verilog isim_temp "half_adder_test.v"
