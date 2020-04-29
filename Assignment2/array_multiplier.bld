@@ -26,7 +26,7 @@ NGDBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 4470584 kilobytes
+Total memory usage is 4470568 kilobytes
 
 Writing NGD file "array_multiplier.ngd" ...
 Total REAL time to NGDBUILD completion:  6 sec
