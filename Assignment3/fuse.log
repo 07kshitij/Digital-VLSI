@@ -14,5 +14,5 @@ Compiling module glbl
 Time Resolution for simulation is 1ps.
 Compiled 3 Verilog Units
 Built simulation executable D:/VLSI/Assignment3/model_test_bench_isim_beh.exe
-Fuse Memory Usage: 27972 KB
-Fuse CPU Usage: 312 ms
+Fuse Memory Usage: 28064 KB
+Fuse CPU Usage: 327 ms

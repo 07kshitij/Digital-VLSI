@@ -34,7 +34,7 @@ module model_test_bench;
 	wire bottle;
 	wire change;
 	
-	parameter PERIOD = 5;
+	parameter PERIOD = 50;
 
 	// Instantiate the Unit Under Test (UUT)
 	vending_machine uut (
@@ -49,38 +49,40 @@ module model_test_bench;
 	always #PERIOD clk=~clk;
 
 	initial begin
-		// Initialize Inputs
-		five_coin = 0;
-		ten_coin = 0;
 		clk = 0;
-		reset = 0;
-
-		// Wait 100 ns for global reset to finish
-		#100;
 		 
-		#100;
 		five_coin = 0; ten_coin = 0; reset = 1;
-		#100;
+		#PERIOD;
 		five_coin = 0; ten_coin = 0; reset = 0;
-		#100;
+		#PERIOD;
 		five_coin = 1; ten_coin = 0; reset = 0;
-		#100;
+		#PERIOD;
 		five_coin = 1; ten_coin = 0; reset = 0;
-		#100;
+		#PERIOD;
 		five_coin = 1; ten_coin = 0; reset = 0;
-		#100;
+		#PERIOD;
+		five_coin = 0; ten_coin = 0; reset = 0;
+		#PERIOD;
 		five_coin = 0; ten_coin = 1; reset = 0;
-		#100;
+		#PERIOD;
 		five_coin = 1; ten_coin = 0; reset = 0;
-		#100;
+		#PERIOD;
+		five_coin = 0; ten_coin = 0; reset = 0;
+		#PERIOD;
 		five_coin = 0; ten_coin = 1; reset = 0;
-		#100;
+		#PERIOD;
 		five_coin = 0; ten_coin = 1; reset = 0;
-		#100;
-        
+		#PERIOD;
+		five_coin = 0; ten_coin = 0; reset = 0;
+		#PERIOD;
+		five_coin = 0; ten_coin = 0; reset = 0;
+		#PERIOD;
+		five_coin = 0; ten_coin = 1; reset = 0;
+		#PERIOD;
+		five_coin = 1; ten_coin = 0; reset = 0;
+		#PERIOD;
 		// Add stimulus here
-
 	end
-      
+	      
 endmodule
 
