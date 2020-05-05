@@ -1,0 +1,2 @@
+verilog work "netgen/par/vending_machine_timesim.v"
+verilog work "model_test_bench.v"

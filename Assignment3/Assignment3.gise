@@ -22,16 +22,79 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="Assignment3.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="glbl_stx_par.prj"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="isim"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log"/>
+    <file xil_pn:fileType="FILE_CMD" xil_pn:name="isim.cmd">
+      <branch xil_pn:name="BehavioralSim"/>
+      <branch xil_pn:name="PostRouteSimulation"/>
+    </file>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="isim.log">
+      <branch xil_pn:name="BehavioralSim"/>
+      <branch xil_pn:name="PostRouteSimulation"/>
+    </file>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="model_test_bench_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="model_test_bench_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="model_test_bench_isim_beh.wdb"/>
+    <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="model_test_bench_isim_par.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="model_test_bench_isim_par.wdb"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="model_test_bench_par.prj"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="model_test_bench_stx_beh.prj"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="vending_machine_stx_beh.prj"/>
-    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="model_test_bench_stx_par.prj"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="netgen"/>
+    <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/par/vending_machine_timesim.nlf"/>
+    <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_SDF" xil_pn:name="netgen/par/vending_machine_timesim.sdf"/>
+    <file xil_pn:branch="PostRouteSimulation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="netgen/par/vending_machine_timesim.v"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="vending_machine.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="vending_machine.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="vending_machine.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="vending_machine.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="vending_machine.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="vending_machine.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="vending_machine.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="vending_machine.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="vending_machine.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="vending_machine.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="vending_machine.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="vending_machine.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="vending_machine.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="vending_machine.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="vending_machine.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="vending_machine.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="vending_machine.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="vending_machine.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="vending_machine.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="vending_machine_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="vending_machine_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="vending_machine_isim_beh.exe"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="vending_machine_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="vending_machine_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="vending_machine_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="vending_machine_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="vending_machine_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="vending_machine_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="vending_machine_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="vending_machine_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="vending_machine_par.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="vending_machine_stx_beh.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="vending_machine_stx_par.prj"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="vending_machine_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="vending_machine_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="vending_machine_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="vending_machine_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_INI" xil_pn:name="xilinxsim.ini">
+      <branch xil_pn:name="BehavioralSim"/>
+      <branch xil_pn:name="PostRouteSimulation"/>
+    </file>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
@@ -39,17 +102,17 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1588594925" xil_pn:in_ck="5967037965307427734" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1588594925">
+    <transform xil_pn:end_ts="1588686113" xil_pn:in_ck="5967037965307427734" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1588686113">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="model_test_bench.v"/>
       <outfile xil_pn:name="vending_machine.v"/>
     </transform>
-    <transform xil_pn:end_ts="1588588550" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="3704333651429129094" xil_pn:start_ts="1588588550">
+    <transform xil_pn:end_ts="1588672051" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="3704333651429129094" xil_pn:start_ts="1588672051">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1588588550" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="4500002137008537252" xil_pn:start_ts="1588588550">
+    <transform xil_pn:end_ts="1588672051" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="4500002137008537252" xil_pn:start_ts="1588672051">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
@@ -57,7 +120,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1588594795" xil_pn:in_ck="5967037965307427734" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1588594795">
+    <transform xil_pn:end_ts="1588685417" xil_pn:in_ck="5967037965307427734" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1588685417">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -67,7 +130,7 @@
       <outfile xil_pn:name="model_test_bench.v"/>
       <outfile xil_pn:name="vending_machine.v"/>
     </transform>
-    <transform xil_pn:end_ts="1588594797" xil_pn:in_ck="5967037965307427734" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-958602928501581573" xil_pn:start_ts="1588594795">
+    <transform xil_pn:end_ts="1588685419" xil_pn:in_ck="5967037965307427734" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-958602928501581573" xil_pn:start_ts="1588685417">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
@@ -82,7 +145,7 @@
       <outfile xil_pn:name="model_test_bench_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1588594798" xil_pn:in_ck="-4195515282923309026" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-1986331921660601506" xil_pn:start_ts="1588594797">
+    <transform xil_pn:end_ts="1588685420" xil_pn:in_ck="-2053429523220982068" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-1986331921660601506" xil_pn:start_ts="1588685419">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
@@ -91,6 +154,154 @@
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="model_test_bench_isim_beh.wdb"/>
+    </transform>
+    <transform xil_pn:end_ts="1588676150" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1588676150">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1588676150" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-2898549412562593036" xil_pn:start_ts="1588676150">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1588676150" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="4744334618675752956" xil_pn:start_ts="1588676150">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1588676150" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1588676150">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1588676150" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="3011740406191025878" xil_pn:start_ts="1588676150">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1588676150" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="3206529612922900429" xil_pn:start_ts="1588676150">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1588676150" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="6904078145401488198" xil_pn:start_ts="1588676150">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1588685486" xil_pn:in_ck="-6106447395713093277" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="-2210087445081751879" xil_pn:start_ts="1588685476">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="vending_machine.lso"/>
+      <outfile xil_pn:name="vending_machine.ngc"/>
+      <outfile xil_pn:name="vending_machine.ngr"/>
+      <outfile xil_pn:name="vending_machine.prj"/>
+      <outfile xil_pn:name="vending_machine.stx"/>
+      <outfile xil_pn:name="vending_machine.syr"/>
+      <outfile xil_pn:name="vending_machine.xst"/>
+      <outfile xil_pn:name="vending_machine_stx_beh.prj"/>
+      <outfile xil_pn:name="vending_machine_stx_par.prj"/>
+      <outfile xil_pn:name="vending_machine_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1588676159" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-8568262616388898175" xil_pn:start_ts="1588676159">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1588685493" xil_pn:in_ck="-9093347396120002107" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="2244310097921973517" xil_pn:start_ts="1588685486">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="vending_machine.bld"/>
+      <outfile xil_pn:name="vending_machine.ngd"/>
+      <outfile xil_pn:name="vending_machine_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1588685516" xil_pn:in_ck="-9093347396120002106" xil_pn:name="TRANEXT_map_virtex7" xil_pn:prop_ck="2100985583056581773" xil_pn:start_ts="1588685493">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="vending_machine.pcf"/>
+      <outfile xil_pn:name="vending_machine_map.map"/>
+      <outfile xil_pn:name="vending_machine_map.mrp"/>
+      <outfile xil_pn:name="vending_machine_map.ncd"/>
+      <outfile xil_pn:name="vending_machine_map.ngm"/>
+      <outfile xil_pn:name="vending_machine_map.xrpt"/>
+      <outfile xil_pn:name="vending_machine_summary.xml"/>
+      <outfile xil_pn:name="vending_machine_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1588685547" xil_pn:in_ck="-6605117264639851553" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="-2283627392121029586" xil_pn:start_ts="1588685516">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="vending_machine.ncd"/>
+      <outfile xil_pn:name="vending_machine.pad"/>
+      <outfile xil_pn:name="vending_machine.par"/>
+      <outfile xil_pn:name="vending_machine.ptwx"/>
+      <outfile xil_pn:name="vending_machine.unroutes"/>
+      <outfile xil_pn:name="vending_machine.xpi"/>
+      <outfile xil_pn:name="vending_machine_pad.csv"/>
+      <outfile xil_pn:name="vending_machine_pad.txt"/>
+      <outfile xil_pn:name="vending_machine_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1588685559" xil_pn:in_ck="-9093347396120002238" xil_pn:name="TRAN_postParSimModel" xil_pn:prop_ck="2173059181234690588" xil_pn:start_ts="1588685547">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="netgen"/>
+      <outfile xil_pn:name="netgen/par/vending_machine_timesim.nlf"/>
+      <outfile xil_pn:name="netgen/par/vending_machine_timesim.sdf"/>
+      <outfile xil_pn:name="netgen/par/vending_machine_timesim.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1588686039" xil_pn:in_ck="6296770694758867410" xil_pn:name="TRAN_copyPost-ParAbstractToPreSimulation" xil_pn:start_ts="1588686039">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="model_test_bench.v"/>
+      <outfile xil_pn:name="netgen/par/vending_machine_timesim.sdf"/>
+      <outfile xil_pn:name="netgen/par/vending_machine_timesim.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1588686041" xil_pn:in_ck="2708850525152589551" xil_pn:name="TRAN_ISimulatePostPlace&amp;RouteModelRunFuse" xil_pn:prop_ck="8520970511596921179" xil_pn:start_ts="1588686039">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="fuse.log"/>
+      <outfile xil_pn:name="isim"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="model_test_bench_isim_par.exe"/>
+      <outfile xil_pn:name="model_test_bench_par.prj"/>
+      <outfile xil_pn:name="xilinxsim.ini"/>
+    </transform>
+    <transform xil_pn:end_ts="1588686042" xil_pn:in_ck="-4195515264987439822" xil_pn:name="TRAN_ISimulatePostPlace&amp;RouteModel" xil_pn:prop_ck="2932400660350376873" xil_pn:start_ts="1588686041">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="isim.cmd"/>
+      <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="model_test_bench_isim_par.wdb"/>
+    </transform>
+    <transform xil_pn:end_ts="1588685547" xil_pn:in_ck="-9093347396120002238" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416185" xil_pn:start_ts="1588685534">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="vending_machine.twr"/>
+      <outfile xil_pn:name="vending_machine.twx"/>
     </transform>
   </transforms>
 

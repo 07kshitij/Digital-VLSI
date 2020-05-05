@@ -18,86 +18,63 @@
 // Additional Comments: 
 //
 //////////////////////////////////////////////////////////////////////////////////
-module vending_machine(input five_coin, input ten_coin, input clk, input reset, output reg bottle, output reg change);
-	parameter S0 = 0, S1 = 1, S2 = 2;
+module vending_machine(input five_coin, input ten_coin, input clk, output reg bottle, output reg change);
+	parameter S0 = 2'b00, S1 = 2'b01, S2 = 2'b11;
 	// S0 -- Waiting or finished state
 	// S1 -- 5 rupees deposited
 	// S2 -- 10 rupees deposited
-	reg[1:0] PS, NS;
-	always @(posedge clk or negedge clk or posedge reset) begin
-		case(reset)
-			1 : begin
-					PS <= S0;
-					bottle <= 0;
-					change <= 0;
-					$display("Time = %5d, Reset", $time);
-				end
-			0 : PS <= NS;
-		endcase
-	end
-	
-	always @(PS or five_coin or ten_coin) begin
+	reg[1:0] PS;
+
+	always @(posedge clk) begin
 		case(PS)
 			S0: begin
-					if(five_coin == 0 && ten_coin == 1) begin
-						NS = S2;
-						$display("Time = %5d, Changing from state S0 to S2", $time);
-						bottle = 0;
-						change = 0;
-					end
-					else if(five_coin == 1 && ten_coin == 0) begin
-						NS = S1;
-						$display("Time = %5d, Changing from state S0 to S1", $time);
-						bottle = 0;
-						change = 0; 
+					if(ten_coin == 1'b1) begin
+						PS = S2;
+						bottle = 1'b0;
+						change = 1'b0;
+						$display("Time = %5d, Changing from S0 to S2\n", $time);
 					end
 					else begin
-						NS = S0;
-						$display("Time = %5d, Remaining in state S0", $time);
-						bottle = 0;
-						change = 0; 
+						PS = S1;
+						bottle = 1'b0;
+						change = 1'b0; 
+						$display("Time = %5d, Changing from S0 to S1\n", $time);
 					end
 				end
 			S1: begin
-					if(five_coin == 0 && ten_coin == 1) begin
-						NS = S0;
-						$display("Time = %5d, Changing from state S1 to S0", $time);
-						bottle = 1;
-						change = 0;
+					if(ten_coin == 1'b1) begin
+						PS = S0;
+						bottle = 1'b1;
+						change = 1'b0;
+						$display("Time = %5d, Changing from S1 to S0\n", $time);
 					end	
-					else if(five_coin == 1 && ten_coin == 0) begin
-						NS = S2;
-						$display("Time = %5d, Changing from state S1 to S2", $time);
-						bottle = 0;
-						change = 0; 
-					end
 					else begin
-						NS = S1;
-						$display("Time = %5d, Remaining in state S1", $time);
-						bottle = 0;
-						change = 0; 
+						PS = S2;
+						bottle = 1'b0;
+						change = 1'b0; 
+						$display("Time = %5d, Changing from S1 to S2\n", $time);
 					end
 				end
 			S2: begin
-					if(five_coin == 0 && ten_coin == 1) begin
-						NS = S1;
-						$display("Time = %5d, Changing from state S2 to S1", $time);
-						bottle = 1;
-						change = 1;
-					end
-					else if(five_coin == 1 && ten_coin == 0) begin
-						NS = S0;
-						$display("Time = %5d, Changing from state S2 to S0", $time);
-						bottle = 1;
-						change = 0; 
+					if(ten_coin == 1'b1) begin
+						PS = S0;
+						bottle = 1'b1;
+						change = 1'b1;
+						$display("Time = %5d, Changing from S2 to S0\n", $time);
 					end
 					else begin
-						NS = S2;
-						$display("Time = %5d, Remaining in state S2", $time);
-						bottle = 0;
-						change = 0; 
+						PS = S0;
+						bottle = 1'b1;
+						change = 1'b0; 
+						$display("Time = %5d, Changing from S2 to S0\n", $time);
 					end
 				end
+			default:	begin
+						PS = S0;
+						bottle = 1'b0;
+						change = 1'b0;
+						$display("Time = %5d, Init @S0\n", $time);
+					end
 		endcase
 	end
 endmodule
