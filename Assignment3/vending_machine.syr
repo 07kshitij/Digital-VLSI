@@ -4,7 +4,7 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.09 secs
  
 --> Parameter xsthdpdir set to xst
 
@@ -113,13 +113,15 @@ Parsing module <vending_machine>.
 =========================================================================
 
 Elaborating module <vending_machine>.
-"D:\VLSI\Assignment3\vending_machine.v" Line 44. $display Time = 
-"D:\VLSI\Assignment3\vending_machine.v" Line 50. $display Time = 
-"D:\VLSI\Assignment3\vending_machine.v" Line 58. $display Time = 
-"D:\VLSI\Assignment3\vending_machine.v" Line 64. $display Time = 
-"D:\VLSI\Assignment3\vending_machine.v" Line 72. $display Time = 
-"D:\VLSI\Assignment3\vending_machine.v" Line 78. $display Time = 
-"D:\VLSI\Assignment3\vending_machine.v" Line 85. $display Time = 
+"D:\VLSI\Assignment3\vending_machine.v" Line 35. $display Time = 
+"D:\VLSI\Assignment3\vending_machine.v" Line 41. $display Time = 
+"D:\VLSI\Assignment3\vending_machine.v" Line 49. $display Time = 
+"D:\VLSI\Assignment3\vending_machine.v" Line 55. $display Time = 
+"D:\VLSI\Assignment3\vending_machine.v" Line 63. $display Time = 
+"D:\VLSI\Assignment3\vending_machine.v" Line 69. $display Time = 
+"D:\VLSI\Assignment3\vending_machine.v" Line 77. $display Time = 
+"D:\VLSI\Assignment3\vending_machine.v" Line 83. $display Time = 
+"D:\VLSI\Assignment3\vending_machine.v" Line 89. $display Time = 
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -130,16 +132,14 @@ Synthesizing Unit <vending_machine>.
         S0 = 2'b00
         S1 = 2'b01
         S2 = 2'b11
-WARNING:Xst:647 - Input <five_coin> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 1-bit register for signal <bottle>.
     Found 1-bit register for signal <change>.
-    Found 2-bit register for signal <PS>.
-    Found 2-bit 3-to-1 multiplexer for signal <PS[1]_GND_1_o_wide_mux_6_OUT> created at line 38.
-    HDL ADVISOR - Describing an operational reset or an explicit power-up state for register <PS> would allow inference of a finite state machine and as consequence better performance and smaller area.
+    Found 2-bit register for signal <present_state>.
+    Found 2-bit 4-to-1 multiplexer for signal <present_state[1]_GND_1_o_wide_mux_10_OUT> created at line 29.
+    HDL ADVISOR - Describing an operational reset or an explicit power-up state for register <present_state> would allow inference of a finite state machine and as consequence better performance and smaller area.
     Summary:
 	inferred   4 D-type flip-flop(s).
-	inferred   1 Multiplexer(s).
+	inferred   2 Multiplexer(s).
 Unit <vending_machine> synthesized.
 
 =========================================================================
@@ -149,8 +149,9 @@ Macro Statistics
 # Registers                                            : 3
  1-bit register                                        : 2
  2-bit register                                        : 1
-# Multiplexers                                         : 1
- 2-bit 3-to-1 multiplexer                              : 1
+# Multiplexers                                         : 2
+ 2-bit 2-to-1 multiplexer                              : 1
+ 2-bit 4-to-1 multiplexer                              : 1
 
 =========================================================================
 
@@ -165,6 +166,9 @@ Advanced HDL Synthesis Report
 Macro Statistics
 # Registers                                            : 4
  Flip-Flops                                            : 4
+# Multiplexers                                         : 2
+ 2-bit 2-to-1 multiplexer                              : 1
+ 2-bit 4-to-1 multiplexer                              : 1
 
 =========================================================================
 
@@ -209,13 +213,14 @@ Top Level Output File Name         : vending_machine.ngc
 Primitive and Black Box Usage:
 ------------------------------
 # BELS                             : 4
-#      LUT3                        : 4
+#      LUT3                        : 3
+#      LUT4                        : 1
 # FlipFlops/Latches                : 4
 #      FD                          : 4
 # Clock Buffers                    : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 3
-#      IBUF                        : 1
+# IO Buffers                       : 4
+#      IBUF                        : 2
 #      OBUF                        : 2
 
 Device utilization summary:
@@ -237,8 +242,8 @@ Slice Logic Distribution:
    Number of unique control sets:         1
 
 IO Utilization: 
- Number of IOs:                           6
- Number of bonded IOBs:                   4  out of    210     1%  
+ Number of IOs:                           5
+ Number of bonded IOBs:                   5  out of    210     2%  
 
 Specific Feature Utilization:
  Number of BUFG/BUFGCTRLs:                1  out of     32     3%  
@@ -276,7 +281,7 @@ Timing Summary:
 Speed Grade: -3
 
    Minimum period: 0.859ns (Maximum Frequency: 1163.738MHz)
-   Minimum input arrival time before clock: 0.631ns
+   Minimum input arrival time before clock: 0.676ns
    Maximum output required time after clock: 0.640ns
    Maximum combinational path delay: No path found
 
@@ -290,41 +295,41 @@ Timing constraint: Default period analysis for Clock 'clk'
   Total number of paths / destination ports: 8 / 4
 -------------------------------------------------------------------------
 Delay:               0.859ns (Levels of Logic = 1)
-  Source:            PS_0 (FF)
-  Destination:       PS_0 (FF)
+  Source:            present_state_1 (FF)
+  Destination:       bottle (FF)
   Source Clock:      clk rising
   Destination Clock: clk rising
 
-  Data Path: PS_0 to PS_0
+  Data Path: present_state_1 to bottle
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               4   0.361   0.393  PS_0 (PS_0)
-     LUT3:I1->O            1   0.097   0.000  Mmux_PS[1]_GND_1_o_wide_mux_6_OUT21 (PS[1]_GND_1_o_wide_mux_6_OUT<1>)
-     FD:D                      0.008          PS_1
+     FD:C->Q               4   0.361   0.393  present_state_1 (present_state_1)
+     LUT3:I1->O            1   0.097   0.000  present_state[1]_PWR_1_o_Mux_11_o1 (present_state[1]_PWR_1_o_Mux_11_o)
+     FD:D                      0.008          bottle
     ----------------------------------------
     Total                      0.859ns (0.466ns logic, 0.393ns route)
                                        (54.2% logic, 45.8% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
-  Total number of paths / destination ports: 4 / 4
+  Total number of paths / destination ports: 5 / 4
 -------------------------------------------------------------------------
-Offset:              0.631ns (Levels of Logic = 2)
+Offset:              0.676ns (Levels of Logic = 2)
   Source:            ten_coin (PAD)
-  Destination:       PS_0 (FF)
+  Destination:       present_state_0 (FF)
   Destination Clock: clk rising
 
-  Data Path: ten_coin to PS_0
+  Data Path: ten_coin to present_state_0
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     IBUF:I->O             4   0.001   0.525  ten_coin_IBUF (ten_coin_IBUF)
-     LUT3:I0->O            1   0.097   0.000  change_rstpot (change_rstpot)
-     FD:D                      0.008          change
+     IBUF:I->O             4   0.001   0.570  ten_coin_IBUF (ten_coin_IBUF)
+     LUT4:I0->O            1   0.097   0.000  Mmux_present_state[1]_GND_1_o_wide_mux_10_OUT11 (present_state[1]_GND_1_o_wide_mux_10_OUT<0>)
+     FD:D                      0.008          present_state_0
     ----------------------------------------
-    Total                      0.631ns (0.106ns logic, 0.525ns route)
-                                       (16.8% logic, 83.2% route)
+    Total                      0.676ns (0.106ns logic, 0.570ns route)
+                                       (15.7% logic, 84.3% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
@@ -361,14 +366,14 @@ clk            |    0.859|         |         |         |
 =========================================================================
 
 
-Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 7.82 secs
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.61 secs
  
 --> 
 
-Total memory usage is 4626252 kilobytes
+Total memory usage is 4625124 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    2 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

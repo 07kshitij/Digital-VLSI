@@ -25,12 +25,12 @@
 
 
 
+extern void simprims_ver_m_00000000000648012491_3151998091_3868638720_init()
+{
+	xsi_register_didat("simprims_ver_m_00000000000648012491_3151998091_3868638720", "isim/model_test_bench_isim_par.exe.sim/simprims_ver/m_00000000000648012491_3151998091_3868638720.didat");
+}
+
 extern void simprims_ver_m_00000000000648012491_3151998091_1970162374_init()
 {
 	xsi_register_didat("simprims_ver_m_00000000000648012491_3151998091_1970162374", "isim/model_test_bench_isim_par.exe.sim/simprims_ver/m_00000000000648012491_3151998091_1970162374.didat");
-}
-
-extern void simprims_ver_m_00000000000648012491_3151998091_3034617094_init()
-{
-	xsi_register_didat("simprims_ver_m_00000000000648012491_3151998091_3034617094", "isim/model_test_bench_isim_par.exe.sim/simprims_ver/m_00000000000648012491_3151998091_3034617094.didat");
 }

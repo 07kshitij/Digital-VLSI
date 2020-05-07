@@ -82,6 +82,13 @@ extern void simprims_ver_m_00000000000126354981_0818475687_0529133301_init()
 	xsi_register_executes(pe);
 }
 
+extern void simprims_ver_m_00000000000126354981_0818475687_3034617094_init()
+{
+	static char *pe[] = {(void *)Cont_28_0};
+	xsi_register_didat("simprims_ver_m_00000000000126354981_0818475687_3034617094", "isim/model_test_bench_isim_par.exe.sim/simprims_ver/m_00000000000126354981_0818475687_3034617094.didat");
+	xsi_register_executes(pe);
+}
+
 extern void simprims_ver_m_00000000000126354981_0818475687_0655909312_init()
 {
 	static char *pe[] = {(void *)Cont_28_0};

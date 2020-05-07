@@ -10,7 +10,7 @@ Target Device  : xc7a100t
 Target Package : csg324
 Target Speed   : -3
 Mapper Version : artix7 -- $Revision: 1.55 $
-Mapped Date    : Tue May 05 19:01:34 2020
+Mapped Date    : Wed May 06 08:08:52 2020
 
 WARNING:LIT:701 - PAD symbol "clk" has an undefined IOSTANDARD.
 WARNING:LIT:702 - PAD symbol "clk" is not constrained (LOC) to a specific
@@ -22,50 +22,50 @@ Updating timing models...
 INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
    (.mrp).
 Running timing-driven placement...
-Total REAL time at the beginning of Placer: 17 secs 
-Total CPU  time at the beginning of Placer: 17 secs 
+Total REAL time at the beginning of Placer: 16 secs 
+Total CPU  time at the beginning of Placer: 16 secs 
 
 Phase 1.1  Initial Placement Analysis
-Phase 1.1  Initial Placement Analysis (Checksum:8d) REAL time: 18 secs 
+Phase 1.1  Initial Placement Analysis (Checksum:9e) REAL time: 17 secs 
 
 Phase 2.7  Design Feasibility Check
-Phase 2.7  Design Feasibility Check (Checksum:8d) REAL time: 18 secs 
+Phase 2.7  Design Feasibility Check (Checksum:9e) REAL time: 17 secs 
 
 Phase 3.31  Local Placement Optimization
-Phase 3.31  Local Placement Optimization (Checksum:8d) REAL time: 18 secs 
+Phase 3.31  Local Placement Optimization (Checksum:9e) REAL time: 17 secs 
 
 Phase 4.2  Initial Placement for Architecture Specific Features
-..........
+.........
 Phase 4.2  Initial Placement for Architecture Specific Features
-(Checksum:26a61d99) REAL time: 19 secs 
+(Checksum:b04fa4ed) REAL time: 18 secs 
 
 Phase 5.30  Global Clock Region Assignment
-Phase 5.30  Global Clock Region Assignment (Checksum:26a61d99) REAL time: 19 secs 
+Phase 5.30  Global Clock Region Assignment (Checksum:b04fa4ed) REAL time: 18 secs 
 
 Phase 6.3  Local Placement Optimization
-....
-Phase 6.3  Local Placement Optimization (Checksum:26a8201e) REAL time: 19 secs 
+.....
+Phase 6.3  Local Placement Optimization (Checksum:b052f6ca) REAL time: 18 secs 
 
 Phase 7.5  Local Placement Optimization
-Phase 7.5  Local Placement Optimization (Checksum:26a8201e) REAL time: 19 secs 
+Phase 7.5  Local Placement Optimization (Checksum:b052f6ca) REAL time: 18 secs 
 
 Phase 8.8  Global Placement
 ...
-.......................
 ................
-Phase 8.8  Global Placement (Checksum:8a85daba) REAL time: 19 secs 
+................
+Phase 8.8  Global Placement (Checksum:8662dd76) REAL time: 19 secs 
 
 Phase 9.5  Local Placement Optimization
-Phase 9.5  Local Placement Optimization (Checksum:8a85daba) REAL time: 19 secs 
+Phase 9.5  Local Placement Optimization (Checksum:8662dd76) REAL time: 19 secs 
 
 Phase 10.18  Placement Optimization
-Phase 10.18  Placement Optimization (Checksum:8a85daba) REAL time: 19 secs 
+Phase 10.18  Placement Optimization (Checksum:8662dd76) REAL time: 19 secs 
 
 Phase 11.5  Local Placement Optimization
-Phase 11.5  Local Placement Optimization (Checksum:8a85daba) REAL time: 19 secs 
+Phase 11.5  Local Placement Optimization (Checksum:8662dd76) REAL time: 19 secs 
 
 Phase 12.34  Placement Validation
-Phase 12.34  Placement Validation (Checksum:8a85daba) REAL time: 19 secs 
+Phase 12.34  Placement Validation (Checksum:8662dd76) REAL time: 19 secs 
 
 Total REAL time to Placer completion: 19 secs 
 Total CPU  time to Placer completion: 19 secs 
@@ -91,13 +91,18 @@ WARNING:PhysDesignRules:2452 - The IOB bottle is either not constrained (LOC) to
    condition may seriously affect the device and will be an error in bitstream
    creation. It should be corrected by properly specifying the pin location and
    I/O Standard.
+WARNING:PhysDesignRules:2452 - The IOB five_coin is either not constrained (LOC)
+   to a specific location and/or has an undefined I/O Standard (IOSTANDARD).
+   This condition may seriously affect the device and will be an error in
+   bitstream creation. It should be corrected by properly specifying the pin
+   location and I/O Standard.
 
 Design Summary
 --------------
 
 Design Summary:
 Number of errors:      0
-Number of warnings:    6
+Number of warnings:    7
 Slice Logic Utilization:
   Number of Slice Registers:                     4 out of 126,800    1%
     Number used as Flip Flops:                   4
@@ -132,7 +137,7 @@ Slice Logic Distribution:
   over-mapped for a non-BRAM resource or if placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                         4 out of     210    1%
+  Number of bonded IOBs:                         5 out of     210    2%
 
 Specific Feature Utilization:
   Number of RAMB36E1/FIFO36E1s:                  0 out of     135    0%
@@ -167,9 +172,9 @@ Specific Feature Utilization:
   Number of STARTUPs:                            0 out of       1    0%
   Number of XADCs:                               0 out of       1    0%
 
-Average Fanout of Non-Clock Nets:                2.50
+Average Fanout of Non-Clock Nets:                2.29
 
-Peak Memory Usage:  5016 MB
+Peak Memory Usage:  5018 MB
 Total REAL time to MAP completion:  20 secs 
 Total CPU time to MAP completion:   20 secs 
 

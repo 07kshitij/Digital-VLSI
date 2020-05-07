@@ -7,7 +7,7 @@
 // \   \   \/     Version: P.20131013
 //  \   \         Application: netgen
 //  /   /         Filename: vending_machine_timesim.v
-// /___/   /\     Timestamp: Tue May 05 19:02:38 2020
+// /___/   /\     Timestamp: Wed May 06 08:09:54 2020
 // \   \  /  \ 
 //  \___\/\___\
 //             
@@ -34,35 +34,36 @@
 `timescale 1 ns/1 ps
 
 module vending_machine (
-  five_coin, ten_coin, clk, reset, bottle, change
+  five_coin, ten_coin, clk, bottle, change
 );
   input five_coin;
   input ten_coin;
   input clk;
-  input reset;
   output bottle;
   output change;
-  wire \clk_BUFGP/IBUFG_38 ;
-  wire ten_coin_IBUF_39;
-  wire change_OBUF_40;
-  wire bottle_OBUF_41;
+  wire \clk_BUFGP/IBUFG_43 ;
+  wire ten_coin_IBUF_44;
+  wire change_OBUF_45;
+  wire bottle_OBUF_46;
+  wire five_coin_IBUF_47;
   wire clk_BUFGP;
   wire \ProtoComp0.INTERMDISABLE_GND.0 ;
   wire \ten_coin/ProtoComp0.INTERMDISABLE_GND.0 ;
-  wire change_rstpot_28;
-  wire \PS[1]_GND_1_o_wide_mux_6_OUT<0> ;
-  wire \PS[1]_PWR_1_o_Mux_7_o ;
-  wire \PS[1]_GND_1_o_wide_mux_6_OUT<1> ;
-  wire \NlwBufferSignal_change/CLK ;
+  wire \present_state[1]_PWR_1_o_Mux_11_o ;
+  wire change_rstpot_17;
+  wire \five_coin/ProtoComp0.INTERMDISABLE_GND.0 ;
+  wire \present_state[1]_GND_1_o_wide_mux_10_OUT<1> ;
+  wire \present_state[1]_GND_1_o_wide_mux_10_OUT<0> ;
   wire \NlwBufferSignal_change_OBUF/I ;
-  wire \NlwBufferSignal_clk_BUFGP/BUFG/IN ;
+  wire \NlwBufferSignal_change/CLK ;
   wire \NlwBufferSignal_bottle/CLK ;
-  wire \NlwBufferSignal_PS_1/CLK ;
-  wire \NlwBufferSignal_PS_0/CLK ;
+  wire \NlwBufferSignal_present_state_1/CLK ;
+  wire \NlwBufferSignal_present_state_0/CLK ;
+  wire \NlwBufferSignal_clk_BUFGP/BUFG/IN ;
   wire \NlwBufferSignal_bottle_OBUF/I ;
   wire VCC;
   wire GND;
-  wire [1 : 0] PS;
+  wire [1 : 0] present_state;
   initial $sdf_annotate("netgen/par/vending_machine_timesim.sdf");
   X_IPAD #(
     .LOC ( "IOB_X1Y128" ))
@@ -79,62 +80,150 @@ module vending_machine (
   \clk_BUFGP/IBUFG  (
     .IBUFDISABLE(1'b0),
     .INTERMDISABLE(\ProtoComp0.INTERMDISABLE_GND.0 ),
-    .O(\clk_BUFGP/IBUFG_38 ),
+    .O(\clk_BUFGP/IBUFG_43 ),
     .I(clk),
     .TPWRGT(1'b1)
   );
   X_IPAD #(
-    .LOC ( "IOB_X0Y147" ))
+    .LOC ( "IOB_X0Y148" ))
   ten_coin_8 (
     .PAD(ten_coin)
   );
   X_ZERO #(
-    .LOC ( "IOB_X0Y147" ))
+    .LOC ( "IOB_X0Y148" ))
   \ProtoComp0.INTERMDISABLE_GND.1  (
     .O(\ten_coin/ProtoComp0.INTERMDISABLE_GND.0 )
   );
   X_IBUF_INTERMDISABLE_TPWRGT #(
-    .LOC ( "IOB_X0Y147" ))
+    .LOC ( "IOB_X0Y148" ))
   ten_coin_IBUF (
     .IBUFDISABLE(1'b0),
     .INTERMDISABLE(\ten_coin/ProtoComp0.INTERMDISABLE_GND.0 ),
-    .O(ten_coin_IBUF_39),
+    .O(ten_coin_IBUF_44),
     .I(ten_coin),
     .TPWRGT(1'b1)
   );
-  X_FF #(
-    .LOC ( "SLICE_X0Y148" ),
-    .INIT ( 1'b0 ))
-  change_26 (
-    .CE(VCC),
-    .CLK(\NlwBufferSignal_change/CLK ),
-    .I(change_rstpot_28),
-    .O(change_OBUF_40),
-    .RST(GND),
-    .SET(GND)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X0Y148" ),
-    .INIT ( 64'hF0F0000000000000 ))
-  change_rstpot (
-    .ADR0(1'b1),
-    .ADR1(1'b1),
-    .ADR3(1'b1),
-    .ADR2(ten_coin_IBUF_39),
-    .ADR5(PS[1]),
-    .ADR4(PS[0]),
-    .O(change_rstpot_28)
-  );
   X_OPAD #(
-    .LOC ( "IOB_X0Y149" ))
+    .LOC ( "IOB_X0Y146" ))
   \change.PAD  (
     .PAD(change)
   );
   X_OBUF #(
-    .LOC ( "IOB_X0Y149" ))
+    .LOC ( "IOB_X0Y146" ))
   change_OBUF (
     .I(\NlwBufferSignal_change_OBUF/I ),
     .O(change)
+  );
+  X_FF #(
+    .LOC ( "SLICE_X1Y147" ),
+    .INIT ( 1'b0 ))
+  change_25 (
+    .CE(VCC),
+    .CLK(\NlwBufferSignal_change/CLK ),
+    .I(change_rstpot_17),
+    .O(change_OBUF_45),
+    .RST(GND),
+    .SET(GND)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X1Y147" ),
+    .INIT ( 64'hFF00000000000000 ))
+  change_rstpot (
+    .ADR0(1'b1),
+    .ADR1(1'b1),
+    .ADR2(1'b1),
+    .ADR5(ten_coin_IBUF_44),
+    .ADR3(present_state[1]),
+    .ADR4(present_state[0]),
+    .O(change_rstpot_17)
+  );
+  X_FF #(
+    .LOC ( "SLICE_X1Y147" ),
+    .INIT ( 1'b0 ))
+  bottle_23 (
+    .CE(VCC),
+    .CLK(\NlwBufferSignal_bottle/CLK ),
+    .I(\present_state[1]_PWR_1_o_Mux_11_o ),
+    .O(bottle_OBUF_46),
+    .RST(GND),
+    .SET(GND)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X1Y147" ),
+    .INIT ( 64'hFFFF0000FF000000 ))
+  \present_state[1]_PWR_1_o_Mux_11_o1  (
+    .ADR0(1'b1),
+    .ADR1(1'b1),
+    .ADR2(1'b1),
+    .ADR5(ten_coin_IBUF_44),
+    .ADR3(present_state[1]),
+    .ADR4(present_state[0]),
+    .O(\present_state[1]_PWR_1_o_Mux_11_o )
+  );
+  X_IPAD #(
+    .LOC ( "IOB_X0Y147" ))
+  five_coin_18 (
+    .PAD(five_coin)
+  );
+  X_ZERO #(
+    .LOC ( "IOB_X0Y147" ))
+  \ProtoComp0.INTERMDISABLE_GND.2  (
+    .O(\five_coin/ProtoComp0.INTERMDISABLE_GND.0 )
+  );
+  X_IBUF_INTERMDISABLE_TPWRGT #(
+    .LOC ( "IOB_X0Y147" ))
+  five_coin_IBUF (
+    .IBUFDISABLE(1'b0),
+    .INTERMDISABLE(\five_coin/ProtoComp0.INTERMDISABLE_GND.0 ),
+    .O(five_coin_IBUF_47),
+    .I(five_coin),
+    .TPWRGT(1'b1)
+  );
+  X_FF #(
+    .LOC ( "SLICE_X0Y147" ),
+    .INIT ( 1'b0 ))
+  present_state_1 (
+    .CE(VCC),
+    .CLK(\NlwBufferSignal_present_state_1/CLK ),
+    .I(\present_state[1]_GND_1_o_wide_mux_10_OUT<1> ),
+    .O(present_state[1]),
+    .RST(GND),
+    .SET(GND)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X0Y147" ),
+    .INIT ( 64'h000000FFFF00FF00 ))
+  \Mmux_present_state[1]_GND_1_o_wide_mux_10_OUT21  (
+    .ADR0(1'b1),
+    .ADR1(1'b1),
+    .ADR2(1'b1),
+    .ADR4(present_state[1]),
+    .ADR3(ten_coin_IBUF_44),
+    .ADR5(present_state[0]),
+    .O(\present_state[1]_GND_1_o_wide_mux_10_OUT<1> )
+  );
+  X_FF #(
+    .LOC ( "SLICE_X0Y147" ),
+    .INIT ( 1'b0 ))
+  present_state_0 (
+    .CE(VCC),
+    .CLK(\NlwBufferSignal_present_state_0/CLK ),
+    .I(\present_state[1]_GND_1_o_wide_mux_10_OUT<0> ),
+    .O(present_state[0]),
+    .RST(GND),
+    .SET(GND)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X0Y147" ),
+    .INIT ( 64'h00003333FCFCFFFF ))
+  \Mmux_present_state[1]_GND_1_o_wide_mux_10_OUT11  (
+    .ADR0(1'b1),
+    .ADR3(1'b1),
+    .ADR1(ten_coin_IBUF_44),
+    .ADR5(present_state[0]),
+    .ADR2(five_coin_IBUF_47),
+    .ADR4(present_state[1]),
+    .O(\present_state[1]_GND_1_o_wide_mux_10_OUT<0> )
   );
   X_CKBUF #(
     .LOC ( "BUFGCTRL_X0Y31" ))
@@ -142,112 +231,43 @@ module vending_machine (
     .I(\NlwBufferSignal_clk_BUFGP/BUFG/IN ),
     .O(clk_BUFGP)
   );
-  X_FF #(
-    .LOC ( "SLICE_X0Y147" ),
-    .INIT ( 1'b0 ))
-  bottle_23 (
-    .CE(VCC),
-    .CLK(\NlwBufferSignal_bottle/CLK ),
-    .I(\PS[1]_PWR_1_o_Mux_7_o ),
-    .O(bottle_OBUF_41),
-    .RST(GND),
-    .SET(GND)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X0Y147" ),
-    .INIT ( 64'hFFFFAAAA00000000 ))
-  \PS[1]_PWR_1_o_Mux_7_o1  (
-    .ADR3(1'b1),
-    .ADR1(1'b1),
-    .ADR2(1'b1),
-    .ADR0(ten_coin_IBUF_39),
-    .ADR4(PS[1]),
-    .ADR5(PS[0]),
-    .O(\PS[1]_PWR_1_o_Mux_7_o )
-  );
-  X_FF #(
-    .LOC ( "SLICE_X0Y147" ),
-    .INIT ( 1'b0 ))
-  PS_1 (
-    .CE(VCC),
-    .CLK(\NlwBufferSignal_PS_1/CLK ),
-    .I(\PS[1]_GND_1_o_wide_mux_6_OUT<1> ),
-    .O(PS[1]),
-    .RST(GND),
-    .SET(GND)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X0Y147" ),
-    .INIT ( 64'h00000F0F0000F0F0 ))
-  \Mmux_PS[1]_GND_1_o_wide_mux_6_OUT21  (
-    .ADR0(1'b1),
-    .ADR1(1'b1),
-    .ADR3(1'b1),
-    .ADR4(PS[1]),
-    .ADR2(ten_coin_IBUF_39),
-    .ADR5(PS[0]),
-    .O(\PS[1]_GND_1_o_wide_mux_6_OUT<1> )
-  );
-  X_FF #(
-    .LOC ( "SLICE_X0Y147" ),
-    .INIT ( 1'b0 ))
-  PS_0 (
-    .CE(VCC),
-    .CLK(\NlwBufferSignal_PS_0/CLK ),
-    .I(\PS[1]_GND_1_o_wide_mux_6_OUT<0> ),
-    .O(PS[0]),
-    .RST(GND),
-    .SET(GND)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X0Y147" ),
-    .INIT ( 64'h00000F0F0000FFFF ))
-  \Mmux_PS[1]_GND_1_o_wide_mux_6_OUT11  (
-    .ADR0(1'b1),
-    .ADR1(1'b1),
-    .ADR3(1'b1),
-    .ADR5(PS[0]),
-    .ADR2(ten_coin_IBUF_39),
-    .ADR4(PS[1]),
-    .O(\PS[1]_GND_1_o_wide_mux_6_OUT<0> )
-  );
   X_OPAD #(
-    .LOC ( "IOB_X0Y148" ))
+    .LOC ( "IOB_X0Y149" ))
   \bottle.PAD  (
     .PAD(bottle)
   );
   X_OBUF #(
-    .LOC ( "IOB_X0Y148" ))
+    .LOC ( "IOB_X0Y149" ))
   bottle_OBUF (
     .I(\NlwBufferSignal_bottle_OBUF/I ),
     .O(bottle)
+  );
+  X_BUF   \NlwBufferBlock_change_OBUF/I  (
+    .I(change_OBUF_45),
+    .O(\NlwBufferSignal_change_OBUF/I )
   );
   X_BUF   \NlwBufferBlock_change/CLK  (
     .I(clk_BUFGP),
     .O(\NlwBufferSignal_change/CLK )
   );
-  X_BUF   \NlwBufferBlock_change_OBUF/I  (
-    .I(change_OBUF_40),
-    .O(\NlwBufferSignal_change_OBUF/I )
-  );
-  X_BUF   \NlwBufferBlock_clk_BUFGP/BUFG/IN  (
-    .I(\clk_BUFGP/IBUFG_38 ),
-    .O(\NlwBufferSignal_clk_BUFGP/BUFG/IN )
-  );
   X_BUF   \NlwBufferBlock_bottle/CLK  (
     .I(clk_BUFGP),
     .O(\NlwBufferSignal_bottle/CLK )
   );
-  X_BUF   \NlwBufferBlock_PS_1/CLK  (
+  X_BUF   \NlwBufferBlock_present_state_1/CLK  (
     .I(clk_BUFGP),
-    .O(\NlwBufferSignal_PS_1/CLK )
+    .O(\NlwBufferSignal_present_state_1/CLK )
   );
-  X_BUF   \NlwBufferBlock_PS_0/CLK  (
+  X_BUF   \NlwBufferBlock_present_state_0/CLK  (
     .I(clk_BUFGP),
-    .O(\NlwBufferSignal_PS_0/CLK )
+    .O(\NlwBufferSignal_present_state_0/CLK )
+  );
+  X_BUF   \NlwBufferBlock_clk_BUFGP/BUFG/IN  (
+    .I(\clk_BUFGP/IBUFG_43 ),
+    .O(\NlwBufferSignal_clk_BUFGP/BUFG/IN )
   );
   X_BUF   \NlwBufferBlock_bottle_OBUF/I  (
-    .I(bottle_OBUF_41),
+    .I(bottle_OBUF_46),
     .O(\NlwBufferSignal_bottle_OBUF/I )
   );
   X_ONE   NlwBlock_vending_machine_VCC (

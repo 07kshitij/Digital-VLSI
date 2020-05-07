@@ -1,5 +1,5 @@
 ISim log file
-Running: D:\VLSI\Assignment3\model_test_bench_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/VLSI/Assignment3/model_test_bench_isim_beh.wdb 
+Running: D:\VLSI\Assignment3\model_test_bench_isim_par.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/VLSI/Assignment3/model_test_bench_isim_par.wdb 
 ISim P.20131013 (signature 0x7708f090)
 WARNING: A WEBPACK license was found.
 WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
@@ -10,12 +10,15 @@ Time resolution is 1 ps
 # wave add /
 # run 1000 ns
 Simulator is doing circuit initialization process.
+INFO: SDF backannotation was successful with SDF file netgen/par/vending_machine_timesim.sdf, for root module /model_test_bench/uut/.
 Finished circuit initialization process.
 Time = 0, clk = 0, five_coin = x, ten_coin = x, bottle = x, change = x
 
-Time = 25, clk = 0, five_coin = 0, ten_coin = 0, bottle = x, change = x
+Time = 3, clk = 0, five_coin = x, ten_coin = x, bottle = 0, change = x
 
-Time = 50, Init @S0
+Time = 3, clk = 0, five_coin = x, ten_coin = x, bottle = 0, change = 0
+
+Time = 25, clk = 0, five_coin = 0, ten_coin = 0, bottle = 0, change = 0
 
 Time = 50, clk = 1, five_coin = 0, ten_coin = 0, bottle = 0, change = 0
 
@@ -23,63 +26,61 @@ Time = 100, clk = 0, five_coin = 0, ten_coin = 0, bottle = 0, change = 0
 
 Time = 125, clk = 0, five_coin = 1, ten_coin = 0, bottle = 0, change = 0
 
-Time = 150, Changing from S0 to S1
-
 Time = 150, clk = 1, five_coin = 1, ten_coin = 0, bottle = 0, change = 0
 
 Time = 200, clk = 0, five_coin = 1, ten_coin = 0, bottle = 0, change = 0
-
-Time = 250, Changing from S1 to S2
 
 Time = 250, clk = 1, five_coin = 1, ten_coin = 0, bottle = 0, change = 0
 
 Time = 300, clk = 0, five_coin = 1, ten_coin = 0, bottle = 0, change = 0
 
-Time = 350, Changing from S2 to S0
+Time = 350, clk = 1, five_coin = 1, ten_coin = 0, bottle = 0, change = 0
 
-Time = 350, clk = 1, five_coin = 1, ten_coin = 0, bottle = 1, change = 0
+Time = 358, clk = 1, five_coin = 1, ten_coin = 0, bottle = 1, change = 0
 
 Time = 400, clk = 0, five_coin = 1, ten_coin = 0, bottle = 1, change = 0
 
-Time = 425, clk = 0, five_coin = 0, ten_coin = 1, bottle = 1, change = 0
+Time = 450, clk = 1, five_coin = 1, ten_coin = 0, bottle = 1, change = 0
 
-Time = 450, Changing from S0 to S2
+Time = 458, clk = 1, five_coin = 1, ten_coin = 0, bottle = 0, change = 0
 
-Time = 450, clk = 1, five_coin = 0, ten_coin = 1, bottle = 0, change = 0
+Time = 500, clk = 0, five_coin = 1, ten_coin = 0, bottle = 0, change = 0
 
-Time = 500, clk = 0, five_coin = 0, ten_coin = 1, bottle = 0, change = 0
+Time = 525, clk = 0, five_coin = 0, ten_coin = 1, bottle = 0, change = 0
 
-Time = 525, clk = 0, five_coin = 1, ten_coin = 0, bottle = 0, change = 0
+Time = 550, clk = 1, five_coin = 0, ten_coin = 1, bottle = 0, change = 0
 
-Time = 550, Changing from S2 to S0
+Time = 558, clk = 1, five_coin = 0, ten_coin = 1, bottle = 1, change = 0
 
-Time = 550, clk = 1, five_coin = 1, ten_coin = 0, bottle = 1, change = 0
+Time = 600, clk = 0, five_coin = 0, ten_coin = 1, bottle = 1, change = 0
 
-Time = 600, clk = 0, five_coin = 1, ten_coin = 0, bottle = 1, change = 0
+Time = 650, clk = 1, five_coin = 0, ten_coin = 1, bottle = 1, change = 0
 
-Time = 625, clk = 0, five_coin = 0, ten_coin = 1, bottle = 1, change = 0
-
-Time = 650, Changing from S0 to S2
-
-Time = 650, clk = 1, five_coin = 0, ten_coin = 1, bottle = 0, change = 0
+Time = 658, clk = 1, five_coin = 0, ten_coin = 1, bottle = 0, change = 0
 
 Time = 700, clk = 0, five_coin = 0, ten_coin = 1, bottle = 0, change = 0
 
-Time = 750, Changing from S2 to S0
+Time = 750, clk = 1, five_coin = 0, ten_coin = 1, bottle = 0, change = 0
 
-Time = 750, clk = 1, five_coin = 0, ten_coin = 1, bottle = 1, change = 1
+Time = 758, clk = 1, five_coin = 0, ten_coin = 1, bottle = 1, change = 0
+
+Time = 758, clk = 1, five_coin = 0, ten_coin = 1, bottle = 1, change = 1
 
 Time = 800, clk = 0, five_coin = 0, ten_coin = 1, bottle = 1, change = 1
 
-Time = 850, Changing from S0 to S2
+Time = 850, clk = 1, five_coin = 0, ten_coin = 1, bottle = 1, change = 1
 
-Time = 850, clk = 1, five_coin = 0, ten_coin = 1, bottle = 0, change = 0
+Time = 858, clk = 1, five_coin = 0, ten_coin = 1, bottle = 0, change = 1
+
+Time = 858, clk = 1, five_coin = 0, ten_coin = 1, bottle = 0, change = 0
 
 Time = 900, clk = 0, five_coin = 0, ten_coin = 1, bottle = 0, change = 0
 
-Time = 950, Changing from S2 to S0
+Time = 925, clk = 0, five_coin = 1, ten_coin = 0, bottle = 0, change = 0
 
-Time = 950, clk = 1, five_coin = 0, ten_coin = 1, bottle = 1, change = 1
+Time = 950, clk = 1, five_coin = 1, ten_coin = 0, bottle = 0, change = 0
 
-Time = 1000, clk = 0, five_coin = 0, ten_coin = 1, bottle = 1, change = 1
+Time = 958, clk = 1, five_coin = 1, ten_coin = 0, bottle = 1, change = 0
+
+Time = 1000, clk = 0, five_coin = 1, ten_coin = 0, bottle = 1, change = 0
 

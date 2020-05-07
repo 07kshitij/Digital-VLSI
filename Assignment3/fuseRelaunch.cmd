@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/VLSI/Assignment3/model_test_bench_isim_beh.exe" -prj "D:/VLSI/Assignment3/model_test_bench_beh.prj" "work.model_test_bench" "work.glbl" 
+-intstyle "ise" -incremental -lib "simprims_ver" -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/VLSI/Assignment3/model_test_bench_isim_par.exe" -prj "D:/VLSI/Assignment3/model_test_bench_par.prj" "work.model_test_bench" "work.glbl" 

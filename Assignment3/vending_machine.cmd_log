@@ -152,3 +152,39 @@ map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -re
 par -w -intstyle ise -ol high -mt off vending_machine_map.ncd vending_machine.ncd vending_machine.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vending_machine.twx vending_machine.ncd -o vending_machine.twr vending_machine.pcf 
 netgen -intstyle ise -s 3  -pcf vending_machine.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim vending_machine.ncd vending_machine_timesim.v 
+xst -intstyle ise -ifn "D:/VLSI/Assignment3/vending_machine.xst" -ofn "D:/VLSI/Assignment3/vending_machine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 vending_machine.ngc vending_machine.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o vending_machine_map.ncd vending_machine.ngd vending_machine.pcf 
+par -w -intstyle ise -ol high -mt off vending_machine_map.ncd vending_machine.ncd vending_machine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vending_machine.twx vending_machine.ncd -o vending_machine.twr vending_machine.pcf 
+netgen -intstyle ise -s 3  -pcf vending_machine.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim vending_machine.ncd vending_machine_timesim.v 
+xst -intstyle ise -ifn "D:/VLSI/Assignment3/vending_machine.xst" -ofn "D:/VLSI/Assignment3/vending_machine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 vending_machine.ngc vending_machine.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o vending_machine_map.ncd vending_machine.ngd vending_machine.pcf 
+par -w -intstyle ise -ol high -mt off vending_machine_map.ncd vending_machine.ncd vending_machine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vending_machine.twx vending_machine.ncd -o vending_machine.twr vending_machine.pcf 
+netgen -intstyle ise -s 3  -pcf vending_machine.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim vending_machine.ncd vending_machine_timesim.v 
+xst -intstyle ise -ifn "D:/VLSI/Assignment3/vending_machine.xst" -ofn "D:/VLSI/Assignment3/vending_machine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 vending_machine.ngc vending_machine.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o vending_machine_map.ncd vending_machine.ngd vending_machine.pcf 
+par -w -intstyle ise -ol high -mt off vending_machine_map.ncd vending_machine.ncd vending_machine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vending_machine.twx vending_machine.ncd -o vending_machine.twr vending_machine.pcf 
+netgen -intstyle ise -s 3  -pcf vending_machine.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim vending_machine.ncd vending_machine_timesim.v 
+xst -intstyle ise -ifn "D:/VLSI/Assignment3/vending_machine.xst" -ofn "D:/VLSI/Assignment3/vending_machine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 vending_machine.ngc vending_machine.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o vending_machine_map.ncd vending_machine.ngd vending_machine.pcf 
+par -w -intstyle ise -ol high -mt off vending_machine_map.ncd vending_machine.ncd vending_machine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vending_machine.twx vending_machine.ncd -o vending_machine.twr vending_machine.pcf 
+netgen -intstyle ise -s 3  -pcf vending_machine.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim vending_machine.ncd vending_machine_timesim.v 
+xst -intstyle ise -ifn "D:/VLSI/Assignment3/vending_machine.xst" -ofn "D:/VLSI/Assignment3/vending_machine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 vending_machine.ngc vending_machine.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o vending_machine_map.ncd vending_machine.ngd vending_machine.pcf 
+par -w -intstyle ise -ol high -mt off vending_machine_map.ncd vending_machine.ncd vending_machine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vending_machine.twx vending_machine.ncd -o vending_machine.twr vending_machine.pcf 
+netgen -intstyle ise -s 3  -pcf vending_machine.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim vending_machine.ncd vending_machine_timesim.v 
+xst -intstyle ise -ifn "D:/VLSI/Assignment3/vending_machine.xst" -ofn "D:/VLSI/Assignment3/vending_machine.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 vending_machine.ngc vending_machine.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o vending_machine_map.ncd vending_machine.ngd vending_machine.pcf 
+par -w -intstyle ise -ol high -mt off vending_machine_map.ncd vending_machine.ncd vending_machine.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml vending_machine.twx vending_machine.ncd -o vending_machine.twr vending_machine.pcf 
+netgen -intstyle ise -s 3  -pcf vending_machine.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim vending_machine.ncd vending_machine_timesim.v 

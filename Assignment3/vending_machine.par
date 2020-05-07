@@ -1,7 +1,7 @@
 Release 14.7 par P.20131013 (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-DESKTOP-8NH1784::  Tue May 05 19:01:57 2020
+DESKTOP-8NH1784::  Wed May 06 08:09:15 2020
 
 par -w -intstyle ise -ol high -mt off vending_machine_map.ncd
 vending_machine.ncd vending_machine.pcf 
@@ -59,7 +59,7 @@ Slice Logic Distribution:
   over-mapped for a non-BRAM resource or if placement fails.
 
 IO Utilization:
-  Number of bonded IOBs:                         4 out of     210    1%
+  Number of bonded IOBs:                         5 out of     210    2%
 
 Specific Feature Utilization:
   Number of RAMB36E1/FIFO36E1s:                  0 out of     135    0%
@@ -104,13 +104,13 @@ Finished initial Timing Analysis.  REAL time: 10 secs
 Starting Router
 
 
-Phase  1  : 17 unrouted;      REAL time: 11 secs 
+Phase  1  : 18 unrouted;      REAL time: 11 secs 
 
-Phase  2  : 14 unrouted;      REAL time: 11 secs 
+Phase  2  : 15 unrouted;      REAL time: 11 secs 
 
-Phase  3  : 1 unrouted;      REAL time: 11 secs 
+Phase  3  : 2 unrouted;      REAL time: 11 secs 
 
-Phase  4  : 1 unrouted; (Par is working to improve performance)     REAL time: 15 secs 
+Phase  4  : 2 unrouted; (Par is working to improve performance)     REAL time: 14 secs 
 
 Updating file: vending_machine.ncd with current fully routed design.
 
@@ -144,8 +144,8 @@ Asterisk (*) preceding a constraint indicates it was not met.
   Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
                                             |             |    Slack   | Achievable | Errors |    Score   
 ----------------------------------------------------------------------------------------------------------
-  Autotimespec constraint for clock net clk | SETUP       |         N/A|     0.947ns|     N/A|           0
-  _BUFGP                                    | HOLD        |     0.238ns|            |       0|           0
+  Autotimespec constraint for clock net clk | SETUP       |         N/A|     0.943ns|     N/A|           0
+  _BUFGP                                    | HOLD        |     0.189ns|            |       0|           0
                                             | MINPERIOD   |         N/A|     1.000ns|     N/A|           0
 ----------------------------------------------------------------------------------------------------------
 
