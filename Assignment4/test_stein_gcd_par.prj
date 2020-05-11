@@ -1,0 +1,2 @@
+verilog work "netgen/par/stein_gcd_timesim.v"
+verilog work "test_stein_gcd.v"

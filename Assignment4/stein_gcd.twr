@@ -1,0 +1,216 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 3
+-n 3 -fastpaths -xml stein_gcd.twx stein_gcd.ncd -o stein_gcd.twr stein_gcd.pcf
+
+Design file:              stein_gcd.ncd
+Physical constraint file: stein_gcd.pcf
+Device,package,speed:     xc7a100t,csg324,C,-3 (PRODUCTION 1.10 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock a<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+a<0>           |         |         |    0.952|    0.952|
+reset          |         |         |    1.783|    1.783|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock a<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+a<1>           |         |         |    0.793|    0.793|
+reset          |         |         |    1.082|    1.082|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock a<2>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+a<2>           |         |         |    0.907|    0.907|
+reset          |         |         |    1.767|    1.767|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock a<3>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+a<3>           |         |         |    0.902|    0.902|
+reset          |         |         |    1.376|    1.376|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock a<4>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+a<4>           |         |         |    0.908|    0.908|
+reset          |         |         |    1.887|    1.887|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock a<5>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+a<5>           |         |         |    0.901|    0.901|
+reset          |         |         |    1.651|    1.651|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock a<6>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+a<6>           |         |         |    0.979|    0.979|
+reset          |         |         |    1.730|    1.730|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock b<0>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+b<0>           |         |         |    0.843|    0.843|
+reset          |         |         |    1.547|    1.547|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock b<1>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+b<1>           |         |         |    1.230|    1.230|
+reset          |         |         |    1.089|    1.089|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock b<2>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+b<2>           |         |         |    0.907|    0.907|
+reset          |         |         |    1.272|    1.272|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock b<3>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+b<3>           |         |         |    0.849|    0.849|
+reset          |         |         |    1.404|    1.404|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock b<4>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+b<4>           |         |         |    0.832|    0.832|
+reset          |         |         |    0.944|    0.944|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock b<5>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+b<5>           |         |         |    1.016|    1.016|
+reset          |         |         |    1.380|    1.380|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock b<6>
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+b<6>           |         |         |    0.951|    0.951|
+reset          |         |         |    1.287|    1.287|
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+a<0>           |    0.406|    4.057|         |         |
+a<1>           |    0.351|    3.236|         |         |
+a<2>           |    0.322|    3.429|         |         |
+a<3>           |    0.350|    3.392|         |         |
+a<4>           |    0.140|    3.843|         |         |
+a<5>           |    0.449|    3.526|         |         |
+a<6>           |    0.458|    3.642|         |         |
+b<0>           |    0.227|    3.926|         |         |
+b<1>           |    0.569|    3.165|         |         |
+b<2>           |    0.436|    3.488|         |         |
+b<3>           |    0.219|    3.294|         |         |
+b<4>           |    0.341|    2.990|         |         |
+b<5>           |    0.750|    3.776|         |         |
+b<6>           |    0.498|    3.304|         |         |
+clk            |    3.498|         |         |         |
+reset          |    1.024|    4.057|         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock reset
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+a<0>           |         |         |    0.241|    0.241|
+a<1>           |         |         |    0.528|    0.528|
+a<2>           |         |         |    0.181|    0.181|
+a<3>           |         |         |    0.506|    0.506|
+a<4>           |         |         |    0.088|    0.088|
+a<5>           |         |         |    0.258|    0.258|
+a<6>           |         |         |    0.338|    0.338|
+b<0>           |         |         |    0.256|    0.256|
+b<1>           |         |         |    1.343|    1.343|
+b<2>           |         |         |    0.598|    0.598|
+b<3>           |         |         |    0.389|    0.389|
+b<4>           |         |         |    0.718|    0.718|
+b<5>           |         |         |    0.700|    0.700|
+b<6>           |         |         |    0.672|    0.672|
+reset          |         |         |    1.202|    1.202|
+---------------+---------+---------+---------+---------+
+
+
+Analysis completed Mon May 11 22:32:24 2020 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 5003 MB
+
+
+

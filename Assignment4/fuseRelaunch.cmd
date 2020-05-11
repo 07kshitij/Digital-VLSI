@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "simprims_ver" -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/VLSI/Assignment4/test_stein_gcd_isim_par.exe" -prj "D:/VLSI/Assignment4/test_stein_gcd_par.prj" "work.test_stein_gcd" "work.glbl" 

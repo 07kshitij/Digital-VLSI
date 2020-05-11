@@ -1,0 +1,2 @@
+verilog isim_temp "netgen/par/stein_gcd_timesim.v"
+verilog isim_temp "test_stein_gcd.v"

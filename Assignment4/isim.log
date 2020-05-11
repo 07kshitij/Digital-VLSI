@@ -1,0 +1,24 @@
+ISim log file
+Running: D:\VLSI\Assignment4\test_stein_gcd_isim_par.exe -intstyle ise -gui -tclbatch isim.cmd -wdb D:/VLSI/Assignment4/test_stein_gcd_isim_par.wdb 
+ISim P.20131013 (signature 0x7708f090)
+WARNING: A WEBPACK license was found.
+WARNING: Please use Xilinx License Configuration Manager to check out a full ISim license.
+WARNING: ISim will run in Lite mode. Please refer to the ISim documentation for more information on the differences between the Lite and the Full version.
+This is a Lite version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+INFO: SDF backannotation was successful with SDF file netgen/par/stein_gcd_timesim.sdf, for root module /test_stein_gcd/uut/.
+Finished circuit initialization process.
+                 171 a= 12 b=  6 gcd=  0
+
+                 327 a=- 54 b= 45 gcd=  9
+
+                 483 a=- 63 b= 28 gcd=  7
+
+                 639 a=- 43 b=  7 gcd=  1
+
+                 795 a= 79 b=  6 gcd=  0
+

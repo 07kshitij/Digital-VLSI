@@ -1,0 +1,29 @@
+Command line:
+   test_stein_gcd_isim_par.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  51140
+
+Mon May 11 22:32:47 2020
+
+
+ Elaboration Time: 0.125 sec
+
+ Current Memory Usage: 5189.53 Meg
+
+ Total Signals          : 5500
+ Total Nets             : 5823
+ Total Signal Drivers   : 3339
+ Total Blocks           : 656
+ Total Primitive Blocks : 443
+ Total Processes        : 4454
+ Total Traceable Variables  : 2028
+ Total Scalar Nets and Variables : 67969
+Total Line Count : 6171
+
+ Total Simulation Time: 0.203125 sec
+
+ Current Memory Usage: 5189.53 Meg
+
+Mon May 11 22:32:56 2020
+
