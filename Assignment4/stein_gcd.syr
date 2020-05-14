@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.10 secs
+Total CPU time to Xst completion: 0.11 secs
  
 --> Reading design: stein_gcd.prj
 
@@ -113,13 +113,8 @@ Parsing module <stein_gcd>.
 =========================================================================
 
 Elaborating module <stein_gcd>.
-WARNING:HDLCompiler:91 - "D:\VLSI\Assignment4\stein_gcd.v" Line 46: Signal <current_res> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\VLSI\Assignment4\stein_gcd.v" Line 48: Signal <current_res> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\VLSI\Assignment4\stein_gcd.v" Line 57: Signal <current_res> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:413 - "D:\VLSI\Assignment4\stein_gcd.v" Line 57: Result of 9-bit expression is truncated to fit in 8-bit target.
-WARNING:HDLCompiler:91 - "D:\VLSI\Assignment4\stein_gcd.v" Line 63: Signal <current_res> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\VLSI\Assignment4\stein_gcd.v" Line 69: Signal <current_res> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
-WARNING:HDLCompiler:91 - "D:\VLSI\Assignment4\stein_gcd.v" Line 83: Signal <current_res> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+WARNING:HDLCompiler:91 - "D:\VLSI\Assignment4\stein_gcd.v" Line 43: Signal <res> missing in the sensitivity list is added for synthesis purposes. HDL and post-synthesis simulations may differ as a result.
+"D:\VLSI\Assignment4\stein_gcd.v" Line 43. $display a = 0, b = 0, extra = 0, res = 0\n
 
 =========================================================================
 *                           HDL Synthesis                               *
@@ -130,7 +125,6 @@ Synthesizing Unit <stein_gcd>.
 WARNING:Xst:647 - Input <a<7:7>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:647 - Input <b<7:7>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 8-bit register for signal <current_res>.
-    Found 1-bit register for signal <current_a<7>>.
     Found 1-bit register for signal <current_a<6>>.
     Found 1-bit register for signal <current_a<5>>.
     Found 1-bit register for signal <current_a<4>>.
@@ -138,7 +132,6 @@ WARNING:Xst:647 - Input <b<7:7>> is never used. This port will be preserved and 
     Found 1-bit register for signal <current_a<2>>.
     Found 1-bit register for signal <current_a<1>>.
     Found 1-bit register for signal <current_a<0>>.
-    Found 1-bit register for signal <current_b<7>>.
     Found 1-bit register for signal <current_b<6>>.
     Found 1-bit register for signal <current_b<5>>.
     Found 1-bit register for signal <current_b<4>>.
@@ -146,10 +139,10 @@ WARNING:Xst:647 - Input <b<7:7>> is never used. This port will be preserved and 
     Found 1-bit register for signal <current_b<2>>.
     Found 1-bit register for signal <current_b<1>>.
     Found 1-bit register for signal <current_b<0>>.
-    Found 8-bit subtractor for signal <n0088> created at line 75.
-    Found 8-bit subtractor for signal <n0089> created at line 80.
-    Found 8x8-bit multiplier for signal <n0085> created at line 46.
-    Found 8x8-bit multiplier for signal <n0086> created at line 48.
+    Found 7-bit subtractor for signal <n0088> created at line 76.
+    Found 7-bit subtractor for signal <n0089> created at line 81.
+    Found 7x8-bit multiplier for signal <n0085> created at line 47.
+    Found 7x8-bit multiplier for signal <n0086> created at line 49.
 WARNING:Xst:737 - Found 1-bit latch for signal <res<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <res<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <res<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -158,14 +151,14 @@ WARNING:Xst:737 - Found 1-bit latch for signal <res<3>>. Latches may be generate
 WARNING:Xst:737 - Found 1-bit latch for signal <res<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <res<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 1-bit latch for signal <res<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
-    Found 8-bit comparator greater for signal <current_b[7]_current_a[7]_LessThan_14_o> created at line 73
+    Found 7-bit comparator greater for signal <current_b[6]_current_a[6]_LessThan_14_o> created at line 74
     Summary:
 	inferred   2 Multiplier(s).
 	inferred   2 Adder/Subtractor(s).
-	inferred  24 D-type flip-flop(s).
+	inferred  22 D-type flip-flop(s).
 	inferred   8 Latch(s).
 	inferred   1 Comparator(s).
-	inferred  19 Multiplexer(s).
+	inferred  18 Multiplexer(s).
 Unit <stein_gcd> synthesized.
 
 =========================================================================
@@ -173,19 +166,19 @@ HDL Synthesis Report
 
 Macro Statistics
 # Multipliers                                          : 2
- 8x8-bit multiplier                                    : 2
+ 8x7-bit multiplier                                    : 2
 # Adders/Subtractors                                   : 2
- 8-bit subtractor                                      : 2
-# Registers                                            : 17
- 1-bit register                                        : 16
+ 7-bit subtractor                                      : 2
+# Registers                                            : 15
+ 1-bit register                                        : 14
  8-bit register                                        : 1
 # Latches                                              : 8
  1-bit latch                                           : 8
 # Comparators                                          : 1
- 8-bit comparator greater                              : 1
-# Multiplexers                                         : 19
+ 7-bit comparator greater                              : 1
+# Multiplexers                                         : 18
  1-bit 2-to-1 multiplexer                              : 8
- 8-bit 2-to-1 multiplexer                              : 11
+ 7-bit 2-to-1 multiplexer                              : 10
 
 =========================================================================
 
@@ -199,24 +192,22 @@ Advanced HDL Synthesis Report
 
 Macro Statistics
 # Multipliers                                          : 2
- 8x8-bit multiplier                                    : 2
+ 8x7-bit multiplier                                    : 2
 # Adders/Subtractors                                   : 2
- 8-bit subtractor                                      : 2
-# Registers                                            : 24
- Flip-Flops                                            : 24
+ 7-bit subtractor                                      : 2
+# Registers                                            : 22
+ Flip-Flops                                            : 22
 # Comparators                                          : 1
- 8-bit comparator greater                              : 1
-# Multiplexers                                         : 19
+ 7-bit comparator greater                              : 1
+# Multiplexers                                         : 18
  1-bit 2-to-1 multiplexer                              : 8
- 8-bit 2-to-1 multiplexer                              : 11
+ 7-bit 2-to-1 multiplexer                              : 10
 
 =========================================================================
 
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
-WARNING:Xst:1710 - FF/Latch <current_b_7> (without init value) has a constant value of 0 in block <stein_gcd>. This FF/Latch will be trimmed during the optimization process.
-WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <current_a_7> (without init value) has a constant value of 0 in block <stein_gcd>. This FF/Latch will be trimmed during the optimization process.
 WARNING:Xst:3001 - This design contains one or more registers or latches with an active
    asynchronous set and asynchronous reset. While this circuit can be built,
    it creates a sub-optimal implementation in terms of area, power and
@@ -234,20 +225,20 @@ WARNING:Xst:3001 - This design contains one or more registers or latches with an
   Please refer to http://www.xilinx.com search string "Artix7 asynchronous set/reset" for more details.
 
   List of register instances with asynchronous set and reset:
-    current_b_0 in unit <stein_gcd>
-    current_b_2 in unit <stein_gcd>
-    current_b_3 in unit <stein_gcd>
-    current_b_1 in unit <stein_gcd>
-    current_b_5 in unit <stein_gcd>
-    current_b_6 in unit <stein_gcd>
-    current_b_4 in unit <stein_gcd>
-    current_a_1 in unit <stein_gcd>
-    current_a_2 in unit <stein_gcd>
-    current_a_0 in unit <stein_gcd>
-    current_a_4 in unit <stein_gcd>
-    current_a_5 in unit <stein_gcd>
-    current_a_3 in unit <stein_gcd>
     current_a_6 in unit <stein_gcd>
+    current_b_0 in unit <stein_gcd>
+    current_b_1 in unit <stein_gcd>
+    current_b_2 in unit <stein_gcd>
+    current_b_4 in unit <stein_gcd>
+    current_b_5 in unit <stein_gcd>
+    current_b_3 in unit <stein_gcd>
+    current_a_0 in unit <stein_gcd>
+    current_a_1 in unit <stein_gcd>
+    current_b_6 in unit <stein_gcd>
+    current_a_3 in unit <stein_gcd>
+    current_a_4 in unit <stein_gcd>
+    current_a_2 in unit <stein_gcd>
+    current_a_5 in unit <stein_gcd>
 
 
 Optimizing unit <stein_gcd> ...
@@ -286,18 +277,19 @@ Top Level Output File Name         : stein_gcd.ngc
 
 Primitive and Black Box Usage:
 ------------------------------
-# BELS                             : 159
+# BELS                             : 146
 #      GND                         : 1
 #      LUT2                        : 28
 #      LUT3                        : 23
-#      LUT5                        : 34
+#      LUT5                        : 25
 #      LUT6                        : 40
-#      MUXCY                       : 14
+#      MUXCY                       : 12
 #      MUXF7                       : 4
 #      VCC                         : 1
-#      XORCY                       : 14
+#      XORCY                       : 12
 # FlipFlops/Latches                : 58
-#      FDC                         : 21
+#      FDC                         : 14
+#      FDCE                        : 7
 #      FDP                         : 14
 #      FDPE                        : 1
 #      LD                          : 8
@@ -318,15 +310,15 @@ Selected Device : 7a100tcsg324-3
 
 Slice Logic Utilization: 
  Number of Slice Registers:              50  out of  126800     0%  
- Number of Slice LUTs:                  125  out of  63400     0%  
-    Number used as Logic:               125  out of  63400     0%  
+ Number of Slice LUTs:                  116  out of  63400     0%  
+    Number used as Logic:               116  out of  63400     0%  
 
 Slice Logic Distribution: 
- Number of LUT Flip Flop pairs used:    152
-   Number with an unused Flip Flop:     102  out of    152    67%  
-   Number with an unused LUT:            27  out of    152    17%  
-   Number of fully used LUT-FF pairs:    23  out of    152    15%  
-   Number of unique control sets:        45
+ Number of LUT Flip Flop pairs used:    151
+   Number with an unused Flip Flop:     101  out of    151    66%  
+   Number with an unused LUT:            35  out of    151    23%  
+   Number of fully used LUT-FF pairs:    15  out of    151     9%  
+   Number of unique control sets:        44
 
 IO Utilization: 
  Number of IOs:                          26
@@ -359,21 +351,21 @@ Clock Information:
 Clock Signal                                      | Clock buffer(FF name)   | Load  |
 --------------------------------------------------+-------------------------+-------+
 clk                                               | BUFGP                   | 36    |
-GND_1_o_GND_1_o_OR_32_o(GND_1_o_GND_1_o_OR_32_o:O)| NONE(*)(res_6)          | 8     |
-reset_a[6]_AND_66_o(reset_a[6]_AND_66_o1:O)       | NONE(*)(current_a_6_LDC)| 1     |
-reset_a[3]_AND_72_o(reset_a[3]_AND_72_o1:O)       | NONE(*)(current_a_3_LDC)| 1     |
+GND_1_o_GND_1_o_OR_32_o(GND_1_o_GND_1_o_OR_32_o:O)| NONE(*)(res_5)          | 8     |
 reset_a[5]_AND_68_o(reset_a[5]_AND_68_o1:O)       | NONE(*)(current_a_5_LDC)| 1     |
-reset_a[4]_AND_70_o(reset_a[4]_AND_70_o1:O)       | NONE(*)(current_a_4_LDC)| 1     |
-reset_a[0]_AND_78_o(reset_a[0]_AND_78_o1:O)       | NONE(*)(current_a_0_LDC)| 1     |
 reset_a[2]_AND_74_o(reset_a[2]_AND_74_o1:O)       | NONE(*)(current_a_2_LDC)| 1     |
-reset_a[1]_AND_76_o(reset_a[1]_AND_76_o1:O)       | NONE(*)(current_a_1_LDC)| 1     |
-reset_b[4]_AND_84_o(reset_b[4]_AND_84_o1:O)       | NONE(*)(current_b_4_LDC)| 1     |
+reset_a[4]_AND_70_o(reset_a[4]_AND_70_o1:O)       | NONE(*)(current_a_4_LDC)| 1     |
+reset_a[3]_AND_72_o(reset_a[3]_AND_72_o1:O)       | NONE(*)(current_a_3_LDC)| 1     |
 reset_b[6]_AND_80_o(reset_b[6]_AND_80_o1:O)       | NONE(*)(current_b_6_LDC)| 1     |
-reset_b[5]_AND_82_o(reset_b[5]_AND_82_o1:O)       | NONE(*)(current_b_5_LDC)| 1     |
-reset_b[1]_AND_90_o(reset_b[1]_AND_90_o1:O)       | NONE(*)(current_b_1_LDC)| 1     |
+reset_a[1]_AND_76_o(reset_a[1]_AND_76_o1:O)       | NONE(*)(current_a_1_LDC)| 1     |
+reset_a[0]_AND_78_o(reset_a[0]_AND_78_o1:O)       | NONE(*)(current_a_0_LDC)| 1     |
 reset_b[3]_AND_86_o(reset_b[3]_AND_86_o1:O)       | NONE(*)(current_b_3_LDC)| 1     |
+reset_b[5]_AND_82_o(reset_b[5]_AND_82_o1:O)       | NONE(*)(current_b_5_LDC)| 1     |
+reset_b[4]_AND_84_o(reset_b[4]_AND_84_o1:O)       | NONE(*)(current_b_4_LDC)| 1     |
 reset_b[2]_AND_88_o(reset_b[2]_AND_88_o1:O)       | NONE(*)(current_b_2_LDC)| 1     |
+reset_b[1]_AND_90_o(reset_b[1]_AND_90_o1:O)       | NONE(*)(current_b_1_LDC)| 1     |
 reset_b[0]_AND_92_o(reset_b[0]_AND_92_o1:O)       | NONE(*)(current_b_0_LDC)| 1     |
+reset_a[6]_AND_66_o(reset_a[6]_AND_66_o1:O)       | NONE(*)(current_a_6_LDC)| 1     |
 --------------------------------------------------+-------------------------+-------+
 (*) These 15 clock signal(s) are generated by combinatorial logic,
 and XST is not able to identify which are the primary clock signals.
@@ -388,7 +380,7 @@ Timing Summary:
 ---------------
 Speed Grade: -3
 
-   Minimum period: 3.063ns (Maximum Frequency: 326.509MHz)
+   Minimum period: 3.031ns (Maximum Frequency: 329.979MHz)
    Minimum input arrival time before clock: 1.217ns
    Maximum output required time after clock: 0.751ns
    Maximum combinational path delay: No path found
@@ -399,10 +391,10 @@ All values displayed in nanoseconds (ns)
 
 =========================================================================
 Timing constraint: Default period analysis for Clock 'clk'
-  Clock period: 3.063ns (frequency: 326.509MHz)
-  Total number of paths / destination ports: 3426 / 37
+  Clock period: 3.031ns (frequency: 329.979MHz)
+  Total number of paths / destination ports: 2971 / 43
 -------------------------------------------------------------------------
-Delay:               3.063ns (Levels of Logic = 10)
+Delay:               3.031ns (Levels of Logic = 10)
   Source:            current_a_0_C_0 (FF)
   Destination:       current_a_5_C_5 (FF)
   Source Clock:      clk rising
@@ -412,21 +404,21 @@ Delay:               3.063ns (Levels of Logic = 10)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDC:C->Q             10   0.361   0.421  current_a_0_C_0 (current_a_0_C_0)
-     LUT3:I1->O           17   0.097   0.353  current_a_01 (current_a_0)
+     FDC:C->Q              9   0.361   0.416  current_a_0_C_0 (current_a_0_C_0)
+     LUT3:I1->O           11   0.097   0.326  current_a_01 (current_a_0)
      MUXCY:DI->O           1   0.337   0.000  Msub_n0088_cy<0> (Msub_n0088_cy<0>)
      MUXCY:CI->O           1   0.023   0.000  Msub_n0088_cy<1> (Msub_n0088_cy<1>)
      MUXCY:CI->O           1   0.023   0.000  Msub_n0088_cy<2> (Msub_n0088_cy<2>)
      MUXCY:CI->O           1   0.023   0.000  Msub_n0088_cy<3> (Msub_n0088_cy<3>)
      MUXCY:CI->O           1   0.023   0.000  Msub_n0088_cy<4> (Msub_n0088_cy<4>)
-     MUXCY:CI->O           1   0.023   0.000  Msub_n0088_cy<5> (Msub_n0088_cy<5>)
+     MUXCY:CI->O           0   0.023   0.000  Msub_n0088_cy<5> (Msub_n0088_cy<5>)
      XORCY:CI->O           1   0.370   0.511  Msub_n0088_xor<6> (n0088<6>)
      LUT5:I2->O            1   0.097   0.295  Mmux_next_a121 (Mmux_next_a12)
      LUT6:I5->O            2   0.097   0.000  Mmux_next_a122 (next_a<5>)
      FDC:D                     0.008          current_a_5_C_5
     ----------------------------------------
-    Total                      3.063ns (1.482ns logic, 1.581ns route)
-                                       (48.4% logic, 51.6% route)
+    Total                      3.031ns (1.482ns logic, 1.549ns route)
+                                       (48.9% logic, 51.1% route)
 
 =========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
@@ -434,56 +426,16 @@ Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
 -------------------------------------------------------------------------
 Offset:              1.217ns (Levels of Logic = 2)
   Source:            reset (PAD)
-  Destination:       current_a_6_C_6 (FF)
+  Destination:       current_a_5_C_5 (FF)
   Destination Clock: clk rising
 
-  Data Path: reset to current_a_6_C_6
+  Data Path: reset to current_a_5_C_5
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O            36   0.001   0.487  reset_IBUF (reset_IBUF)
      LUT2:I0->O            2   0.097   0.283  reset_b[6]_AND_80_o1 (reset_b[6]_AND_80_o)
      FDP:PRE                   0.349          current_b_6_P_6
-    ----------------------------------------
-    Total                      1.217ns (0.447ns logic, 0.770ns route)
-                                       (36.7% logic, 63.3% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'reset_a[6]_AND_66_o'
-  Total number of paths / destination ports: 2 / 1
--------------------------------------------------------------------------
-Offset:              1.217ns (Levels of Logic = 2)
-  Source:            reset (PAD)
-  Destination:       current_a_6_LDC (LATCH)
-  Destination Clock: reset_a[6]_AND_66_o falling
-
-  Data Path: reset to current_a_6_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            36   0.001   0.487  reset_IBUF (reset_IBUF)
-     LUT2:I0->O            2   0.097   0.283  reset_a[6]_AND_67_o1 (reset_a[6]_AND_67_o)
-     LDC:CLR                   0.349          current_a_6_LDC
-    ----------------------------------------
-    Total                      1.217ns (0.447ns logic, 0.770ns route)
-                                       (36.7% logic, 63.3% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'reset_a[3]_AND_72_o'
-  Total number of paths / destination ports: 2 / 1
--------------------------------------------------------------------------
-Offset:              1.217ns (Levels of Logic = 2)
-  Source:            reset (PAD)
-  Destination:       current_a_3_LDC (LATCH)
-  Destination Clock: reset_a[3]_AND_72_o falling
-
-  Data Path: reset to current_a_3_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            36   0.001   0.487  reset_IBUF (reset_IBUF)
-     LUT2:I0->O            2   0.097   0.283  reset_a[3]_AND_73_o1 (reset_a[3]_AND_73_o)
-     LDC:CLR                   0.349          current_a_3_LDC
     ----------------------------------------
     Total                      1.217ns (0.447ns logic, 0.770ns route)
                                        (36.7% logic, 63.3% route)
@@ -509,46 +461,6 @@ Offset:              1.217ns (Levels of Logic = 2)
                                        (36.7% logic, 63.3% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'reset_a[4]_AND_70_o'
-  Total number of paths / destination ports: 2 / 1
--------------------------------------------------------------------------
-Offset:              1.217ns (Levels of Logic = 2)
-  Source:            reset (PAD)
-  Destination:       current_a_4_LDC (LATCH)
-  Destination Clock: reset_a[4]_AND_70_o falling
-
-  Data Path: reset to current_a_4_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            36   0.001   0.487  reset_IBUF (reset_IBUF)
-     LUT2:I0->O            2   0.097   0.283  reset_a[4]_AND_71_o1 (reset_a[4]_AND_71_o)
-     LDC:CLR                   0.349          current_a_4_LDC
-    ----------------------------------------
-    Total                      1.217ns (0.447ns logic, 0.770ns route)
-                                       (36.7% logic, 63.3% route)
-
-=========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'reset_a[0]_AND_78_o'
-  Total number of paths / destination ports: 2 / 1
--------------------------------------------------------------------------
-Offset:              1.217ns (Levels of Logic = 2)
-  Source:            reset (PAD)
-  Destination:       current_a_0_LDC (LATCH)
-  Destination Clock: reset_a[0]_AND_78_o falling
-
-  Data Path: reset to current_a_0_LDC
-                                Gate     Net
-    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
-    ----------------------------------------  ------------
-     IBUF:I->O            36   0.001   0.487  reset_IBUF (reset_IBUF)
-     LUT2:I0->O            2   0.097   0.283  reset_a[0]_AND_79_o1 (reset_a[0]_AND_79_o)
-     LDC:CLR                   0.349          current_a_0_LDC
-    ----------------------------------------
-    Total                      1.217ns (0.447ns logic, 0.770ns route)
-                                       (36.7% logic, 63.3% route)
-
-=========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'reset_a[2]_AND_74_o'
   Total number of paths / destination ports: 2 / 1
 -------------------------------------------------------------------------
@@ -569,41 +481,41 @@ Offset:              1.217ns (Levels of Logic = 2)
                                        (36.7% logic, 63.3% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'reset_a[1]_AND_76_o'
+Timing constraint: Default OFFSET IN BEFORE for Clock 'reset_a[4]_AND_70_o'
   Total number of paths / destination ports: 2 / 1
 -------------------------------------------------------------------------
 Offset:              1.217ns (Levels of Logic = 2)
   Source:            reset (PAD)
-  Destination:       current_a_1_LDC (LATCH)
-  Destination Clock: reset_a[1]_AND_76_o falling
+  Destination:       current_a_4_LDC (LATCH)
+  Destination Clock: reset_a[4]_AND_70_o falling
 
-  Data Path: reset to current_a_1_LDC
+  Data Path: reset to current_a_4_LDC
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O            36   0.001   0.487  reset_IBUF (reset_IBUF)
-     LUT2:I0->O            2   0.097   0.283  reset_a[1]_AND_77_o1 (reset_a[1]_AND_77_o)
-     LDC:CLR                   0.349          current_a_1_LDC
+     LUT2:I0->O            2   0.097   0.283  reset_a[4]_AND_71_o1 (reset_a[4]_AND_71_o)
+     LDC:CLR                   0.349          current_a_4_LDC
     ----------------------------------------
     Total                      1.217ns (0.447ns logic, 0.770ns route)
                                        (36.7% logic, 63.3% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'reset_b[4]_AND_84_o'
+Timing constraint: Default OFFSET IN BEFORE for Clock 'reset_a[3]_AND_72_o'
   Total number of paths / destination ports: 2 / 1
 -------------------------------------------------------------------------
 Offset:              1.217ns (Levels of Logic = 2)
   Source:            reset (PAD)
-  Destination:       current_b_4_LDC (LATCH)
-  Destination Clock: reset_b[4]_AND_84_o falling
+  Destination:       current_a_3_LDC (LATCH)
+  Destination Clock: reset_a[3]_AND_72_o falling
 
-  Data Path: reset to current_b_4_LDC
+  Data Path: reset to current_a_3_LDC
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O            36   0.001   0.487  reset_IBUF (reset_IBUF)
-     LUT2:I0->O            2   0.097   0.283  reset_b[4]_AND_85_o1 (reset_b[4]_AND_85_o)
-     LDC:CLR                   0.349          current_b_4_LDC
+     LUT2:I0->O            2   0.097   0.283  reset_a[3]_AND_73_o1 (reset_a[3]_AND_73_o)
+     LDC:CLR                   0.349          current_a_3_LDC
     ----------------------------------------
     Total                      1.217ns (0.447ns logic, 0.770ns route)
                                        (36.7% logic, 63.3% route)
@@ -629,41 +541,41 @@ Offset:              1.217ns (Levels of Logic = 2)
                                        (36.7% logic, 63.3% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'reset_b[5]_AND_82_o'
+Timing constraint: Default OFFSET IN BEFORE for Clock 'reset_a[1]_AND_76_o'
   Total number of paths / destination ports: 2 / 1
 -------------------------------------------------------------------------
 Offset:              1.217ns (Levels of Logic = 2)
   Source:            reset (PAD)
-  Destination:       current_b_5_LDC (LATCH)
-  Destination Clock: reset_b[5]_AND_82_o falling
+  Destination:       current_a_1_LDC (LATCH)
+  Destination Clock: reset_a[1]_AND_76_o falling
 
-  Data Path: reset to current_b_5_LDC
+  Data Path: reset to current_a_1_LDC
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O            36   0.001   0.487  reset_IBUF (reset_IBUF)
-     LUT2:I0->O            2   0.097   0.283  reset_b[5]_AND_83_o1 (reset_b[5]_AND_83_o)
-     LDC:CLR                   0.349          current_b_5_LDC
+     LUT2:I0->O            2   0.097   0.283  reset_a[1]_AND_77_o1 (reset_a[1]_AND_77_o)
+     LDC:CLR                   0.349          current_a_1_LDC
     ----------------------------------------
     Total                      1.217ns (0.447ns logic, 0.770ns route)
                                        (36.7% logic, 63.3% route)
 
 =========================================================================
-Timing constraint: Default OFFSET IN BEFORE for Clock 'reset_b[1]_AND_90_o'
+Timing constraint: Default OFFSET IN BEFORE for Clock 'reset_a[0]_AND_78_o'
   Total number of paths / destination ports: 2 / 1
 -------------------------------------------------------------------------
 Offset:              1.217ns (Levels of Logic = 2)
   Source:            reset (PAD)
-  Destination:       current_b_1_LDC (LATCH)
-  Destination Clock: reset_b[1]_AND_90_o falling
+  Destination:       current_a_0_LDC (LATCH)
+  Destination Clock: reset_a[0]_AND_78_o falling
 
-  Data Path: reset to current_b_1_LDC
+  Data Path: reset to current_a_0_LDC
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
      IBUF:I->O            36   0.001   0.487  reset_IBUF (reset_IBUF)
-     LUT2:I0->O            2   0.097   0.283  reset_b[1]_AND_91_o1 (reset_b[1]_AND_91_o)
-     LDC:CLR                   0.349          current_b_1_LDC
+     LUT2:I0->O            2   0.097   0.283  reset_a[0]_AND_79_o1 (reset_a[0]_AND_79_o)
+     LDC:CLR                   0.349          current_a_0_LDC
     ----------------------------------------
     Total                      1.217ns (0.447ns logic, 0.770ns route)
                                        (36.7% logic, 63.3% route)
@@ -689,6 +601,46 @@ Offset:              1.217ns (Levels of Logic = 2)
                                        (36.7% logic, 63.3% route)
 
 =========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'reset_b[5]_AND_82_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.217ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       current_b_5_LDC (LATCH)
+  Destination Clock: reset_b[5]_AND_82_o falling
+
+  Data Path: reset to current_b_5_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            36   0.001   0.487  reset_IBUF (reset_IBUF)
+     LUT2:I0->O            2   0.097   0.283  reset_b[5]_AND_83_o1 (reset_b[5]_AND_83_o)
+     LDC:CLR                   0.349          current_b_5_LDC
+    ----------------------------------------
+    Total                      1.217ns (0.447ns logic, 0.770ns route)
+                                       (36.7% logic, 63.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'reset_b[4]_AND_84_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.217ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       current_b_4_LDC (LATCH)
+  Destination Clock: reset_b[4]_AND_84_o falling
+
+  Data Path: reset to current_b_4_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            36   0.001   0.487  reset_IBUF (reset_IBUF)
+     LUT2:I0->O            2   0.097   0.283  reset_b[4]_AND_85_o1 (reset_b[4]_AND_85_o)
+     LDC:CLR                   0.349          current_b_4_LDC
+    ----------------------------------------
+    Total                      1.217ns (0.447ns logic, 0.770ns route)
+                                       (36.7% logic, 63.3% route)
+
+=========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'reset_b[2]_AND_88_o'
   Total number of paths / destination ports: 2 / 1
 -------------------------------------------------------------------------
@@ -709,6 +661,26 @@ Offset:              1.217ns (Levels of Logic = 2)
                                        (36.7% logic, 63.3% route)
 
 =========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'reset_b[1]_AND_90_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.217ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       current_b_1_LDC (LATCH)
+  Destination Clock: reset_b[1]_AND_90_o falling
+
+  Data Path: reset to current_b_1_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            36   0.001   0.487  reset_IBUF (reset_IBUF)
+     LUT2:I0->O            2   0.097   0.283  reset_b[1]_AND_91_o1 (reset_b[1]_AND_91_o)
+     LDC:CLR                   0.349          current_b_1_LDC
+    ----------------------------------------
+    Total                      1.217ns (0.447ns logic, 0.770ns route)
+                                       (36.7% logic, 63.3% route)
+
+=========================================================================
 Timing constraint: Default OFFSET IN BEFORE for Clock 'reset_b[0]_AND_92_o'
   Total number of paths / destination ports: 2 / 1
 -------------------------------------------------------------------------
@@ -724,6 +696,26 @@ Offset:              1.217ns (Levels of Logic = 2)
      IBUF:I->O            36   0.001   0.487  reset_IBUF (reset_IBUF)
      LUT2:I0->O            2   0.097   0.283  reset_b[0]_AND_93_o1 (reset_b[0]_AND_93_o)
      LDC:CLR                   0.349          current_b_0_LDC
+    ----------------------------------------
+    Total                      1.217ns (0.447ns logic, 0.770ns route)
+                                       (36.7% logic, 63.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'reset_a[6]_AND_66_o'
+  Total number of paths / destination ports: 2 / 1
+-------------------------------------------------------------------------
+Offset:              1.217ns (Levels of Logic = 2)
+  Source:            reset (PAD)
+  Destination:       current_a_6_LDC (LATCH)
+  Destination Clock: reset_a[6]_AND_66_o falling
+
+  Data Path: reset to current_a_6_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            36   0.001   0.487  reset_IBUF (reset_IBUF)
+     LUT2:I0->O            2   0.097   0.283  reset_a[6]_AND_67_o1 (reset_a[6]_AND_67_o)
+     LDC:CLR                   0.349          current_a_6_LDC
     ----------------------------------------
     Total                      1.217ns (0.447ns logic, 0.770ns route)
                                        (36.7% logic, 63.3% route)
@@ -757,21 +749,21 @@ Clock to Setup on destination clock GND_1_o_GND_1_o_OR_32_o
                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -------------------+---------+---------+---------+---------+
-clk                |         |         |    4.399|         |
-reset_a[0]_AND_78_o|         |         |    4.641|         |
-reset_a[1]_AND_76_o|         |         |    4.559|         |
-reset_a[2]_AND_74_o|         |         |    4.559|         |
-reset_a[3]_AND_72_o|         |         |    4.559|         |
-reset_a[4]_AND_70_o|         |         |    4.564|         |
-reset_a[5]_AND_68_o|         |         |    4.564|         |
-reset_a[6]_AND_66_o|         |         |    4.642|         |
-reset_b[0]_AND_92_o|         |         |    4.563|         |
-reset_b[1]_AND_90_o|         |         |    4.488|         |
-reset_b[2]_AND_88_o|         |         |    4.493|         |
-reset_b[3]_AND_86_o|         |         |    4.493|         |
-reset_b[4]_AND_84_o|         |         |    4.498|         |
-reset_b[5]_AND_82_o|         |         |    4.497|         |
-reset_b[6]_AND_80_o|         |         |    4.543|         |
+clk                |         |         |    4.528|         |
+reset_a[0]_AND_78_o|         |         |    4.742|         |
+reset_a[1]_AND_76_o|         |         |    4.692|         |
+reset_a[2]_AND_74_o|         |         |    4.692|         |
+reset_a[3]_AND_72_o|         |         |    4.692|         |
+reset_a[4]_AND_70_o|         |         |    4.697|         |
+reset_a[5]_AND_68_o|         |         |    4.697|         |
+reset_a[6]_AND_66_o|         |         |    4.771|         |
+reset_b[0]_AND_92_o|         |         |    4.700|         |
+reset_b[1]_AND_90_o|         |         |    4.621|         |
+reset_b[2]_AND_88_o|         |         |    4.626|         |
+reset_b[3]_AND_86_o|         |         |    4.626|         |
+reset_b[4]_AND_84_o|         |         |    4.631|         |
+reset_b[5]_AND_82_o|         |         |    4.630|         |
+reset_b[6]_AND_80_o|         |         |    4.667|         |
 -------------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock clk
@@ -779,34 +771,34 @@ Clock to Setup on destination clock clk
                    | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock       |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 -------------------+---------+---------+---------+---------+
-clk                |    3.063|         |         |         |
-reset_a[0]_AND_78_o|         |    3.306|         |         |
+clk                |    3.031|         |         |         |
+reset_a[0]_AND_78_o|         |    3.274|         |         |
 reset_a[1]_AND_76_o|         |    3.200|         |         |
-reset_a[2]_AND_74_o|         |    3.263|         |         |
-reset_a[3]_AND_72_o|         |    3.253|         |         |
-reset_a[4]_AND_70_o|         |    3.178|         |         |
+reset_a[2]_AND_74_o|         |    3.261|         |         |
+reset_a[3]_AND_72_o|         |    3.251|         |         |
+reset_a[4]_AND_70_o|         |    3.173|         |         |
 reset_a[5]_AND_68_o|         |    3.113|         |         |
-reset_a[6]_AND_66_o|         |    3.147|         |         |
-reset_b[0]_AND_92_o|         |    3.123|         |         |
-reset_b[1]_AND_90_o|         |    3.109|         |         |
-reset_b[2]_AND_88_o|         |    3.147|         |         |
-reset_b[3]_AND_86_o|         |    3.067|         |         |
-reset_b[4]_AND_84_o|         |    3.049|         |         |
-reset_b[5]_AND_82_o|         |    3.063|         |         |
-reset_b[6]_AND_80_o|         |    3.048|         |         |
+reset_a[6]_AND_66_o|         |    3.026|         |         |
+reset_b[0]_AND_92_o|         |    3.128|         |         |
+reset_b[1]_AND_90_o|         |    3.100|         |         |
+reset_b[2]_AND_88_o|         |    3.143|         |         |
+reset_b[3]_AND_86_o|         |    3.050|         |         |
+reset_b[4]_AND_84_o|         |    3.036|         |         |
+reset_b[5]_AND_82_o|         |    3.059|         |         |
+reset_b[6]_AND_80_o|         |    2.908|         |         |
 -------------------+---------+---------+---------+---------+
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 8.00 secs
-Total CPU time to Xst completion: 8.80 secs
+Total REAL time to Xst completion: 10.00 secs
+Total CPU time to Xst completion: 9.87 secs
  
 --> 
 
-Total memory usage is 4626308 kilobytes
+Total memory usage is 4626328 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   20 (   0 filtered)
+Number of warnings :   12 (   0 filtered)
 Number of infos    :    1 (   0 filtered)
 

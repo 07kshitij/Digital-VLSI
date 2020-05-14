@@ -12,13 +12,41 @@ Time resolution is 1 ps
 Simulator is doing circuit initialization process.
 INFO: SDF backannotation was successful with SDF file netgen/par/stein_gcd_timesim.sdf, for root module /test_stein_gcd/uut/.
 Finished circuit initialization process.
-                 171 a= 12 b=  6 gcd=  0
+a =   0 b =   4 gcd =   0
 
-                 327 a=- 54 b= 45 gcd=  9
+WARNING: at 162152 ps: Timing violation in /test_stein_gcd/uut/res_2/  $width( CLK:161948 ps, :162152 ps, 632 ps)
 
-                 483 a=- 63 b= 28 gcd=  7
 
-                 639 a=- 43 b=  7 gcd=  1
+WARNING: at 162495 ps: Timing violation in /test_stein_gcd/uut/res_0/  $width( CLK:162291 ps, :162495 ps, 632 ps)
 
-                 795 a= 79 b=  6 gcd=  0
+
+WARNING: at 162510 ps: Timing violation in /test_stein_gcd/uut/res_1/  $width( CLK:162306 ps, :162510 ps, 632 ps)
+
+
+WARNING: at 162618 ps: Timing violation in /test_stein_gcd/uut/res_6/  $width( CLK:162414 ps, :162618 ps, 632 ps)
+
+
+WARNING: at 162633 ps: Timing violation in /test_stein_gcd/uut/res_3/  $width( CLK:162429 ps, :162633 ps, 632 ps)
+
+
+WARNING: at 162651 ps: Timing violation in /test_stein_gcd/uut/res_7/  $width( CLK:162447 ps, :162651 ps, 632 ps)
+
+
+WARNING: at 162738 ps: Timing violation in /test_stein_gcd/uut/res_5/  $width( CLK:162534 ps, :162738 ps, 632 ps)
+
+
+WARNING: at 162740 ps: Timing violation in /test_stein_gcd/uut/res_4/  $width( CLK:162536 ps, :162740 ps, 632 ps)
+
+
+a =  10 b =   4 gcd =   2
+
+a =   0 b =   2 gcd =   2
+
+a = - 54 b =  45 gcd =   9
+
+a =  63 b = - 28 gcd =   7
+
+a =   4 b =   9 gcd =   1
+
+a =   0 b =   0 gcd =   0
 

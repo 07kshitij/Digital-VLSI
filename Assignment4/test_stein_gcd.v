@@ -41,7 +41,7 @@ module test_stein_gcd;
 		.clk(clk), 
 		.res(res)
 	);
-	always #10 clk = ~clk;
+	always #5 clk = ~clk;
 		initial begin
 			// Initialize Inputs
 			a = 0;
@@ -50,17 +50,27 @@ module test_stein_gcd;
 			clk = 0;
 
 			// Add stimulus here
-			#15;
-			a = 8'sb00001100; b = 8'sb00000110;#1;reset=1; #5; reset = 0; #150;
-			$display($time," a=%d b=%d gcd=%d\n",a,b,res);
-			a = 8'sb10110110; b = 8'sb00101101;#1;reset=1; #5; reset = 0; #150;
-			$display($time," a=-%d b=%d gcd=%d\n",a[6:0],b,res);
-			a = 8'sb10111111; b = 8'sb00011100;#1;reset=1; #5; reset = 0; #150;
-			$display($time," a=-%d b=%d gcd=%d\n",a[6:0],b,res);
-			a = 8'sb10101011; b = 8'sb00000111;#1;reset=1; #5; reset = 0; #150;
-			$display($time," a=-%d b=%d gcd=%d\n",a[6:0],b,res);
-			a = 8'sb01001111; b = 8'sb00000110;#1;reset=1; #5; reset = 0; #150;
-			$display($time," a=%d b=%d gcd=%d\n",a,b,res);
+			a = 8'sb00000000; b = 8'sb00000100; #2; reset = 1; #10; reset = 0; #100; // gcd(0, 4)
+			$display("a = %d b = %d gcd = %d\n", a, b, res);
+			#20;
+			a = 8'sb00001010; b = 8'sb00000100; #2; reset = 1; #10; reset = 0; #100; // gcd(10, 4)
+			$display("a = %d b = %d gcd = %d\n", a, b, res);
+			#20;
+			a = 8'sb00000000; b = 8'sb00000010; #2; reset = 1; #10; reset = 0; #100; // gcd(0, 2)
+			$display("a = %d b = %d gcd = %d\n", a, b, res);
+			#20;
+			a = 8'sb10110110; b = 8'sb00101101; #2; reset = 1; #10; reset = 0; #100; // gcd(-54, 45)
+			$display("a = -%d b = %d gcd = %d\n", a[6:0], b, res);
+			#20;
+			a = 8'sb00111111; b = 8'sb10011100; #2; reset = 1; #10; reset = 0; #100; // gcd(63, -28)
+			$display("a = %d b = -%d gcd = %d\n", a, b[6:0], res);
+			#20;
+			a = 8'sb00000100; b = 8'sb00001001; #2; reset = 1; #10; reset = 0; #100; // gcd(4, 9)
+			$display("a = %d b = %d gcd = %d\n", a, b, res);
+			#20;
+			a = 8'sb00000000; b = 8'sb00000000; #2; reset = 1; #10; reset = 0; #100; // gcd(0, 0)
+			$display("a = %d b = %d gcd = %d\n", a, b, res);
+			#20;
 		end
       
 endmodule

@@ -19,16 +19,16 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 module stein_gcd(input [7:0] a, input [7:0] b, input reset, input clk, output reg [7:0] res);
-	reg[7:0] current_a, current_b, current_res;
-	reg[7:0] next_a, next_b, next_res;
+	reg[6:0] current_a, current_b, next_a, next_b;
+	reg[7:0] next_res, current_res;
 	
 	always @(posedge clk, posedge reset)
 		begin
 			if (reset) 
 				begin
-					current_a = {1'b0, a[6:0]};
-					current_b = {1'b0, b[6:0]};
-					current_res = 1;
+					current_a = a[6:0];
+					current_b = b[6:0];
+					current_res = 8'b00000001;
 				end
 			else
 				begin
@@ -38,8 +38,9 @@ module stein_gcd(input [7:0] a, input [7:0] b, input reset, input clk, output re
 				end
 		end
 	
-	always @(current_a, current_b)
+	always @(current_a, current_b, current_res)
 		begin
+			$display("a = %d, b = %d, extra = %d, res = %d\n", current_a, current_b, current_res, res);
 			if(current_a == 0 || current_b == 0)
 				begin
 					if(current_a == 0)
@@ -48,13 +49,13 @@ module stein_gcd(input [7:0] a, input [7:0] b, input reset, input clk, output re
 						res = current_a * current_res;
 					next_a = current_a;
 					next_b = current_b;
-					next_res = 1;
+					next_res = current_res;
 				end
 			else if(current_a[0] == 0 && current_b[0] == 0)
 				begin
 					next_a = current_a >> 1;
 					next_b = current_b >> 1;
-					next_res = current_res * 2;
+					next_res = current_res << 1;
 				end
 			else if(current_a[0] == 0)
 				begin
@@ -83,4 +84,5 @@ module stein_gcd(input [7:0] a, input [7:0] b, input reset, input clk, output re
 					next_res = current_res;
 				end
 		end
+
 endmodule

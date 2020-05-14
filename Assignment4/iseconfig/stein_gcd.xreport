@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2020-05-11T15:35:45</DateModified>
+  <DateModified>2020-05-14T22:44:45</DateModified>
   <ModuleName>stein_gcd</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SummaryTimeStamp>2020-05-12T05:26:28</SummaryTimeStamp>
   <SavedFilePath>D:/VLSI/Assignment4/iseconfig/stein_gcd.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>D:/VLSI/Assignment4</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>D:/VLSI/Assignment4\</ImplementationReportsDirectory>
   <DateInitialized>2020-05-11T15:35:45</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

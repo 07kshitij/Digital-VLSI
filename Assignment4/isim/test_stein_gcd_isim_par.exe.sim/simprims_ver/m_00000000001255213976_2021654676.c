@@ -81,6 +81,13 @@ LAB4:    *((unsigned int *)t7) = 1;
 }
 
 
+extern void simprims_ver_m_00000000001255213976_2021654676_0952285107_init()
+{
+	static char *pe[] = {(void *)Gate_29_0};
+	xsi_register_didat("simprims_ver_m_00000000001255213976_2021654676_0952285107", "isim/test_stein_gcd_isim_par.exe.sim/simprims_ver/m_00000000001255213976_2021654676_0952285107.didat");
+	xsi_register_executes(pe);
+}
+
 extern void simprims_ver_m_00000000001255213976_2021654676_init()
 {
 	static char *pe[] = {(void *)Gate_29_0};
@@ -88,16 +95,9 @@ extern void simprims_ver_m_00000000001255213976_2021654676_init()
 	xsi_register_executes(pe);
 }
 
-extern void simprims_ver_m_00000000001255213976_2021654676_3351863807_init()
+extern void simprims_ver_m_00000000001255213976_2021654676_2741500892_init()
 {
 	static char *pe[] = {(void *)Gate_29_0};
-	xsi_register_didat("simprims_ver_m_00000000001255213976_2021654676_3351863807", "isim/test_stein_gcd_isim_par.exe.sim/simprims_ver/m_00000000001255213976_2021654676_3351863807.didat");
-	xsi_register_executes(pe);
-}
-
-extern void simprims_ver_m_00000000001255213976_2021654676_3501356476_init()
-{
-	static char *pe[] = {(void *)Gate_29_0};
-	xsi_register_didat("simprims_ver_m_00000000001255213976_2021654676_3501356476", "isim/test_stein_gcd_isim_par.exe.sim/simprims_ver/m_00000000001255213976_2021654676_3501356476.didat");
+	xsi_register_didat("simprims_ver_m_00000000001255213976_2021654676_2741500892", "isim/test_stein_gcd_isim_par.exe.sim/simprims_ver/m_00000000001255213976_2021654676_2741500892.didat");
 	xsi_register_executes(pe);
 }

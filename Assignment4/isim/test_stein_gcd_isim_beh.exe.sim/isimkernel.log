@@ -2,14 +2,14 @@ Command line:
    test_stein_gcd_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  51103
+     -socket  50344
 
-Mon May 11 22:27:21 2020
+Thu May 14 11:49:32 2020
 
 
  Elaboration Time: 0.03125 sec
 
- Current Memory Usage: 5160.04 Meg
+ Current Memory Usage: 5160.06 Meg
 
  Total Signals          : 18
  Total Nets             : 39
@@ -18,12 +18,12 @@ Mon May 11 22:27:21 2020
  Total Primitive Blocks : 2
  Total Processes        : 15
  Total Traceable Variables  : 29
- Total Scalar Nets and Variables : 193
-Total Line Count : 77
+ Total Scalar Nets and Variables : 189
+Total Line Count : 81
 
- Total Simulation Time: 0.03125 sec
+ Total Simulation Time: 0.078125 sec
 
- Current Memory Usage: 5160.04 Meg
+ Current Memory Usage: 5474.64 Meg
 
-Mon May 11 22:27:35 2020
+Thu May 14 11:50:12 2020
 

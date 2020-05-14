@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -lib "secureip" -o "D:/VLSI/Assignment4_v2/test_gcd_isim_beh.exe" -prj "D:/VLSI/Assignment4_v2/test_gcd_beh.prj" "work.test_gcd" "work.glbl" 

@@ -7,7 +7,7 @@
 // \   \   \/     Version: P.20131013
 //  \   \         Application: netgen
 //  /   /         Filename: stein_gcd_timesim.v
-// /___/   /\     Timestamp: Mon May 11 22:32:37 2020
+// /___/   /\     Timestamp: Thu May 14 11:26:50 2020
 // \   \  /  \ 
 //  \___\/\___\
 //             
@@ -41,19 +41,6 @@ module stein_gcd (
   input [7 : 0] a;
   input [7 : 0] b;
   output [7 : 0] res;
-  wire \current_a[7]_current_b[7]_mux_8_OUT<2>_0 ;
-  wire GND_1_o_GND_1_o_OR_32_o_1328;
-  wire res_2_1329;
-  wire \current_a[7]_current_b[7]_mux_8_OUT<3>_0 ;
-  wire res_3_1331;
-  wire \current_a[7]_current_b[7]_mux_8_OUT<4> ;
-  wire res_4_1333;
-  wire \current_a[7]_current_b[7]_mux_8_OUT<5> ;
-  wire res_5_1335;
-  wire \current_a[7]_current_b[7]_mux_8_OUT<6> ;
-  wire res_6_1337;
-  wire \current_a[7]_current_b[7]_mux_8_OUT<7>_0 ;
-  wire res_7_1339;
   wire current_b_6;
   wire current_b_5;
   wire current_b_4;
@@ -68,176 +55,155 @@ module stein_gcd (
   wire current_a_2;
   wire current_a_1;
   wire current_a_0;
-  wire \clk_BUFGP/IBUFG_1380 ;
+  wire \clk_BUFGP/IBUFG_1316 ;
   wire clk_BUFGP;
-  wire reset_IBUF_1382;
-  wire current_b_3_C_3_1383;
-  wire \reset_b[3]_AND_87_o ;
-  wire current_b_1_LDC_1386;
-  wire current_b_1_C_1_1387;
-  wire current_b_1_P_1_1388;
+  wire current_b_1_LDC_1318;
+  wire current_b_1_C_1_1319;
+  wire current_b_1_P_1_1320;
   wire GND_1_o_GND_1_o_equal_6_o;
-  wire N61;
-  wire \current_b[7]_current_a[7]_LessThan_14_o2_1392 ;
-  wire N59;
+  wire N58;
+  wire \current_b[6]_current_a[6]_LessThan_14_o2_1324 ;
+  wire N56;
+  wire current_b_3_C_3_1326;
+  wire \reset_b[3]_AND_87_o_0 ;
   wire N11;
-  wire current_b_4_LDC_1395;
-  wire current_b_4_C_4_1396;
-  wire current_b_4_P_4_1397;
-  wire current_a_5_LDC_1398;
-  wire current_a_5_C_5_1399;
-  wire current_a_5_P_5_1400;
+  wire current_b_4_LDC_1330;
+  wire current_b_4_C_4_1331;
+  wire current_b_4_P_4_1332;
+  wire current_a_5_LDC_1333;
+  wire current_a_5_C_5_1334;
+  wire current_a_5_P_5_0;
   wire \n0088<4>_0 ;
   wire \n0089<4>_0 ;
-  wire current_b_0_P_0_1404;
+  wire GND_1_o_GND_1_o_OR_32_o_1339;
+  wire current_b_0_P_0_1340;
   wire \reset_b[0]_AND_92_o ;
-  wire current_b_2_LDC_1407;
-  wire current_b_2_C_2_0;
-  wire current_b_2_P_2_1409;
-  wire N65;
-  wire N63;
-  wire current_b_6_P_6_1413;
-  wire \reset_b[6]_AND_80_o ;
-  wire current_a_6_LDC_1416;
-  wire current_a_6_C_6_1417;
-  wire current_a_6_P_6_1418;
-  wire current_a_1_C_1_1419;
-  wire \reset_a[1]_AND_77_o ;
-  wire \reset_a[1]_AND_76_o ;
-  wire current_a_1_LDC_1423;
-  wire current_b_3_LDC_1424;
-  wire current_b_3_P_3_1425;
-  wire N67;
-  wire current_a_4_P_4_1427;
-  wire \reset_a[4]_AND_70_o ;
-  wire N57;
-  wire N55;
-  wire current_b_6_LDC_1433;
-  wire current_b_6_C_6_1434;
-  wire N16;
-  wire current_a_0_LDC_1436;
-  wire current_a_0_C_0_1437;
-  wire current_a_0_P_0_1438;
-  wire current_b_5_LDC_1439;
-  wire current_b_5_C_5_1440;
-  wire current_b_5_P_5_1441;
-  wire N6;
-  wire \reset_b[4]_AND_84_o ;
-  wire \reset_b[4]_AND_85_o_0 ;
+  wire Mmux_next_a102_1343;
+  wire reset_IBUF_1344;
   wire N26;
-  wire _n0137_inv;
+  wire current_a_0_LDC_1346;
+  wire current_a_1_LDC_1347;
+  wire current_a_1_C_1_1348;
+  wire current_a_1_P_1_1349;
+  wire current_a_0_P_0_1350;
+  wire current_a_0_C_0_1351;
   wire N34;
   wire \n0088<1>_0 ;
   wire \n0089<1>_0 ;
+  wire current_a_6_LDC_1355;
+  wire current_a_6_C_6_1356;
+  wire current_a_6_P_6_1357;
+  wire current_b_2_LDC_1358;
+  wire current_b_2_C_2_1359;
+  wire current_b_2_P_2_1360;
+  wire N62;
+  wire N60;
+  wire current_b_6_P_6_0;
+  wire \reset_b[6]_AND_80_o ;
+  wire \reset_a[1]_AND_77_o_0 ;
+  wire \reset_a[1]_AND_76_o ;
+  wire current_b_3_LDC_1370;
+  wire current_b_3_P_3_1371;
+  wire N64;
+  wire current_a_4_P_4_1373;
+  wire \reset_a[4]_AND_70_o ;
+  wire N54;
+  wire N52;
+  wire N16;
+  wire current_b_5_LDC_1380;
+  wire current_b_5_C_5_1381;
+  wire current_b_5_P_5_1382;
+  wire N6;
+  wire current_b_6_LDC_1384;
+  wire current_b_6_C_6_1385;
+  wire N20;
+  wire \reset_b[4]_AND_84_o ;
+  wire \reset_b[4]_AND_85_o ;
   wire \reset_b[1]_AND_90_o ;
   wire \reset_a[2]_AND_74_o ;
-  wire current_a_2_LDC_1453;
+  wire current_a_2_LDC_1392;
   wire \reset_a[2]_AND_75_o_0 ;
   wire \n0088<5>_0 ;
   wire \n0089<5>_0 ;
-  wire current_a_2_C_2_1457;
+  wire current_a_2_C_2_1396;
   wire \reset_a[5]_AND_68_o ;
   wire \n0088<6>_0 ;
   wire \n0089<6>_0 ;
-  wire current_b_01_1463;
-  wire current_b_0_LDC_1464;
-  wire current_b_0_C_0_1465;
-  wire N37;
-  wire \n0088<7>_0 ;
-  wire \n0089<7>_0 ;
+  wire N14;
+  wire current_b_01_1404;
+  wire current_b_0_LDC_1405;
+  wire current_b_0_C_0_1406;
   wire \reset_b[5]_AND_82_o ;
   wire \reset_b[5]_AND_83_o_0 ;
-  wire current_a_1_P_1_1472;
   wire \reset_b[2]_AND_88_o ;
   wire \reset_a[3]_AND_72_o ;
-  wire current_a_3_LDC_1476;
-  wire \reset_a[3]_AND_73_o ;
-  wire current_a_3_C_3_1478;
+  wire current_a_3_LDC_1412;
+  wire \reset_a[3]_AND_73_o_0 ;
+  wire current_a_3_C_3_1414;
   wire \reset_a[0]_AND_78_o ;
   wire \reset_a[6]_AND_66_o ;
   wire N22;
   wire \reset_b[6]_AND_81_o_0 ;
   wire \reset_b[0]_AND_93_o ;
-  wire current_a_4_LDC_1484;
-  wire \reset_a[4]_AND_71_o_0 ;
+  wire current_a_4_LDC_1420;
+  wire \reset_a[4]_AND_71_o ;
   wire \reset_b[3]_AND_86_o ;
-  wire current_a_4_C_4_1487;
+  wire current_a_4_C_4_0;
   wire N28;
-  wire N30;
+  wire N29;
+  wire N31;
   wire \reset_b[1]_AND_91_o_0 ;
   wire \reset_a[5]_AND_69_o_0 ;
-  wire current_a_2_P_2_1492;
-  wire \reset_b[2]_AND_89_o_0 ;
-  wire \reset_a[6]_AND_67_o_0 ;
-  wire \reset_a[0]_AND_79_o_0 ;
-  wire current_a_3_P_3_1496;
+  wire N18;
+  wire current_a_2_P_2_1430;
+  wire \reset_a[6]_AND_67_o ;
+  wire \reset_b[2]_AND_89_o ;
+  wire \reset_a[0]_AND_79_o ;
+  wire current_a_3_P_3_1434;
+  wire N12;
   wire \n0088<2>_0 ;
   wire \n0089<2>_0 ;
   wire \n0088<3>_0 ;
   wire \n0089<3>_0 ;
-  wire b_6_IBUF_1501;
-  wire a_2_IBUF_1502;
-  wire a_6_IBUF_1503;
-  wire b_5_IBUF_1504;
-  wire a_1_IBUF_1505;
-  wire a_4_IBUF_1506;
-  wire a_5_IBUF_1507;
-  wire b_4_IBUF_1508;
-  wire a_0_IBUF_1509;
-  wire a_3_IBUF_1510;
-  wire \current_a[7]_current_b[7]_mux_8_OUT<1> ;
-  wire \current_a[7]_current_b[7]_mux_8_OUT<0>_0 ;
-  wire b_3_IBUF_1513;
-  wire b_1_IBUF_1514;
-  wire b_2_IBUF_1515;
-  wire b_0_IBUF_1516;
-  wire res_0_1519;
-  wire res_1_1520;
-  wire Mmux_next_a10;
-  wire Mmux_next_a4;
-  wire N69;
-  wire Mmux_next_a6;
-  wire N12;
-  wire \current_b[7]_current_a[7]_LessThan_14_o1_1526 ;
-  wire N36;
-  wire N14;
+  wire b_6_IBUF_1440;
+  wire a_2_IBUF_1441;
+  wire a_6_IBUF_1442;
+  wire b_5_IBUF_1443;
+  wire a_1_IBUF_1444;
+  wire a_4_IBUF_1445;
+  wire a_5_IBUF_1446;
+  wire b_4_IBUF_1447;
+  wire a_0_IBUF_1448;
+  wire \current_a[6]_current_b[6]_mux_8_OUT<1> ;
+  wire \current_a[6]_current_b[6]_mux_8_OUT<3>_0 ;
+  wire a_3_IBUF_1451;
+  wire \current_a[6]_current_b[6]_mux_8_OUT<2> ;
+  wire \current_a[6]_current_b[6]_mux_8_OUT<0>_0 ;
+  wire b_3_IBUF_1454;
+  wire \current_a[6]_current_b[6]_mux_8_OUT<5> ;
+  wire \current_a[6]_current_b[6]_mux_8_OUT<4>_0 ;
+  wire \current_a[6]_current_b[6]_mux_8_OUT<6> ;
+  wire \current_a[6]_current_b[6]_mux_8_OUT<7>_0 ;
+  wire b_1_IBUF_1459;
+  wire b_2_IBUF_1460;
+  wire b_0_IBUF_1461;
+  wire res_0_1464;
+  wire res_1_1465;
+  wire res_2_1466;
+  wire res_3_1467;
+  wire res_4_1468;
+  wire res_5_1469;
+  wire res_6_1470;
+  wire res_7_1471;
+  wire N30;
+  wire \current_b[6]_current_a[6]_LessThan_14_o1_1473 ;
   wire Mmux_next_a8;
   wire Mmux_next_a12;
-  wire N31;
-  wire N29;
+  wire Mmux_next_a10;
+  wire Mmux_next_a4;
+  wire Mmux_next_a6;
   wire N33;
-  wire N20;
-  wire N18;
-  wire \ProtoComp36.INTERMDISABLE_GND.0 ;
-  wire \a<1>/ProtoComp36.INTERMDISABLE_GND.0 ;
-  wire \a<2>/ProtoComp36.INTERMDISABLE_GND.0 ;
-  wire \b<1>/ProtoComp36.INTERMDISABLE_GND.0 ;
-  wire \a<3>/ProtoComp36.INTERMDISABLE_GND.0 ;
-  wire \reset/ProtoComp36.INTERMDISABLE_GND.0 ;
-  wire \b<3>/ProtoComp36.INTERMDISABLE_GND.0 ;
-  wire \a<5>/ProtoComp36.INTERMDISABLE_GND.0 ;
-  wire \b<2>/ProtoComp36.INTERMDISABLE_GND.0 ;
-  wire \b<0>/ProtoComp36.INTERMDISABLE_GND.0 ;
-  wire \a<4>/ProtoComp36.INTERMDISABLE_GND.0 ;
-  wire \a<6>/ProtoComp36.INTERMDISABLE_GND.0 ;
-  wire \current_a[7]_current_b[7]_mux_8_OUT<0> ;
-  wire \reset_b[0]_AND_93_o_pack_1 ;
-  wire \reset_a[0]_AND_79_o ;
-  wire \reset_a[3]_AND_73_o_pack_1 ;
-  wire \reset_a[2]_AND_75_o ;
-  wire \reset_b[4]_AND_85_o ;
-  wire \reset_a[1]_AND_77_o_pack_1 ;
-  wire \b<6>/ProtoComp36.INTERMDISABLE_GND.0 ;
-  wire \reset_a[5]_AND_69_o ;
-  wire \reset_b[1]_AND_91_o ;
-  wire \current_a[7]_current_b[7]_mux_8_OUT<2> ;
-  wire \current_a[7]_current_b[7]_mux_8_OUT<3> ;
-  wire \reset_b[6]_AND_81_o ;
-  wire \current_a[7]_current_b[7]_mux_8_OUT<7> ;
-  wire \reset_a[4]_AND_71_o ;
-  wire \b<4>/ProtoComp36.INTERMDISABLE_GND.0 ;
-  wire \b<5>/ProtoComp36.INTERMDISABLE_GND.0 ;
-  wire \clk/ProtoComp36.INTERMDISABLE_GND.0 ;
+  wire N66;
   wire \Mmult_n0086/PCOUT0 ;
   wire \Mmult_n0086/PCOUT1 ;
   wire \Mmult_n0086/PCOUT2 ;
@@ -762,159 +728,191 @@ module stein_gcd (
   wire \Mmult_n0085/CARRYIN_INT ;
   wire \Mmult_n0085/CLK_INT ;
   wire \Mmult_n0085/MULTSIGNIN ;
-  wire N71;
-  wire N72;
-  wire \next_b<4>_pack_7 ;
-  wire \next_b<3>_pack_9 ;
-  wire N77;
-  wire N78;
-  wire \reset_b[3]_AND_87_o_pack_1 ;
+  wire \ProtoComp34.INTERMDISABLE_GND.0 ;
+  wire \a<0>/ProtoComp34.INTERMDISABLE_GND.0 ;
+  wire \a<1>/ProtoComp34.INTERMDISABLE_GND.0 ;
+  wire \a<2>/ProtoComp34.INTERMDISABLE_GND.0 ;
+  wire \a<3>/ProtoComp34.INTERMDISABLE_GND.0 ;
+  wire \a<4>/ProtoComp34.INTERMDISABLE_GND.0 ;
+  wire \a<5>/ProtoComp34.INTERMDISABLE_GND.0 ;
+  wire \b<0>/ProtoComp34.INTERMDISABLE_GND.0 ;
+  wire \b<1>/ProtoComp34.INTERMDISABLE_GND.0 ;
+  wire \reset/ProtoComp34.INTERMDISABLE_GND.0 ;
+  wire \b<3>/ProtoComp34.INTERMDISABLE_GND.0 ;
+  wire \b<4>/ProtoComp34.INTERMDISABLE_GND.0 ;
+  wire \b<2>/ProtoComp34.INTERMDISABLE_GND.0 ;
+  wire \a<6>/ProtoComp34.INTERMDISABLE_GND.0 ;
+  wire \b<6>/ProtoComp34.INTERMDISABLE_GND.0 ;
+  wire \b<5>/ProtoComp34.INTERMDISABLE_GND.0 ;
+  wire \reset_b[1]_AND_91_o ;
   wire \reset_b[5]_AND_83_o ;
-  wire \reset_a[6]_AND_67_o ;
-  wire \reset_b[2]_AND_89_o ;
-  wire current_b_2_C_2_1092;
-  wire N76;
-  wire N75;
-  wire \next_b<2>_pack_7 ;
-  wire current_a_0_C_0_pack_1;
-  wire current_res_2_rstpot_1296;
-  wire current_res_1_rstpot_1295;
-  wire current_res_3_rstpot_1281;
-  wire current_res_4_rstpot_1274;
-  wire current_res_5_rstpot_1264;
-  wire current_res_6_rstpot_1256;
-  wire current_res_7_rstpot_1253;
+  wire current_b_6_P_6_546;
+  wire \reset_a[1]_AND_77_o ;
+  wire \reset_b[6]_AND_81_o ;
+  wire \reset_a[2]_AND_75_o ;
+  wire \reset_b[4]_AND_85_o_pack_2 ;
+  wire \reset_a[5]_AND_69_o ;
+  wire \reset_a[6]_AND_67_o_pack_1 ;
+  wire \reset_b[0]_AND_93_o_pack_1 ;
   wire N73;
-  wire N74;
+  wire \next_b<2>_pack_9 ;
+  wire N72;
+  wire \reset_b[2]_AND_89_o_pack_1 ;
+  wire \reset_a[3]_AND_73_o ;
+  wire \reset_a[0]_AND_79_o_pack_1 ;
+  wire \reset_a[4]_AND_71_o_pack_1 ;
+  wire current_a_5_P_5_823;
+  wire \reset_b[3]_AND_87_o ;
+  wire N71;
   wire \next_b<1>_pack_7 ;
-  wire \NlwBufferSignal_res_2/CLK ;
-  wire \NlwBufferSignal_res_2/IN ;
-  wire \NlwBufferSignal_res_3/CLK ;
-  wire \NlwBufferSignal_res_3/IN ;
-  wire \NlwBufferSignal_current_b_0_LDC/CLK ;
-  wire \NlwBufferSignal_current_a_0_LDC/CLK ;
-  wire \NlwBufferSignal_current_a_3_LDC/CLK ;
-  wire \NlwBufferSignal_current_a_4_LDC/CLK ;
-  wire \NlwBufferSignal_current_b_6_LDC/CLK ;
-  wire \NlwBufferSignal_current_a_1_LDC/CLK ;
-  wire \NlwBufferSignal_current_a_4_P_4/CLK ;
-  wire \NlwBufferSignal_current_a_4_P_4/IN ;
-  wire \NlwBufferSignal_current_a_2_LDC/CLK ;
-  wire \NlwBufferSignal_current_b_4_LDC/CLK ;
-  wire \NlwBufferSignal_res_0/CLK ;
-  wire \NlwBufferSignal_res_0/IN ;
-  wire \NlwBufferSignal_res_1/CLK ;
-  wire \NlwBufferSignal_res_1/IN ;
-  wire \NlwBufferSignal_Msub_n0088_cy<3>/DI<0> ;
-  wire \NlwBufferSignal_Msub_n0088_cy<3>/DI<1> ;
-  wire \NlwBufferSignal_Msub_n0088_cy<3>/DI<2> ;
-  wire \NlwBufferSignal_Msub_n0088_cy<3>/DI<3> ;
-  wire \NlwBufferSignal_res_6/CLK ;
-  wire \NlwBufferSignal_res_6/IN ;
-  wire \NlwBufferSignal_res_7/CLK ;
-  wire \NlwBufferSignal_res_7/IN ;
+  wire N70;
+  wire current_a_4_C_4_991;
+  wire N75;
+  wire N74;
+  wire \next_b<3>_pack_9 ;
+  wire N69;
+  wire \next_b<4>_pack_7 ;
+  wire N68;
+  wire \current_a[6]_current_b[6]_mux_8_OUT<0> ;
+  wire \current_a[6]_current_b[6]_mux_8_OUT<3> ;
+  wire \Msub_n0088_lut<6>1_1075 ;
+  wire \current_a[6]_current_b[6]_mux_8_OUT<7> ;
+  wire \current_a[6]_current_b[6]_mux_8_OUT<4> ;
   wire \NlwBufferSignal_Msub_n0089_cy<3>/DI<0> ;
   wire \NlwBufferSignal_Msub_n0089_cy<3>/DI<1> ;
   wire \NlwBufferSignal_Msub_n0089_cy<3>/DI<2> ;
   wire \NlwBufferSignal_Msub_n0089_cy<3>/DI<3> ;
-  wire \NlwBufferSignal_res_4/CLK ;
-  wire \NlwBufferSignal_res_4/IN ;
   wire \NlwBufferSignal_clk_BUFGP/BUFG/IN ;
+  wire \NlwBufferSignal_Msub_n0088_cy<3>/DI<0> ;
+  wire \NlwBufferSignal_Msub_n0088_cy<3>/DI<1> ;
+  wire \NlwBufferSignal_Msub_n0088_cy<3>/DI<2> ;
+  wire \NlwBufferSignal_Msub_n0088_cy<3>/DI<3> ;
+  wire \NlwBufferSignal_res_1/CLK ;
+  wire \NlwBufferSignal_res_1/IN ;
   wire \NlwBufferSignal_res_5/CLK ;
   wire \NlwBufferSignal_res_5/IN ;
+  wire \NlwBufferSignal_res_6/CLK ;
+  wire \NlwBufferSignal_res_6/IN ;
+  wire \NlwBufferSignal_res_2/CLK ;
+  wire \NlwBufferSignal_res_2/IN ;
+  wire \NlwBufferSignal_res_3/CLK ;
+  wire \NlwBufferSignal_res_3/IN ;
+  wire \NlwBufferSignal_res_4/CLK ;
+  wire \NlwBufferSignal_res_4/IN ;
+  wire \NlwBufferSignal_res_7/CLK ;
+  wire \NlwBufferSignal_res_7/IN ;
+  wire \NlwBufferSignal_current_b_5_LDC/CLK ;
+  wire \NlwBufferSignal_current_b_6_LDC/CLK ;
+  wire \NlwBufferSignal_res_0/CLK ;
+  wire \NlwBufferSignal_res_0/IN ;
+  wire \NlwBufferSignal_current_b_6_P_6/CLK ;
+  wire \NlwBufferSignal_current_b_6_P_6/IN ;
+  wire \NlwBufferSignal_current_a_5_LDC/CLK ;
+  wire \NlwBufferSignal_current_b_4_LDC/CLK ;
+  wire \NlwBufferSignal_current_a_6_LDC/CLK ;
+  wire \NlwBufferSignal_current_b_0_LDC/CLK ;
+  wire \NlwBufferSignal_current_a_6_C_6/CLK ;
+  wire \NlwBufferSignal_current_a_6_C_6/IN ;
+  wire \NlwBufferSignal_current_b_6_C_6/CLK ;
+  wire \NlwBufferSignal_current_b_2_C_2/CLK ;
+  wire \NlwBufferSignal_current_b_2_C_2/IN ;
+  wire \NlwBufferSignal_current_b_1_LDC/CLK ;
+  wire \NlwBufferSignal_current_b_2_LDC/CLK ;
+  wire \NlwBufferSignal_current_b_2_P_2/CLK ;
+  wire \NlwBufferSignal_current_b_2_P_2/IN ;
+  wire \NlwBufferSignal_current_b_3_LDC/CLK ;
+  wire \NlwBufferSignal_current_a_0_LDC/CLK ;
+  wire \NlwBufferSignal_current_a_6_P_6/CLK ;
+  wire \NlwBufferSignal_current_b_5_P_5/CLK ;
+  wire \NlwBufferSignal_current_a_5_C_5/CLK ;
+  wire \NlwBufferSignal_current_a_5_C_5/IN ;
+  wire \NlwBufferSignal_current_a_4_LDC/CLK ;
+  wire \NlwBufferSignal_current_a_5_P_5/CLK ;
+  wire \NlwBufferSignal_current_a_5_P_5/IN ;
+  wire \NlwBufferSignal_current_b_0_C_0/CLK ;
+  wire \NlwBufferSignal_current_a_4_P_4/CLK ;
+  wire \NlwBufferSignal_current_a_4_P_4/IN ;
+  wire \NlwBufferSignal_current_a_1_LDC/CLK ;
+  wire \NlwBufferSignal_current_a_1_P_1/CLK ;
+  wire \NlwBufferSignal_current_b_1_C_1/CLK ;
+  wire \NlwBufferSignal_current_b_1_C_1/IN ;
+  wire \NlwBufferSignal_current_b_5_C_5/CLK ;
+  wire \NlwBufferSignal_current_b_5_C_5/IN ;
+  wire \NlwBufferSignal_Msub_n0089_xor<6>/DI<0> ;
+  wire \NlwBufferSignal_Msub_n0089_xor<6>/DI<1> ;
+  wire \NlwBufferSignal_current_a_3_C_3/CLK ;
+  wire \NlwBufferSignal_current_a_3_C_3/IN ;
+  wire \NlwBufferSignal_current_a_3_LDC/CLK ;
+  wire \NlwBufferSignal_current_b_0_P_0/CLK ;
+  wire \NlwBufferSignal_current_b_0_P_0/IN ;
+  wire \NlwBufferSignal_current_b_3_C_3/CLK ;
+  wire \NlwBufferSignal_current_b_3_C_3/IN ;
+  wire \NlwBufferSignal_current_a_2_C_2/CLK ;
+  wire \NlwBufferSignal_current_a_3_P_3/CLK ;
+  wire \NlwBufferSignal_current_a_3_P_3/IN ;
+  wire \NlwBufferSignal_current_a_0_C_0/CLK ;
+  wire \NlwBufferSignal_current_a_4_C_4/CLK ;
+  wire \NlwBufferSignal_current_a_4_C_4/IN ;
+  wire \NlwBufferSignal_current_b_3_P_3/CLK ;
+  wire \NlwBufferSignal_current_b_3_P_3/IN ;
+  wire \NlwBufferSignal_current_a_2_P_2/CLK ;
+  wire \NlwBufferSignal_current_a_2_P_2/IN ;
   wire \NlwBufferSignal_current_b_4_P_4/CLK ;
   wire \NlwBufferSignal_current_b_4_P_4/IN ;
   wire \NlwBufferSignal_current_b_4_C_4/CLK ;
   wire \NlwBufferSignal_current_b_4_C_4/IN ;
+  wire \NlwBufferSignal_current_res_7/CLK ;
+  wire \NlwBufferSignal_current_res_7/IN ;
+  wire \NlwBufferSignal_current_res_6/CLK ;
+  wire \NlwBufferSignal_current_res_6/IN ;
+  wire \NlwBufferSignal_current_res_5/CLK ;
+  wire \NlwBufferSignal_current_res_5/IN ;
+  wire \NlwBufferSignal_current_res_4/CLK ;
+  wire \NlwBufferSignal_current_res_4/IN ;
   wire \NlwBufferSignal_current_a_1_C_1/CLK ;
   wire \NlwBufferSignal_current_a_1_C_1/IN ;
-  wire \NlwBufferSignal_current_b_3_C_3/CLK ;
-  wire \NlwBufferSignal_current_b_3_C_3/IN ;
-  wire \NlwBufferSignal_current_b_3_LDC/CLK ;
-  wire \NlwBufferSignal_current_a_1_P_1/CLK ;
-  wire \NlwBufferSignal_current_a_1_P_1/IN ;
-  wire \NlwBufferSignal_current_a_3_C_3/CLK ;
-  wire \NlwBufferSignal_current_a_2_P_2/CLK ;
-  wire \NlwBufferSignal_current_a_2_P_2/IN ;
-  wire \NlwBufferSignal_current_b_0_P_0/CLK ;
-  wire \NlwBufferSignal_current_a_2_C_2/CLK ;
-  wire \NlwBufferSignal_current_a_5_C_5/CLK ;
-  wire \NlwBufferSignal_current_a_5_C_5/IN ;
-  wire \NlwBufferSignal_current_b_1_LDC/CLK ;
-  wire \NlwBufferSignal_current_a_5_LDC/CLK ;
-  wire \NlwBufferSignal_current_a_4_C_4/CLK ;
-  wire \NlwBufferSignal_current_a_4_C_4/IN ;
-  wire \NlwBufferSignal_current_res_0/CLK ;
-  wire \NlwBufferSignal_current_a_3_P_3/CLK ;
-  wire \NlwBufferSignal_current_a_3_P_3/IN ;
-  wire \NlwBufferSignal_Msub_n0089_xor<7>/DI<0> ;
-  wire \NlwBufferSignal_Msub_n0089_xor<7>/DI<1> ;
-  wire \NlwBufferSignal_Msub_n0089_xor<7>/DI<2> ;
-  wire \NlwBufferSignal_current_b_6_P_6/CLK ;
-  wire \NlwBufferSignal_current_b_6_P_6/IN ;
-  wire \NlwBufferSignal_current_b_1_P_1/CLK ;
-  wire \NlwBufferSignal_current_b_1_P_1/IN ;
-  wire \NlwBufferSignal_current_a_5_P_5/CLK ;
-  wire \NlwBufferSignal_current_a_5_P_5/IN ;
-  wire \NlwBufferSignal_current_a_6_P_6/CLK ;
-  wire \NlwBufferSignal_current_a_6_P_6/IN ;
-  wire \NlwBufferSignal_current_b_5_P_5/CLK ;
-  wire \NlwBufferSignal_current_b_2_LDC/CLK ;
-  wire \NlwBufferSignal_current_b_0_C_0/CLK ;
-  wire \NlwBufferSignal_current_b_0_C_0/IN ;
-  wire \NlwBufferSignal_current_b_5_C_5/CLK ;
-  wire \NlwBufferSignal_current_b_5_C_5/IN ;
-  wire \NlwBufferSignal_current_a_6_C_6/CLK ;
-  wire \NlwBufferSignal_current_a_6_C_6/IN ;
-  wire \NlwBufferSignal_current_b_2_C_2/CLK ;
-  wire \NlwBufferSignal_current_b_2_C_2/IN ;
-  wire \NlwBufferSignal_current_b_5_LDC/CLK ;
-  wire \NlwBufferSignal_Msub_n0088_xor<7>/DI<0> ;
-  wire \NlwBufferSignal_Msub_n0088_xor<7>/DI<1> ;
-  wire \NlwBufferSignal_Msub_n0088_xor<7>/DI<2> ;
-  wire \NlwBufferSignal_current_b_3_P_3/CLK ;
-  wire \NlwBufferSignal_current_b_3_P_3/IN ;
-  wire \NlwBufferSignal_current_a_6_LDC/CLK ;
-  wire \NlwBufferSignal_current_b_2_P_2/CLK ;
-  wire \NlwBufferSignal_current_b_2_P_2/IN ;
-  wire \NlwBufferSignal_current_b_6_C_6/CLK ;
-  wire \NlwBufferSignal_current_a_0_C_0/CLK ;
-  wire \NlwBufferSignal_current_a_0_C_0/IN ;
-  wire \NlwBufferSignal_current_res_4/CLK ;
   wire \NlwBufferSignal_current_res_3/CLK ;
+  wire \NlwBufferSignal_current_res_3/IN ;
   wire \NlwBufferSignal_current_res_2/CLK ;
+  wire \NlwBufferSignal_current_res_2/IN ;
   wire \NlwBufferSignal_current_res_1/CLK ;
-  wire \NlwBufferSignal_current_res_7/CLK ;
-  wire \NlwBufferSignal_current_res_6/CLK ;
-  wire \NlwBufferSignal_current_res_5/CLK ;
-  wire \NlwBufferSignal_current_b_1_C_1/CLK ;
-  wire \NlwBufferSignal_current_b_1_C_1/IN ;
+  wire \NlwBufferSignal_current_res_1/IN ;
+  wire \NlwBufferSignal_current_res_0/CLK ;
   wire \NlwBufferSignal_current_a_0_P_0/CLK ;
   wire \NlwBufferSignal_current_a_0_P_0/IN ;
-  wire VCC;
+  wire \NlwBufferSignal_current_b_1_P_1/CLK ;
+  wire \NlwBufferSignal_current_b_1_P_1/IN ;
+  wire \NlwBufferSignal_current_a_2_LDC/CLK ;
+  wire \NlwBufferSignal_Msub_n0088_xor<6>/DI<0> ;
+  wire \NlwBufferSignal_Msub_n0088_xor<6>/DI<1> ;
   wire GND;
-  wire \NLW_ProtoComp34.CYINITVCC_O_UNCONNECTED ;
-  wire \NLW_Msub_n0088_cy<3>_CO[0]_UNCONNECTED ;
-  wire \NLW_Msub_n0088_cy<3>_CO[1]_UNCONNECTED ;
-  wire \NLW_Msub_n0088_cy<3>_CO[2]_UNCONNECTED ;
-  wire \NLW_Msub_n0088_cy<3>_O[0]_UNCONNECTED ;
-  wire \NLW_ProtoComp34.CYINITVCC.1_O_UNCONNECTED ;
+  wire VCC;
+  wire \NLW_ProtoComp32.CYINITVCC.1_O_UNCONNECTED ;
   wire \NLW_Msub_n0089_cy<3>_CO[0]_UNCONNECTED ;
   wire \NLW_Msub_n0089_cy<3>_CO[1]_UNCONNECTED ;
   wire \NLW_Msub_n0089_cy<3>_CO[2]_UNCONNECTED ;
   wire \NLW_Msub_n0089_cy<3>_O[0]_UNCONNECTED ;
-  wire \NLW_Msub_n0088_lut<7>_116.D6LUT_O_UNCONNECTED ;
-  wire \NLW_Msub_n0089_xor<7>_CO[0]_UNCONNECTED ;
-  wire \NLW_Msub_n0089_xor<7>_CO[1]_UNCONNECTED ;
-  wire \NLW_Msub_n0089_xor<7>_CO[2]_UNCONNECTED ;
-  wire \NLW_Msub_n0089_xor<7>_CO[3]_UNCONNECTED ;
-  wire \NLW_Msub_n0089_xor<7>_DI[3]_UNCONNECTED ;
-  wire \NLW_Msub_n0088_lut<7>_114.D6LUT_O_UNCONNECTED ;
-  wire \NLW_Msub_n0088_xor<7>_CO[0]_UNCONNECTED ;
-  wire \NLW_Msub_n0088_xor<7>_CO[1]_UNCONNECTED ;
-  wire \NLW_Msub_n0088_xor<7>_CO[2]_UNCONNECTED ;
-  wire \NLW_Msub_n0088_xor<7>_CO[3]_UNCONNECTED ;
-  wire \NLW_Msub_n0088_xor<7>_DI[3]_UNCONNECTED ;
+  wire \NLW_ProtoComp32.CYINITVCC_O_UNCONNECTED ;
+  wire \NLW_Msub_n0088_cy<3>_CO[0]_UNCONNECTED ;
+  wire \NLW_Msub_n0088_cy<3>_CO[1]_UNCONNECTED ;
+  wire \NLW_Msub_n0088_cy<3>_CO[2]_UNCONNECTED ;
+  wire \NLW_Msub_n0088_cy<3>_O[0]_UNCONNECTED ;
+  wire \NLW_Msub_n0089_xor<6>_CO[0]_UNCONNECTED ;
+  wire \NLW_Msub_n0089_xor<6>_CO[1]_UNCONNECTED ;
+  wire \NLW_Msub_n0089_xor<6>_CO[2]_UNCONNECTED ;
+  wire \NLW_Msub_n0089_xor<6>_CO[3]_UNCONNECTED ;
+  wire \NLW_Msub_n0089_xor<6>_DI[2]_UNCONNECTED ;
+  wire \NLW_Msub_n0089_xor<6>_DI[3]_UNCONNECTED ;
+  wire \NLW_Msub_n0089_xor<6>_O[3]_UNCONNECTED ;
+  wire \NLW_Msub_n0089_xor<6>_S[3]_UNCONNECTED ;
+  wire \NLW_Msub_n0088_xor<6>_CO[0]_UNCONNECTED ;
+  wire \NLW_Msub_n0088_xor<6>_CO[1]_UNCONNECTED ;
+  wire \NLW_Msub_n0088_xor<6>_CO[2]_UNCONNECTED ;
+  wire \NLW_Msub_n0088_xor<6>_CO[3]_UNCONNECTED ;
+  wire \NLW_Msub_n0088_xor<6>_DI[2]_UNCONNECTED ;
+  wire \NLW_Msub_n0088_xor<6>_DI[3]_UNCONNECTED ;
+  wire \NLW_Msub_n0088_xor<6>_O[3]_UNCONNECTED ;
+  wire \NLW_Msub_n0088_xor<6>_S[3]_UNCONNECTED ;
   wire [7 : 0] current_res;
   wire [7 : 0] n0085;
   wire [7 : 0] n0086;
@@ -922,1239 +920,115 @@ module stein_gcd (
   wire [6 : 0] next_a;
   wire [3 : 3] Msub_n0088_cy;
   wire [3 : 3] Msub_n0089_cy;
+  wire [5 : 0] Msub_n0089_lut;
+  wire [6 : 1] n0089;
   wire [6 : 0] Msub_n0088_lut;
-  wire [7 : 1] n0088;
-  wire [6 : 0] Msub_n0089_lut;
-  wire [7 : 1] n0089;
+  wire [6 : 1] n0088;
   initial $sdf_annotate("netgen/par/stein_gcd_timesim.sdf");
-  X_LATCHE #(
-    .LOC ( "OLOGIC_X0Y142" ),
-    .INIT ( 1'b0 ))
-  res_2 (
-    .GE(VCC),
-    .CLK(\NlwBufferSignal_res_2/CLK ),
-    .I(\NlwBufferSignal_res_2/IN ),
-    .O(res_2_1329),
-    .RST(GND),
-    .SET(GND)
-  );
-  X_LATCHE #(
-    .LOC ( "OLOGIC_X0Y131" ),
-    .INIT ( 1'b0 ))
-  res_3 (
-    .GE(VCC),
-    .CLK(\NlwBufferSignal_res_3/CLK ),
-    .I(\NlwBufferSignal_res_3/IN ),
-    .O(res_3_1331),
-    .RST(GND),
-    .SET(GND)
-  );
-  X_OPAD #(
-    .LOC ( "IOB_X0Y133" ))
-  \res<1>  (
-    .PAD(res[1])
-  );
-  X_OBUF #(
-    .LOC ( "IOB_X0Y133" ))
-  res_1_OBUF (
-    .I(res_1_1520),
-    .O(res[1])
-  );
-  X_OPAD #(
-    .LOC ( "IOB_X0Y131" ))
-  \res<3>  (
-    .PAD(res[3])
-  );
-  X_OBUF #(
-    .LOC ( "IOB_X0Y131" ))
-  res_3_OBUF (
-    .I(res_3_1331),
-    .O(res[3])
-  );
-  X_IPAD #(
-    .LOC ( "IOB_X0Y161" ))
-  \a<0>  (
-    .PAD(a[0])
-  );
-  X_ZERO #(
-    .LOC ( "IOB_X0Y161" ))
-  \ProtoComp36.INTERMDISABLE_GND.1  (
-    .O(\ProtoComp36.INTERMDISABLE_GND.0 )
-  );
-  X_IBUF_INTERMDISABLE_TPWRGT #(
-    .LOC ( "IOB_X0Y161" ))
-  a_0_IBUF (
-    .IBUFDISABLE(1'b0),
-    .INTERMDISABLE(\ProtoComp36.INTERMDISABLE_GND.0 ),
-    .O(a_0_IBUF_1509),
-    .I(a[0]),
-    .TPWRGT(1'b1)
-  );
-  X_OPAD #(
-    .LOC ( "IOB_X0Y127" ))
-  \res<7>  (
-    .PAD(res[7])
-  );
-  X_OBUF #(
-    .LOC ( "IOB_X0Y127" ))
-  res_7_OBUF (
-    .I(res_7_1339),
-    .O(res[7])
-  );
-  X_IPAD #(
-    .LOC ( "IOB_X0Y148" ))
-  \a<1>  (
-    .PAD(a[1])
-  );
-  X_ZERO #(
-    .LOC ( "IOB_X0Y148" ))
-  \ProtoComp36.INTERMDISABLE_GND.2  (
-    .O(\a<1>/ProtoComp36.INTERMDISABLE_GND.0 )
-  );
-  X_IBUF_INTERMDISABLE_TPWRGT #(
-    .LOC ( "IOB_X0Y148" ))
-  a_1_IBUF (
-    .IBUFDISABLE(1'b0),
-    .INTERMDISABLE(\a<1>/ProtoComp36.INTERMDISABLE_GND.0 ),
-    .O(a_1_IBUF_1505),
-    .I(a[1]),
-    .TPWRGT(1'b1)
-  );
-  X_IPAD #(
-    .LOC ( "IOB_X0Y147" ))
-  \a<2>  (
-    .PAD(a[2])
-  );
-  X_ZERO #(
-    .LOC ( "IOB_X0Y147" ))
-  \ProtoComp36.INTERMDISABLE_GND.3  (
-    .O(\a<2>/ProtoComp36.INTERMDISABLE_GND.0 )
-  );
-  X_IBUF_INTERMDISABLE_TPWRGT #(
-    .LOC ( "IOB_X0Y147" ))
-  a_2_IBUF (
-    .IBUFDISABLE(1'b0),
-    .INTERMDISABLE(\a<2>/ProtoComp36.INTERMDISABLE_GND.0 ),
-    .O(a_2_IBUF_1502),
-    .I(a[2]),
-    .TPWRGT(1'b1)
-  );
-  X_OPAD #(
-    .LOC ( "IOB_X0Y142" ))
-  \res<2>  (
-    .PAD(res[2])
-  );
-  X_OBUF #(
-    .LOC ( "IOB_X0Y142" ))
-  res_2_OBUF (
-    .I(res_2_1329),
-    .O(res[2])
-  );
-  X_OPAD #(
-    .LOC ( "IOB_X0Y129" ))
-  \res<5>  (
-    .PAD(res[5])
-  );
-  X_OBUF #(
-    .LOC ( "IOB_X0Y129" ))
-  res_5_OBUF (
-    .I(res_5_1335),
-    .O(res[5])
-  );
-  X_OPAD #(
-    .LOC ( "IOB_X0Y130" ))
-  \res<4>  (
-    .PAD(res[4])
-  );
-  X_OBUF #(
-    .LOC ( "IOB_X0Y130" ))
-  res_4_OBUF (
-    .I(res_4_1333),
-    .O(res[4])
-  );
-  X_OPAD #(
-    .LOC ( "IOB_X0Y128" ))
-  \res<6>  (
-    .PAD(res[6])
-  );
-  X_OBUF #(
-    .LOC ( "IOB_X0Y128" ))
-  res_6_OBUF (
-    .I(res_6_1337),
-    .O(res[6])
-  );
-  X_IPAD #(
-    .LOC ( "IOB_X0Y141" ))
-  \b<1>  (
-    .PAD(b[1])
-  );
-  X_ZERO #(
-    .LOC ( "IOB_X0Y141" ))
-  \ProtoComp36.INTERMDISABLE_GND.7  (
-    .O(\b<1>/ProtoComp36.INTERMDISABLE_GND.0 )
-  );
-  X_IBUF_INTERMDISABLE_TPWRGT #(
-    .LOC ( "IOB_X0Y141" ))
-  b_1_IBUF (
-    .IBUFDISABLE(1'b0),
-    .INTERMDISABLE(\b<1>/ProtoComp36.INTERMDISABLE_GND.0 ),
-    .O(b_1_IBUF_1514),
-    .I(b[1]),
-    .TPWRGT(1'b1)
-  );
-  X_IPAD #(
-    .LOC ( "IOB_X0Y146" ))
-  \a<3>  (
-    .PAD(a[3])
-  );
-  X_ZERO #(
-    .LOC ( "IOB_X0Y146" ))
-  \ProtoComp36.INTERMDISABLE_GND.4  (
-    .O(\a<3>/ProtoComp36.INTERMDISABLE_GND.0 )
-  );
-  X_IBUF_INTERMDISABLE_TPWRGT #(
-    .LOC ( "IOB_X0Y146" ))
-  a_3_IBUF (
-    .IBUFDISABLE(1'b0),
-    .INTERMDISABLE(\a<3>/ProtoComp36.INTERMDISABLE_GND.0 ),
-    .O(a_3_IBUF_1510),
-    .I(a[3]),
-    .TPWRGT(1'b1)
-  );
-  X_IPAD #(
-    .LOC ( "IOB_X0Y132" ))
-  reset_104 (
-    .PAD(reset)
-  );
-  X_ZERO #(
-    .LOC ( "IOB_X0Y132" ))
-  \ProtoComp36.INTERMDISABLE_GND.11  (
-    .O(\reset/ProtoComp36.INTERMDISABLE_GND.0 )
-  );
-  X_IBUF_INTERMDISABLE_TPWRGT #(
-    .LOC ( "IOB_X0Y132" ))
-  reset_IBUF (
-    .IBUFDISABLE(1'b0),
-    .INTERMDISABLE(\reset/ProtoComp36.INTERMDISABLE_GND.0 ),
-    .O(reset_IBUF_1382),
-    .I(reset),
-    .TPWRGT(1'b1)
-  );
-  X_IPAD #(
-    .LOC ( "IOB_X0Y139" ))
-  \b<3>  (
-    .PAD(b[3])
-  );
-  X_ZERO #(
-    .LOC ( "IOB_X0Y139" ))
-  \ProtoComp36.INTERMDISABLE_GND.12  (
-    .O(\b<3>/ProtoComp36.INTERMDISABLE_GND.0 )
-  );
-  X_IBUF_INTERMDISABLE_TPWRGT #(
-    .LOC ( "IOB_X0Y139" ))
-  b_3_IBUF (
-    .IBUFDISABLE(1'b0),
-    .INTERMDISABLE(\b<3>/ProtoComp36.INTERMDISABLE_GND.0 ),
-    .O(b_3_IBUF_1513),
-    .I(b[3]),
-    .TPWRGT(1'b1)
-  );
-  X_IPAD #(
-    .LOC ( "IOB_X0Y144" ))
-  \a<5>  (
-    .PAD(a[5])
-  );
-  X_ZERO #(
-    .LOC ( "IOB_X0Y144" ))
-  \ProtoComp36.INTERMDISABLE_GND.8  (
-    .O(\a<5>/ProtoComp36.INTERMDISABLE_GND.0 )
-  );
-  X_IBUF_INTERMDISABLE_TPWRGT #(
-    .LOC ( "IOB_X0Y144" ))
-  a_5_IBUF (
-    .IBUFDISABLE(1'b0),
-    .INTERMDISABLE(\a<5>/ProtoComp36.INTERMDISABLE_GND.0 ),
-    .O(a_5_IBUF_1507),
-    .I(a[5]),
-    .TPWRGT(1'b1)
-  );
-  X_IPAD #(
-    .LOC ( "IOB_X0Y140" ))
-  \b<2>  (
-    .PAD(b[2])
-  );
-  X_ZERO #(
-    .LOC ( "IOB_X0Y140" ))
-  \ProtoComp36.INTERMDISABLE_GND.9  (
-    .O(\b<2>/ProtoComp36.INTERMDISABLE_GND.0 )
-  );
-  X_IBUF_INTERMDISABLE_TPWRGT #(
-    .LOC ( "IOB_X0Y140" ))
-  b_2_IBUF (
-    .IBUFDISABLE(1'b0),
-    .INTERMDISABLE(\b<2>/ProtoComp36.INTERMDISABLE_GND.0 ),
-    .O(b_2_IBUF_1515),
-    .I(b[2]),
-    .TPWRGT(1'b1)
-  );
-  X_IPAD #(
-    .LOC ( "IOB_X0Y145" ))
-  \b<0>  (
-    .PAD(b[0])
-  );
-  X_ZERO #(
-    .LOC ( "IOB_X0Y145" ))
-  \ProtoComp36.INTERMDISABLE_GND.5  (
-    .O(\b<0>/ProtoComp36.INTERMDISABLE_GND.0 )
-  );
-  X_IBUF_INTERMDISABLE_TPWRGT #(
-    .LOC ( "IOB_X0Y145" ))
-  b_0_IBUF (
-    .IBUFDISABLE(1'b0),
-    .INTERMDISABLE(\b<0>/ProtoComp36.INTERMDISABLE_GND.0 ),
-    .O(b_0_IBUF_1516),
-    .I(b[0]),
-    .TPWRGT(1'b1)
-  );
-  X_IPAD #(
-    .LOC ( "IOB_X0Y149" ))
-  \a<4>  (
-    .PAD(a[4])
-  );
-  X_ZERO #(
-    .LOC ( "IOB_X0Y149" ))
-  \ProtoComp36.INTERMDISABLE_GND.6  (
-    .O(\a<4>/ProtoComp36.INTERMDISABLE_GND.0 )
-  );
-  X_IBUF_INTERMDISABLE_TPWRGT #(
-    .LOC ( "IOB_X0Y149" ))
-  a_4_IBUF (
-    .IBUFDISABLE(1'b0),
-    .INTERMDISABLE(\a<4>/ProtoComp36.INTERMDISABLE_GND.0 ),
-    .O(a_4_IBUF_1506),
-    .I(a[4]),
-    .TPWRGT(1'b1)
-  );
-  X_IPAD #(
-    .LOC ( "IOB_X0Y143" ))
-  \a<6>  (
-    .PAD(a[6])
-  );
-  X_ZERO #(
-    .LOC ( "IOB_X0Y143" ))
-  \ProtoComp36.INTERMDISABLE_GND.10  (
-    .O(\a<6>/ProtoComp36.INTERMDISABLE_GND.0 )
-  );
-  X_IBUF_INTERMDISABLE_TPWRGT #(
-    .LOC ( "IOB_X0Y143" ))
-  a_6_IBUF (
-    .IBUFDISABLE(1'b0),
-    .INTERMDISABLE(\a<6>/ProtoComp36.INTERMDISABLE_GND.0 ),
-    .O(a_6_IBUF_1503),
-    .I(a[6]),
-    .TPWRGT(1'b1)
-  );
-  X_BUF   \current_a[7]_current_b[7]_mux_8_OUT<1>/current_a[7]_current_b[7]_mux_8_OUT<1>_DMUX_Delay  (
-    .I(\current_a[7]_current_b[7]_mux_8_OUT<0> ),
-    .O(\current_a[7]_current_b[7]_mux_8_OUT<0>_0 )
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X10Y145" ),
-    .INIT ( 64'hFF00AAAAFF00AAAA ))
-  \Mmux_current_a[7]_current_b[7]_mux_8_OUT<1>11  (
-    .ADR2(1'b1),
-    .ADR1(1'b1),
-    .ADR4(GND_1_o_GND_1_o_equal_6_o),
-    .ADR0(n0086[1]),
-    .ADR3(n0085[1]),
-    .ADR5(1'b1),
-    .O(\current_a[7]_current_b[7]_mux_8_OUT<1> )
-  );
-  X_LUT5 #(
-    .LOC ( "SLICE_X10Y145" ),
-    .INIT ( 32'hF0F0CCCC ))
-  \Mmux_current_a[7]_current_b[7]_mux_8_OUT<0>11  (
-    .ADR1(n0086[0]),
-    .ADR2(n0085[0]),
-    .ADR4(GND_1_o_GND_1_o_equal_6_o),
-    .ADR3(1'b1),
-    .ADR0(1'b1),
-    .O(\current_a[7]_current_b[7]_mux_8_OUT<0> )
-  );
-  X_BUF   \current_b_0_LDC/current_b_0_LDC_AMUX_Delay  (
-    .I(\reset_b[0]_AND_93_o_pack_1 ),
-    .O(\reset_b[0]_AND_93_o )
-  );
-  X_LATCHE #(
-    .LOC ( "SLICE_X16Y152" ),
-    .INIT ( 1'b0 ))
-  current_b_0_LDC (
-    .GE(VCC),
-    .CLK(\NlwBufferSignal_current_b_0_LDC/CLK ),
-    .I(1'b1),
-    .O(current_b_0_LDC_1464),
-    .RST(\reset_b[0]_AND_93_o ),
-    .SET(GND)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X16Y152" ),
-    .INIT ( 64'hCCCC0000CCCC0000 ))
-  \reset_b[0]_AND_92_o1  (
-    .ADR0(1'b1),
-    .ADR3(1'b1),
-    .ADR2(1'b1),
-    .ADR1(reset_IBUF_1382),
-    .ADR4(b_0_IBUF_1516),
-    .ADR5(1'b1),
-    .O(\reset_b[0]_AND_92_o )
-  );
-  X_LUT5 #(
-    .LOC ( "SLICE_X16Y152" ),
-    .INIT ( 32'h0000CCCC ))
-  \reset_b[0]_AND_93_o1  (
-    .ADR0(1'b1),
-    .ADR3(1'b1),
-    .ADR2(1'b1),
-    .ADR1(reset_IBUF_1382),
-    .ADR4(b_0_IBUF_1516),
-    .O(\reset_b[0]_AND_93_o_pack_1 )
-  );
-  X_BUF   \reset_a[0]_AND_78_o/reset_a[0]_AND_78_o_AMUX_Delay  (
-    .I(\reset_a[0]_AND_79_o ),
-    .O(\reset_a[0]_AND_79_o_0 )
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X14Y155" ),
-    .INIT ( 64'h8888888888888888 ))
-  \reset_a[0]_AND_78_o1  (
-    .ADR4(1'b1),
-    .ADR3(1'b1),
-    .ADR2(1'b1),
-    .ADR1(reset_IBUF_1382),
-    .ADR0(a_0_IBUF_1509),
-    .ADR5(1'b1),
-    .O(\reset_a[0]_AND_78_o )
-  );
-  X_LUT5 #(
-    .LOC ( "SLICE_X14Y155" ),
-    .INIT ( 32'h44444444 ))
-  \reset_a[0]_AND_79_o1  (
-    .ADR4(1'b1),
-    .ADR3(1'b1),
-    .ADR2(1'b1),
-    .ADR1(reset_IBUF_1382),
-    .ADR0(a_0_IBUF_1509),
-    .O(\reset_a[0]_AND_79_o )
-  );
-  X_LATCHE #(
-    .LOC ( "SLICE_X16Y155" ),
-    .INIT ( 1'b0 ))
-  current_a_0_LDC (
-    .GE(VCC),
-    .CLK(\NlwBufferSignal_current_a_0_LDC/CLK ),
-    .I(1'b1),
-    .O(current_a_0_LDC_1436),
-    .RST(\reset_a[0]_AND_79_o_0 ),
-    .SET(GND)
-  );
-  X_BUF   \current_a_3_LDC/current_a_3_LDC_AMUX_Delay  (
-    .I(\reset_a[3]_AND_73_o_pack_1 ),
-    .O(\reset_a[3]_AND_73_o )
-  );
-  X_LATCHE #(
-    .LOC ( "SLICE_X18Y153" ),
-    .INIT ( 1'b0 ))
-  current_a_3_LDC (
-    .GE(VCC),
-    .CLK(\NlwBufferSignal_current_a_3_LDC/CLK ),
-    .I(1'b1),
-    .O(current_a_3_LDC_1476),
-    .RST(\reset_a[3]_AND_73_o ),
-    .SET(GND)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X18Y153" ),
-    .INIT ( 64'hA0A0A0A0A0A0A0A0 ))
-  \reset_a[3]_AND_72_o1  (
-    .ADR4(1'b1),
-    .ADR1(1'b1),
-    .ADR3(1'b1),
-    .ADR2(reset_IBUF_1382),
-    .ADR0(a_3_IBUF_1510),
-    .ADR5(1'b1),
-    .O(\reset_a[3]_AND_72_o )
-  );
-  X_LUT5 #(
-    .LOC ( "SLICE_X18Y153" ),
-    .INIT ( 32'h50505050 ))
-  \reset_a[3]_AND_73_o1  (
-    .ADR4(1'b1),
-    .ADR1(1'b1),
-    .ADR3(1'b1),
-    .ADR2(reset_IBUF_1382),
-    .ADR0(a_3_IBUF_1510),
-    .O(\reset_a[3]_AND_73_o_pack_1 )
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X18Y154" ),
-    .INIT ( 64'hAAAAFACCAAAA0ACC ))
-  Mmux_next_a102 (
-    .ADR1(current_a_5),
-    .ADR0(current_a_4),
-    .ADR3(current_a_0),
-    .ADR2(current_b_0),
-    .ADR4(GND_1_o_GND_1_o_OR_32_o_1328),
-    .ADR5(Mmux_next_a10),
-    .O(next_a[4])
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X18Y154" ),
-    .INIT ( 64'hFFFFAF0A50F50000 ))
-  Mmux_next_a101 (
-    .ADR1(1'b1),
-    .ADR2(current_b_6),
-    .ADR0(current_a_6),
-    .ADR5(\n0088<5>_0 ),
-    .ADR4(\n0089<5>_0 ),
-    .ADR3(\current_b[7]_current_a[7]_LessThan_14_o2_1392 ),
-    .O(Mmux_next_a10)
-  );
-  X_LATCHE #(
-    .LOC ( "SLICE_X18Y154" ),
-    .INIT ( 1'b0 ))
-  current_a_4_LDC (
-    .GE(VCC),
-    .CLK(\NlwBufferSignal_current_a_4_LDC/CLK ),
-    .I(1'b1),
-    .O(current_a_4_LDC_1484),
-    .RST(\reset_a[4]_AND_71_o_0 ),
-    .SET(GND)
-  );
-  X_BUF   \reset_a[2]_AND_74_o/reset_a[2]_AND_74_o_AMUX_Delay  (
-    .I(\reset_a[2]_AND_75_o ),
-    .O(\reset_a[2]_AND_75_o_0 )
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X17Y153" ),
-    .INIT ( 64'hCCCC0000CCCC0000 ))
-  \reset_a[2]_AND_74_o1  (
-    .ADR0(1'b1),
-    .ADR3(1'b1),
-    .ADR2(1'b1),
-    .ADR1(reset_IBUF_1382),
-    .ADR4(a_2_IBUF_1502),
-    .ADR5(1'b1),
-    .O(\reset_a[2]_AND_74_o )
-  );
-  X_LUT5 #(
-    .LOC ( "SLICE_X17Y153" ),
-    .INIT ( 32'h0000CCCC ))
-  \reset_a[2]_AND_75_o1  (
-    .ADR0(1'b1),
-    .ADR3(1'b1),
-    .ADR2(1'b1),
-    .ADR1(reset_IBUF_1382),
-    .ADR4(a_2_IBUF_1502),
-    .O(\reset_a[2]_AND_75_o )
-  );
-  X_BUF   \current_b_6_LDC/current_b_6_LDC_AMUX_Delay  (
-    .I(\reset_b[4]_AND_85_o ),
-    .O(\reset_b[4]_AND_85_o_0 )
-  );
-  X_LATCHE #(
-    .LOC ( "SLICE_X18Y151" ),
-    .INIT ( 1'b0 ))
-  current_b_6_LDC (
-    .GE(VCC),
-    .CLK(\NlwBufferSignal_current_b_6_LDC/CLK ),
-    .I(1'b1),
-    .O(current_b_6_LDC_1433),
-    .RST(\reset_b[6]_AND_81_o_0 ),
-    .SET(GND)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X18Y151" ),
-    .INIT ( 64'hF0F00000F0F00000 ))
-  \reset_b[4]_AND_84_o1  (
-    .ADR0(1'b1),
-    .ADR1(1'b1),
-    .ADR3(1'b1),
-    .ADR4(reset_IBUF_1382),
-    .ADR2(b_4_IBUF_1508),
-    .ADR5(1'b1),
-    .O(\reset_b[4]_AND_84_o )
-  );
-  X_LUT5 #(
-    .LOC ( "SLICE_X18Y151" ),
-    .INIT ( 32'h0F0F0000 ))
-  \reset_b[4]_AND_85_o1  (
-    .ADR0(1'b1),
-    .ADR1(1'b1),
-    .ADR3(1'b1),
-    .ADR4(reset_IBUF_1382),
-    .ADR2(b_4_IBUF_1508),
-    .O(\reset_b[4]_AND_85_o )
-  );
-  X_BUF   \current_a_1_LDC/current_a_1_LDC_AMUX_Delay  (
-    .I(\reset_a[1]_AND_77_o_pack_1 ),
-    .O(\reset_a[1]_AND_77_o )
-  );
-  X_LATCHE #(
-    .LOC ( "SLICE_X18Y152" ),
-    .INIT ( 1'b0 ))
-  current_a_1_LDC (
-    .GE(VCC),
-    .CLK(\NlwBufferSignal_current_a_1_LDC/CLK ),
-    .I(1'b1),
-    .O(current_a_1_LDC_1423),
-    .RST(\reset_a[1]_AND_77_o ),
-    .SET(GND)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X18Y152" ),
-    .INIT ( 64'hF0F00000F0F00000 ))
-  \reset_a[1]_AND_76_o1  (
-    .ADR0(1'b1),
-    .ADR1(1'b1),
-    .ADR3(1'b1),
-    .ADR4(reset_IBUF_1382),
-    .ADR2(a_1_IBUF_1505),
-    .ADR5(1'b1),
-    .O(\reset_a[1]_AND_76_o )
-  );
-  X_LUT5 #(
-    .LOC ( "SLICE_X18Y152" ),
-    .INIT ( 32'h0F0F0000 ))
-  \reset_a[1]_AND_77_o1  (
-    .ADR0(1'b1),
-    .ADR1(1'b1),
-    .ADR3(1'b1),
-    .ADR4(reset_IBUF_1382),
-    .ADR2(a_1_IBUF_1505),
-    .O(\reset_a[1]_AND_77_o_pack_1 )
-  );
-  X_IPAD #(
-    .LOC ( "IOB_X0Y136" ))
-  \b<6>  (
-    .PAD(b[6])
-  );
-  X_ZERO #(
-    .LOC ( "IOB_X0Y136" ))
-  \ProtoComp36.INTERMDISABLE_GND.15  (
-    .O(\b<6>/ProtoComp36.INTERMDISABLE_GND.0 )
-  );
-  X_IBUF_INTERMDISABLE_TPWRGT #(
-    .LOC ( "IOB_X0Y136" ))
-  b_6_IBUF (
-    .IBUFDISABLE(1'b0),
-    .INTERMDISABLE(\b<6>/ProtoComp36.INTERMDISABLE_GND.0 ),
-    .O(b_6_IBUF_1501),
-    .I(b[6]),
-    .TPWRGT(1'b1)
-  );
-  X_BUF   \current_a_4_P_4/current_a_4_P_4_AMUX_Delay  (
-    .I(\reset_a[5]_AND_69_o ),
-    .O(\reset_a[5]_AND_69_o_0 )
-  );
-  X_FF #(
-    .LOC ( "SLICE_X18Y155" ),
-    .INIT ( 1'b1 ))
-  current_a_4_P_4 (
-    .CE(VCC),
-    .CLK(\NlwBufferSignal_current_a_4_P_4/CLK ),
-    .I(\NlwBufferSignal_current_a_4_P_4/IN ),
-    .O(current_a_4_P_4_1427),
-    .SET(\reset_a[4]_AND_70_o ),
-    .RST(GND)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X18Y155" ),
-    .INIT ( 64'hC0C0C0C0C0C0C0C0 ))
-  \reset_a[5]_AND_68_o1  (
-    .ADR0(1'b1),
-    .ADR3(1'b1),
-    .ADR4(1'b1),
-    .ADR1(reset_IBUF_1382),
-    .ADR2(a_5_IBUF_1507),
-    .ADR5(1'b1),
-    .O(\reset_a[5]_AND_68_o )
-  );
-  X_LUT5 #(
-    .LOC ( "SLICE_X18Y155" ),
-    .INIT ( 32'h0C0C0C0C ))
-  \reset_a[5]_AND_69_o1  (
-    .ADR0(1'b1),
-    .ADR3(1'b1),
-    .ADR4(1'b1),
-    .ADR1(reset_IBUF_1382),
-    .ADR2(a_5_IBUF_1507),
-    .O(\reset_a[5]_AND_69_o )
-  );
-  X_LATCHE #(
-    .LOC ( "SLICE_X16Y153" ),
-    .INIT ( 1'b0 ))
-  current_a_2_LDC (
-    .GE(VCC),
-    .CLK(\NlwBufferSignal_current_a_2_LDC/CLK ),
-    .I(1'b1),
-    .O(current_a_2_LDC_1453),
-    .RST(\reset_a[2]_AND_75_o_0 ),
-    .SET(GND)
-  );
-  X_BUF   \current_b_4_LDC/current_b_4_LDC_AMUX_Delay  (
-    .I(\reset_b[1]_AND_91_o ),
-    .O(\reset_b[1]_AND_91_o_0 )
-  );
-  X_LATCHE #(
-    .LOC ( "SLICE_X19Y151" ),
-    .INIT ( 1'b0 ))
-  current_b_4_LDC (
-    .GE(VCC),
-    .CLK(\NlwBufferSignal_current_b_4_LDC/CLK ),
-    .I(1'b1),
-    .O(current_b_4_LDC_1395),
-    .RST(\reset_b[4]_AND_85_o_0 ),
-    .SET(GND)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X19Y151" ),
-    .INIT ( 64'hCCCC0000CCCC0000 ))
-  \reset_b[1]_AND_90_o1  (
-    .ADR0(1'b1),
-    .ADR3(1'b1),
-    .ADR2(1'b1),
-    .ADR4(reset_IBUF_1382),
-    .ADR1(b_1_IBUF_1514),
-    .ADR5(1'b1),
-    .O(\reset_b[1]_AND_90_o )
-  );
-  X_LUT5 #(
-    .LOC ( "SLICE_X19Y151" ),
-    .INIT ( 32'h33330000 ))
-  \reset_b[1]_AND_91_o1  (
-    .ADR0(1'b1),
-    .ADR3(1'b1),
-    .ADR2(1'b1),
-    .ADR4(reset_IBUF_1382),
-    .ADR1(b_1_IBUF_1514),
-    .O(\reset_b[1]_AND_91_o )
-  );
-  X_BUF   \current_a[7]_current_b[7]_mux_8_OUT<4>/current_a[7]_current_b[7]_mux_8_OUT<4>_DMUX_Delay  (
-    .I(\current_a[7]_current_b[7]_mux_8_OUT<3> ),
-    .O(\current_a[7]_current_b[7]_mux_8_OUT<3>_0 )
-  );
-  X_BUF   \current_a[7]_current_b[7]_mux_8_OUT<4>/current_a[7]_current_b[7]_mux_8_OUT<4>_CMUX_Delay  (
-    .I(\current_a[7]_current_b[7]_mux_8_OUT<2> ),
-    .O(\current_a[7]_current_b[7]_mux_8_OUT<2>_0 )
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X11Y145" ),
-    .INIT ( 64'hFF00F0F0FF00F0F0 ))
-  \Mmux_current_a[7]_current_b[7]_mux_8_OUT<4>11  (
-    .ADR0(1'b1),
-    .ADR1(1'b1),
-    .ADR4(GND_1_o_GND_1_o_equal_6_o),
-    .ADR2(n0086[4]),
-    .ADR3(n0085[4]),
-    .ADR5(1'b1),
-    .O(\current_a[7]_current_b[7]_mux_8_OUT<4> )
-  );
-  X_LUT5 #(
-    .LOC ( "SLICE_X11Y145" ),
-    .INIT ( 32'hCCCCAAAA ))
-  \Mmux_current_a[7]_current_b[7]_mux_8_OUT<3>11  (
-    .ADR0(n0086[3]),
-    .ADR1(n0085[3]),
-    .ADR4(GND_1_o_GND_1_o_equal_6_o),
-    .ADR3(1'b1),
-    .ADR2(1'b1),
-    .O(\current_a[7]_current_b[7]_mux_8_OUT<3> )
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X11Y145" ),
-    .INIT ( 64'hCFC0CFC0CFC0CFC0 ))
-  \Mmux_current_a[7]_current_b[7]_mux_8_OUT<6>11  (
-    .ADR0(1'b1),
-    .ADR4(1'b1),
-    .ADR2(GND_1_o_GND_1_o_equal_6_o),
-    .ADR3(n0086[6]),
-    .ADR1(n0085[6]),
-    .ADR5(1'b1),
-    .O(\current_a[7]_current_b[7]_mux_8_OUT<6> )
-  );
-  X_LUT5 #(
-    .LOC ( "SLICE_X11Y145" ),
-    .INIT ( 32'hAFAFA0A0 ))
-  \Mmux_current_a[7]_current_b[7]_mux_8_OUT<2>11  (
-    .ADR4(n0086[2]),
-    .ADR0(n0085[2]),
-    .ADR2(GND_1_o_GND_1_o_equal_6_o),
-    .ADR3(1'b1),
-    .ADR1(1'b1),
-    .O(\current_a[7]_current_b[7]_mux_8_OUT<2> )
-  );
-  X_BUF   \reset_b[6]_AND_80_o/reset_b[6]_AND_80_o_AMUX_Delay  (
-    .I(\reset_b[6]_AND_81_o ),
-    .O(\reset_b[6]_AND_81_o_0 )
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X16Y151" ),
-    .INIT ( 64'hCCCC0000CCCC0000 ))
-  \reset_b[6]_AND_80_o1  (
-    .ADR0(1'b1),
-    .ADR3(1'b1),
-    .ADR2(1'b1),
-    .ADR1(reset_IBUF_1382),
-    .ADR4(b_6_IBUF_1501),
-    .ADR5(1'b1),
-    .O(\reset_b[6]_AND_80_o )
-  );
-  X_LUT5 #(
-    .LOC ( "SLICE_X16Y151" ),
-    .INIT ( 32'h0000CCCC ))
-  \reset_b[6]_AND_81_o1  (
-    .ADR0(1'b1),
-    .ADR3(1'b1),
-    .ADR2(1'b1),
-    .ADR1(reset_IBUF_1382),
-    .ADR4(b_6_IBUF_1501),
-    .O(\reset_b[6]_AND_81_o )
-  );
-  X_LATCHE #(
-    .LOC ( "OLOGIC_X0Y134" ),
-    .INIT ( 1'b0 ))
-  res_0 (
-    .GE(VCC),
-    .CLK(\NlwBufferSignal_res_0/CLK ),
-    .I(\NlwBufferSignal_res_0/IN ),
-    .O(res_0_1519),
-    .RST(GND),
-    .SET(GND)
-  );
-  X_BUF   \current_a[7]_current_b[7]_mux_8_OUT<5>/current_a[7]_current_b[7]_mux_8_OUT<5>_DMUX_Delay  (
-    .I(\current_a[7]_current_b[7]_mux_8_OUT<7> ),
-    .O(\current_a[7]_current_b[7]_mux_8_OUT<7>_0 )
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X11Y146" ),
-    .INIT ( 64'hCCCCAAAACCCCAAAA ))
-  \Mmux_current_a[7]_current_b[7]_mux_8_OUT<5>11  (
-    .ADR3(1'b1),
-    .ADR2(1'b1),
-    .ADR4(GND_1_o_GND_1_o_equal_6_o),
-    .ADR0(n0086[5]),
-    .ADR1(n0085[5]),
-    .ADR5(1'b1),
-    .O(\current_a[7]_current_b[7]_mux_8_OUT<5> )
-  );
-  X_LUT5 #(
-    .LOC ( "SLICE_X11Y146" ),
-    .INIT ( 32'hF0F0FF00 ))
-  \Mmux_current_a[7]_current_b[7]_mux_8_OUT<7>11  (
-    .ADR3(n0086[7]),
-    .ADR2(n0085[7]),
-    .ADR4(GND_1_o_GND_1_o_equal_6_o),
-    .ADR1(1'b1),
-    .ADR0(1'b1),
-    .O(\current_a[7]_current_b[7]_mux_8_OUT<7> )
-  );
-  X_LATCHE #(
-    .LOC ( "OLOGIC_X0Y133" ),
-    .INIT ( 1'b0 ))
-  res_1 (
-    .GE(VCC),
-    .CLK(\NlwBufferSignal_res_1/CLK ),
-    .I(\NlwBufferSignal_res_1/IN ),
-    .O(res_1_1520),
-    .RST(GND),
-    .SET(GND)
-  );
-  X_BUF   \reset_a[4]_AND_70_o/reset_a[4]_AND_70_o_AMUX_Delay  (
-    .I(\reset_a[4]_AND_71_o ),
-    .O(\reset_a[4]_AND_71_o_0 )
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X16Y154" ),
-    .INIT ( 64'hCCCC0000CCCC0000 ))
-  \reset_a[4]_AND_70_o1  (
-    .ADR0(1'b1),
-    .ADR3(1'b1),
-    .ADR2(1'b1),
-    .ADR1(reset_IBUF_1382),
-    .ADR4(a_4_IBUF_1506),
-    .ADR5(1'b1),
-    .O(\reset_a[4]_AND_70_o )
-  );
-  X_LUT5 #(
-    .LOC ( "SLICE_X16Y154" ),
-    .INIT ( 32'h0000CCCC ))
-  \reset_a[4]_AND_71_o1  (
-    .ADR0(1'b1),
-    .ADR3(1'b1),
-    .ADR2(1'b1),
-    .ADR1(reset_IBUF_1382),
-    .ADR4(a_4_IBUF_1506),
-    .O(\reset_a[4]_AND_71_o )
-  );
-  X_IPAD #(
-    .LOC ( "IOB_X0Y138" ))
-  \b<4>  (
-    .PAD(b[4])
-  );
-  X_ZERO #(
-    .LOC ( "IOB_X0Y138" ))
-  \ProtoComp36.INTERMDISABLE_GND.13  (
-    .O(\b<4>/ProtoComp36.INTERMDISABLE_GND.0 )
-  );
-  X_IBUF_INTERMDISABLE_TPWRGT #(
-    .LOC ( "IOB_X0Y138" ))
-  b_4_IBUF (
-    .IBUFDISABLE(1'b0),
-    .INTERMDISABLE(\b<4>/ProtoComp36.INTERMDISABLE_GND.0 ),
-    .O(b_4_IBUF_1508),
-    .I(b[4]),
-    .TPWRGT(1'b1)
-  );
-  X_IPAD #(
-    .LOC ( "IOB_X0Y137" ))
-  \b<5>  (
-    .PAD(b[5])
-  );
-  X_ZERO #(
-    .LOC ( "IOB_X0Y137" ))
-  \ProtoComp36.INTERMDISABLE_GND.14  (
-    .O(\b<5>/ProtoComp36.INTERMDISABLE_GND.0 )
-  );
-  X_IBUF_INTERMDISABLE_TPWRGT #(
-    .LOC ( "IOB_X0Y137" ))
-  b_5_IBUF (
-    .IBUFDISABLE(1'b0),
-    .INTERMDISABLE(\b<5>/ProtoComp36.INTERMDISABLE_GND.0 ),
-    .O(b_5_IBUF_1504),
-    .I(b[5]),
-    .TPWRGT(1'b1)
-  );
-  X_BUF   \Msub_n0088_cy<3>/Msub_n0088_cy<3>_DMUX_Delay  (
-    .I(n0088[3]),
-    .O(\n0088<3>_0 )
-  );
-  X_BUF   \Msub_n0088_cy<3>/Msub_n0088_cy<3>_CMUX_Delay  (
-    .I(n0088[2]),
-    .O(\n0088<2>_0 )
-  );
-  X_BUF   \Msub_n0088_cy<3>/Msub_n0088_cy<3>_BMUX_Delay  (
-    .I(n0088[1]),
-    .O(\n0088<1>_0 )
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X22Y153" ),
-    .INIT ( 64'hF3C0596AA6950C3F ))
-  \Msub_n0088_lut<3>  (
-    .ADR1(current_b_3_LDC_1424),
-    .ADR0(current_a_3_LDC_1476),
-    .ADR5(current_a_3_C_3_1478),
-    .ADR2(current_b_3_P_3_1425),
-    .ADR3(current_b_3_C_3_1383),
-    .ADR4(current_a_3_P_3_1496),
-    .O(Msub_n0088_lut[3])
-  );
-  X_ONE #(
-    .LOC ( "SLICE_X22Y153" ))
-  \ProtoComp34.CYINITVCC  (
-    .O(\NLW_ProtoComp34.CYINITVCC_O_UNCONNECTED )
-  );
-  X_CARRY4 #(
-    .LOC ( "SLICE_X22Y153" ))
-  \Msub_n0088_cy<3>  (
-    .CI(1'b0),
-    .CYINIT(1'b1),
-    .CO({Msub_n0088_cy[3], \NLW_Msub_n0088_cy<3>_CO[2]_UNCONNECTED , \NLW_Msub_n0088_cy<3>_CO[1]_UNCONNECTED , 
-\NLW_Msub_n0088_cy<3>_CO[0]_UNCONNECTED }),
-    .DI({\NlwBufferSignal_Msub_n0088_cy<3>/DI<3> , \NlwBufferSignal_Msub_n0088_cy<3>/DI<2> , \NlwBufferSignal_Msub_n0088_cy<3>/DI<1> , 
-\NlwBufferSignal_Msub_n0088_cy<3>/DI<0> }),
-    .O({n0088[3], n0088[2], n0088[1], \NLW_Msub_n0088_cy<3>_O[0]_UNCONNECTED }),
-    .S({Msub_n0088_lut[3], Msub_n0088_lut[2], Msub_n0088_lut[1], Msub_n0088_lut[0]})
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X22Y153" ),
-    .INIT ( 64'hF3A6C095590C6A3F ))
-  \Msub_n0088_lut<2>  (
-    .ADR1(current_b_2_LDC_1407),
-    .ADR0(current_a_2_LDC_1453),
-    .ADR3(current_a_2_C_2_1457),
-    .ADR2(current_b_2_P_2_1409),
-    .ADR4(current_b_2_C_2_0),
-    .ADR5(current_a_2_P_2_1492),
-    .O(Msub_n0088_lut[2])
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X22Y153" ),
-    .INIT ( 64'hF5C6A093390A6C5F ))
-  \Msub_n0088_lut<1>  (
-    .ADR0(current_b_1_LDC_1386),
-    .ADR1(current_a_1_LDC_1423),
-    .ADR3(current_a_1_C_1_1419),
-    .ADR2(current_b_1_P_1_1388),
-    .ADR4(current_b_1_C_1_1387),
-    .ADR5(current_a_1_P_1_1472),
-    .O(Msub_n0088_lut[1])
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X22Y153" ),
-    .INIT ( 64'hFA50C963369C05AF ))
-  \Msub_n0088_lut<0>  (
-    .ADR0(current_b_0_LDC_1464),
-    .ADR1(current_a_0_LDC_1436),
-    .ADR3(current_b_0_P_0_1404),
-    .ADR2(current_b_0_C_0_1465),
-    .ADR4(current_a_0_C_0_1437),
-    .ADR5(current_a_0_P_0_1438),
-    .O(Msub_n0088_lut[0])
-  );
-  X_IPAD #(
-    .LOC ( "IOB_X1Y128" ))
-  clk_36 (
-    .PAD(clk)
-  );
-  X_ZERO #(
-    .LOC ( "IOB_X1Y128" ))
-  \ProtoComp36.INTERMDISABLE_GND  (
-    .O(\clk/ProtoComp36.INTERMDISABLE_GND.0 )
-  );
-  X_IBUF_INTERMDISABLE_TPWRGT #(
-    .LOC ( "IOB_X1Y128" ))
-  \clk_BUFGP/IBUFG  (
-    .IBUFDISABLE(1'b0),
-    .INTERMDISABLE(\clk/ProtoComp36.INTERMDISABLE_GND.0 ),
-    .O(\clk_BUFGP/IBUFG_1380 ),
-    .I(clk),
-    .TPWRGT(1'b1)
-  );
-  X_LATCHE #(
-    .LOC ( "OLOGIC_X0Y128" ),
-    .INIT ( 1'b0 ))
-  res_6 (
-    .GE(VCC),
-    .CLK(\NlwBufferSignal_res_6/CLK ),
-    .I(\NlwBufferSignal_res_6/IN ),
-    .O(res_6_1337),
-    .RST(GND),
-    .SET(GND)
-  );
-  X_LATCHE #(
-    .LOC ( "OLOGIC_X0Y127" ),
-    .INIT ( 1'b0 ))
-  res_7 (
-    .GE(VCC),
-    .CLK(\NlwBufferSignal_res_7/CLK ),
-    .I(\NlwBufferSignal_res_7/IN ),
-    .O(res_7_1339),
-    .RST(GND),
-    .SET(GND)
-  );
-  X_BUF   \Msub_n0089_cy<3>/Msub_n0089_cy<3>_DMUX_Delay  (
-    .I(n0089[3]),
-    .O(\n0089<3>_0 )
-  );
-  X_BUF   \Msub_n0089_cy<3>/Msub_n0089_cy<3>_CMUX_Delay  (
-    .I(n0089[2]),
-    .O(\n0089<2>_0 )
-  );
-  X_BUF   \Msub_n0089_cy<3>/Msub_n0089_cy<3>_BMUX_Delay  (
-    .I(n0089[1]),
-    .O(\n0089<1>_0 )
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X23Y152" ),
-    .INIT ( 64'hF3A6590CC0956A3F ))
-  \Msub_n0089_lut<3>  (
-    .ADR0(current_b_3_LDC_1424),
-    .ADR1(current_a_3_LDC_1476),
-    .ADR5(current_a_3_C_3_1478),
-    .ADR4(current_b_3_P_3_1425),
-    .ADR3(current_b_3_C_3_1383),
-    .ADR2(current_a_3_P_3_1496),
-    .O(Msub_n0089_lut[3])
-  );
-  X_ONE #(
-    .LOC ( "SLICE_X23Y152" ))
-  \ProtoComp34.CYINITVCC.1  (
-    .O(\NLW_ProtoComp34.CYINITVCC.1_O_UNCONNECTED )
-  );
-  X_CARRY4 #(
-    .LOC ( "SLICE_X23Y152" ))
-  \Msub_n0089_cy<3>  (
-    .CI(1'b0),
-    .CYINIT(1'b1),
-    .CO({Msub_n0089_cy[3], \NLW_Msub_n0089_cy<3>_CO[2]_UNCONNECTED , \NLW_Msub_n0089_cy<3>_CO[1]_UNCONNECTED , 
-\NLW_Msub_n0089_cy<3>_CO[0]_UNCONNECTED }),
-    .DI({\NlwBufferSignal_Msub_n0089_cy<3>/DI<3> , \NlwBufferSignal_Msub_n0089_cy<3>/DI<2> , \NlwBufferSignal_Msub_n0089_cy<3>/DI<1> , 
-\NlwBufferSignal_Msub_n0089_cy<3>/DI<0> }),
-    .O({n0089[3], n0089[2], n0089[1], \NLW_Msub_n0089_cy<3>_O[0]_UNCONNECTED }),
-    .S({Msub_n0089_lut[3], Msub_n0089_lut[2], Msub_n0089_lut[1], Msub_n0089_lut[0]})
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X23Y152" ),
-    .INIT ( 64'hFA50369CC96305AF ))
-  \Msub_n0089_lut<2>  (
-    .ADR1(current_b_2_LDC_1407),
-    .ADR0(current_a_2_LDC_1453),
-    .ADR2(current_a_2_C_2_1457),
-    .ADR4(current_b_2_P_2_1409),
-    .ADR5(current_b_2_C_2_0),
-    .ADR3(current_a_2_P_2_1492),
-    .O(Msub_n0089_lut[2])
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X23Y152" ),
-    .INIT ( 64'hF3C0A695596A0C3F ))
-  \Msub_n0089_lut<1>  (
-    .ADR1(current_b_1_LDC_1386),
-    .ADR0(current_a_1_LDC_1423),
-    .ADR4(current_a_1_C_1_1419),
-    .ADR2(current_b_1_P_1_1388),
-    .ADR3(current_b_1_C_1_1387),
-    .ADR5(current_a_1_P_1_1472),
-    .O(Msub_n0089_lut[1])
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X23Y152" ),
-    .INIT ( 64'hFC30569AA96503CF ))
-  \Msub_n0089_lut<0>  (
-    .ADR1(current_b_0_LDC_1464),
-    .ADR0(current_a_0_LDC_1436),
-    .ADR3(current_b_0_P_0_1404),
-    .ADR2(current_b_0_C_0_1465),
-    .ADR5(current_a_0_C_0_1437),
-    .ADR4(current_a_0_P_0_1438),
-    .O(Msub_n0089_lut[0])
-  );
-  X_OPAD #(
-    .LOC ( "IOB_X0Y134" ))
-  \res<0>  (
-    .PAD(res[0])
-  );
-  X_OBUF #(
-    .LOC ( "IOB_X0Y134" ))
-  res_0_OBUF (
-    .I(res_0_1519),
-    .O(res[0])
-  );
-  X_LATCHE #(
-    .LOC ( "OLOGIC_X0Y130" ),
-    .INIT ( 1'b0 ))
-  res_4 (
-    .GE(VCC),
-    .CLK(\NlwBufferSignal_res_4/CLK ),
-    .I(\NlwBufferSignal_res_4/IN ),
-    .O(res_4_1333),
-    .RST(GND),
-    .SET(GND)
-  );
   X_BUF #(
-    .LOC ( "DSP48_X0Y58" ))
+    .LOC ( "DSP48_X1Y63" ))
   \Mmult_n0086/INMODE0INV  (
     .I(GND),
     .O(\Mmult_n0086/INMODE0_INT )
   );
   X_BUF #(
-    .LOC ( "DSP48_X0Y58" ))
+    .LOC ( "DSP48_X1Y63" ))
   \Mmult_n0086/INMODE1INV  (
     .I(GND),
     .O(\Mmult_n0086/INMODE1_INT )
   );
   X_BUF #(
-    .LOC ( "DSP48_X0Y58" ))
+    .LOC ( "DSP48_X1Y63" ))
   \Mmult_n0086/INMODE2INV  (
     .I(VCC),
     .O(\Mmult_n0086/INMODE2_INT )
   );
   X_BUF #(
-    .LOC ( "DSP48_X0Y58" ))
+    .LOC ( "DSP48_X1Y63" ))
   \Mmult_n0086/INMODE3INV  (
     .I(GND),
     .O(\Mmult_n0086/INMODE3_INT )
   );
   X_BUF #(
-    .LOC ( "DSP48_X0Y58" ))
+    .LOC ( "DSP48_X1Y63" ))
   \Mmult_n0086/INMODE4INV  (
     .I(GND),
     .O(\Mmult_n0086/INMODE4_INT )
   );
   X_BUF #(
-    .LOC ( "DSP48_X0Y58" ))
+    .LOC ( "DSP48_X1Y63" ))
   \Mmult_n0086/ALUMODE0INV  (
     .I(GND),
     .O(\Mmult_n0086/ALUMODE0_INT )
   );
   X_BUF #(
-    .LOC ( "DSP48_X0Y58" ))
+    .LOC ( "DSP48_X1Y63" ))
   \Mmult_n0086/ALUMODE1INV  (
     .I(GND),
     .O(\Mmult_n0086/ALUMODE1_INT )
   );
   X_BUF #(
-    .LOC ( "DSP48_X0Y58" ))
+    .LOC ( "DSP48_X1Y63" ))
   \Mmult_n0086/ALUMODE2INV  (
     .I(GND),
     .O(\Mmult_n0086/ALUMODE2_INT )
   );
   X_BUF #(
-    .LOC ( "DSP48_X0Y58" ))
+    .LOC ( "DSP48_X1Y63" ))
   \Mmult_n0086/ALUMODE3INV  (
     .I(GND),
     .O(\Mmult_n0086/ALUMODE3_INT )
   );
   X_BUF #(
-    .LOC ( "DSP48_X0Y58" ))
+    .LOC ( "DSP48_X1Y63" ))
   \Mmult_n0086/OPMODE0INV  (
     .I(VCC),
     .O(\Mmult_n0086/OPMODE0_INT )
   );
   X_BUF #(
-    .LOC ( "DSP48_X0Y58" ))
+    .LOC ( "DSP48_X1Y63" ))
   \Mmult_n0086/OPMODE1INV  (
     .I(GND),
     .O(\Mmult_n0086/OPMODE1_INT )
   );
   X_BUF #(
-    .LOC ( "DSP48_X0Y58" ))
+    .LOC ( "DSP48_X1Y63" ))
   \Mmult_n0086/OPMODE2INV  (
     .I(VCC),
     .O(\Mmult_n0086/OPMODE2_INT )
   );
   X_BUF #(
-    .LOC ( "DSP48_X0Y58" ))
+    .LOC ( "DSP48_X1Y63" ))
   \Mmult_n0086/OPMODE3INV  (
     .I(GND),
     .O(\Mmult_n0086/OPMODE3_INT )
   );
   X_BUF #(
-    .LOC ( "DSP48_X0Y58" ))
+    .LOC ( "DSP48_X1Y63" ))
   \Mmult_n0086/OPMODE4INV  (
     .I(GND),
     .O(\Mmult_n0086/OPMODE4_INT )
   );
   X_BUF #(
-    .LOC ( "DSP48_X0Y58" ))
+    .LOC ( "DSP48_X1Y63" ))
   \Mmult_n0086/OPMODE5INV  (
     .I(GND),
     .O(\Mmult_n0086/OPMODE5_INT )
   );
   X_BUF #(
-    .LOC ( "DSP48_X0Y58" ))
+    .LOC ( "DSP48_X1Y63" ))
   \Mmult_n0086/OPMODE6INV  (
     .I(GND),
     .O(\Mmult_n0086/OPMODE6_INT )
   );
   X_BUF #(
-    .LOC ( "DSP48_X0Y58" ))
+    .LOC ( "DSP48_X1Y63" ))
   \Mmult_n0086/CARRYININV  (
     .I(GND),
     .O(\Mmult_n0086/CARRYIN_INT )
   );
   X_BUF #(
-    .LOC ( "DSP48_X0Y58" ))
+    .LOC ( "DSP48_X1Y63" ))
   \Mmult_n0086/CLKINV  (
     .I(GND),
     .O(\Mmult_n0086/CLK_INT )
@@ -2185,7 +1059,7 @@ module stein_gcd (
     .SEL_MASK ( "MASK" ),
     .MASK ( 48'h3fffffffffff ),
     .PATTERN ( 48'h000000000000 ),
-    .LOC ( "DSP48_X0Y58" ))
+    .LOC ( "DSP48_X1Y63" ))
   Mmult_n0086 (
     .RSTC(GND),
     .CEB1(GND),
@@ -2237,11 +1111,11 @@ VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, 
     .BCIN({\Mmult_n0086/BCIN17 , \Mmult_n0086/BCIN16 , \Mmult_n0086/BCIN15 , \Mmult_n0086/BCIN14 , \Mmult_n0086/BCIN13 , \Mmult_n0086/BCIN12 , 
 \Mmult_n0086/BCIN11 , \Mmult_n0086/BCIN10 , \Mmult_n0086/BCIN9 , \Mmult_n0086/BCIN8 , \Mmult_n0086/BCIN7 , \Mmult_n0086/BCIN6 , \Mmult_n0086/BCIN5 , 
 \Mmult_n0086/BCIN4 , \Mmult_n0086/BCIN3 , \Mmult_n0086/BCIN2 , \Mmult_n0086/BCIN1 , \Mmult_n0086/BCIN0 }),
-    .B({GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, current_a_6, current_a_5, current_a_4, current_a_3, current_a_2, current_a_1, 
-current_a_0}),
+    .B({GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, current_res[7], current_res[6], current_res[5], current_res[4], current_res[3], 
+current_res[2], current_res[1], current_res[0]}),
     .D({GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND}),
-    .A({VCC, VCC, VCC, VCC, VCC, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, current_res[7], current_res[6], 
-current_res[5], current_res[4], current_res[3], current_res[2], current_res[1], current_res[0]}),
+    .A({VCC, VCC, VCC, VCC, VCC, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, current_a_6, current_a_5, 
+current_a_4, current_a_3, current_a_2, current_a_1, current_a_0}),
     .ACIN({\Mmult_n0086/ACIN29 , \Mmult_n0086/ACIN28 , \Mmult_n0086/ACIN27 , \Mmult_n0086/ACIN26 , \Mmult_n0086/ACIN25 , \Mmult_n0086/ACIN24 , 
 \Mmult_n0086/ACIN23 , \Mmult_n0086/ACIN22 , \Mmult_n0086/ACIN21 , \Mmult_n0086/ACIN20 , \Mmult_n0086/ACIN19 , \Mmult_n0086/ACIN18 , 
 \Mmult_n0086/ACIN17 , \Mmult_n0086/ACIN16 , \Mmult_n0086/ACIN15 , \Mmult_n0086/ACIN14 , \Mmult_n0086/ACIN13 , \Mmult_n0086/ACIN12 , 
@@ -2272,127 +1146,209 @@ current_res[5], current_res[4], current_res[3], current_res[2], current_res[1], 
 \Mmult_n0086/PCOUT11 , \Mmult_n0086/PCOUT10 , \Mmult_n0086/PCOUT9 , \Mmult_n0086/PCOUT8 , \Mmult_n0086/PCOUT7 , \Mmult_n0086/PCOUT6 , 
 \Mmult_n0086/PCOUT5 , \Mmult_n0086/PCOUT4 , \Mmult_n0086/PCOUT3 , \Mmult_n0086/PCOUT2 , \Mmult_n0086/PCOUT1 , \Mmult_n0086/PCOUT0 })
   );
-  X_CKBUF #(
-    .LOC ( "BUFGCTRL_X0Y31" ))
-  \clk_BUFGP/BUFG  (
-    .I(\NlwBufferSignal_clk_BUFGP/BUFG/IN ),
-    .O(clk_BUFGP)
+  X_BUF   \Msub_n0089_cy<3>/Msub_n0089_cy<3>_DMUX_Delay  (
+    .I(n0089[3]),
+    .O(\n0089<3>_0 )
   );
-  X_LATCHE #(
-    .LOC ( "OLOGIC_X0Y129" ),
-    .INIT ( 1'b0 ))
-  res_5 (
-    .GE(VCC),
-    .CLK(\NlwBufferSignal_res_5/CLK ),
-    .I(\NlwBufferSignal_res_5/IN ),
-    .O(res_5_1335),
-    .RST(GND),
-    .SET(GND)
+  X_BUF   \Msub_n0089_cy<3>/Msub_n0089_cy<3>_CMUX_Delay  (
+    .I(n0089[2]),
+    .O(\n0089<2>_0 )
+  );
+  X_BUF   \Msub_n0089_cy<3>/Msub_n0089_cy<3>_BMUX_Delay  (
+    .I(n0089[1]),
+    .O(\n0089<1>_0 )
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X41Y162" ),
+    .INIT ( 64'hF539C60AA06C935F ))
+  \Msub_n0089_lut<3>  (
+    .ADR1(current_b_3_LDC_1370),
+    .ADR0(current_a_3_LDC_1412),
+    .ADR5(current_a_3_C_3_1414),
+    .ADR3(current_b_3_P_3_1371),
+    .ADR4(current_b_3_C_3_1326),
+    .ADR2(current_a_3_P_3_1434),
+    .O(Msub_n0089_lut[3])
+  );
+  X_ONE #(
+    .LOC ( "SLICE_X41Y162" ))
+  \ProtoComp32.CYINITVCC.1  (
+    .O(\NLW_ProtoComp32.CYINITVCC.1_O_UNCONNECTED )
+  );
+  X_CARRY4 #(
+    .LOC ( "SLICE_X41Y162" ))
+  \Msub_n0089_cy<3>  (
+    .CI(1'b0),
+    .CYINIT(1'b1),
+    .CO({Msub_n0089_cy[3], \NLW_Msub_n0089_cy<3>_CO[2]_UNCONNECTED , \NLW_Msub_n0089_cy<3>_CO[1]_UNCONNECTED , 
+\NLW_Msub_n0089_cy<3>_CO[0]_UNCONNECTED }),
+    .DI({\NlwBufferSignal_Msub_n0089_cy<3>/DI<3> , \NlwBufferSignal_Msub_n0089_cy<3>/DI<2> , \NlwBufferSignal_Msub_n0089_cy<3>/DI<1> , 
+\NlwBufferSignal_Msub_n0089_cy<3>/DI<0> }),
+    .O({n0089[3], n0089[2], n0089[1], \NLW_Msub_n0089_cy<3>_O[0]_UNCONNECTED }),
+    .S({Msub_n0089_lut[3], Msub_n0089_lut[2], Msub_n0089_lut[1], Msub_n0089_lut[0]})
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X41Y162" ),
+    .INIT ( 64'hF3C0A695596A0C3F ))
+  \Msub_n0089_lut<2>  (
+    .ADR0(current_b_2_LDC_1358),
+    .ADR1(current_a_2_LDC_1392),
+    .ADR3(current_a_2_C_2_1396),
+    .ADR5(current_b_2_P_2_1360),
+    .ADR4(current_b_2_C_2_1359),
+    .ADR2(current_a_2_P_2_1430),
+    .O(Msub_n0089_lut[2])
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X41Y162" ),
+    .INIT ( 64'hFC30A965569A03CF ))
+  \Msub_n0089_lut<1>  (
+    .ADR1(current_b_1_LDC_1318),
+    .ADR0(current_a_1_LDC_1347),
+    .ADR4(current_a_1_C_1_1348),
+    .ADR3(current_b_1_P_1_1320),
+    .ADR2(current_b_1_C_1_1319),
+    .ADR5(current_a_1_P_1_1349),
+    .O(Msub_n0089_lut[1])
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X41Y162" ),
+    .INIT ( 64'hF359C06AA60C953F ))
+  \Msub_n0089_lut<0>  (
+    .ADR1(current_b_0_LDC_1405),
+    .ADR0(current_a_0_LDC_1346),
+    .ADR2(current_b_0_P_0_1340),
+    .ADR4(current_b_0_C_0_1406),
+    .ADR5(current_a_0_C_0_1351),
+    .ADR3(current_a_0_P_0_1350),
+    .O(Msub_n0089_lut[0])
+  );
+  X_OPAD #(
+    .LOC ( "IOB_X0Y134" ))
+  \res<0>  (
+    .PAD(res[0])
+  );
+  X_OBUF #(
+    .LOC ( "IOB_X0Y134" ))
+  res_0_OBUF (
+    .I(res_0_1464),
+    .O(res[0])
+  );
+  X_OPAD #(
+    .LOC ( "IOB_X0Y133" ))
+  \res<1>  (
+    .PAD(res[1])
+  );
+  X_OBUF #(
+    .LOC ( "IOB_X0Y133" ))
+  res_1_OBUF (
+    .I(res_1_1465),
+    .O(res[1])
   );
   X_BUF #(
-    .LOC ( "DSP48_X1Y58" ))
+    .LOC ( "DSP48_X1Y62" ))
   \Mmult_n0085/INMODE0INV  (
     .I(GND),
     .O(\Mmult_n0085/INMODE0_INT )
   );
   X_BUF #(
-    .LOC ( "DSP48_X1Y58" ))
+    .LOC ( "DSP48_X1Y62" ))
   \Mmult_n0085/INMODE1INV  (
     .I(GND),
     .O(\Mmult_n0085/INMODE1_INT )
   );
   X_BUF #(
-    .LOC ( "DSP48_X1Y58" ))
+    .LOC ( "DSP48_X1Y62" ))
   \Mmult_n0085/INMODE2INV  (
     .I(VCC),
     .O(\Mmult_n0085/INMODE2_INT )
   );
   X_BUF #(
-    .LOC ( "DSP48_X1Y58" ))
+    .LOC ( "DSP48_X1Y62" ))
   \Mmult_n0085/INMODE3INV  (
     .I(GND),
     .O(\Mmult_n0085/INMODE3_INT )
   );
   X_BUF #(
-    .LOC ( "DSP48_X1Y58" ))
+    .LOC ( "DSP48_X1Y62" ))
   \Mmult_n0085/INMODE4INV  (
     .I(GND),
     .O(\Mmult_n0085/INMODE4_INT )
   );
   X_BUF #(
-    .LOC ( "DSP48_X1Y58" ))
+    .LOC ( "DSP48_X1Y62" ))
   \Mmult_n0085/ALUMODE0INV  (
     .I(GND),
     .O(\Mmult_n0085/ALUMODE0_INT )
   );
   X_BUF #(
-    .LOC ( "DSP48_X1Y58" ))
+    .LOC ( "DSP48_X1Y62" ))
   \Mmult_n0085/ALUMODE1INV  (
     .I(GND),
     .O(\Mmult_n0085/ALUMODE1_INT )
   );
   X_BUF #(
-    .LOC ( "DSP48_X1Y58" ))
+    .LOC ( "DSP48_X1Y62" ))
   \Mmult_n0085/ALUMODE2INV  (
     .I(GND),
     .O(\Mmult_n0085/ALUMODE2_INT )
   );
   X_BUF #(
-    .LOC ( "DSP48_X1Y58" ))
+    .LOC ( "DSP48_X1Y62" ))
   \Mmult_n0085/ALUMODE3INV  (
     .I(GND),
     .O(\Mmult_n0085/ALUMODE3_INT )
   );
   X_BUF #(
-    .LOC ( "DSP48_X1Y58" ))
+    .LOC ( "DSP48_X1Y62" ))
   \Mmult_n0085/OPMODE0INV  (
     .I(VCC),
     .O(\Mmult_n0085/OPMODE0_INT )
   );
   X_BUF #(
-    .LOC ( "DSP48_X1Y58" ))
+    .LOC ( "DSP48_X1Y62" ))
   \Mmult_n0085/OPMODE1INV  (
     .I(GND),
     .O(\Mmult_n0085/OPMODE1_INT )
   );
   X_BUF #(
-    .LOC ( "DSP48_X1Y58" ))
+    .LOC ( "DSP48_X1Y62" ))
   \Mmult_n0085/OPMODE2INV  (
     .I(VCC),
     .O(\Mmult_n0085/OPMODE2_INT )
   );
   X_BUF #(
-    .LOC ( "DSP48_X1Y58" ))
+    .LOC ( "DSP48_X1Y62" ))
   \Mmult_n0085/OPMODE3INV  (
     .I(GND),
     .O(\Mmult_n0085/OPMODE3_INT )
   );
   X_BUF #(
-    .LOC ( "DSP48_X1Y58" ))
+    .LOC ( "DSP48_X1Y62" ))
   \Mmult_n0085/OPMODE4INV  (
     .I(GND),
     .O(\Mmult_n0085/OPMODE4_INT )
   );
   X_BUF #(
-    .LOC ( "DSP48_X1Y58" ))
+    .LOC ( "DSP48_X1Y62" ))
   \Mmult_n0085/OPMODE5INV  (
     .I(GND),
     .O(\Mmult_n0085/OPMODE5_INT )
   );
   X_BUF #(
-    .LOC ( "DSP48_X1Y58" ))
+    .LOC ( "DSP48_X1Y62" ))
   \Mmult_n0085/OPMODE6INV  (
     .I(GND),
     .O(\Mmult_n0085/OPMODE6_INT )
   );
   X_BUF #(
-    .LOC ( "DSP48_X1Y58" ))
+    .LOC ( "DSP48_X1Y62" ))
   \Mmult_n0085/CARRYININV  (
     .I(GND),
     .O(\Mmult_n0085/CARRYIN_INT )
   );
   X_BUF #(
-    .LOC ( "DSP48_X1Y58" ))
+    .LOC ( "DSP48_X1Y62" ))
   \Mmult_n0085/CLKINV  (
     .I(GND),
     .O(\Mmult_n0085/CLK_INT )
@@ -2423,7 +1379,7 @@ current_res[5], current_res[4], current_res[3], current_res[2], current_res[1], 
     .SEL_MASK ( "MASK" ),
     .MASK ( 48'h3fffffffffff ),
     .PATTERN ( 48'h000000000000 ),
-    .LOC ( "DSP48_X1Y58" ))
+    .LOC ( "DSP48_X1Y62" ))
   Mmult_n0085 (
     .RSTC(GND),
     .CEB1(GND),
@@ -2475,11 +1431,11 @@ VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, VCC, 
     .BCIN({\Mmult_n0085/BCIN17 , \Mmult_n0085/BCIN16 , \Mmult_n0085/BCIN15 , \Mmult_n0085/BCIN14 , \Mmult_n0085/BCIN13 , \Mmult_n0085/BCIN12 , 
 \Mmult_n0085/BCIN11 , \Mmult_n0085/BCIN10 , \Mmult_n0085/BCIN9 , \Mmult_n0085/BCIN8 , \Mmult_n0085/BCIN7 , \Mmult_n0085/BCIN6 , \Mmult_n0085/BCIN5 , 
 \Mmult_n0085/BCIN4 , \Mmult_n0085/BCIN3 , \Mmult_n0085/BCIN2 , \Mmult_n0085/BCIN1 , \Mmult_n0085/BCIN0 }),
-    .B({GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, current_b_6, current_b_5, current_b_4, current_b_3, current_b_2, current_b_1, 
-current_b_0}),
+    .B({GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, current_res[7], current_res[6], current_res[5], current_res[4], current_res[3], 
+current_res[2], current_res[1], current_res[0]}),
     .D({GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND}),
-    .A({VCC, VCC, VCC, VCC, VCC, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, current_res[7], current_res[6], 
-current_res[5], current_res[4], current_res[3], current_res[2], current_res[1], current_res[0]}),
+    .A({VCC, VCC, VCC, VCC, VCC, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, GND, current_b_6, current_b_5, 
+current_b_4, current_b_3, current_b_2, current_b_1, current_b_0}),
     .ACIN({\Mmult_n0085/ACIN29 , \Mmult_n0085/ACIN28 , \Mmult_n0085/ACIN27 , \Mmult_n0085/ACIN26 , \Mmult_n0085/ACIN25 , \Mmult_n0085/ACIN24 , 
 \Mmult_n0085/ACIN23 , \Mmult_n0085/ACIN22 , \Mmult_n0085/ACIN21 , \Mmult_n0085/ACIN20 , \Mmult_n0085/ACIN19 , \Mmult_n0085/ACIN18 , 
 \Mmult_n0085/ACIN17 , \Mmult_n0085/ACIN16 , \Mmult_n0085/ACIN15 , \Mmult_n0085/ACIN14 , \Mmult_n0085/ACIN13 , \Mmult_n0085/ACIN12 , 
@@ -2510,1720 +1466,2574 @@ current_res[5], current_res[4], current_res[3], current_res[2], current_res[1], 
 \Mmult_n0085/PCOUT11 , \Mmult_n0085/PCOUT10 , \Mmult_n0085/PCOUT9 , \Mmult_n0085/PCOUT8 , \Mmult_n0085/PCOUT7 , \Mmult_n0085/PCOUT6 , 
 \Mmult_n0085/PCOUT5 , \Mmult_n0085/PCOUT4 , \Mmult_n0085/PCOUT3 , \Mmult_n0085/PCOUT2 , \Mmult_n0085/PCOUT1 , \Mmult_n0085/PCOUT0 })
   );
-  X_FF #(
-    .LOC ( "SLICE_X19Y152" ),
-    .INIT ( 1'b1 ))
-  current_b_4_P_4 (
-    .CE(VCC),
-    .CLK(\NlwBufferSignal_current_b_4_P_4/CLK ),
-    .I(\NlwBufferSignal_current_b_4_P_4/IN ),
-    .O(current_b_4_P_4_1397),
-    .SET(\reset_b[4]_AND_84_o ),
-    .RST(GND)
+  X_CKBUF #(
+    .LOC ( "BUFGCTRL_X0Y31" ))
+  \clk_BUFGP/BUFG  (
+    .I(\NlwBufferSignal_clk_BUFGP/BUFG/IN ),
+    .O(clk_BUFGP)
   );
-  X_BUF   \current_b_4_C_4/current_b_4_C_4_CMUX_Delay  (
-    .I(\next_b<4>_pack_7 ),
-    .O(next_b[4])
+  X_BUF   \Msub_n0088_cy<3>/Msub_n0088_cy<3>_DMUX_Delay  (
+    .I(n0088[3]),
+    .O(\n0088<3>_0 )
   );
-  X_MUX2 #(
-    .LOC ( "SLICE_X20Y152" ))
-  Mmux_next_b10 (
-    .IA(N71),
-    .IB(N72),
-    .O(\next_b<4>_pack_7 ),
-    .SEL(\current_b[7]_current_a[7]_LessThan_14_o2_1392 )
+  X_BUF   \Msub_n0088_cy<3>/Msub_n0088_cy<3>_CMUX_Delay  (
+    .I(n0088[2]),
+    .O(\n0088<2>_0 )
   );
-  X_FF #(
-    .LOC ( "SLICE_X20Y152" ),
-    .INIT ( 1'b0 ))
-  current_b_4_C_4 (
-    .CE(VCC),
-    .CLK(\NlwBufferSignal_current_b_4_C_4/CLK ),
-    .I(\NlwBufferSignal_current_b_4_C_4/IN ),
-    .O(current_b_4_C_4_1396),
-    .RST(\reset_b[4]_AND_85_o_0 ),
-    .SET(GND)
+  X_BUF   \Msub_n0088_cy<3>/Msub_n0088_cy<3>_BMUX_Delay  (
+    .I(n0088[1]),
+    .O(\n0088<1>_0 )
   );
   X_LUT6 #(
-    .LOC ( "SLICE_X20Y152" ),
-    .INIT ( 64'hCCCCFFF0CCCC0F00 ))
-  Mmux_next_b10_F (
-    .ADR0(1'b1),
-    .ADR4(GND_1_o_GND_1_o_equal_6_o),
-    .ADR2(current_b_0),
-    .ADR5(N55),
-    .ADR3(current_b_5),
-    .ADR1(current_b_4),
-    .O(N71)
+    .LOC ( "SLICE_X42Y163" ),
+    .INIT ( 64'hF3A6590CC0956A3F ))
+  \Msub_n0088_lut<3>  (
+    .ADR1(current_b_3_LDC_1370),
+    .ADR0(current_a_3_LDC_1412),
+    .ADR3(current_a_3_C_3_1414),
+    .ADR2(current_b_3_P_3_1371),
+    .ADR5(current_b_3_C_3_1326),
+    .ADR4(current_a_3_P_3_1434),
+    .O(Msub_n0088_lut[3])
   );
-  X_LUT6 #(
-    .LOC ( "SLICE_X20Y152" ),
-    .INIT ( 64'hCCCCFFF0CCCC0F00 ))
-  Mmux_next_b10_G (
-    .ADR0(1'b1),
-    .ADR4(GND_1_o_GND_1_o_equal_6_o),
-    .ADR2(current_b_0),
-    .ADR5(N57),
-    .ADR3(current_b_5),
-    .ADR1(current_b_4),
-    .O(N72)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X20Y152" ),
-    .INIT ( 64'hFFFFF0F00F0F0000 ))
-  current_b_41 (
-    .ADR0(1'b1),
-    .ADR1(1'b1),
-    .ADR3(1'b1),
-    .ADR2(current_b_4_LDC_1395),
-    .ADR4(current_b_4_C_4_1396),
-    .ADR5(current_b_4_P_4_1397),
-    .O(current_b_4)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X20Y152" ),
-    .INIT ( 64'hFFFFF0F00F0F0000 ))
-  current_b_01_1 (
-    .ADR0(1'b1),
-    .ADR1(1'b1),
-    .ADR3(1'b1),
-    .ADR2(current_b_0_LDC_1464),
-    .ADR4(current_b_0_C_0_1465),
-    .ADR5(current_b_0_P_0_1404),
-    .O(current_b_01_1463)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X21Y154" ),
-    .INIT ( 64'h088C0088CEEFCCEE ))
-  \current_b[7]_current_a[7]_LessThan_14_o2  (
-    .ADR1(current_a_2),
-    .ADR5(current_b_2),
-    .ADR0(current_a_1),
-    .ADR3(current_b_1),
-    .ADR4(current_a_0),
-    .ADR2(current_b_0),
-    .O(\current_b[7]_current_a[7]_LessThan_14_o1_1526 )
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X21Y154" ),
-    .INIT ( 64'hFFF5FF500A00AF00 ))
-  \current_b[7]_current_a[7]_LessThan_14_o1  (
-    .ADR1(1'b1),
-    .ADR2(current_a_3),
-    .ADR0(current_b_3),
-    .ADR3(N11),
-    .ADR5(N12),
-    .ADR4(\current_b[7]_current_a[7]_LessThan_14_o1_1526 ),
-    .O(\current_b[7]_current_a[7]_LessThan_14_o2_1392 )
-  );
-  X_FF #(
-    .LOC ( "SLICE_X21Y154" ),
-    .INIT ( 1'b0 ))
-  current_a_1_C_1 (
-    .CE(VCC),
-    .CLK(\NlwBufferSignal_current_a_1_C_1/CLK ),
-    .I(\NlwBufferSignal_current_a_1_C_1/IN ),
-    .O(current_a_1_C_1_1419),
-    .RST(\reset_a[1]_AND_77_o ),
-    .SET(GND)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X21Y154" ),
-    .INIT ( 64'hFFFFAAAA55550000 ))
-  current_a_41 (
-    .ADR3(1'b1),
-    .ADR1(1'b1),
-    .ADR2(1'b1),
-    .ADR0(current_a_4_LDC_1484),
-    .ADR4(current_a_4_C_4_1487),
-    .ADR5(current_a_4_P_4_1427),
-    .O(current_a_4)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X21Y154" ),
-    .INIT ( 64'hFF1B1B00FFFF1B1B ))
-  \current_b[7]_current_a[7]_LessThan_14_o1_SW1  (
-    .ADR0(current_b_5_LDC_1439),
-    .ADR1(current_b_5_C_5_1440),
-    .ADR2(current_b_5_P_5_1441),
-    .ADR4(current_a_5),
-    .ADR5(current_b_4),
-    .ADR3(current_a_4),
-    .O(N12)
-  );
-  X_BUF   \current_b_3_C_3/current_b_3_C_3_CMUX_Delay  (
-    .I(\next_b<3>_pack_9 ),
-    .O(next_b[3])
-  );
-  X_MUX2 #(
-    .LOC ( "SLICE_X21Y151" ))
-  Mmux_next_b8 (
-    .IA(N77),
-    .IB(N78),
-    .O(\next_b<3>_pack_9 ),
-    .SEL(\current_b[7]_current_a[7]_LessThan_14_o2_1392 )
-  );
-  X_FF #(
-    .LOC ( "SLICE_X21Y151" ),
-    .INIT ( 1'b0 ))
-  current_b_3_C_3 (
-    .CE(VCC),
-    .CLK(\NlwBufferSignal_current_b_3_C_3/CLK ),
-    .I(\NlwBufferSignal_current_b_3_C_3/IN ),
-    .O(current_b_3_C_3_1383),
-    .RST(\reset_b[3]_AND_87_o ),
-    .SET(GND)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X21Y151" ),
-    .INIT ( 64'hF0F0FFCCF0F03300 ))
-  Mmux_next_b8_F (
-    .ADR0(1'b1),
-    .ADR4(GND_1_o_GND_1_o_equal_6_o),
-    .ADR1(current_b_0),
-    .ADR5(N67),
-    .ADR3(current_b_4),
-    .ADR2(current_b_3),
-    .O(N77)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X21Y151" ),
-    .INIT ( 64'hCCCCCCCCFFF00F00 ))
-  Mmux_next_b8_G (
-    .ADR0(1'b1),
-    .ADR5(GND_1_o_GND_1_o_equal_6_o),
-    .ADR2(current_b_0),
-    .ADR4(N69),
-    .ADR3(current_b_4),
-    .ADR1(current_b_3),
-    .O(N78)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X21Y151" ),
-    .INIT ( 64'hFFFF5555AAAA0000 ))
-  current_b_31 (
-    .ADR3(1'b1),
-    .ADR1(1'b1),
-    .ADR2(1'b1),
-    .ADR0(current_b_3_LDC_1424),
-    .ADR5(current_b_3_C_3_1383),
-    .ADR4(current_b_3_P_3_1425),
-    .O(current_b_3)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X21Y151" ),
-    .INIT ( 64'hFF0BF400FF08F700 ))
-  \current_b[7]_current_a[7]_LessThan_14_o21_SW11_F  (
-    .ADR3(current_b_3),
-    .ADR0(current_b_6_P_6_1413),
-    .ADR1(current_b_6_LDC_1433),
-    .ADR2(current_a_6),
-    .ADR5(current_b_6_C_6_1434),
-    .ADR4(N22),
-    .O(N69)
-  );
-  X_BUF   \current_b_3_LDC/current_b_3_LDC_AMUX_Delay  (
-    .I(\reset_b[3]_AND_87_o_pack_1 ),
-    .O(\reset_b[3]_AND_87_o )
-  );
-  X_LATCHE #(
-    .LOC ( "SLICE_X20Y150" ),
-    .INIT ( 1'b0 ))
-  current_b_3_LDC (
-    .GE(VCC),
-    .CLK(\NlwBufferSignal_current_b_3_LDC/CLK ),
-    .I(1'b1),
-    .O(current_b_3_LDC_1424),
-    .RST(\reset_b[3]_AND_87_o ),
-    .SET(GND)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X20Y150" ),
-    .INIT ( 64'hF0F00000F0F00000 ))
-  \reset_b[3]_AND_86_o1  (
-    .ADR0(1'b1),
-    .ADR1(1'b1),
-    .ADR3(1'b1),
-    .ADR2(reset_IBUF_1382),
-    .ADR4(b_3_IBUF_1513),
-    .ADR5(1'b1),
-    .O(\reset_b[3]_AND_86_o )
-  );
-  X_LUT5 #(
-    .LOC ( "SLICE_X20Y150" ),
-    .INIT ( 32'h0000F0F0 ))
-  \reset_b[3]_AND_87_o1  (
-    .ADR0(1'b1),
-    .ADR1(1'b1),
-    .ADR3(1'b1),
-    .ADR2(reset_IBUF_1382),
-    .ADR4(b_3_IBUF_1513),
-    .O(\reset_b[3]_AND_87_o_pack_1 )
-  );
-  X_FF #(
-    .LOC ( "SLICE_X19Y154" ),
-    .INIT ( 1'b1 ))
-  current_a_1_P_1 (
-    .CE(VCC),
-    .CLK(\NlwBufferSignal_current_a_1_P_1/CLK ),
-    .I(\NlwBufferSignal_current_a_1_P_1/IN ),
-    .O(current_a_1_P_1_1472),
-    .SET(\reset_a[1]_AND_76_o ),
-    .RST(GND)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X20Y153" ),
-    .INIT ( 64'hFFFFAAAA55550000 ))
-  current_a_21 (
-    .ADR3(1'b1),
-    .ADR1(1'b1),
-    .ADR2(1'b1),
-    .ADR0(current_a_2_LDC_1453),
-    .ADR4(current_a_2_C_2_1457),
-    .ADR5(current_a_2_P_2_1492),
-    .O(current_a_2)
-  );
-  X_FF #(
-    .LOC ( "SLICE_X20Y153" ),
-    .INIT ( 1'b0 ))
-  current_a_3_C_3 (
-    .CE(VCC),
-    .CLK(\NlwBufferSignal_current_a_3_C_3/CLK ),
-    .I(next_a[3]),
-    .O(current_a_3_C_3_1478),
-    .RST(\reset_a[3]_AND_73_o ),
-    .SET(GND)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X20Y153" ),
-    .INIT ( 64'hFFFCDFDC23200300 ))
-  Mmux_next_a82 (
-    .ADR5(current_a_3),
-    .ADR3(current_a_4),
-    .ADR2(current_a_0),
-    .ADR0(current_b_0),
-    .ADR1(GND_1_o_GND_1_o_OR_32_o_1328),
-    .ADR4(Mmux_next_a8),
-    .O(next_a[3])
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X20Y153" ),
-    .INIT ( 64'hFFF30C00FF30CF00 ))
-  Mmux_next_a81 (
-    .ADR0(1'b1),
-    .ADR1(current_b_6),
-    .ADR2(current_a_6),
-    .ADR4(\n0088<4>_0 ),
-    .ADR3(\n0089<4>_0 ),
-    .ADR5(\current_b[7]_current_a[7]_LessThan_14_o2_1392 ),
-    .O(Mmux_next_a8)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X19Y153" ),
-    .INIT ( 64'hCCCCCCCCFCAA0CAA ))
-  Mmux_next_a42 (
-    .ADR0(current_a_2),
-    .ADR1(current_a_1),
-    .ADR3(current_a_0),
-    .ADR2(current_b_0),
-    .ADR5(GND_1_o_GND_1_o_OR_32_o_1328),
-    .ADR4(Mmux_next_a4),
-    .O(next_a[1])
-  );
-  X_FF #(
-    .LOC ( "SLICE_X19Y153" ),
-    .INIT ( 1'b1 ))
-  current_a_2_P_2 (
-    .CE(VCC),
-    .CLK(\NlwBufferSignal_current_a_2_P_2/CLK ),
-    .I(\NlwBufferSignal_current_a_2_P_2/IN ),
-    .O(current_a_2_P_2_1492),
-    .SET(\reset_a[2]_AND_74_o ),
-    .RST(GND)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X19Y153" ),
-    .INIT ( 64'hFF0CF300FFCF3000 ))
-  Mmux_next_a41 (
-    .ADR0(1'b1),
-    .ADR1(current_b_6),
-    .ADR2(current_a_6),
-    .ADR3(\n0088<2>_0 ),
-    .ADR4(\n0089<2>_0 ),
-    .ADR5(\current_b[7]_current_a[7]_LessThan_14_o2_1392 ),
-    .O(Mmux_next_a4)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X21Y152" ),
-    .INIT ( 64'hFFFF5555AAAA0000 ))
-  current_a_31 (
-    .ADR3(1'b1),
-    .ADR1(1'b1),
-    .ADR2(1'b1),
-    .ADR0(current_a_3_LDC_1476),
-    .ADR5(current_a_3_C_3_1478),
-    .ADR4(current_a_3_P_3_1496),
-    .O(current_a_3)
-  );
-  X_FF #(
-    .LOC ( "SLICE_X21Y152" ),
-    .INIT ( 1'b1 ))
-  current_b_0_P_0 (
-    .CE(VCC),
-    .CLK(\NlwBufferSignal_current_b_0_P_0/CLK ),
-    .I(next_b[0]),
-    .O(current_b_0_P_0_1404),
-    .SET(\reset_b[0]_AND_92_o ),
-    .RST(GND)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X21Y152" ),
-    .INIT ( 64'hBBAABABABBAABABA ))
-  Mmux_next_b21 (
-    .ADR5(1'b1),
-    .ADR4(current_b_1_LDC_1386),
-    .ADR2(current_b_1_C_1_1387),
-    .ADR3(current_b_1_P_1_1388),
-    .ADR0(current_b_0),
-    .ADR1(GND_1_o_GND_1_o_equal_6_o),
-    .O(next_b[0])
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X21Y153" ),
-    .INIT ( 64'hFFFF0F0FF0F00000 ))
-  current_a_11 (
-    .ADR0(1'b1),
-    .ADR1(1'b1),
-    .ADR3(1'b1),
-    .ADR2(current_a_1_LDC_1423),
-    .ADR5(current_a_1_C_1_1419),
-    .ADR4(current_a_1_P_1_1472),
-    .O(current_a_1)
-  );
-  X_FF #(
-    .LOC ( "SLICE_X21Y153" ),
-    .INIT ( 1'b0 ))
-  current_a_2_C_2 (
-    .CE(VCC),
-    .CLK(\NlwBufferSignal_current_a_2_C_2/CLK ),
-    .I(next_a[2]),
-    .O(current_a_2_C_2_1457),
-    .RST(\reset_a[2]_AND_75_o_0 ),
-    .SET(GND)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X21Y153" ),
-    .INIT ( 64'hCCCCCCCCFCAA0CAA ))
-  Mmux_next_a62 (
-    .ADR0(current_a_3),
-    .ADR1(current_a_2),
-    .ADR3(current_a_0),
-    .ADR2(current_b_0),
-    .ADR5(GND_1_o_GND_1_o_OR_32_o_1328),
-    .ADR4(Mmux_next_a6),
-    .O(next_a[2])
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X21Y153" ),
-    .INIT ( 64'hFF0CF300FFCF3000 ))
-  Mmux_next_a61 (
-    .ADR0(1'b1),
-    .ADR1(current_b_6),
-    .ADR2(current_a_6),
-    .ADR3(\n0088<3>_0 ),
-    .ADR4(\n0089<3>_0 ),
-    .ADR5(\current_b[7]_current_a[7]_LessThan_14_o2_1392 ),
-    .O(Mmux_next_a6)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X21Y150" ),
-    .INIT ( 64'hFFE41B00FFFF0000 ))
-  \current_b[7]_current_a[7]_LessThan_14_o21_SW10_F  (
-    .ADR0(current_b_6_LDC_1433),
-    .ADR2(current_b_6_P_6_1413),
-    .ADR1(current_b_6_C_6_1434),
-    .ADR3(current_b_3),
-    .ADR5(current_a_6),
-    .ADR4(N22),
-    .O(N67)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X21Y150" ),
-    .INIT ( 64'hFFFFFA5005AF0000 ))
-  Mmux_next_b8_SW0 (
-    .ADR1(1'b1),
-    .ADR0(current_a_0_LDC_1436),
-    .ADR2(current_a_0_C_0_1437),
-    .ADR3(current_a_0_P_0_1438),
-    .ADR5(current_a_3),
-    .ADR4(current_b_3),
-    .O(N22)
-  );
-  X_FF #(
-    .LOC ( "SLICE_X21Y155" ),
-    .INIT ( 1'b0 ))
-  current_a_5_C_5 (
-    .CE(VCC),
-    .CLK(\NlwBufferSignal_current_a_5_C_5/CLK ),
-    .I(\NlwBufferSignal_current_a_5_C_5/IN ),
-    .O(current_a_5_C_5_1399),
-    .RST(\reset_a[5]_AND_69_o_0 ),
-    .SET(GND)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X21Y155" ),
-    .INIT ( 64'hFCFCFC3C30F03030 ))
-  Mmux_next_a141_SW0 (
-    .ADR0(1'b1),
-    .ADR3(current_b_6),
-    .ADR2(current_a_6),
-    .ADR1(current_b_0),
-    .ADR4(\n0088<7>_0 ),
-    .ADR5(\n0089<7>_0 ),
-    .O(N36)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X21Y155" ),
-    .INIT ( 64'hCACACAC0C0CAC0C0 ))
-  Mmux_next_a142 (
-    .ADR0(current_a_0),
-    .ADR1(current_a_6),
-    .ADR2(GND_1_o_GND_1_o_OR_32_o_1328),
-    .ADR3(\current_b[7]_current_a[7]_LessThan_14_o2_1392 ),
-    .ADR5(N37),
-    .ADR4(N36),
-    .O(next_a[6])
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X21Y155" ),
-    .INIT ( 64'hFFFF00FFFF000000 ))
-  current_a_51 (
-    .ADR0(1'b1),
-    .ADR1(1'b1),
-    .ADR2(1'b1),
-    .ADR3(current_a_5_LDC_1398),
-    .ADR5(current_a_5_C_5_1399),
-    .ADR4(current_a_5_P_5_1400),
-    .O(current_a_5)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X21Y155" ),
-    .INIT ( 64'h1B00FF1B0000FF00 ))
-  \current_b[7]_current_a[7]_LessThan_14_o1_SW0  (
-    .ADR0(current_b_4_LDC_1395),
-    .ADR1(current_b_4_C_4_1396),
-    .ADR2(current_b_4_P_4_1397),
-    .ADR5(current_a_4),
-    .ADR4(current_b_5),
-    .ADR3(current_a_5),
-    .O(N11)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X20Y151" ),
-    .INIT ( 64'hF0FEF0F2F010F0D0 ))
-  \current_b[7]_current_a[7]_LessThan_14_o21_SW2_F  (
-    .ADR2(current_b_4),
-    .ADR4(current_b_6_P_6_1413),
-    .ADR1(current_b_6_LDC_1433),
-    .ADR3(current_a_6),
-    .ADR0(current_b_6_C_6_1434),
-    .ADR5(N14),
-    .O(N57)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X20Y151" ),
-    .INIT ( 64'hFFB84700FFFF0000 ))
-  \current_b[7]_current_a[7]_LessThan_14_o21_SW1_F  (
-    .ADR1(current_b_6_LDC_1433),
-    .ADR0(current_b_6_P_6_1413),
-    .ADR2(current_b_6_C_6_1434),
-    .ADR3(current_b_4),
-    .ADR5(current_a_6),
-    .ADR4(N14),
-    .O(N55)
-  );
-  X_LATCHE #(
-    .LOC ( "SLICE_X20Y151" ),
-    .INIT ( 1'b0 ))
-  current_b_1_LDC (
-    .GE(VCC),
-    .CLK(\NlwBufferSignal_current_b_1_LDC/CLK ),
-    .I(1'b1),
-    .O(current_b_1_LDC_1386),
-    .RST(\reset_b[1]_AND_91_o_0 ),
-    .SET(GND)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X20Y151" ),
-    .INIT ( 64'hFFFF0C3FF3C00000 ))
-  Mmux_next_b10_SW0 (
-    .ADR0(1'b1),
-    .ADR1(current_a_0_LDC_1436),
-    .ADR3(current_a_0_C_0_1437),
-    .ADR2(current_a_0_P_0_1438),
-    .ADR4(current_a_4),
-    .ADR5(current_b_4),
-    .O(N14)
-  );
-  X_LATCHE #(
-    .LOC ( "SLICE_X19Y155" ),
-    .INIT ( 1'b0 ))
-  current_a_5_LDC (
-    .GE(VCC),
-    .CLK(\NlwBufferSignal_current_a_5_LDC/CLK ),
-    .I(1'b1),
-    .O(current_a_5_LDC_1398),
-    .RST(\reset_a[5]_AND_69_o_0 ),
-    .SET(GND)
-  );
-  X_BUF   \current_a_4_C_4/current_a_4_C_4_AMUX_Delay  (
-    .I(\reset_b[5]_AND_83_o ),
-    .O(\reset_b[5]_AND_83_o_0 )
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X20Y154" ),
-    .INIT ( 64'hFFBFFABA45054000 ))
-  Mmux_next_a122 (
-    .ADR5(current_a_5),
-    .ADR2(current_a_0),
-    .ADR4(current_a_6),
-    .ADR1(current_b_0),
-    .ADR0(GND_1_o_GND_1_o_OR_32_o_1328),
-    .ADR3(Mmux_next_a12),
-    .O(next_a[5])
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X20Y154" ),
-    .INIT ( 64'hFFFFC0FC3F030000 ))
-  Mmux_next_a121 (
-    .ADR0(1'b1),
-    .ADR3(current_b_6),
-    .ADR2(current_a_6),
-    .ADR5(\n0088<6>_0 ),
-    .ADR4(\n0089<6>_0 ),
-    .ADR1(\current_b[7]_current_a[7]_LessThan_14_o2_1392 ),
-    .O(Mmux_next_a12)
-  );
-  X_FF #(
-    .LOC ( "SLICE_X20Y154" ),
-    .INIT ( 1'b0 ))
-  current_a_4_C_4 (
-    .CE(VCC),
-    .CLK(\NlwBufferSignal_current_a_4_C_4/CLK ),
-    .I(\NlwBufferSignal_current_a_4_C_4/IN ),
-    .O(current_a_4_C_4_1487),
-    .RST(\reset_a[4]_AND_71_o_0 ),
-    .SET(GND)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X20Y154" ),
-    .INIT ( 64'hCC00CC00CC00CC00 ))
-  \reset_b[5]_AND_82_o1  (
-    .ADR0(1'b1),
-    .ADR4(1'b1),
-    .ADR2(1'b1),
-    .ADR3(reset_IBUF_1382),
-    .ADR1(b_5_IBUF_1504),
-    .ADR5(1'b1),
-    .O(\reset_b[5]_AND_82_o )
-  );
-  X_LUT5 #(
-    .LOC ( "SLICE_X20Y154" ),
-    .INIT ( 32'h33003300 ))
-  \reset_b[5]_AND_83_o1  (
-    .ADR0(1'b1),
-    .ADR4(1'b1),
-    .ADR2(1'b1),
-    .ADR3(reset_IBUF_1382),
-    .ADR1(b_5_IBUF_1504),
-    .O(\reset_b[5]_AND_83_o )
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X22Y152" ),
-    .INIT ( 64'hFFFFAAAA55550000 ))
-  current_b_01 (
-    .ADR3(1'b1),
-    .ADR1(1'b1),
-    .ADR2(1'b1),
-    .ADR0(current_b_0_LDC_1464),
-    .ADR4(current_b_0_C_0_1465),
-    .ADR5(current_b_0_P_0_1404),
-    .O(current_b_0)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X22Y152" ),
-    .INIT ( 64'hFFFF33F3FF3F3333 ))
-  Mmux_next_a2_SW2_SW1 (
-    .ADR0(1'b1),
-    .ADR2(current_b_6),
-    .ADR3(current_a_6),
-    .ADR1(current_b_0),
-    .ADR4(\n0088<1>_0 ),
-    .ADR5(\n0089<1>_0 ),
-    .O(N34)
-  );
-  X_FF #(
-    .LOC ( "SLICE_X22Y152" ),
-    .INIT ( 1'b1 ))
-  current_res_0 (
-    .CE(_n0137_inv),
-    .CLK(\NlwBufferSignal_current_res_0/CLK ),
-    .I(GND_1_o_GND_1_o_OR_32_o_1328),
-    .O(current_res[0]),
-    .SET(reset_IBUF_1382),
-    .RST(GND)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X22Y152" ),
-    .INIT ( 64'hFFFF0001FFFF0000 ))
-  GND_1_o_GND_1_o_OR_32_o (
-    .ADR2(current_b_2),
-    .ADR0(current_b_1),
-    .ADR3(current_b_0),
-    .ADR1(current_b_3),
-    .ADR5(N6),
-    .ADR4(GND_1_o_GND_1_o_equal_6_o),
-    .O(GND_1_o_GND_1_o_OR_32_o_1328)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X22Y152" ),
-    .INIT ( 64'h0000000000000001 ))
-  \GND_1_o_GND_1_o_equal_6_o<7>  (
-    .ADR0(current_a_2),
-    .ADR1(current_a_3),
-    .ADR2(current_a_4),
-    .ADR4(current_a_5),
-    .ADR3(current_a_6),
-    .ADR5(N26),
-    .O(GND_1_o_GND_1_o_equal_6_o)
-  );
-  X_BUF   \current_a_3_P_3/current_a_3_P_3_DMUX_Delay  (
-    .I(n0089[7]),
-    .O(\n0089<7>_0 )
-  );
-  X_BUF   \current_a_3_P_3/current_a_3_P_3_CMUX_Delay  (
-    .I(n0089[6]),
-    .O(\n0089<6>_0 )
-  );
-  X_BUF   \current_a_3_P_3/current_a_3_P_3_BMUX_Delay  (
-    .I(n0089[5]),
-    .O(\n0089<5>_0 )
-  );
-  X_BUF   \current_a_3_P_3/current_a_3_P_3_AMUX_Delay  (
-    .I(n0089[4]),
-    .O(\n0089<4>_0 )
-  );
-  X_FF #(
-    .LOC ( "SLICE_X23Y153" ),
-    .INIT ( 1'b1 ))
-  current_a_3_P_3 (
-    .CE(VCC),
-    .CLK(\NlwBufferSignal_current_a_3_P_3/CLK ),
-    .I(\NlwBufferSignal_current_a_3_P_3/IN ),
-    .O(current_a_3_P_3_1496),
-    .SET(\reset_a[3]_AND_72_o ),
-    .RST(GND)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X23Y153" ),
-    .INIT ( 64'hFFFFFFFFFFFFFFFF ))
-  \Msub_n0088_lut<7>_116.D6LUT  (
-    .ADR0(1'b1),
-    .ADR1(1'b1),
-    .ADR2(1'b1),
-    .ADR3(1'b1),
-    .ADR4(1'b1),
-    .ADR5(1'b1),
-    .O(\NLW_Msub_n0088_lut<7>_116.D6LUT_O_UNCONNECTED )
+  X_ONE #(
+    .LOC ( "SLICE_X42Y163" ))
+  \ProtoComp32.CYINITVCC  (
+    .O(\NLW_ProtoComp32.CYINITVCC_O_UNCONNECTED )
   );
   X_CARRY4 #(
-    .LOC ( "SLICE_X23Y153" ))
-  \Msub_n0089_xor<7>  (
-    .CI(Msub_n0089_cy[3]),
-    .CYINIT(1'b0),
-    .CO({\NLW_Msub_n0089_xor<7>_CO[3]_UNCONNECTED , \NLW_Msub_n0089_xor<7>_CO[2]_UNCONNECTED , \NLW_Msub_n0089_xor<7>_CO[1]_UNCONNECTED , 
-\NLW_Msub_n0089_xor<7>_CO[0]_UNCONNECTED }),
-    .DI({\NLW_Msub_n0089_xor<7>_DI[3]_UNCONNECTED , \NlwBufferSignal_Msub_n0089_xor<7>/DI<2> , \NlwBufferSignal_Msub_n0089_xor<7>/DI<1> , 
-\NlwBufferSignal_Msub_n0089_xor<7>/DI<0> }),
-    .O({n0089[7], n0089[6], n0089[5], n0089[4]}),
-    .S({1'b1, Msub_n0089_lut[6], Msub_n0089_lut[5], Msub_n0089_lut[4]})
+    .LOC ( "SLICE_X42Y163" ))
+  \Msub_n0088_cy<3>  (
+    .CI(1'b0),
+    .CYINIT(1'b1),
+    .CO({Msub_n0088_cy[3], \NLW_Msub_n0088_cy<3>_CO[2]_UNCONNECTED , \NLW_Msub_n0088_cy<3>_CO[1]_UNCONNECTED , 
+\NLW_Msub_n0088_cy<3>_CO[0]_UNCONNECTED }),
+    .DI({\NlwBufferSignal_Msub_n0088_cy<3>/DI<3> , \NlwBufferSignal_Msub_n0088_cy<3>/DI<2> , \NlwBufferSignal_Msub_n0088_cy<3>/DI<1> , 
+\NlwBufferSignal_Msub_n0088_cy<3>/DI<0> }),
+    .O({n0088[3], n0088[2], n0088[1], \NLW_Msub_n0088_cy<3>_O[0]_UNCONNECTED }),
+    .S({Msub_n0088_lut[3], Msub_n0088_lut[2], Msub_n0088_lut[1], Msub_n0088_lut[0]})
   );
   X_LUT6 #(
-    .LOC ( "SLICE_X23Y153" ),
-    .INIT ( 64'hF5C6A093390A6C5F ))
-  \Msub_n0089_lut<6>  (
-    .ADR0(current_b_6_LDC_1433),
-    .ADR1(current_a_6_LDC_1416),
-    .ADR3(current_a_6_C_6_1417),
-    .ADR5(current_a_6_P_6_1418),
-    .ADR2(current_b_6_P_6_1413),
-    .ADR4(current_b_6_C_6_1434),
-    .O(Msub_n0089_lut[6])
+    .LOC ( "SLICE_X42Y163" ),
+    .INIT ( 64'hFA36509CC90563AF ))
+  \Msub_n0088_lut<2>  (
+    .ADR0(current_b_2_LDC_1358),
+    .ADR1(current_a_2_LDC_1392),
+    .ADR5(current_a_2_C_2_1396),
+    .ADR4(current_b_2_P_2_1360),
+    .ADR2(current_b_2_C_2_1359),
+    .ADR3(current_a_2_P_2_1430),
+    .O(Msub_n0088_lut[2])
   );
   X_LUT6 #(
-    .LOC ( "SLICE_X23Y153" ),
-    .INIT ( 64'hF5A0396CC6930A5F ))
-  \Msub_n0089_lut<5>  (
-    .ADR0(current_b_5_LDC_1439),
-    .ADR1(current_a_5_LDC_1398),
-    .ADR5(current_a_5_C_5_1399),
-    .ADR4(current_a_5_P_5_1400),
-    .ADR2(current_b_5_P_5_1441),
-    .ADR3(current_b_5_C_5_1440),
-    .O(Msub_n0089_lut[5])
+    .LOC ( "SLICE_X42Y163" ),
+    .INIT ( 64'hFC56A903309A65CF ))
+  \Msub_n0088_lut<1>  (
+    .ADR1(current_b_1_LDC_1318),
+    .ADR0(current_a_1_LDC_1347),
+    .ADR4(current_a_1_C_1_1348),
+    .ADR5(current_b_1_P_1_1320),
+    .ADR2(current_b_1_C_1_1319),
+    .ADR3(current_a_1_P_1_1349),
+    .O(Msub_n0088_lut[1])
   );
   X_LUT6 #(
-    .LOC ( "SLICE_X23Y153" ),
-    .INIT ( 64'hFAC9360550639CAF ))
-  \Msub_n0089_lut<4>  (
-    .ADR1(current_b_4_LDC_1395),
-    .ADR0(current_a_4_LDC_1484),
-    .ADR2(current_a_4_C_4_1487),
-    .ADR5(current_a_4_P_4_1427),
-    .ADR4(current_b_4_P_4_1397),
-    .ADR3(current_b_4_C_4_1396),
-    .O(Msub_n0089_lut[4])
+    .LOC ( "SLICE_X42Y163" ),
+    .INIT ( 64'hFA50C963369C05AF ))
+  \Msub_n0088_lut<0>  (
+    .ADR1(current_b_0_LDC_1405),
+    .ADR0(current_a_0_LDC_1346),
+    .ADR5(current_b_0_P_0_1340),
+    .ADR4(current_b_0_C_0_1406),
+    .ADR2(current_a_0_C_0_1351),
+    .ADR3(current_a_0_P_0_1350),
+    .O(Msub_n0088_lut[0])
   );
-  X_LUT6 #(
-    .LOC ( "SLICE_X25Y153" ),
-    .INIT ( 64'hF0F0F0F0EAEE6222 ))
-  Mmux_next_b12_SW1 (
-    .ADR0(current_b_6_C_6_1434),
-    .ADR2(current_b_5),
-    .ADR3(current_a_6),
-    .ADR1(current_b_0),
-    .ADR4(N16),
-    .ADR5(GND_1_o_GND_1_o_equal_6_o),
-    .O(N28)
+  X_IPAD #(
+    .LOC ( "IOB_X1Y128" ))
+  clk_24 (
+    .PAD(clk)
   );
-  X_LUT6 #(
-    .LOC ( "SLICE_X25Y153" ),
-    .INIT ( 64'hFFFF3F0FCFFF0F0F ))
-  Mmux_next_a2_SW2_SW0 (
-    .ADR0(1'b1),
-    .ADR1(current_b_6),
-    .ADR3(current_a_6),
-    .ADR2(current_b_0),
-    .ADR5(\n0088<1>_0 ),
-    .ADR4(\n0089<1>_0 ),
-    .O(N33)
+  X_ZERO #(
+    .LOC ( "IOB_X1Y128" ))
+  \ProtoComp34.INTERMDISABLE_GND  (
+    .O(\ProtoComp34.INTERMDISABLE_GND.0 )
   );
-  X_LUT6 #(
-    .LOC ( "SLICE_X25Y153" ),
-    .INIT ( 64'hCECECEC2C2CEC2C2 ))
-  Mmux_next_a2 (
-    .ADR0(current_a_1),
-    .ADR1(current_a_0),
-    .ADR2(GND_1_o_GND_1_o_OR_32_o_1328),
-    .ADR3(\current_b[7]_current_a[7]_LessThan_14_o2_1392 ),
-    .ADR5(N34),
-    .ADR4(N33),
-    .O(next_a[0])
+  X_IBUF_INTERMDISABLE_TPWRGT #(
+    .LOC ( "IOB_X1Y128" ))
+  \clk_BUFGP/IBUFG  (
+    .IBUFDISABLE(1'b0),
+    .INTERMDISABLE(\ProtoComp34.INTERMDISABLE_GND.0 ),
+    .O(\clk_BUFGP/IBUFG_1316 ),
+    .I(clk),
+    .TPWRGT(1'b1)
   );
-  X_FF #(
-    .LOC ( "SLICE_X25Y153" ),
-    .INIT ( 1'b1 ))
-  current_b_6_P_6 (
-    .CE(VCC),
-    .CLK(\NlwBufferSignal_current_b_6_P_6/CLK ),
-    .I(\NlwBufferSignal_current_b_6_P_6/IN ),
-    .O(current_b_6_P_6_1413),
-    .SET(\reset_b[6]_AND_80_o ),
-    .RST(GND)
+  X_OPAD #(
+    .LOC ( "IOB_X0Y132" ))
+  \res<6>  (
+    .PAD(res[6])
   );
-  X_LUT6 #(
-    .LOC ( "SLICE_X25Y153" ),
-    .INIT ( 64'hF0F0F4CCF0F0B0CC ))
-  Mmux_next_b12_SW3 (
-    .ADR1(current_b_6_C_6_1434),
-    .ADR2(current_b_5),
-    .ADR0(current_a_6),
-    .ADR3(current_b_0),
-    .ADR5(N16),
-    .ADR4(GND_1_o_GND_1_o_equal_6_o),
-    .O(N30)
+  X_OBUF #(
+    .LOC ( "IOB_X0Y132" ))
+  res_6_OBUF (
+    .I(res_6_1470),
+    .O(res[6])
   );
-  X_LUT6 #(
-    .LOC ( "SLICE_X25Y154" ),
-    .INIT ( 64'hFFFF5555AAAA0000 ))
-  current_b_61 (
-    .ADR3(1'b1),
-    .ADR1(1'b1),
-    .ADR2(1'b1),
-    .ADR0(current_b_6_LDC_1433),
-    .ADR5(current_b_6_C_6_1434),
-    .ADR4(current_b_6_P_6_1413),
-    .O(current_b_6)
+  X_IPAD #(
+    .LOC ( "IOB_X0Y161" ))
+  \a<0>  (
+    .PAD(a[0])
   );
-  X_FF #(
-    .LOC ( "SLICE_X25Y154" ),
-    .INIT ( 1'b1 ))
-  current_b_1_P_1 (
-    .CE(VCC),
-    .CLK(\NlwBufferSignal_current_b_1_P_1/CLK ),
-    .I(\NlwBufferSignal_current_b_1_P_1/IN ),
-    .O(current_b_1_P_1_1388),
-    .SET(\reset_b[1]_AND_90_o ),
-    .RST(GND)
+  X_ZERO #(
+    .LOC ( "IOB_X0Y161" ))
+  \ProtoComp34.INTERMDISABLE_GND.1  (
+    .O(\a<0>/ProtoComp34.INTERMDISABLE_GND.0 )
   );
-  X_LUT6 #(
-    .LOC ( "SLICE_X25Y154" ),
-    .INIT ( 64'h00000000000A005F ))
-  GND_1_o_GND_1_o_OR_32_o_SW0 (
-    .ADR1(1'b1),
-    .ADR0(current_b_4_LDC_1395),
-    .ADR2(current_b_4_P_4_1397),
-    .ADR4(current_b_4_C_4_1396),
-    .ADR5(current_b_5),
-    .ADR3(current_b_6),
-    .O(N6)
+  X_IBUF_INTERMDISABLE_TPWRGT #(
+    .LOC ( "IOB_X0Y161" ))
+  a_0_IBUF (
+    .IBUFDISABLE(1'b0),
+    .INTERMDISABLE(\a<0>/ProtoComp34.INTERMDISABLE_GND.0 ),
+    .O(a_0_IBUF_1448),
+    .I(a[0]),
+    .TPWRGT(1'b1)
   );
-  X_LUT6 #(
-    .LOC ( "SLICE_X20Y155" ),
-    .INIT ( 64'hFFF00FA0FF500F00 ))
-  Mmux_next_a141_SW1 (
-    .ADR1(1'b1),
-    .ADR0(current_b_6),
-    .ADR3(current_a_6),
-    .ADR2(current_b_0),
-    .ADR4(\n0088<7>_0 ),
-    .ADR5(\n0089<7>_0 ),
-    .O(N37)
+  X_OPAD #(
+    .LOC ( "IOB_X0Y127" ))
+  \res<7>  (
+    .PAD(res[7])
   );
-  X_FF #(
-    .LOC ( "SLICE_X20Y155" ),
-    .INIT ( 1'b1 ))
-  current_a_5_P_5 (
-    .CE(VCC),
-    .CLK(\NlwBufferSignal_current_a_5_P_5/CLK ),
-    .I(\NlwBufferSignal_current_a_5_P_5/IN ),
-    .O(current_a_5_P_5_1400),
-    .SET(\reset_a[5]_AND_68_o ),
-    .RST(GND)
+  X_OBUF #(
+    .LOC ( "IOB_X0Y127" ))
+  res_7_OBUF (
+    .I(res_7_1471),
+    .O(res[7])
   );
-  X_BUF   \current_a_6_P_6/current_a_6_P_6_AMUX_Delay  (
-    .I(\reset_a[6]_AND_67_o ),
-    .O(\reset_a[6]_AND_67_o_0 )
+  X_IPAD #(
+    .LOC ( "IOB_X0Y147" ))
+  \a<1>  (
+    .PAD(a[1])
   );
-  X_FF #(
-    .LOC ( "SLICE_X20Y156" ),
-    .INIT ( 1'b1 ))
-  current_a_6_P_6 (
-    .CE(VCC),
-    .CLK(\NlwBufferSignal_current_a_6_P_6/CLK ),
-    .I(\NlwBufferSignal_current_a_6_P_6/IN ),
-    .O(current_a_6_P_6_1418),
-    .SET(\reset_a[6]_AND_66_o ),
-    .RST(GND)
+  X_ZERO #(
+    .LOC ( "IOB_X0Y147" ))
+  \ProtoComp34.INTERMDISABLE_GND.2  (
+    .O(\a<1>/ProtoComp34.INTERMDISABLE_GND.0 )
   );
-  X_LUT6 #(
-    .LOC ( "SLICE_X20Y156" ),
-    .INIT ( 64'hCC00CC00CC00CC00 ))
-  \reset_a[6]_AND_66_o1  (
-    .ADR0(1'b1),
-    .ADR4(1'b1),
-    .ADR2(1'b1),
-    .ADR1(reset_IBUF_1382),
-    .ADR3(a_6_IBUF_1503),
-    .ADR5(1'b1),
-    .O(\reset_a[6]_AND_66_o )
+  X_IBUF_INTERMDISABLE_TPWRGT #(
+    .LOC ( "IOB_X0Y147" ))
+  a_1_IBUF (
+    .IBUFDISABLE(1'b0),
+    .INTERMDISABLE(\a<1>/ProtoComp34.INTERMDISABLE_GND.0 ),
+    .O(a_1_IBUF_1444),
+    .I(a[1]),
+    .TPWRGT(1'b1)
   );
-  X_LUT5 #(
-    .LOC ( "SLICE_X20Y156" ),
-    .INIT ( 32'h00CC00CC ))
-  \reset_a[6]_AND_67_o1  (
-    .ADR0(1'b1),
-    .ADR4(1'b1),
-    .ADR2(1'b1),
-    .ADR1(reset_IBUF_1382),
-    .ADR3(a_6_IBUF_1503),
-    .O(\reset_a[6]_AND_67_o )
+  X_IPAD #(
+    .LOC ( "IOB_X0Y171" ))
+  \a<2>  (
+    .PAD(a[2])
   );
-  X_LUT6 #(
-    .LOC ( "SLICE_X23Y154" ),
-    .INIT ( 64'hFFFF0000FADA0A8A ))
-  Mmux_next_b12_SW4 (
-    .ADR0(current_b_6_P_6_1413),
-    .ADR4(current_b_5),
-    .ADR3(current_a_6),
-    .ADR2(current_b_0),
-    .ADR1(N16),
-    .ADR5(GND_1_o_GND_1_o_equal_6_o),
-    .O(N31)
+  X_ZERO #(
+    .LOC ( "IOB_X0Y171" ))
+  \ProtoComp34.INTERMDISABLE_GND.3  (
+    .O(\a<2>/ProtoComp34.INTERMDISABLE_GND.0 )
   );
-  X_LUT6 #(
-    .LOC ( "SLICE_X23Y154" ),
-    .INIT ( 64'hFF00FF00DA8ACACA ))
-  Mmux_next_b12_SW2 (
-    .ADR0(current_b_6_P_6_1413),
-    .ADR3(current_b_5),
-    .ADR4(current_a_6),
-    .ADR2(current_b_0),
-    .ADR1(N16),
-    .ADR5(GND_1_o_GND_1_o_equal_6_o),
-    .O(N29)
+  X_IBUF_INTERMDISABLE_TPWRGT #(
+    .LOC ( "IOB_X0Y171" ))
+  a_2_IBUF (
+    .IBUFDISABLE(1'b0),
+    .INTERMDISABLE(\a<2>/ProtoComp34.INTERMDISABLE_GND.0 ),
+    .O(a_2_IBUF_1441),
+    .I(a[2]),
+    .TPWRGT(1'b1)
   );
-  X_FF #(
-    .LOC ( "SLICE_X23Y154" ),
-    .INIT ( 1'b1 ))
-  current_b_5_P_5 (
-    .CE(VCC),
-    .CLK(\NlwBufferSignal_current_b_5_P_5/CLK ),
-    .I(next_b[5]),
-    .O(current_b_5_P_5_1441),
-    .SET(\reset_b[5]_AND_82_o ),
-    .RST(GND)
+  X_OPAD #(
+    .LOC ( "IOB_X0Y129" ))
+  \res<5>  (
+    .PAD(res[5])
   );
-  X_LUT6 #(
-    .LOC ( "SLICE_X23Y154" ),
-    .INIT ( 64'hFBD9EAC873516240 ))
-  Mmux_next_b12 (
-    .ADR0(current_b_6_LDC_1433),
-    .ADR5(N31),
-    .ADR2(N30),
-    .ADR1(\current_b[7]_current_a[7]_LessThan_14_o2_1392 ),
-    .ADR4(N28),
-    .ADR3(N29),
-    .O(next_b[5])
+  X_OBUF #(
+    .LOC ( "IOB_X0Y129" ))
+  res_5_OBUF (
+    .I(res_5_1469),
+    .O(res[5])
+  );
+  X_IPAD #(
+    .LOC ( "IOB_X0Y174" ))
+  \a<3>  (
+    .PAD(a[3])
+  );
+  X_ZERO #(
+    .LOC ( "IOB_X0Y174" ))
+  \ProtoComp34.INTERMDISABLE_GND.4  (
+    .O(\a<3>/ProtoComp34.INTERMDISABLE_GND.0 )
+  );
+  X_IBUF_INTERMDISABLE_TPWRGT #(
+    .LOC ( "IOB_X0Y174" ))
+  a_3_IBUF (
+    .IBUFDISABLE(1'b0),
+    .INTERMDISABLE(\a<3>/ProtoComp34.INTERMDISABLE_GND.0 ),
+    .O(a_3_IBUF_1451),
+    .I(a[3]),
+    .TPWRGT(1'b1)
+  );
+  X_OPAD #(
+    .LOC ( "IOB_X0Y149" ))
+  \res<2>  (
+    .PAD(res[2])
+  );
+  X_OBUF #(
+    .LOC ( "IOB_X0Y149" ))
+  res_2_OBUF (
+    .I(res_2_1466),
+    .O(res[2])
+  );
+  X_OPAD #(
+    .LOC ( "IOB_X0Y131" ))
+  \res<3>  (
+    .PAD(res[3])
+  );
+  X_OBUF #(
+    .LOC ( "IOB_X0Y131" ))
+  res_3_OBUF (
+    .I(res_3_1467),
+    .O(res[3])
+  );
+  X_OPAD #(
+    .LOC ( "IOB_X0Y130" ))
+  \res<4>  (
+    .PAD(res[4])
+  );
+  X_OBUF #(
+    .LOC ( "IOB_X0Y130" ))
+  res_4_OBUF (
+    .I(res_4_1468),
+    .O(res[4])
+  );
+  X_IPAD #(
+    .LOC ( "IOB_X0Y172" ))
+  \a<4>  (
+    .PAD(a[4])
+  );
+  X_ZERO #(
+    .LOC ( "IOB_X0Y172" ))
+  \ProtoComp34.INTERMDISABLE_GND.6  (
+    .O(\a<4>/ProtoComp34.INTERMDISABLE_GND.0 )
+  );
+  X_IBUF_INTERMDISABLE_TPWRGT #(
+    .LOC ( "IOB_X0Y172" ))
+  a_4_IBUF (
+    .IBUFDISABLE(1'b0),
+    .INTERMDISABLE(\a<4>/ProtoComp34.INTERMDISABLE_GND.0 ),
+    .O(a_4_IBUF_1445),
+    .I(a[4]),
+    .TPWRGT(1'b1)
+  );
+  X_IPAD #(
+    .LOC ( "IOB_X0Y144" ))
+  \a<5>  (
+    .PAD(a[5])
+  );
+  X_ZERO #(
+    .LOC ( "IOB_X0Y144" ))
+  \ProtoComp34.INTERMDISABLE_GND.8  (
+    .O(\a<5>/ProtoComp34.INTERMDISABLE_GND.0 )
+  );
+  X_IBUF_INTERMDISABLE_TPWRGT #(
+    .LOC ( "IOB_X0Y144" ))
+  a_5_IBUF (
+    .IBUFDISABLE(1'b0),
+    .INTERMDISABLE(\a<5>/ProtoComp34.INTERMDISABLE_GND.0 ),
+    .O(a_5_IBUF_1446),
+    .I(a[5]),
+    .TPWRGT(1'b1)
+  );
+  X_IPAD #(
+    .LOC ( "IOB_X0Y145" ))
+  \b<0>  (
+    .PAD(b[0])
+  );
+  X_ZERO #(
+    .LOC ( "IOB_X0Y145" ))
+  \ProtoComp34.INTERMDISABLE_GND.5  (
+    .O(\b<0>/ProtoComp34.INTERMDISABLE_GND.0 )
+  );
+  X_IBUF_INTERMDISABLE_TPWRGT #(
+    .LOC ( "IOB_X0Y145" ))
+  b_0_IBUF (
+    .IBUFDISABLE(1'b0),
+    .INTERMDISABLE(\b<0>/ProtoComp34.INTERMDISABLE_GND.0 ),
+    .O(b_0_IBUF_1461),
+    .I(b[0]),
+    .TPWRGT(1'b1)
+  );
+  X_IPAD #(
+    .LOC ( "IOB_X0Y148" ))
+  \b<1>  (
+    .PAD(b[1])
+  );
+  X_ZERO #(
+    .LOC ( "IOB_X0Y148" ))
+  \ProtoComp34.INTERMDISABLE_GND.7  (
+    .O(\b<1>/ProtoComp34.INTERMDISABLE_GND.0 )
+  );
+  X_IBUF_INTERMDISABLE_TPWRGT #(
+    .LOC ( "IOB_X0Y148" ))
+  b_1_IBUF (
+    .IBUFDISABLE(1'b0),
+    .INTERMDISABLE(\b<1>/ProtoComp34.INTERMDISABLE_GND.0 ),
+    .O(b_1_IBUF_1459),
+    .I(b[1]),
+    .TPWRGT(1'b1)
+  );
+  X_IPAD #(
+    .LOC ( "IOB_X0Y135" ))
+  reset_92 (
+    .PAD(reset)
+  );
+  X_ZERO #(
+    .LOC ( "IOB_X0Y135" ))
+  \ProtoComp34.INTERMDISABLE_GND.11  (
+    .O(\reset/ProtoComp34.INTERMDISABLE_GND.0 )
+  );
+  X_IBUF_INTERMDISABLE_TPWRGT #(
+    .LOC ( "IOB_X0Y135" ))
+  reset_IBUF (
+    .IBUFDISABLE(1'b0),
+    .INTERMDISABLE(\reset/ProtoComp34.INTERMDISABLE_GND.0 ),
+    .O(reset_IBUF_1344),
+    .I(reset),
+    .TPWRGT(1'b1)
+  );
+  X_IPAD #(
+    .LOC ( "IOB_X0Y146" ))
+  \b<3>  (
+    .PAD(b[3])
+  );
+  X_ZERO #(
+    .LOC ( "IOB_X0Y146" ))
+  \ProtoComp34.INTERMDISABLE_GND.12  (
+    .O(\b<3>/ProtoComp34.INTERMDISABLE_GND.0 )
+  );
+  X_IBUF_INTERMDISABLE_TPWRGT #(
+    .LOC ( "IOB_X0Y146" ))
+  b_3_IBUF (
+    .IBUFDISABLE(1'b0),
+    .INTERMDISABLE(\b<3>/ProtoComp34.INTERMDISABLE_GND.0 ),
+    .O(b_3_IBUF_1454),
+    .I(b[3]),
+    .TPWRGT(1'b1)
+  );
+  X_IPAD #(
+    .LOC ( "IOB_X0Y138" ))
+  \b<4>  (
+    .PAD(b[4])
+  );
+  X_ZERO #(
+    .LOC ( "IOB_X0Y138" ))
+  \ProtoComp34.INTERMDISABLE_GND.13  (
+    .O(\b<4>/ProtoComp34.INTERMDISABLE_GND.0 )
+  );
+  X_IBUF_INTERMDISABLE_TPWRGT #(
+    .LOC ( "IOB_X0Y138" ))
+  b_4_IBUF (
+    .IBUFDISABLE(1'b0),
+    .INTERMDISABLE(\b<4>/ProtoComp34.INTERMDISABLE_GND.0 ),
+    .O(b_4_IBUF_1447),
+    .I(b[4]),
+    .TPWRGT(1'b1)
+  );
+  X_IPAD #(
+    .LOC ( "IOB_X0Y140" ))
+  \b<2>  (
+    .PAD(b[2])
+  );
+  X_ZERO #(
+    .LOC ( "IOB_X0Y140" ))
+  \ProtoComp34.INTERMDISABLE_GND.9  (
+    .O(\b<2>/ProtoComp34.INTERMDISABLE_GND.0 )
+  );
+  X_IBUF_INTERMDISABLE_TPWRGT #(
+    .LOC ( "IOB_X0Y140" ))
+  b_2_IBUF (
+    .IBUFDISABLE(1'b0),
+    .INTERMDISABLE(\b<2>/ProtoComp34.INTERMDISABLE_GND.0 ),
+    .O(b_2_IBUF_1460),
+    .I(b[2]),
+    .TPWRGT(1'b1)
+  );
+  X_IPAD #(
+    .LOC ( "IOB_X0Y173" ))
+  \a<6>  (
+    .PAD(a[6])
+  );
+  X_ZERO #(
+    .LOC ( "IOB_X0Y173" ))
+  \ProtoComp34.INTERMDISABLE_GND.10  (
+    .O(\a<6>/ProtoComp34.INTERMDISABLE_GND.0 )
+  );
+  X_IBUF_INTERMDISABLE_TPWRGT #(
+    .LOC ( "IOB_X0Y173" ))
+  a_6_IBUF (
+    .IBUFDISABLE(1'b0),
+    .INTERMDISABLE(\a<6>/ProtoComp34.INTERMDISABLE_GND.0 ),
+    .O(a_6_IBUF_1442),
+    .I(a[6]),
+    .TPWRGT(1'b1)
   );
   X_LATCHE #(
-    .LOC ( "SLICE_X22Y150" ),
+    .LOC ( "OLOGIC_X0Y133" ),
     .INIT ( 1'b0 ))
-  current_b_2_LDC (
+  res_1 (
     .GE(VCC),
-    .CLK(\NlwBufferSignal_current_b_2_LDC/CLK ),
-    .I(1'b1),
-    .O(current_b_2_LDC_1407),
-    .RST(\reset_b[2]_AND_89_o_0 ),
+    .CLK(\NlwBufferSignal_res_1/CLK ),
+    .I(\NlwBufferSignal_res_1/IN ),
+    .O(res_1_1465),
+    .RST(GND),
     .SET(GND)
   );
-  X_BUF   \current_b_0_C_0/current_b_0_C_0_BMUX_Delay  (
-    .I(\reset_b[2]_AND_89_o ),
-    .O(\reset_b[2]_AND_89_o_0 )
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X22Y151" ),
-    .INIT ( 64'hA0A0A0A0A0A0A0A0 ))
-  \reset_b[2]_AND_88_o1  (
-    .ADR4(1'b1),
-    .ADR1(1'b1),
-    .ADR3(1'b1),
-    .ADR2(reset_IBUF_1382),
-    .ADR0(b_2_IBUF_1515),
-    .ADR5(1'b1),
-    .O(\reset_b[2]_AND_88_o )
-  );
-  X_LUT5 #(
-    .LOC ( "SLICE_X22Y151" ),
-    .INIT ( 32'h50505050 ))
-  \reset_b[2]_AND_89_o1  (
-    .ADR4(1'b1),
-    .ADR1(1'b1),
-    .ADR3(1'b1),
-    .ADR2(reset_IBUF_1382),
-    .ADR0(b_2_IBUF_1515),
-    .O(\reset_b[2]_AND_89_o )
-  );
-  X_FF #(
-    .LOC ( "SLICE_X22Y151" ),
+  X_LATCHE #(
+    .LOC ( "OLOGIC_X0Y129" ),
     .INIT ( 1'b0 ))
-  current_b_0_C_0 (
-    .CE(VCC),
-    .CLK(\NlwBufferSignal_current_b_0_C_0/CLK ),
-    .I(\NlwBufferSignal_current_b_0_C_0/IN ),
-    .O(current_b_0_C_0_1465),
-    .RST(\reset_b[0]_AND_93_o ),
+  res_5 (
+    .GE(VCC),
+    .CLK(\NlwBufferSignal_res_5/CLK ),
+    .I(\NlwBufferSignal_res_5/IN ),
+    .O(res_5_1469),
+    .RST(GND),
     .SET(GND)
   );
-  X_FF #(
-    .LOC ( "SLICE_X22Y155" ),
+  X_LATCHE #(
+    .LOC ( "OLOGIC_X0Y132" ),
     .INIT ( 1'b0 ))
-  current_b_5_C_5 (
-    .CE(VCC),
-    .CLK(\NlwBufferSignal_current_b_5_C_5/CLK ),
-    .I(\NlwBufferSignal_current_b_5_C_5/IN ),
-    .O(current_b_5_C_5_1440),
-    .RST(\reset_b[5]_AND_83_o_0 ),
+  res_6 (
+    .GE(VCC),
+    .CLK(\NlwBufferSignal_res_6/CLK ),
+    .I(\NlwBufferSignal_res_6/IN ),
+    .O(res_6_1470),
+    .RST(GND),
     .SET(GND)
   );
-  X_LUT6 #(
-    .LOC ( "SLICE_X23Y155" ),
-    .INIT ( 64'hFFFF3333CCCC0000 ))
-  current_a_61 (
-    .ADR0(1'b1),
-    .ADR3(1'b1),
-    .ADR2(1'b1),
-    .ADR1(current_a_6_LDC_1416),
-    .ADR5(current_a_6_C_6_1417),
-    .ADR4(current_a_6_P_6_1418),
-    .O(current_a_6)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X23Y155" ),
-    .INIT ( 64'hFFFF5555AAAA0000 ))
-  current_b_51 (
-    .ADR3(1'b1),
-    .ADR1(1'b1),
-    .ADR2(1'b1),
-    .ADR0(current_b_5_LDC_1439),
-    .ADR5(current_b_5_C_5_1440),
-    .ADR4(current_b_5_P_5_1441),
-    .O(current_b_5)
-  );
-  X_FF #(
-    .LOC ( "SLICE_X23Y155" ),
+  X_LATCHE #(
+    .LOC ( "OLOGIC_X0Y149" ),
     .INIT ( 1'b0 ))
-  current_a_6_C_6 (
-    .CE(VCC),
-    .CLK(\NlwBufferSignal_current_a_6_C_6/CLK ),
-    .I(\NlwBufferSignal_current_a_6_C_6/IN ),
-    .O(current_a_6_C_6_1417),
-    .RST(\reset_a[6]_AND_67_o_0 ),
+  res_2 (
+    .GE(VCC),
+    .CLK(\NlwBufferSignal_res_2/CLK ),
+    .I(\NlwBufferSignal_res_2/IN ),
+    .O(res_2_1466),
+    .RST(GND),
     .SET(GND)
   );
-  X_LUT6 #(
-    .LOC ( "SLICE_X23Y155" ),
-    .INIT ( 64'hFFF30C00FFC03F00 ))
-  Mmux_next_b12_SW0 (
-    .ADR0(1'b1),
-    .ADR1(current_a_0_LDC_1436),
-    .ADR5(current_a_0_C_0_1437),
-    .ADR2(current_a_0_P_0_1438),
-    .ADR4(current_a_5),
-    .ADR3(current_b_5),
-    .O(N16)
+  X_IPAD #(
+    .LOC ( "IOB_X0Y136" ))
+  \b<6>  (
+    .PAD(b[6])
   );
-  X_BUF   \current_b_2_C_2/current_b_2_C_2_CMUX_Delay  (
-    .I(current_b_2_C_2_1092),
-    .O(current_b_2_C_2_0)
+  X_ZERO #(
+    .LOC ( "IOB_X0Y136" ))
+  \ProtoComp34.INTERMDISABLE_GND.15  (
+    .O(\b<6>/ProtoComp34.INTERMDISABLE_GND.0 )
   );
-  X_FF #(
-    .LOC ( "SLICE_X25Y152" ),
+  X_IBUF_INTERMDISABLE_TPWRGT #(
+    .LOC ( "IOB_X0Y136" ))
+  b_6_IBUF (
+    .IBUFDISABLE(1'b0),
+    .INTERMDISABLE(\b<6>/ProtoComp34.INTERMDISABLE_GND.0 ),
+    .O(b_6_IBUF_1440),
+    .I(b[6]),
+    .TPWRGT(1'b1)
+  );
+  X_IPAD #(
+    .LOC ( "IOB_X0Y137" ))
+  \b<5>  (
+    .PAD(b[5])
+  );
+  X_ZERO #(
+    .LOC ( "IOB_X0Y137" ))
+  \ProtoComp34.INTERMDISABLE_GND.14  (
+    .O(\b<5>/ProtoComp34.INTERMDISABLE_GND.0 )
+  );
+  X_IBUF_INTERMDISABLE_TPWRGT #(
+    .LOC ( "IOB_X0Y137" ))
+  b_5_IBUF (
+    .IBUFDISABLE(1'b0),
+    .INTERMDISABLE(\b<5>/ProtoComp34.INTERMDISABLE_GND.0 ),
+    .O(b_5_IBUF_1443),
+    .I(b[5]),
+    .TPWRGT(1'b1)
+  );
+  X_LATCHE #(
+    .LOC ( "OLOGIC_X0Y131" ),
     .INIT ( 1'b0 ))
-  current_b_2_C_2 (
-    .CE(VCC),
-    .CLK(\NlwBufferSignal_current_b_2_C_2/CLK ),
-    .I(\NlwBufferSignal_current_b_2_C_2/IN ),
-    .O(current_b_2_C_2_1092),
-    .RST(\reset_b[2]_AND_89_o_0 ),
+  res_3 (
+    .GE(VCC),
+    .CLK(\NlwBufferSignal_res_3/CLK ),
+    .I(\NlwBufferSignal_res_3/IN ),
+    .O(res_3_1467),
+    .RST(GND),
     .SET(GND)
   );
-  X_BUF   \current_b_5_LDC/current_b_5_LDC_DMUX_Delay  (
-    .I(n0088[7]),
-    .O(\n0088<7>_0 )
+  X_LATCHE #(
+    .LOC ( "OLOGIC_X0Y130" ),
+    .INIT ( 1'b0 ))
+  res_4 (
+    .GE(VCC),
+    .CLK(\NlwBufferSignal_res_4/CLK ),
+    .I(\NlwBufferSignal_res_4/IN ),
+    .O(res_4_1468),
+    .RST(GND),
+    .SET(GND)
   );
-  X_BUF   \current_b_5_LDC/current_b_5_LDC_CMUX_Delay  (
-    .I(n0088[6]),
-    .O(\n0088<6>_0 )
-  );
-  X_BUF   \current_b_5_LDC/current_b_5_LDC_BMUX_Delay  (
-    .I(n0088[5]),
-    .O(\n0088<5>_0 )
+  X_LATCHE #(
+    .LOC ( "OLOGIC_X0Y127" ),
+    .INIT ( 1'b0 ))
+  res_7 (
+    .GE(VCC),
+    .CLK(\NlwBufferSignal_res_7/CLK ),
+    .I(\NlwBufferSignal_res_7/IN ),
+    .O(res_7_1471),
+    .RST(GND),
+    .SET(GND)
   );
   X_BUF   \current_b_5_LDC/current_b_5_LDC_AMUX_Delay  (
-    .I(n0088[4]),
-    .O(\n0088<4>_0 )
+    .I(\reset_b[1]_AND_91_o ),
+    .O(\reset_b[1]_AND_91_o_0 )
   );
   X_LATCHE #(
-    .LOC ( "SLICE_X22Y154" ),
+    .LOC ( "SLICE_X35Y163" ),
     .INIT ( 1'b0 ))
   current_b_5_LDC (
     .GE(VCC),
     .CLK(\NlwBufferSignal_current_b_5_LDC/CLK ),
     .I(1'b1),
-    .O(current_b_5_LDC_1439),
+    .O(current_b_5_LDC_1380),
     .RST(\reset_b[5]_AND_83_o_0 ),
     .SET(GND)
   );
   X_LUT6 #(
-    .LOC ( "SLICE_X22Y154" ),
-    .INIT ( 64'hFFFFFFFFFFFFFFFF ))
-  \Msub_n0088_lut<7>_114.D6LUT  (
+    .LOC ( "SLICE_X35Y163" ),
+    .INIT ( 64'hAAAA0000AAAA0000 ))
+  \reset_b[1]_AND_90_o1  (
+    .ADR3(1'b1),
+    .ADR1(1'b1),
+    .ADR2(1'b1),
+    .ADR0(reset_IBUF_1344),
+    .ADR4(b_1_IBUF_1459),
+    .ADR5(1'b1),
+    .O(\reset_b[1]_AND_90_o )
+  );
+  X_LUT5 #(
+    .LOC ( "SLICE_X35Y163" ),
+    .INIT ( 32'h0000AAAA ))
+  \reset_b[1]_AND_91_o1  (
+    .ADR3(1'b1),
+    .ADR1(1'b1),
+    .ADR2(1'b1),
+    .ADR0(reset_IBUF_1344),
+    .ADR4(b_1_IBUF_1459),
+    .O(\reset_b[1]_AND_91_o )
+  );
+  X_BUF   \reset_b[5]_AND_82_o/reset_b[5]_AND_82_o_AMUX_Delay  (
+    .I(\reset_b[5]_AND_83_o ),
+    .O(\reset_b[5]_AND_83_o_0 )
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X34Y163" ),
+    .INIT ( 64'hAA00AA00AA00AA00 ))
+  \reset_b[5]_AND_82_o1  (
+    .ADR4(1'b1),
+    .ADR1(1'b1),
+    .ADR2(1'b1),
+    .ADR3(reset_IBUF_1344),
+    .ADR0(b_5_IBUF_1443),
+    .ADR5(1'b1),
+    .O(\reset_b[5]_AND_82_o )
+  );
+  X_LUT5 #(
+    .LOC ( "SLICE_X34Y163" ),
+    .INIT ( 32'h55005500 ))
+  \reset_b[5]_AND_83_o1  (
+    .ADR4(1'b1),
+    .ADR1(1'b1),
+    .ADR2(1'b1),
+    .ADR3(reset_IBUF_1344),
+    .ADR0(b_5_IBUF_1443),
+    .O(\reset_b[5]_AND_83_o )
+  );
+  X_LATCHE #(
+    .LOC ( "SLICE_X36Y159" ),
+    .INIT ( 1'b0 ))
+  current_b_6_LDC (
+    .GE(VCC),
+    .CLK(\NlwBufferSignal_current_b_6_LDC/CLK ),
+    .I(1'b1),
+    .O(current_b_6_LDC_1384),
+    .RST(\reset_b[6]_AND_81_o_0 ),
+    .SET(GND)
+  );
+  X_LATCHE #(
+    .LOC ( "OLOGIC_X0Y134" ),
+    .INIT ( 1'b0 ))
+  res_0 (
+    .GE(VCC),
+    .CLK(\NlwBufferSignal_res_0/CLK ),
+    .I(\NlwBufferSignal_res_0/IN ),
+    .O(res_0_1464),
+    .RST(GND),
+    .SET(GND)
+  );
+  X_BUF   \current_b_6_P_6/current_b_6_P_6_CMUX_Delay  (
+    .I(current_b_6_P_6_546),
+    .O(current_b_6_P_6_0)
+  );
+  X_FF #(
+    .LOC ( "SLICE_X39Y159" ),
+    .INIT ( 1'b1 ))
+  current_b_6_P_6 (
+    .CE(VCC),
+    .CLK(\NlwBufferSignal_current_b_6_P_6/CLK ),
+    .I(\NlwBufferSignal_current_b_6_P_6/IN ),
+    .O(current_b_6_P_6_546),
+    .SET(\reset_b[6]_AND_80_o ),
+    .RST(GND)
+  );
+  X_BUF   \reset_a[1]_AND_76_o/reset_a[1]_AND_76_o_AMUX_Delay  (
+    .I(\reset_a[1]_AND_77_o ),
+    .O(\reset_a[1]_AND_77_o_0 )
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X38Y160" ),
+    .INIT ( 64'hFF000000FF000000 ))
+  \reset_a[1]_AND_76_o1  (
     .ADR0(1'b1),
     .ADR1(1'b1),
     .ADR2(1'b1),
-    .ADR3(1'b1),
-    .ADR4(1'b1),
+    .ADR3(reset_IBUF_1344),
+    .ADR4(a_1_IBUF_1444),
     .ADR5(1'b1),
-    .O(\NLW_Msub_n0088_lut<7>_114.D6LUT_O_UNCONNECTED )
+    .O(\reset_a[1]_AND_76_o )
   );
-  X_CARRY4 #(
-    .LOC ( "SLICE_X22Y154" ))
-  \Msub_n0088_xor<7>  (
-    .CI(Msub_n0088_cy[3]),
-    .CYINIT(1'b0),
-    .CO({\NLW_Msub_n0088_xor<7>_CO[3]_UNCONNECTED , \NLW_Msub_n0088_xor<7>_CO[2]_UNCONNECTED , \NLW_Msub_n0088_xor<7>_CO[1]_UNCONNECTED , 
-\NLW_Msub_n0088_xor<7>_CO[0]_UNCONNECTED }),
-    .DI({\NLW_Msub_n0088_xor<7>_DI[3]_UNCONNECTED , \NlwBufferSignal_Msub_n0088_xor<7>/DI<2> , \NlwBufferSignal_Msub_n0088_xor<7>/DI<1> , 
-\NlwBufferSignal_Msub_n0088_xor<7>/DI<0> }),
-    .O({n0088[7], n0088[6], n0088[5], n0088[4]}),
-    .S({1'b1, Msub_n0088_lut[6], Msub_n0088_lut[5], Msub_n0088_lut[4]})
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X22Y154" ),
-    .INIT ( 64'hFAC9360550639CAF ))
-  \Msub_n0088_lut<6>  (
-    .ADR1(current_b_6_LDC_1433),
-    .ADR0(current_a_6_LDC_1416),
-    .ADR2(current_a_6_C_6_1417),
-    .ADR5(current_a_6_P_6_1418),
-    .ADR4(current_b_6_P_6_1413),
-    .ADR3(current_b_6_C_6_1434),
-    .O(Msub_n0088_lut[6])
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X22Y154" ),
-    .INIT ( 64'hF5C6390AA0936C5F ))
-  \Msub_n0088_lut<5>  (
-    .ADR1(current_b_5_LDC_1439),
-    .ADR0(current_a_5_LDC_1398),
-    .ADR5(current_a_5_C_5_1399),
-    .ADR2(current_a_5_P_5_1400),
-    .ADR4(current_b_5_P_5_1441),
-    .ADR3(current_b_5_C_5_1440),
-    .O(Msub_n0088_lut[5])
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X22Y154" ),
-    .INIT ( 64'hFA36509CC90563AF ))
-  \Msub_n0088_lut<4>  (
-    .ADR0(current_b_4_LDC_1395),
-    .ADR1(current_a_4_LDC_1484),
-    .ADR5(current_a_4_C_4_1487),
-    .ADR3(current_a_4_P_4_1427),
-    .ADR4(current_b_4_P_4_1397),
-    .ADR2(current_b_4_C_4_1396),
-    .O(Msub_n0088_lut[4])
-  );
-  X_FF #(
-    .LOC ( "SLICE_X23Y151" ),
-    .INIT ( 1'b1 ))
-  current_b_3_P_3 (
-    .CE(VCC),
-    .CLK(\NlwBufferSignal_current_b_3_P_3/CLK ),
-    .I(\NlwBufferSignal_current_b_3_P_3/IN ),
-    .O(current_b_3_P_3_1425),
-    .SET(\reset_b[3]_AND_86_o ),
-    .RST(GND)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X23Y151" ),
-    .INIT ( 64'hFFFFFFFF00030C0F ))
-  _n0137_inv1 (
+  X_LUT5 #(
+    .LOC ( "SLICE_X38Y160" ),
+    .INIT ( 32'h0000FF00 ))
+  \reset_a[1]_AND_77_o1  (
     .ADR0(1'b1),
-    .ADR2(current_b_0),
-    .ADR1(current_a_0_LDC_1436),
-    .ADR4(current_a_0_P_0_1438),
-    .ADR3(current_a_0_C_0_1437),
-    .ADR5(GND_1_o_GND_1_o_OR_32_o_1328),
-    .O(_n0137_inv)
+    .ADR1(1'b1),
+    .ADR2(1'b1),
+    .ADR3(reset_IBUF_1344),
+    .ADR4(a_1_IBUF_1444),
+    .O(\reset_a[1]_AND_77_o )
+  );
+  X_BUF   \reset_b[6]_AND_80_o/reset_b[6]_AND_80_o_AMUX_Delay  (
+    .I(\reset_b[6]_AND_81_o ),
+    .O(\reset_b[6]_AND_81_o_0 )
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X37Y159" ),
+    .INIT ( 64'hAAAA0000AAAA0000 ))
+  \reset_b[6]_AND_80_o1  (
+    .ADR3(1'b1),
+    .ADR1(1'b1),
+    .ADR2(1'b1),
+    .ADR4(reset_IBUF_1344),
+    .ADR0(b_6_IBUF_1440),
+    .ADR5(1'b1),
+    .O(\reset_b[6]_AND_80_o )
+  );
+  X_LUT5 #(
+    .LOC ( "SLICE_X37Y159" ),
+    .INIT ( 32'h55550000 ))
+  \reset_b[6]_AND_81_o1  (
+    .ADR3(1'b1),
+    .ADR1(1'b1),
+    .ADR2(1'b1),
+    .ADR4(reset_IBUF_1344),
+    .ADR0(b_6_IBUF_1440),
+    .O(\reset_b[6]_AND_81_o )
+  );
+  X_BUF   \current_a_5_LDC/current_a_5_LDC_AMUX_Delay  (
+    .I(\reset_a[2]_AND_75_o ),
+    .O(\reset_a[2]_AND_75_o_0 )
   );
   X_LATCHE #(
-    .LOC ( "SLICE_X22Y156" ),
+    .LOC ( "SLICE_X39Y164" ),
+    .INIT ( 1'b0 ))
+  current_a_5_LDC (
+    .GE(VCC),
+    .CLK(\NlwBufferSignal_current_a_5_LDC/CLK ),
+    .I(1'b1),
+    .O(current_a_5_LDC_1333),
+    .RST(\reset_a[5]_AND_69_o_0 ),
+    .SET(GND)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X39Y164" ),
+    .INIT ( 64'h8888888888888888 ))
+  \reset_a[2]_AND_74_o1  (
+    .ADR3(1'b1),
+    .ADR4(1'b1),
+    .ADR2(1'b1),
+    .ADR0(reset_IBUF_1344),
+    .ADR1(a_2_IBUF_1441),
+    .ADR5(1'b1),
+    .O(\reset_a[2]_AND_74_o )
+  );
+  X_LUT5 #(
+    .LOC ( "SLICE_X39Y164" ),
+    .INIT ( 32'h22222222 ))
+  \reset_a[2]_AND_75_o1  (
+    .ADR3(1'b1),
+    .ADR4(1'b1),
+    .ADR2(1'b1),
+    .ADR0(reset_IBUF_1344),
+    .ADR1(a_2_IBUF_1441),
+    .O(\reset_a[2]_AND_75_o )
+  );
+  X_BUF   \current_b_4_LDC/current_b_4_LDC_CMUX_Delay  (
+    .I(\reset_a[5]_AND_69_o ),
+    .O(\reset_a[5]_AND_69_o_0 )
+  );
+  X_BUF   \current_b_4_LDC/current_b_4_LDC_AMUX_Delay  (
+    .I(\reset_b[4]_AND_85_o_pack_2 ),
+    .O(\reset_b[4]_AND_85_o )
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X38Y164" ),
+    .INIT ( 64'hCCCC0000CCCC0000 ))
+  \reset_a[5]_AND_68_o1  (
+    .ADR0(1'b1),
+    .ADR3(1'b1),
+    .ADR2(1'b1),
+    .ADR1(reset_IBUF_1344),
+    .ADR4(a_5_IBUF_1446),
+    .ADR5(1'b1),
+    .O(\reset_a[5]_AND_68_o )
+  );
+  X_LUT5 #(
+    .LOC ( "SLICE_X38Y164" ),
+    .INIT ( 32'h0000CCCC ))
+  \reset_a[5]_AND_69_o1  (
+    .ADR0(1'b1),
+    .ADR3(1'b1),
+    .ADR2(1'b1),
+    .ADR1(reset_IBUF_1344),
+    .ADR4(a_5_IBUF_1446),
+    .O(\reset_a[5]_AND_69_o )
+  );
+  X_LATCHE #(
+    .LOC ( "SLICE_X38Y164" ),
+    .INIT ( 1'b0 ))
+  current_b_4_LDC (
+    .GE(VCC),
+    .CLK(\NlwBufferSignal_current_b_4_LDC/CLK ),
+    .I(1'b1),
+    .O(current_b_4_LDC_1330),
+    .RST(\reset_b[4]_AND_85_o ),
+    .SET(GND)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X38Y164" ),
+    .INIT ( 64'h8888888888888888 ))
+  \reset_b[4]_AND_84_o1  (
+    .ADR3(1'b1),
+    .ADR4(1'b1),
+    .ADR2(1'b1),
+    .ADR0(reset_IBUF_1344),
+    .ADR1(b_4_IBUF_1447),
+    .ADR5(1'b1),
+    .O(\reset_b[4]_AND_84_o )
+  );
+  X_LUT5 #(
+    .LOC ( "SLICE_X38Y164" ),
+    .INIT ( 32'h22222222 ))
+  \reset_b[4]_AND_85_o1  (
+    .ADR3(1'b1),
+    .ADR4(1'b1),
+    .ADR2(1'b1),
+    .ADR0(reset_IBUF_1344),
+    .ADR1(b_4_IBUF_1447),
+    .O(\reset_b[4]_AND_85_o_pack_2 )
+  );
+  X_BUF   \current_a_6_LDC/current_a_6_LDC_AMUX_Delay  (
+    .I(\reset_a[6]_AND_67_o_pack_1 ),
+    .O(\reset_a[6]_AND_67_o )
+  );
+  X_LATCHE #(
+    .LOC ( "SLICE_X36Y163" ),
     .INIT ( 1'b0 ))
   current_a_6_LDC (
     .GE(VCC),
     .CLK(\NlwBufferSignal_current_a_6_LDC/CLK ),
     .I(1'b1),
-    .O(current_a_6_LDC_1416),
-    .RST(\reset_a[6]_AND_67_o_0 ),
+    .O(current_a_6_LDC_1355),
+    .RST(\reset_a[6]_AND_67_o ),
     .SET(GND)
   );
   X_LUT6 #(
-    .LOC ( "SLICE_X24Y151" ),
-    .INIT ( 64'hFF00FB40F780F3C0 ))
-  \current_b[7]_current_a[7]_LessThan_14_o21_SW7_F  (
-    .ADR0(current_b_6_LDC_1433),
-    .ADR5(current_b_6_P_6_1413),
-    .ADR4(current_b_6_C_6_1434),
-    .ADR2(current_b_2),
-    .ADR1(current_a_6),
-    .ADR3(N20),
-    .O(N63)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X24Y151" ),
-    .INIT ( 64'hFFFF0A5FF5A00000 ))
-  Mmux_next_b6_SW0 (
+    .LOC ( "SLICE_X36Y163" ),
+    .INIT ( 64'hAAAA0000AAAA0000 ))
+  \reset_a[6]_AND_66_o1  (
+    .ADR3(1'b1),
     .ADR1(1'b1),
-    .ADR0(current_a_0_LDC_1436),
-    .ADR3(current_a_0_C_0_1437),
-    .ADR2(current_a_0_P_0_1438),
-    .ADR4(current_a_2),
-    .ADR5(current_b_2),
-    .O(N20)
+    .ADR2(1'b1),
+    .ADR0(reset_IBUF_1344),
+    .ADR4(a_6_IBUF_1442),
+    .ADR5(1'b1),
+    .O(\reset_a[6]_AND_66_o )
+  );
+  X_LUT5 #(
+    .LOC ( "SLICE_X36Y163" ),
+    .INIT ( 32'h0000AAAA ))
+  \reset_a[6]_AND_67_o1  (
+    .ADR3(1'b1),
+    .ADR1(1'b1),
+    .ADR2(1'b1),
+    .ADR0(reset_IBUF_1344),
+    .ADR4(a_6_IBUF_1442),
+    .O(\reset_a[6]_AND_67_o_pack_1 )
+  );
+  X_BUF   \current_b_0_LDC/current_b_0_LDC_AMUX_Delay  (
+    .I(\reset_b[0]_AND_93_o_pack_1 ),
+    .O(\reset_b[0]_AND_93_o )
+  );
+  X_LATCHE #(
+    .LOC ( "SLICE_X40Y159" ),
+    .INIT ( 1'b0 ))
+  current_b_0_LDC (
+    .GE(VCC),
+    .CLK(\NlwBufferSignal_current_b_0_LDC/CLK ),
+    .I(1'b1),
+    .O(current_b_0_LDC_1405),
+    .RST(\reset_b[0]_AND_93_o ),
+    .SET(GND)
   );
   X_LUT6 #(
-    .LOC ( "SLICE_X24Y151" ),
-    .INIT ( 64'hFF00FFE4FF001B00 ))
-  \current_b[7]_current_a[7]_LessThan_14_o21_SW8_F  (
-    .ADR3(current_b_2),
-    .ADR2(current_b_6_P_6_1413),
-    .ADR0(current_b_6_LDC_1433),
-    .ADR4(current_a_6),
-    .ADR1(current_b_6_C_6_1434),
-    .ADR5(N20),
-    .O(N65)
-  );
-  X_BUF   \current_b_2_P_2/current_b_2_P_2_CMUX_Delay  (
-    .I(\next_b<2>_pack_7 ),
-    .O(next_b[2])
-  );
-  X_MUX2 #(
-    .LOC ( "SLICE_X24Y152" ))
-  Mmux_next_b6 (
-    .IA(N75),
-    .IB(N76),
-    .O(\next_b<2>_pack_7 ),
-    .SEL(\current_b[7]_current_a[7]_LessThan_14_o2_1392 )
-  );
-  X_FF #(
-    .LOC ( "SLICE_X24Y152" ),
-    .INIT ( 1'b1 ))
-  current_b_2_P_2 (
-    .CE(VCC),
-    .CLK(\NlwBufferSignal_current_b_2_P_2/CLK ),
-    .I(\NlwBufferSignal_current_b_2_P_2/IN ),
-    .O(current_b_2_P_2_1409),
-    .SET(\reset_b[2]_AND_88_o ),
-    .RST(GND)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X24Y152" ),
-    .INIT ( 64'hCCCCFFF0CCCC0F00 ))
-  Mmux_next_b6_F (
-    .ADR0(1'b1),
-    .ADR4(GND_1_o_GND_1_o_equal_6_o),
-    .ADR2(current_b_0),
-    .ADR5(N63),
-    .ADR3(current_b_3),
-    .ADR1(current_b_2),
-    .O(N75)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X24Y152" ),
-    .INIT ( 64'hCCCCCCCCFFF00F00 ))
-  Mmux_next_b6_G (
-    .ADR0(1'b1),
-    .ADR5(GND_1_o_GND_1_o_equal_6_o),
-    .ADR2(current_b_0),
-    .ADR4(N65),
-    .ADR3(current_b_3),
-    .ADR1(current_b_2),
-    .O(N76)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X24Y152" ),
-    .INIT ( 64'hFFFF3333CCCC0000 ))
-  current_b_21 (
+    .LOC ( "SLICE_X40Y159" ),
+    .INIT ( 64'hCCCC0000CCCC0000 ))
+  \reset_b[0]_AND_92_o1  (
     .ADR0(1'b1),
     .ADR3(1'b1),
     .ADR2(1'b1),
-    .ADR1(current_b_2_LDC_1407),
-    .ADR5(current_b_2_C_2_0),
-    .ADR4(current_b_2_P_2_1409),
-    .O(current_b_2)
+    .ADR1(reset_IBUF_1344),
+    .ADR4(b_0_IBUF_1461),
+    .ADR5(1'b1),
+    .O(\reset_b[0]_AND_92_o )
+  );
+  X_LUT5 #(
+    .LOC ( "SLICE_X40Y159" ),
+    .INIT ( 32'h0000CCCC ))
+  \reset_b[0]_AND_93_o1  (
+    .ADR0(1'b1),
+    .ADR3(1'b1),
+    .ADR2(1'b1),
+    .ADR1(reset_IBUF_1344),
+    .ADR4(b_0_IBUF_1461),
+    .O(\reset_b[0]_AND_93_o_pack_1 )
   );
   X_FF #(
-    .LOC ( "SLICE_X24Y155" ),
+    .LOC ( "SLICE_X39Y163" ),
+    .INIT ( 1'b0 ))
+  current_a_6_C_6 (
+    .CE(VCC),
+    .CLK(\NlwBufferSignal_current_a_6_C_6/CLK ),
+    .I(\NlwBufferSignal_current_a_6_C_6/IN ),
+    .O(current_a_6_C_6_1356),
+    .RST(\reset_a[6]_AND_67_o ),
+    .SET(GND)
+  );
+  X_FF #(
+    .LOC ( "SLICE_X38Y159" ),
     .INIT ( 1'b0 ))
   current_b_6_C_6 (
     .CE(VCC),
     .CLK(\NlwBufferSignal_current_b_6_C_6/CLK ),
     .I(next_b[6]),
-    .O(current_b_6_C_6_1434),
+    .O(current_b_6_C_6_1385),
     .RST(\reset_b[6]_AND_81_o_0 ),
     .SET(GND)
   );
   X_LUT6 #(
-    .LOC ( "SLICE_X24Y155" ),
-    .INIT ( 64'hFF00FF008800AA00 ))
-  Mmux_next_b141 (
-    .ADR2(1'b1),
-    .ADR3(current_b_6),
+    .LOC ( "SLICE_X38Y159" ),
+    .INIT ( 64'hF0F0F0F0A000A0A0 ))
+  Mmux_next_b131 (
+    .ADR1(1'b1),
+    .ADR2(current_b_6),
     .ADR0(current_b_0),
-    .ADR1(current_a_6),
+    .ADR3(current_a_6),
     .ADR4(current_a_0),
     .ADR5(GND_1_o_GND_1_o_equal_6_o),
     .O(next_b[6])
   );
-  X_BUF   \N26/N26_AMUX_Delay  (
-    .I(current_a_0_C_0_pack_1),
-    .O(current_a_0_C_0_1437)
+  X_BUF   \current_b_2_C_2/current_b_2_C_2_CMUX_Delay  (
+    .I(\next_b<2>_pack_9 ),
+    .O(next_b[2])
+  );
+  X_MUX2 #(
+    .LOC ( "SLICE_X40Y162" ))
+  Mmux_next_b6 (
+    .IA(N72),
+    .IB(N73),
+    .O(\next_b<2>_pack_9 ),
+    .SEL(\current_b[6]_current_a[6]_LessThan_14_o2_1324 )
+  );
+  X_FF #(
+    .LOC ( "SLICE_X40Y162" ),
+    .INIT ( 1'b0 ))
+  current_b_2_C_2 (
+    .CE(VCC),
+    .CLK(\NlwBufferSignal_current_b_2_C_2/CLK ),
+    .I(\NlwBufferSignal_current_b_2_C_2/IN ),
+    .O(current_b_2_C_2_1359),
+    .RST(\reset_b[2]_AND_89_o ),
+    .SET(GND)
   );
   X_LUT6 #(
-    .LOC ( "SLICE_X24Y154" ),
-    .INIT ( 64'hFFFBF7F3FFEAD5C0 ))
-  \GND_1_o_GND_1_o_equal_6_o<7>_SW1  (
-    .ADR1(current_a_0_LDC_1436),
-    .ADR0(current_a_1_LDC_1423),
-    .ADR3(current_a_1_C_1_1419),
-    .ADR4(current_a_1_P_1_1472),
-    .ADR2(current_a_0_P_0_1438),
-    .ADR5(current_a_0_C_0_1437),
+    .LOC ( "SLICE_X40Y162" ),
+    .INIT ( 64'hCCCCFFF0CCCC0F00 ))
+  Mmux_next_b6_F (
+    .ADR0(1'b1),
+    .ADR4(GND_1_o_GND_1_o_equal_6_o),
+    .ADR2(current_b_0),
+    .ADR5(N60),
+    .ADR3(current_b_3),
+    .ADR1(current_b_2),
+    .O(N72)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X40Y162" ),
+    .INIT ( 64'hCCCCFFF0CCCC0F00 ))
+  Mmux_next_b6_G (
+    .ADR0(1'b1),
+    .ADR4(GND_1_o_GND_1_o_equal_6_o),
+    .ADR2(current_b_0),
+    .ADR5(N62),
+    .ADR3(current_b_3),
+    .ADR1(current_b_2),
+    .O(N73)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X40Y162" ),
+    .INIT ( 64'hFFFFAAAA55550000 ))
+  current_b_21 (
+    .ADR3(1'b1),
+    .ADR1(1'b1),
+    .ADR2(1'b1),
+    .ADR0(current_b_2_LDC_1358),
+    .ADR4(current_b_2_C_2_1359),
+    .ADR5(current_b_2_P_2_1360),
+    .O(current_b_2)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X40Y162" ),
+    .INIT ( 64'hFF00FF00EEAE6222 ))
+  Mmux_next_b12_SW2 (
+    .ADR0(current_b_6_P_6_0),
+    .ADR3(current_b_5),
+    .ADR1(current_b_0),
+    .ADR2(current_a_6),
+    .ADR4(N16),
+    .ADR5(GND_1_o_GND_1_o_equal_6_o),
+    .O(N29)
+  );
+  X_LATCHE #(
+    .LOC ( "SLICE_X37Y163" ),
+    .INIT ( 1'b0 ))
+  current_b_1_LDC (
+    .GE(VCC),
+    .CLK(\NlwBufferSignal_current_b_1_LDC/CLK ),
+    .I(1'b1),
+    .O(current_b_1_LDC_1318),
+    .RST(\reset_b[1]_AND_91_o_0 ),
+    .SET(GND)
+  );
+  X_BUF   \current_b_2_LDC/current_b_2_LDC_AMUX_Delay  (
+    .I(\reset_b[2]_AND_89_o_pack_1 ),
+    .O(\reset_b[2]_AND_89_o )
+  );
+  X_LATCHE #(
+    .LOC ( "SLICE_X38Y162" ),
+    .INIT ( 1'b0 ))
+  current_b_2_LDC (
+    .GE(VCC),
+    .CLK(\NlwBufferSignal_current_b_2_LDC/CLK ),
+    .I(1'b1),
+    .O(current_b_2_LDC_1358),
+    .RST(\reset_b[2]_AND_89_o ),
+    .SET(GND)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X38Y162" ),
+    .INIT ( 64'hAAAA0000AAAA0000 ))
+  \reset_b[2]_AND_88_o1  (
+    .ADR3(1'b1),
+    .ADR1(1'b1),
+    .ADR2(1'b1),
+    .ADR0(reset_IBUF_1344),
+    .ADR4(b_2_IBUF_1460),
+    .ADR5(1'b1),
+    .O(\reset_b[2]_AND_88_o )
+  );
+  X_LUT5 #(
+    .LOC ( "SLICE_X38Y162" ),
+    .INIT ( 32'h0000AAAA ))
+  \reset_b[2]_AND_89_o1  (
+    .ADR3(1'b1),
+    .ADR1(1'b1),
+    .ADR2(1'b1),
+    .ADR0(reset_IBUF_1344),
+    .ADR4(b_2_IBUF_1460),
+    .O(\reset_b[2]_AND_89_o_pack_1 )
+  );
+  X_FF #(
+    .LOC ( "SLICE_X39Y162" ),
+    .INIT ( 1'b1 ))
+  current_b_2_P_2 (
+    .CE(VCC),
+    .CLK(\NlwBufferSignal_current_b_2_P_2/CLK ),
+    .I(\NlwBufferSignal_current_b_2_P_2/IN ),
+    .O(current_b_2_P_2_1360),
+    .SET(\reset_b[2]_AND_88_o ),
+    .RST(GND)
+  );
+  X_BUF   \reset_a[3]_AND_72_o/reset_a[3]_AND_72_o_AMUX_Delay  (
+    .I(\reset_a[3]_AND_73_o ),
+    .O(\reset_a[3]_AND_73_o_0 )
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X38Y165" ),
+    .INIT ( 64'hAAAA0000AAAA0000 ))
+  \reset_a[3]_AND_72_o1  (
+    .ADR3(1'b1),
+    .ADR1(1'b1),
+    .ADR2(1'b1),
+    .ADR0(reset_IBUF_1344),
+    .ADR4(a_3_IBUF_1451),
+    .ADR5(1'b1),
+    .O(\reset_a[3]_AND_72_o )
+  );
+  X_LUT5 #(
+    .LOC ( "SLICE_X38Y165" ),
+    .INIT ( 32'h0000AAAA ))
+  \reset_a[3]_AND_73_o1  (
+    .ADR3(1'b1),
+    .ADR1(1'b1),
+    .ADR2(1'b1),
+    .ADR0(reset_IBUF_1344),
+    .ADR4(a_3_IBUF_1451),
+    .O(\reset_a[3]_AND_73_o )
+  );
+  X_LATCHE #(
+    .LOC ( "SLICE_X40Y160" ),
+    .INIT ( 1'b0 ))
+  current_b_3_LDC (
+    .GE(VCC),
+    .CLK(\NlwBufferSignal_current_b_3_LDC/CLK ),
+    .I(1'b1),
+    .O(current_b_3_LDC_1370),
+    .RST(\reset_b[3]_AND_87_o_0 ),
+    .SET(GND)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X40Y160" ),
+    .INIT ( 64'hFFFBFEFAFF73DC50 ))
+  \GND_1_o_GND_1_o_equal_6_o<6>_SW1  (
+    .ADR0(current_a_0_LDC_1346),
+    .ADR1(current_a_1_LDC_1347),
+    .ADR4(current_a_1_C_1_1348),
+    .ADR3(current_a_1_P_1_1349),
+    .ADR5(current_a_0_P_0_1350),
+    .ADR2(current_a_0_C_0_1351),
     .O(N26)
   );
-  X_FF #(
-    .LOC ( "SLICE_X24Y154" ),
-    .INIT ( 1'b0 ))
-  current_a_0_C_0 (
-    .CE(VCC),
-    .CLK(\NlwBufferSignal_current_a_0_C_0/CLK ),
-    .I(\NlwBufferSignal_current_a_0_C_0/IN ),
-    .O(current_a_0_C_0_pack_1),
-    .RST(\reset_a[0]_AND_79_o_0 ),
-    .SET(GND)
-  );
-  X_FF #(
-    .LOC ( "SLICE_X29Y145" ),
-    .INIT ( 1'b0 ))
-  current_res_4 (
-    .CE(VCC),
-    .CLK(\NlwBufferSignal_current_res_4/CLK ),
-    .I(current_res_4_rstpot_1274),
-    .O(current_res[4]),
-    .RST(reset_IBUF_1382),
-    .SET(GND)
+  X_BUF   \current_a_0_LDC/current_a_0_LDC_AMUX_Delay  (
+    .I(\reset_a[0]_AND_79_o_pack_1 ),
+    .O(\reset_a[0]_AND_79_o )
   );
   X_LUT6 #(
-    .LOC ( "SLICE_X29Y145" ),
-    .INIT ( 64'h00000000AAAFAAA0 ))
-  current_res_4_rstpot (
-    .ADR1(1'b1),
-    .ADR4(current_res[3]),
-    .ADR3(current_a_0),
-    .ADR0(current_res[4]),
-    .ADR2(current_b_0),
-    .ADR5(GND_1_o_GND_1_o_OR_32_o_1328),
-    .O(current_res_4_rstpot_1274)
-  );
-  X_FF #(
-    .LOC ( "SLICE_X29Y145" ),
-    .INIT ( 1'b0 ))
-  current_res_3 (
-    .CE(VCC),
-    .CLK(\NlwBufferSignal_current_res_3/CLK ),
-    .I(current_res_3_rstpot_1281),
-    .O(current_res[3]),
-    .RST(reset_IBUF_1382),
-    .SET(GND)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X29Y145" ),
-    .INIT ( 64'h00000000CCCCCFC0 ))
-  current_res_3_rstpot (
+    .LOC ( "SLICE_X40Y161" ),
+    .INIT ( 64'hFFFFF0F00F0F0000 ))
+  current_b_01_1 (
     .ADR0(1'b1),
-    .ADR3(current_res[2]),
+    .ADR1(1'b1),
+    .ADR3(1'b1),
+    .ADR2(current_b_0_LDC_1405),
+    .ADR4(current_b_0_C_0_1406),
+    .ADR5(current_b_0_P_0_1340),
+    .O(current_b_01_1404)
+  );
+  X_LATCHE #(
+    .LOC ( "SLICE_X40Y161" ),
+    .INIT ( 1'b0 ))
+  current_a_0_LDC (
+    .GE(VCC),
+    .CLK(\NlwBufferSignal_current_a_0_LDC/CLK ),
+    .I(1'b1),
+    .O(current_a_0_LDC_1346),
+    .RST(\reset_a[0]_AND_79_o ),
+    .SET(GND)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X40Y161" ),
+    .INIT ( 64'hCC00CC00CC00CC00 ))
+  \reset_a[0]_AND_78_o1  (
+    .ADR0(1'b1),
+    .ADR4(1'b1),
+    .ADR2(1'b1),
+    .ADR1(reset_IBUF_1344),
+    .ADR3(a_0_IBUF_1448),
+    .ADR5(1'b1),
+    .O(\reset_a[0]_AND_78_o )
+  );
+  X_LUT5 #(
+    .LOC ( "SLICE_X40Y161" ),
+    .INIT ( 32'h00CC00CC ))
+  \reset_a[0]_AND_79_o1  (
+    .ADR0(1'b1),
+    .ADR4(1'b1),
+    .ADR2(1'b1),
+    .ADR1(reset_IBUF_1344),
+    .ADR3(a_0_IBUF_1448),
+    .O(\reset_a[0]_AND_79_o_pack_1 )
+  );
+  X_FF #(
+    .LOC ( "SLICE_X38Y163" ),
+    .INIT ( 1'b1 ))
+  current_a_6_P_6 (
+    .CE(VCC),
+    .CLK(\NlwBufferSignal_current_a_6_P_6/CLK ),
+    .I(next_a[6]),
+    .O(current_a_6_P_6_1357),
+    .SET(\reset_a[6]_AND_66_o ),
+    .RST(GND)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X38Y163" ),
+    .INIT ( 64'hEEEE00E044440040 ))
+  Mmux_next_a131 (
+    .ADR0(current_a_6_LDC_1355),
+    .ADR1(current_a_6_C_6_1356),
     .ADR2(current_a_0),
-    .ADR1(current_res[3]),
-    .ADR4(current_b_0),
-    .ADR5(GND_1_o_GND_1_o_OR_32_o_1328),
-    .O(current_res_3_rstpot_1281)
-  );
-  X_FF #(
-    .LOC ( "SLICE_X29Y145" ),
-    .INIT ( 1'b0 ))
-  current_res_2 (
-    .CE(VCC),
-    .CLK(\NlwBufferSignal_current_res_2/CLK ),
-    .I(current_res_2_rstpot_1296),
-    .O(current_res[2]),
-    .RST(reset_IBUF_1382),
-    .SET(GND)
+    .ADR5(current_a_6_P_6_1357),
+    .ADR3(current_b_0),
+    .ADR4(GND_1_o_GND_1_o_OR_32_o_1339),
+    .O(next_a[6])
   );
   X_LUT6 #(
-    .LOC ( "SLICE_X29Y145" ),
-    .INIT ( 64'h00000000FFFA000A ))
-  current_res_2_rstpot (
-    .ADR1(1'b1),
-    .ADR0(current_res[1]),
-    .ADR3(current_a_0),
-    .ADR4(current_res[2]),
-    .ADR2(current_b_0),
-    .ADR5(GND_1_o_GND_1_o_OR_32_o_1328),
-    .O(current_res_2_rstpot_1296)
-  );
-  X_FF #(
-    .LOC ( "SLICE_X29Y145" ),
-    .INIT ( 1'b0 ))
-  current_res_1 (
-    .CE(VCC),
-    .CLK(\NlwBufferSignal_current_res_1/CLK ),
-    .I(current_res_1_rstpot_1295),
-    .O(current_res[1]),
-    .RST(reset_IBUF_1382),
-    .SET(GND)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X29Y145" ),
-    .INIT ( 64'h00000000AAAFAAA0 ))
-  current_res_1_rstpot (
-    .ADR1(1'b1),
-    .ADR4(current_res[0]),
-    .ADR3(current_a_0),
-    .ADR0(current_res[1]),
-    .ADR2(current_b_0),
-    .ADR5(GND_1_o_GND_1_o_OR_32_o_1328),
-    .O(current_res_1_rstpot_1295)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X26Y153" ),
-    .INIT ( 64'hFF00EF20BF80AFA0 ))
-  \current_b[7]_current_a[7]_LessThan_14_o21_SW4_F  (
-    .ADR1(current_b_6_LDC_1433),
-    .ADR5(current_b_6_P_6_1413),
-    .ADR4(current_b_6_C_6_1434),
+    .LOC ( "SLICE_X40Y163" ),
+    .INIT ( 64'h40C44040DCFDDCDC ))
+  \current_b[6]_current_a[6]_LessThan_14_o2  (
+    .ADR1(current_a_2),
+    .ADR5(current_b_2),
+    .ADR2(current_a_1),
     .ADR0(current_b_1),
-    .ADR2(current_a_6),
-    .ADR3(N18),
-    .O(N59)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X26Y153" ),
-    .INIT ( 64'hFFFF03CFFC300000 ))
-  Mmux_next_b4_SW0 (
-    .ADR0(1'b1),
-    .ADR1(current_a_0_LDC_1436),
-    .ADR2(current_a_0_C_0_1437),
-    .ADR3(current_a_0_P_0_1438),
-    .ADR4(current_a_1),
-    .ADR5(current_b_1),
-    .O(N18)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X26Y153" ),
-    .INIT ( 64'hF0F0FEF2F0F010D0 ))
-  \current_b[7]_current_a[7]_LessThan_14_o21_SW5_F  (
-    .ADR2(current_b_1),
-    .ADR3(current_b_6_P_6_1413),
-    .ADR1(current_b_6_LDC_1433),
-    .ADR4(current_a_6),
-    .ADR0(current_b_6_C_6_1434),
-    .ADR5(N18),
-    .O(N61)
-  );
-  X_FF #(
-    .LOC ( "SLICE_X28Y146" ),
-    .INIT ( 1'b0 ))
-  current_res_7 (
-    .CE(VCC),
-    .CLK(\NlwBufferSignal_current_res_7/CLK ),
-    .I(current_res_7_rstpot_1253),
-    .O(current_res[7]),
-    .RST(reset_IBUF_1382),
-    .SET(GND)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X28Y146" ),
-    .INIT ( 64'h00000000CCCFCCC0 ))
-  current_res_7_rstpot (
-    .ADR0(1'b1),
-    .ADR4(current_res[6]),
-    .ADR3(current_a_0),
-    .ADR1(current_res[7]),
-    .ADR2(current_b_0),
-    .ADR5(GND_1_o_GND_1_o_OR_32_o_1328),
-    .O(current_res_7_rstpot_1253)
-  );
-  X_FF #(
-    .LOC ( "SLICE_X28Y146" ),
-    .INIT ( 1'b0 ))
-  current_res_6 (
-    .CE(VCC),
-    .CLK(\NlwBufferSignal_current_res_6/CLK ),
-    .I(current_res_6_rstpot_1256),
-    .O(current_res[6]),
-    .RST(reset_IBUF_1382),
-    .SET(GND)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X28Y146" ),
-    .INIT ( 64'h00000000CCCCCCF0 ))
-  current_res_6_rstpot (
-    .ADR0(1'b1),
-    .ADR2(current_res[5]),
     .ADR4(current_a_0),
-    .ADR1(current_res[6]),
     .ADR3(current_b_0),
-    .ADR5(GND_1_o_GND_1_o_OR_32_o_1328),
-    .O(current_res_6_rstpot_1256)
-  );
-  X_FF #(
-    .LOC ( "SLICE_X28Y146" ),
-    .INIT ( 1'b0 ))
-  current_res_5 (
-    .CE(VCC),
-    .CLK(\NlwBufferSignal_current_res_5/CLK ),
-    .I(current_res_5_rstpot_1264),
-    .O(current_res[5]),
-    .RST(reset_IBUF_1382),
-    .SET(GND)
+    .O(\current_b[6]_current_a[6]_LessThan_14_o1_1473 )
   );
   X_LUT6 #(
-    .LOC ( "SLICE_X28Y146" ),
-    .INIT ( 64'h00000000F0F0F0AA ))
-  current_res_5_rstpot (
+    .LOC ( "SLICE_X40Y163" ),
+    .INIT ( 64'hFFF5FF500A00AF00 ))
+  \current_b[6]_current_a[6]_LessThan_14_o1  (
     .ADR1(1'b1),
-    .ADR0(current_res[4]),
-    .ADR4(current_a_0),
-    .ADR2(current_res[5]),
-    .ADR3(current_b_0),
-    .ADR5(GND_1_o_GND_1_o_OR_32_o_1328),
-    .O(current_res_5_rstpot_1264)
+    .ADR2(current_a_3),
+    .ADR0(current_b_3),
+    .ADR3(N11),
+    .ADR5(N12),
+    .ADR4(\current_b[6]_current_a[6]_LessThan_14_o1_1473 ),
+    .O(\current_b[6]_current_a[6]_LessThan_14_o2_1324 )
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X40Y163" ),
+    .INIT ( 64'hFFFF0000EEE64C44 ))
+  Mmux_next_b12_SW3 (
+    .ADR1(current_b_6_C_6_1385),
+    .ADR4(current_b_5),
+    .ADR0(current_b_0),
+    .ADR2(current_a_6),
+    .ADR3(N16),
+    .ADR5(GND_1_o_GND_1_o_equal_6_o),
+    .O(N30)
+  );
+  X_FF #(
+    .LOC ( "SLICE_X40Y163" ),
+    .INIT ( 1'b1 ))
+  current_b_5_P_5 (
+    .CE(VCC),
+    .CLK(\NlwBufferSignal_current_b_5_P_5/CLK ),
+    .I(next_b[5]),
+    .O(current_b_5_P_5_1382),
+    .SET(\reset_b[5]_AND_82_o ),
+    .RST(GND)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X40Y163" ),
+    .INIT ( 64'hF5A0F5A0EEEE4444 ))
+  Mmux_next_b12 (
+    .ADR0(current_b_6_LDC_1384),
+    .ADR5(\current_b[6]_current_a[6]_LessThan_14_o2_1324 ),
+    .ADR1(N28),
+    .ADR4(N29),
+    .ADR2(N31),
+    .ADR3(N30),
+    .O(next_b[5])
+  );
+  X_FF #(
+    .LOC ( "SLICE_X40Y164" ),
+    .INIT ( 1'b0 ))
+  current_a_5_C_5 (
+    .CE(VCC),
+    .CLK(\NlwBufferSignal_current_a_5_C_5/CLK ),
+    .I(\NlwBufferSignal_current_a_5_C_5/IN ),
+    .O(current_a_5_C_5_1334),
+    .RST(\reset_a[5]_AND_69_o_0 ),
+    .SET(GND)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X40Y164" ),
+    .INIT ( 64'hFFFF5555AAAA0000 ))
+  current_b_61 (
+    .ADR3(1'b1),
+    .ADR1(1'b1),
+    .ADR2(1'b1),
+    .ADR0(current_b_6_LDC_1384),
+    .ADR5(current_b_6_C_6_1385),
+    .ADR4(current_b_6_P_6_0),
+    .O(current_b_6)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X40Y164" ),
+    .INIT ( 64'h00000000000C003F ))
+  GND_1_o_GND_1_o_OR_32_o_SW0 (
+    .ADR0(1'b1),
+    .ADR1(current_b_4_LDC_1330),
+    .ADR2(current_b_4_P_4_1332),
+    .ADR4(current_b_4_C_4_1331),
+    .ADR5(current_b_5),
+    .ADR3(current_b_6),
+    .O(N6)
+  );
+  X_BUF   \current_a_4_LDC/current_a_4_LDC_BMUX_Delay  (
+    .I(\reset_a[4]_AND_71_o_pack_1 ),
+    .O(\reset_a[4]_AND_71_o )
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X40Y166" ),
+    .INIT ( 64'hAA00AA00AA00AA00 ))
+  \reset_a[4]_AND_70_o1  (
+    .ADR4(1'b1),
+    .ADR1(1'b1),
+    .ADR2(1'b1),
+    .ADR0(reset_IBUF_1344),
+    .ADR3(a_4_IBUF_1445),
+    .ADR5(1'b1),
+    .O(\reset_a[4]_AND_70_o )
+  );
+  X_LUT5 #(
+    .LOC ( "SLICE_X40Y166" ),
+    .INIT ( 32'h00AA00AA ))
+  \reset_a[4]_AND_71_o1  (
+    .ADR4(1'b1),
+    .ADR1(1'b1),
+    .ADR2(1'b1),
+    .ADR0(reset_IBUF_1344),
+    .ADR3(a_4_IBUF_1445),
+    .O(\reset_a[4]_AND_71_o_pack_1 )
+  );
+  X_LATCHE #(
+    .LOC ( "SLICE_X40Y166" ),
+    .INIT ( 1'b0 ))
+  current_a_4_LDC (
+    .GE(VCC),
+    .CLK(\NlwBufferSignal_current_a_4_LDC/CLK ),
+    .I(1'b1),
+    .O(current_a_4_LDC_1420),
+    .RST(\reset_a[4]_AND_71_o ),
+    .SET(GND)
+  );
+  X_BUF   \current_a_6/current_a_6_DMUX_Delay  (
+    .I(current_a_5_P_5_823),
+    .O(current_a_5_P_5_0)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X41Y164" ),
+    .INIT ( 64'hFFFFF0F00F0F0000 ))
+  current_a_61 (
+    .ADR0(1'b1),
+    .ADR1(1'b1),
+    .ADR3(1'b1),
+    .ADR2(current_a_6_LDC_1355),
+    .ADR4(current_a_6_C_6_1356),
+    .ADR5(current_a_6_P_6_1357),
+    .O(current_a_6)
+  );
+  X_FF #(
+    .LOC ( "SLICE_X41Y164" ),
+    .INIT ( 1'b1 ))
+  current_a_5_P_5 (
+    .CE(VCC),
+    .CLK(\NlwBufferSignal_current_a_5_P_5/CLK ),
+    .I(\NlwBufferSignal_current_a_5_P_5/IN ),
+    .O(current_a_5_P_5_823),
+    .SET(\reset_a[5]_AND_68_o ),
+    .RST(GND)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X41Y164" ),
+    .INIT ( 64'hFFFFAFFF5F0F0F0F ))
+  Mmux_next_a2_SW2_SW1 (
+    .ADR1(1'b1),
+    .ADR3(current_b_6),
+    .ADR2(current_b_0),
+    .ADR0(current_a_6),
+    .ADR5(\n0088<1>_0 ),
+    .ADR4(\n0089<1>_0 ),
+    .O(N34)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X41Y164" ),
+    .INIT ( 64'hFF00FF00FACA3A0A ))
+  Mmux_next_a122 (
+    .ADR3(current_a_5),
+    .ADR2(current_a_0),
+    .ADR1(current_b_0),
+    .ADR0(current_a_6),
+    .ADR5(GND_1_o_GND_1_o_OR_32_o_1339),
+    .ADR4(Mmux_next_a12),
+    .O(next_a[5])
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X41Y164" ),
+    .INIT ( 64'hFF44BB00FFDD2200 ))
+  Mmux_next_a121 (
+    .ADR2(1'b1),
+    .ADR1(current_b_6),
+    .ADR0(current_a_6),
+    .ADR3(\n0088<6>_0 ),
+    .ADR4(\n0089<6>_0 ),
+    .ADR5(\current_b[6]_current_a[6]_LessThan_14_o2_1324 ),
+    .O(Mmux_next_a12)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X41Y161" ),
+    .INIT ( 64'hFFFFCCCC33330000 ))
+  current_b_01 (
+    .ADR0(1'b1),
+    .ADR3(1'b1),
+    .ADR2(1'b1),
+    .ADR1(current_b_0_LDC_1405),
+    .ADR4(current_b_0_C_0_1406),
+    .ADR5(current_b_0_P_0_1340),
+    .O(current_b_0)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X41Y161" ),
+    .INIT ( 64'hFF0DFF08F200F700 ))
+  \current_b[6]_current_a[6]_LessThan_14_o21_SW8_F  (
+    .ADR3(current_b_2),
+    .ADR1(current_b_6_P_6_0),
+    .ADR0(current_b_6_LDC_1384),
+    .ADR2(current_a_6),
+    .ADR4(current_b_6_C_6_1385),
+    .ADR5(N20),
+    .O(N62)
+  );
+  X_FF #(
+    .LOC ( "SLICE_X41Y161" ),
+    .INIT ( 1'b0 ))
+  current_b_0_C_0 (
+    .CE(VCC),
+    .CLK(\NlwBufferSignal_current_b_0_C_0/CLK ),
+    .I(next_b[0]),
+    .O(current_b_0_C_0_1406),
+    .RST(\reset_b[0]_AND_93_o ),
+    .SET(GND)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X41Y161" ),
+    .INIT ( 64'hF0F0F0F0FFFAF5F0 ))
+  Mmux_next_b21 (
+    .ADR1(1'b1),
+    .ADR0(current_b_1_LDC_1318),
+    .ADR3(current_b_1_C_1_1319),
+    .ADR4(current_b_1_P_1_1320),
+    .ADR2(current_b_0),
+    .ADR5(GND_1_o_GND_1_o_equal_6_o),
+    .O(next_b[0])
+  );
+  X_FF #(
+    .LOC ( "SLICE_X41Y166" ),
+    .INIT ( 1'b1 ))
+  current_a_4_P_4 (
+    .CE(VCC),
+    .CLK(\NlwBufferSignal_current_a_4_P_4/CLK ),
+    .I(\NlwBufferSignal_current_a_4_P_4/IN ),
+    .O(current_a_4_P_4_1373),
+    .SET(\reset_a[4]_AND_70_o ),
+    .RST(GND)
+  );
+  X_BUF   \current_a_1_LDC/current_a_1_LDC_AMUX_Delay  (
+    .I(\reset_b[3]_AND_87_o ),
+    .O(\reset_b[3]_AND_87_o_0 )
+  );
+  X_LATCHE #(
+    .LOC ( "SLICE_X41Y160" ),
+    .INIT ( 1'b0 ))
+  current_a_1_LDC (
+    .GE(VCC),
+    .CLK(\NlwBufferSignal_current_a_1_LDC/CLK ),
+    .I(1'b1),
+    .O(current_a_1_LDC_1347),
+    .RST(\reset_a[1]_AND_77_o_0 ),
+    .SET(GND)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X41Y160" ),
+    .INIT ( 64'hF0F00000F0F00000 ))
+  \reset_b[3]_AND_86_o1  (
+    .ADR0(1'b1),
+    .ADR1(1'b1),
+    .ADR3(1'b1),
+    .ADR2(reset_IBUF_1344),
+    .ADR4(b_3_IBUF_1454),
+    .ADR5(1'b1),
+    .O(\reset_b[3]_AND_86_o )
+  );
+  X_LUT5 #(
+    .LOC ( "SLICE_X41Y160" ),
+    .INIT ( 32'h0000F0F0 ))
+  \reset_b[3]_AND_87_o1  (
+    .ADR0(1'b1),
+    .ADR1(1'b1),
+    .ADR3(1'b1),
+    .ADR2(reset_IBUF_1344),
+    .ADR4(b_3_IBUF_1454),
+    .O(\reset_b[3]_AND_87_o )
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X43Y162" ),
+    .INIT ( 64'hFFFFF0F00F0F0000 ))
+  current_b_51 (
+    .ADR0(1'b1),
+    .ADR1(1'b1),
+    .ADR3(1'b1),
+    .ADR2(current_b_5_LDC_1380),
+    .ADR4(current_b_5_C_5_1381),
+    .ADR5(current_b_5_P_5_1382),
+    .O(current_b_5)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X43Y162" ),
+    .INIT ( 64'hFFFFFA5005AF0000 ))
+  Mmux_next_b12_SW0 (
+    .ADR1(1'b1),
+    .ADR0(current_a_0_LDC_1346),
+    .ADR2(current_a_0_C_0_1351),
+    .ADR3(current_a_0_P_0_1350),
+    .ADR5(current_a_5),
+    .ADR4(current_b_5),
+    .O(N16)
+  );
+  X_FF #(
+    .LOC ( "SLICE_X43Y162" ),
+    .INIT ( 1'b1 ))
+  current_a_1_P_1 (
+    .CE(VCC),
+    .CLK(\NlwBufferSignal_current_a_1_P_1/CLK ),
+    .I(next_a[1]),
+    .O(current_a_1_P_1_1349),
+    .SET(\reset_a[1]_AND_76_o ),
+    .RST(GND)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X43Y162" ),
+    .INIT ( 64'hCCCCCCCCEFE04F40 ))
+  Mmux_next_a42 (
+    .ADR3(current_a_2),
+    .ADR1(current_a_1),
+    .ADR2(current_a_0),
+    .ADR0(current_b_0),
+    .ADR5(GND_1_o_GND_1_o_OR_32_o_1339),
+    .ADR4(Mmux_next_a4),
+    .O(next_a[1])
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X43Y162" ),
+    .INIT ( 64'hF0FCF030FCFF3000 ))
+  Mmux_next_a41 (
+    .ADR0(1'b1),
+    .ADR1(current_b_6),
+    .ADR3(current_a_6),
+    .ADR2(\n0088<2>_0 ),
+    .ADR4(\n0089<2>_0 ),
+    .ADR5(\current_b[6]_current_a[6]_LessThan_14_o2_1324 ),
+    .O(Mmux_next_a4)
   );
   X_BUF   \current_b_1_C_1/current_b_1_C_1_CMUX_Delay  (
     .I(\next_b<1>_pack_7 ),
     .O(next_b[1])
   );
   X_MUX2 #(
-    .LOC ( "SLICE_X24Y153" ))
+    .LOC ( "SLICE_X43Y163" ))
   Mmux_next_b4 (
-    .IA(N73),
-    .IB(N74),
+    .IA(N70),
+    .IB(N71),
     .O(\next_b<1>_pack_7 ),
-    .SEL(\current_b[7]_current_a[7]_LessThan_14_o2_1392 )
+    .SEL(\current_b[6]_current_a[6]_LessThan_14_o2_1324 )
   );
   X_FF #(
-    .LOC ( "SLICE_X24Y153" ),
+    .LOC ( "SLICE_X43Y163" ),
     .INIT ( 1'b0 ))
   current_b_1_C_1 (
     .CE(VCC),
     .CLK(\NlwBufferSignal_current_b_1_C_1/CLK ),
     .I(\NlwBufferSignal_current_b_1_C_1/IN ),
-    .O(current_b_1_C_1_1387),
+    .O(current_b_1_C_1_1319),
     .RST(\reset_b[1]_AND_91_o_0 ),
     .SET(GND)
   );
   X_LUT6 #(
-    .LOC ( "SLICE_X24Y153" ),
-    .INIT ( 64'hCCCCFFF0CCCC0F00 ))
+    .LOC ( "SLICE_X43Y163" ),
+    .INIT ( 64'hF0F0F0F0FFAA5500 ))
   Mmux_next_b4_F (
-    .ADR0(1'b1),
-    .ADR4(GND_1_o_GND_1_o_equal_6_o),
-    .ADR2(current_b_0),
-    .ADR5(N59),
-    .ADR3(current_b_2),
-    .ADR1(current_b_1),
-    .O(N73)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X24Y153" ),
-    .INIT ( 64'hCCCCCCCCFFF00F00 ))
-  Mmux_next_b4_G (
-    .ADR0(1'b1),
-    .ADR5(GND_1_o_GND_1_o_equal_6_o),
-    .ADR2(current_b_0),
-    .ADR4(N61),
-    .ADR3(current_b_2),
-    .ADR1(current_b_1),
-    .O(N74)
-  );
-  X_LUT6 #(
-    .LOC ( "SLICE_X24Y153" ),
-    .INIT ( 64'hFFFF5555AAAA0000 ))
-  current_b_11 (
-    .ADR3(1'b1),
     .ADR1(1'b1),
-    .ADR2(1'b1),
-    .ADR0(current_b_1_LDC_1386),
-    .ADR5(current_b_1_C_1_1387),
-    .ADR4(current_b_1_P_1_1388),
+    .ADR5(GND_1_o_GND_1_o_equal_6_o),
+    .ADR0(current_b_0),
+    .ADR4(N56),
+    .ADR3(current_b_2),
+    .ADR2(current_b_1),
+    .O(N70)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X43Y163" ),
+    .INIT ( 64'hF0F0F0F0FFAA5500 ))
+  Mmux_next_b4_G (
+    .ADR1(1'b1),
+    .ADR5(GND_1_o_GND_1_o_equal_6_o),
+    .ADR0(current_b_0),
+    .ADR4(N58),
+    .ADR3(current_b_2),
+    .ADR2(current_b_1),
+    .O(N71)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X43Y163" ),
+    .INIT ( 64'hFFFF0F0FF0F00000 ))
+  current_b_11 (
+    .ADR0(1'b1),
+    .ADR1(1'b1),
+    .ADR3(1'b1),
+    .ADR2(current_b_1_LDC_1318),
+    .ADR5(current_b_1_C_1_1319),
+    .ADR4(current_b_1_P_1_1320),
     .O(current_b_1)
   );
   X_LUT6 #(
-    .LOC ( "SLICE_X24Y153" ),
-    .INIT ( 64'hFFFF3333CCCC0000 ))
+    .LOC ( "SLICE_X43Y163" ),
+    .INIT ( 64'hFFFFCCCC33330000 ))
   current_a_01 (
     .ADR0(1'b1),
     .ADR3(1'b1),
     .ADR2(1'b1),
-    .ADR1(current_a_0_LDC_1436),
-    .ADR5(current_a_0_C_0_1437),
-    .ADR4(current_a_0_P_0_1438),
+    .ADR1(current_a_0_LDC_1346),
+    .ADR4(current_a_0_C_0_1351),
+    .ADR5(current_a_0_P_0_1350),
     .O(current_a_0)
   );
+  X_BUF   \current_b_5_C_5/current_b_5_C_5_CMUX_Delay  (
+    .I(n0089[6]),
+    .O(\n0089<6>_0 )
+  );
+  X_BUF   \current_b_5_C_5/current_b_5_C_5_BMUX_Delay  (
+    .I(n0089[5]),
+    .O(\n0089<5>_0 )
+  );
+  X_BUF   \current_b_5_C_5/current_b_5_C_5_AMUX_Delay  (
+    .I(n0089[4]),
+    .O(\n0089<4>_0 )
+  );
   X_FF #(
-    .LOC ( "SLICE_X26Y154" ),
+    .LOC ( "SLICE_X41Y163" ),
+    .INIT ( 1'b0 ))
+  current_b_5_C_5 (
+    .CE(VCC),
+    .CLK(\NlwBufferSignal_current_b_5_C_5/CLK ),
+    .I(\NlwBufferSignal_current_b_5_C_5/IN ),
+    .O(current_b_5_C_5_1381),
+    .RST(\reset_b[5]_AND_83_o_0 ),
+    .SET(GND)
+  );
+  X_CARRY4 #(
+    .LOC ( "SLICE_X41Y163" ))
+  \Msub_n0089_xor<6>  (
+    .CI(Msub_n0089_cy[3]),
+    .CYINIT(1'b0),
+    .CO({\NLW_Msub_n0089_xor<6>_CO[3]_UNCONNECTED , \NLW_Msub_n0089_xor<6>_CO[2]_UNCONNECTED , \NLW_Msub_n0089_xor<6>_CO[1]_UNCONNECTED , 
+\NLW_Msub_n0089_xor<6>_CO[0]_UNCONNECTED }),
+    .DI({\NLW_Msub_n0089_xor<6>_DI[3]_UNCONNECTED , \NLW_Msub_n0089_xor<6>_DI[2]_UNCONNECTED , \NlwBufferSignal_Msub_n0089_xor<6>/DI<1> , 
+\NlwBufferSignal_Msub_n0089_xor<6>/DI<0> }),
+    .O({\NLW_Msub_n0089_xor<6>_O[3]_UNCONNECTED , n0089[6], n0089[5], n0089[4]}),
+    .S({\NLW_Msub_n0089_xor<6>_S[3]_UNCONNECTED , Msub_n0088_lut[6], Msub_n0089_lut[5], Msub_n0089_lut[4]})
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X41Y163" ),
+    .INIT ( 64'hFA50C963369C05AF ))
+  \Msub_n0088_lut<6>  (
+    .ADR0(current_a_6_LDC_1355),
+    .ADR3(current_a_6_P_6_1357),
+    .ADR4(current_b_6_C_6_1385),
+    .ADR1(current_b_6_LDC_1384),
+    .ADR5(current_b_6_P_6_0),
+    .ADR2(current_a_6_C_6_1356),
+    .O(Msub_n0088_lut[6])
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X41Y163" ),
+    .INIT ( 64'hFAC9360550639CAF ))
+  \Msub_n0089_lut<5>  (
+    .ADR1(current_b_5_LDC_1380),
+    .ADR0(current_a_5_LDC_1333),
+    .ADR2(current_a_5_C_5_1334),
+    .ADR5(current_a_5_P_5_0),
+    .ADR4(current_b_5_P_5_1382),
+    .ADR3(current_b_5_C_5_1381),
+    .O(Msub_n0089_lut[5])
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X41Y163" ),
+    .INIT ( 64'hF539A06CC60A935F ))
+  \Msub_n0089_lut<4>  (
+    .ADR0(current_b_4_LDC_1330),
+    .ADR1(current_a_4_LDC_1420),
+    .ADR5(current_a_4_C_4_0),
+    .ADR3(current_a_4_P_4_1373),
+    .ADR2(current_b_4_P_4_1332),
+    .ADR4(current_b_4_C_4_1331),
+    .O(Msub_n0089_lut[4])
+  );
+  X_FF #(
+    .LOC ( "SLICE_X41Y165" ),
+    .INIT ( 1'b0 ))
+  current_a_3_C_3 (
+    .CE(VCC),
+    .CLK(\NlwBufferSignal_current_a_3_C_3/CLK ),
+    .I(\NlwBufferSignal_current_a_3_C_3/IN ),
+    .O(current_a_3_C_3_1414),
+    .RST(\reset_a[3]_AND_73_o_0 ),
+    .SET(GND)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X41Y165" ),
+    .INIT ( 64'hFF00FF00EEE44E44 ))
+  Mmux_next_a102 (
+    .ADR1(current_a_5),
+    .ADR3(current_a_4),
+    .ADR0(current_a_0),
+    .ADR2(current_b_0),
+    .ADR5(GND_1_o_GND_1_o_OR_32_o_1339),
+    .ADR4(Mmux_next_a10),
+    .O(next_a[4])
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X41Y165" ),
+    .INIT ( 64'hF0FCF030FCFF3000 ))
+  Mmux_next_a101 (
+    .ADR0(1'b1),
+    .ADR1(current_b_6),
+    .ADR3(current_a_6),
+    .ADR2(\n0088<5>_0 ),
+    .ADR4(\n0089<5>_0 ),
+    .ADR5(\current_b[6]_current_a[6]_LessThan_14_o2_1324 ),
+    .O(Mmux_next_a10)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X40Y165" ),
+    .INIT ( 64'hCCCCCCCCFAD850D8 ))
+  Mmux_next_a82 (
+    .ADR1(current_a_3),
+    .ADR2(current_a_4),
+    .ADR0(current_a_0),
+    .ADR3(current_b_0),
+    .ADR5(GND_1_o_GND_1_o_OR_32_o_1339),
+    .ADR4(Mmux_next_a8),
+    .O(next_a[3])
+  );
+  X_LATCHE #(
+    .LOC ( "SLICE_X40Y165" ),
+    .INIT ( 1'b0 ))
+  current_a_3_LDC (
+    .GE(VCC),
+    .CLK(\NlwBufferSignal_current_a_3_LDC/CLK ),
+    .I(1'b1),
+    .O(current_a_3_LDC_1412),
+    .RST(\reset_a[3]_AND_73_o_0 ),
+    .SET(GND)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X40Y165" ),
+    .INIT ( 64'hFF50AF00FFF50A00 ))
+  Mmux_next_a81 (
+    .ADR1(1'b1),
+    .ADR2(current_b_6),
+    .ADR0(current_a_6),
+    .ADR3(\n0088<4>_0 ),
+    .ADR4(\n0089<4>_0 ),
+    .ADR5(\current_b[6]_current_a[6]_LessThan_14_o2_1324 ),
+    .O(Mmux_next_a8)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X43Y161" ),
+    .INIT ( 64'hFE10F2D0FF00FF00 ))
+  \current_b[6]_current_a[6]_LessThan_14_o21_SW7_F  (
+    .ADR1(current_b_6_LDC_1384),
+    .ADR4(current_b_6_P_6_0),
+    .ADR0(current_b_6_C_6_1385),
+    .ADR2(current_b_2),
+    .ADR5(current_a_6),
+    .ADR3(N20),
+    .O(N60)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X43Y161" ),
+    .INIT ( 64'hFFFF0C3FF3C00000 ))
+  Mmux_next_b6_SW0 (
+    .ADR0(1'b1),
+    .ADR1(current_a_0_LDC_1346),
+    .ADR3(current_a_0_C_0_1351),
+    .ADR2(current_a_0_P_0_1350),
+    .ADR4(current_a_2),
+    .ADR5(current_b_2),
+    .O(N20)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X43Y161" ),
+    .INIT ( 64'hFFE41B00FFFF0000 ))
+  \current_b[6]_current_a[6]_LessThan_14_o21_SW10_F  (
+    .ADR0(current_b_6_LDC_1384),
+    .ADR2(current_b_6_P_6_0),
+    .ADR1(current_b_6_C_6_1385),
+    .ADR3(current_b_3),
+    .ADR5(current_a_6),
+    .ADR4(N22),
+    .O(N64)
+  );
+  X_FF #(
+    .LOC ( "SLICE_X43Y161" ),
+    .INIT ( 1'b1 ))
+  current_b_0_P_0 (
+    .CE(VCC),
+    .CLK(\NlwBufferSignal_current_b_0_P_0/CLK ),
+    .I(\NlwBufferSignal_current_b_0_P_0/IN ),
+    .O(current_b_0_P_0_1340),
+    .SET(\reset_b[0]_AND_92_o ),
+    .RST(GND)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X43Y161" ),
+    .INIT ( 64'hFFFF03CFFC300000 ))
+  Mmux_next_b8_SW0 (
+    .ADR0(1'b1),
+    .ADR1(current_a_0_LDC_1346),
+    .ADR2(current_a_0_C_0_1351),
+    .ADR3(current_a_0_P_0_1350),
+    .ADR4(current_a_3),
+    .ADR5(current_b_3),
+    .O(N22)
+  );
+  X_FF #(
+    .LOC ( "SLICE_X43Y160" ),
+    .INIT ( 1'b0 ))
+  current_b_3_C_3 (
+    .CE(VCC),
+    .CLK(\NlwBufferSignal_current_b_3_C_3/CLK ),
+    .I(\NlwBufferSignal_current_b_3_C_3/IN ),
+    .O(current_b_3_C_3_1326),
+    .RST(\reset_b[3]_AND_87_o_0 ),
+    .SET(GND)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X43Y164" ),
+    .INIT ( 64'hFF00FF01FF00FF00 ))
+  GND_1_o_GND_1_o_OR_32_o (
+    .ADR2(current_b_2),
+    .ADR1(current_b_1),
+    .ADR0(current_b_0),
+    .ADR4(current_b_3),
+    .ADR5(N6),
+    .ADR3(GND_1_o_GND_1_o_equal_6_o),
+    .O(GND_1_o_GND_1_o_OR_32_o_1339)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X43Y164" ),
+    .INIT ( 64'h0000000000000001 ))
+  \GND_1_o_GND_1_o_equal_6_o<6>  (
+    .ADR0(current_a_2),
+    .ADR1(current_a_3),
+    .ADR3(current_a_4),
+    .ADR2(current_a_5),
+    .ADR4(current_a_6),
+    .ADR5(N26),
+    .O(GND_1_o_GND_1_o_equal_6_o)
+  );
+  X_FF #(
+    .LOC ( "SLICE_X43Y164" ),
+    .INIT ( 1'b0 ))
+  current_a_2_C_2 (
+    .CE(VCC),
+    .CLK(\NlwBufferSignal_current_a_2_C_2/CLK ),
+    .I(next_a[2]),
+    .O(current_a_2_C_2_1396),
+    .RST(\reset_a[2]_AND_75_o_0 ),
+    .SET(GND)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X43Y164" ),
+    .INIT ( 64'hCCCCCCCCFACA0ACA ))
+  Mmux_next_a62 (
+    .ADR0(current_a_3),
+    .ADR1(current_a_2),
+    .ADR2(current_a_0),
+    .ADR3(current_b_0),
+    .ADR5(GND_1_o_GND_1_o_OR_32_o_1339),
+    .ADR4(Mmux_next_a6),
+    .O(next_a[2])
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X43Y164" ),
+    .INIT ( 64'hFF30CF00FFF30C00 ))
+  Mmux_next_a61 (
+    .ADR0(1'b1),
+    .ADR2(current_b_6),
+    .ADR1(current_a_6),
+    .ADR3(\n0088<3>_0 ),
+    .ADR4(\n0089<3>_0 ),
+    .ADR5(\current_b[6]_current_a[6]_LessThan_14_o2_1324 ),
+    .O(Mmux_next_a6)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X43Y165" ),
+    .INIT ( 64'hFFFF0F0FF0F00000 ))
+  current_a_51 (
+    .ADR0(1'b1),
+    .ADR1(1'b1),
+    .ADR3(1'b1),
+    .ADR2(current_a_5_LDC_1333),
+    .ADR5(current_a_5_C_5_1334),
+    .ADR4(current_a_5_P_5_0),
+    .O(current_a_5)
+  );
+  X_FF #(
+    .LOC ( "SLICE_X43Y165" ),
+    .INIT ( 1'b1 ))
+  current_a_3_P_3 (
+    .CE(VCC),
+    .CLK(\NlwBufferSignal_current_a_3_P_3/CLK ),
+    .I(\NlwBufferSignal_current_a_3_P_3/IN ),
+    .O(current_a_3_P_3_1434),
+    .SET(\reset_a[3]_AND_72_o ),
+    .RST(GND)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X43Y165" ),
+    .INIT ( 64'h4700FF470000FF00 ))
+  \current_b[6]_current_a[6]_LessThan_14_o1_SW0  (
+    .ADR1(current_b_4_LDC_1330),
+    .ADR2(current_b_4_C_4_1331),
+    .ADR0(current_b_4_P_4_1332),
+    .ADR5(current_a_4),
+    .ADR4(current_b_5),
+    .ADR3(current_a_5),
+    .O(N11)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X42Y161" ),
+    .INIT ( 64'hFF47B800FF00FF00 ))
+  \current_b[6]_current_a[6]_LessThan_14_o21_SW4_F  (
+    .ADR1(current_b_6_LDC_1384),
+    .ADR0(current_b_6_P_6_0),
+    .ADR2(current_b_6_C_6_1385),
+    .ADR4(current_b_1),
+    .ADR5(current_a_6),
+    .ADR3(N18),
+    .O(N56)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X42Y161" ),
+    .INIT ( 64'hFFFF05AFFA500000 ))
+  Mmux_next_b4_SW0 (
+    .ADR1(1'b1),
+    .ADR0(current_a_0_LDC_1346),
+    .ADR2(current_a_0_C_0_1351),
+    .ADR3(current_a_0_P_0_1350),
+    .ADR4(current_a_1),
+    .ADR5(current_b_1),
+    .O(N18)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X42Y161" ),
+    .INIT ( 64'hFFFFFF5F0FAF0F0F ))
+  Mmux_next_a2_SW2_SW0 (
+    .ADR1(1'b1),
+    .ADR3(current_b_6),
+    .ADR2(current_b_0),
+    .ADR0(current_a_6),
+    .ADR4(\n0088<1>_0 ),
+    .ADR5(\n0089<1>_0 ),
+    .O(N33)
+  );
+  X_FF #(
+    .LOC ( "SLICE_X42Y161" ),
+    .INIT ( 1'b0 ))
+  current_a_0_C_0 (
+    .CE(VCC),
+    .CLK(\NlwBufferSignal_current_a_0_C_0/CLK ),
+    .I(next_a[0]),
+    .O(current_a_0_C_0_1351),
+    .RST(\reset_a[0]_AND_79_o ),
+    .SET(GND)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X42Y161" ),
+    .INIT ( 64'hCCCCEEE2CCCC22E2 ))
+  Mmux_next_a2 (
+    .ADR0(current_a_1),
+    .ADR1(current_a_0),
+    .ADR4(GND_1_o_GND_1_o_OR_32_o_1339),
+    .ADR3(\current_b[6]_current_a[6]_LessThan_14_o2_1324 ),
+    .ADR5(N34),
+    .ADR2(N33),
+    .O(next_a[0])
+  );
+  X_BUF   \current_a_4_C_4/current_a_4_C_4_AMUX_Delay  (
+    .I(current_a_4_C_4_991),
+    .O(current_a_4_C_4_0)
+  );
+  X_FF #(
+    .LOC ( "SLICE_X43Y166" ),
+    .INIT ( 1'b0 ))
+  current_a_4_C_4 (
+    .CE(VCC),
+    .CLK(\NlwBufferSignal_current_a_4_C_4/CLK ),
+    .I(\NlwBufferSignal_current_a_4_C_4/IN ),
+    .O(current_a_4_C_4_991),
+    .RST(\reset_a[4]_AND_71_o ),
+    .SET(GND)
+  );
+  X_BUF   \current_b_3_P_3/current_b_3_P_3_CMUX_Delay  (
+    .I(\next_b<3>_pack_9 ),
+    .O(next_b[3])
+  );
+  X_MUX2 #(
+    .LOC ( "SLICE_X42Y162" ))
+  Mmux_next_b8 (
+    .IA(N74),
+    .IB(N75),
+    .O(\next_b<3>_pack_9 ),
+    .SEL(\current_b[6]_current_a[6]_LessThan_14_o2_1324 )
+  );
+  X_FF #(
+    .LOC ( "SLICE_X42Y162" ),
+    .INIT ( 1'b1 ))
+  current_b_3_P_3 (
+    .CE(VCC),
+    .CLK(\NlwBufferSignal_current_b_3_P_3/CLK ),
+    .I(\NlwBufferSignal_current_b_3_P_3/IN ),
+    .O(current_b_3_P_3_1371),
+    .SET(\reset_b[3]_AND_86_o ),
+    .RST(GND)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X42Y162" ),
+    .INIT ( 64'hCCCCFFF0CCCC0F00 ))
+  Mmux_next_b8_F (
+    .ADR0(1'b1),
+    .ADR4(GND_1_o_GND_1_o_equal_6_o),
+    .ADR2(current_b_0),
+    .ADR5(N64),
+    .ADR3(current_b_4),
+    .ADR1(current_b_3),
+    .O(N74)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X42Y162" ),
+    .INIT ( 64'hCCCCFFF0CCCC0F00 ))
+  Mmux_next_b8_G (
+    .ADR0(1'b1),
+    .ADR4(GND_1_o_GND_1_o_equal_6_o),
+    .ADR2(current_b_0),
+    .ADR5(N66),
+    .ADR3(current_b_4),
+    .ADR1(current_b_3),
+    .O(N75)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X42Y162" ),
+    .INIT ( 64'hFFFFAAAA55550000 ))
+  current_b_31 (
+    .ADR3(1'b1),
+    .ADR1(1'b1),
+    .ADR2(1'b1),
+    .ADR0(current_b_3_LDC_1370),
+    .ADR4(current_b_3_C_3_1326),
+    .ADR5(current_b_3_P_3_1371),
+    .O(current_b_3)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X42Y162" ),
+    .INIT ( 64'hFF00FF00FFD82700 ))
+  \current_b[6]_current_a[6]_LessThan_14_o21_SW11_F  (
+    .ADR3(current_b_3),
+    .ADR1(current_b_6_P_6_0),
+    .ADR0(current_b_6_LDC_1384),
+    .ADR5(current_a_6),
+    .ADR2(current_b_6_C_6_1385),
+    .ADR4(N22),
+    .O(N66)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X44Y165" ),
+    .INIT ( 64'hFDFF2000F8FF7000 ))
+  \current_b[6]_current_a[6]_LessThan_14_o21_SW1_F  (
+    .ADR0(current_b_6_LDC_1384),
+    .ADR1(current_b_6_P_6_0),
+    .ADR5(current_b_6_C_6_1385),
+    .ADR2(current_b_4),
+    .ADR3(current_a_6),
+    .ADR4(N14),
+    .O(N52)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X44Y165" ),
+    .INIT ( 64'hFFFFF3C00C3F0000 ))
+  Mmux_next_b10_SW0 (
+    .ADR0(1'b1),
+    .ADR1(current_a_0_LDC_1346),
+    .ADR3(current_a_0_C_0_1351),
+    .ADR2(current_a_0_P_0_1350),
+    .ADR5(current_a_4),
+    .ADR4(current_b_4),
+    .O(N14)
+  );
+  X_FF #(
+    .LOC ( "SLICE_X45Y164" ),
+    .INIT ( 1'b1 ))
+  current_a_2_P_2 (
+    .CE(VCC),
+    .CLK(\NlwBufferSignal_current_a_2_P_2/CLK ),
+    .I(\NlwBufferSignal_current_a_2_P_2/IN ),
+    .O(current_a_2_P_2_1430),
+    .SET(\reset_a[2]_AND_74_o ),
+    .RST(GND)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X45Y164" ),
+    .INIT ( 64'hFFFFCCCC33330000 ))
+  current_a_21 (
+    .ADR0(1'b1),
+    .ADR3(1'b1),
+    .ADR2(1'b1),
+    .ADR5(current_a_2_P_2_1430),
+    .ADR1(current_a_2_LDC_1392),
+    .ADR4(current_a_2_C_2_1396),
+    .O(current_a_2)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X44Y164" ),
+    .INIT ( 64'hFF0BFF08F400F700 ))
+  \current_b[6]_current_a[6]_LessThan_14_o21_SW2_F  (
+    .ADR3(current_b_4),
+    .ADR0(current_b_6_P_6_0),
+    .ADR1(current_b_6_LDC_1384),
+    .ADR2(current_a_6),
+    .ADR4(current_b_6_C_6_1385),
+    .ADR5(N14),
+    .O(N54)
+  );
+  X_BUF   \current_b_4_P_4/current_b_4_P_4_CMUX_Delay  (
+    .I(\next_b<4>_pack_7 ),
+    .O(next_b[4])
+  );
+  X_MUX2 #(
+    .LOC ( "SLICE_X42Y165" ))
+  Mmux_next_b10 (
+    .IA(N68),
+    .IB(N69),
+    .O(\next_b<4>_pack_7 ),
+    .SEL(\current_b[6]_current_a[6]_LessThan_14_o2_1324 )
+  );
+  X_FF #(
+    .LOC ( "SLICE_X42Y165" ),
+    .INIT ( 1'b1 ))
+  current_b_4_P_4 (
+    .CE(VCC),
+    .CLK(\NlwBufferSignal_current_b_4_P_4/CLK ),
+    .I(\NlwBufferSignal_current_b_4_P_4/IN ),
+    .O(current_b_4_P_4_1332),
+    .SET(\reset_b[4]_AND_84_o ),
+    .RST(GND)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X42Y165" ),
+    .INIT ( 64'hCCCCFFF0CCCC0F00 ))
+  Mmux_next_b10_F (
+    .ADR0(1'b1),
+    .ADR4(GND_1_o_GND_1_o_equal_6_o),
+    .ADR2(current_b_0),
+    .ADR5(N52),
+    .ADR3(current_b_5),
+    .ADR1(current_b_4),
+    .O(N68)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X42Y165" ),
+    .INIT ( 64'hFFFCFF0C00FC000C ))
+  Mmux_next_b10_G (
+    .ADR0(1'b1),
+    .ADR3(GND_1_o_GND_1_o_equal_6_o),
+    .ADR2(current_b_0),
+    .ADR4(N54),
+    .ADR1(current_b_5),
+    .ADR5(current_b_4),
+    .O(N69)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X42Y165" ),
+    .INIT ( 64'hFFFFF0F00F0F0000 ))
+  current_b_41 (
+    .ADR0(1'b1),
+    .ADR1(1'b1),
+    .ADR3(1'b1),
+    .ADR2(current_b_4_LDC_1330),
+    .ADR4(current_b_4_C_4_1331),
+    .ADR5(current_b_4_P_4_1332),
+    .O(current_b_4)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X42Y165" ),
+    .INIT ( 64'hFFFFFF0000FF0000 ))
+  current_a_31 (
+    .ADR0(1'b1),
+    .ADR1(1'b1),
+    .ADR2(1'b1),
+    .ADR3(current_a_3_LDC_1412),
+    .ADR4(current_a_3_C_3_1414),
+    .ADR5(current_a_3_P_3_1434),
+    .O(current_a_3)
+  );
+  X_FF #(
+    .LOC ( "SLICE_X42Y167" ),
+    .INIT ( 1'b0 ))
+  current_b_4_C_4 (
+    .CE(VCC),
+    .CLK(\NlwBufferSignal_current_b_4_C_4/CLK ),
+    .I(\NlwBufferSignal_current_b_4_C_4/IN ),
+    .O(current_b_4_C_4_1331),
+    .RST(\reset_b[4]_AND_85_o ),
+    .SET(GND)
+  );
+  X_FF #(
+    .LOC ( "SLICE_X50Y156" ),
+    .INIT ( 1'b0 ))
+  current_res_7 (
+    .CE(Mmux_next_a102_1343),
+    .CLK(\NlwBufferSignal_current_res_7/CLK ),
+    .I(\NlwBufferSignal_current_res_7/IN ),
+    .O(current_res[7]),
+    .RST(reset_IBUF_1344),
+    .SET(GND)
+  );
+  X_FF #(
+    .LOC ( "SLICE_X50Y156" ),
+    .INIT ( 1'b0 ))
+  current_res_6 (
+    .CE(Mmux_next_a102_1343),
+    .CLK(\NlwBufferSignal_current_res_6/CLK ),
+    .I(\NlwBufferSignal_current_res_6/IN ),
+    .O(current_res[6]),
+    .RST(reset_IBUF_1344),
+    .SET(GND)
+  );
+  X_FF #(
+    .LOC ( "SLICE_X50Y156" ),
+    .INIT ( 1'b0 ))
+  current_res_5 (
+    .CE(Mmux_next_a102_1343),
+    .CLK(\NlwBufferSignal_current_res_5/CLK ),
+    .I(\NlwBufferSignal_current_res_5/IN ),
+    .O(current_res[5]),
+    .RST(reset_IBUF_1344),
+    .SET(GND)
+  );
+  X_FF #(
+    .LOC ( "SLICE_X50Y156" ),
+    .INIT ( 1'b0 ))
+  current_res_4 (
+    .CE(Mmux_next_a102_1343),
+    .CLK(\NlwBufferSignal_current_res_4/CLK ),
+    .I(\NlwBufferSignal_current_res_4/IN ),
+    .O(current_res[4]),
+    .RST(reset_IBUF_1344),
+    .SET(GND)
+  );
+  X_BUF   \current_a[6]_current_b[6]_mux_8_OUT<1>/current_a[6]_current_b[6]_mux_8_OUT<1>_CMUX_Delay  (
+    .I(\current_a[6]_current_b[6]_mux_8_OUT<3> ),
+    .O(\current_a[6]_current_b[6]_mux_8_OUT<3>_0 )
+  );
+  X_BUF   \current_a[6]_current_b[6]_mux_8_OUT<1>/current_a[6]_current_b[6]_mux_8_OUT<1>_AMUX_Delay  (
+    .I(\current_a[6]_current_b[6]_mux_8_OUT<0> ),
+    .O(\current_a[6]_current_b[6]_mux_8_OUT<0>_0 )
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X56Y155" ),
+    .INIT ( 64'hFF00AAAAFF00AAAA ))
+  \Mmux_current_a[6]_current_b[6]_mux_8_OUT<1>11  (
+    .ADR2(1'b1),
+    .ADR1(1'b1),
+    .ADR4(GND_1_o_GND_1_o_equal_6_o),
+    .ADR0(n0086[1]),
+    .ADR3(n0085[1]),
+    .ADR5(1'b1),
+    .O(\current_a[6]_current_b[6]_mux_8_OUT<1> )
+  );
+  X_LUT5 #(
+    .LOC ( "SLICE_X56Y155" ),
+    .INIT ( 32'hCCCCF0F0 ))
+  \Mmux_current_a[6]_current_b[6]_mux_8_OUT<3>11  (
+    .ADR2(n0086[3]),
+    .ADR1(n0085[3]),
+    .ADR4(GND_1_o_GND_1_o_equal_6_o),
+    .ADR3(1'b1),
+    .ADR0(1'b1),
+    .O(\current_a[6]_current_b[6]_mux_8_OUT<3> )
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X56Y155" ),
+    .INIT ( 64'hBB88BB88BB88BB88 ))
+  \Mmux_current_a[6]_current_b[6]_mux_8_OUT<2>11  (
+    .ADR4(1'b1),
+    .ADR2(1'b1),
+    .ADR1(GND_1_o_GND_1_o_equal_6_o),
+    .ADR3(n0086[2]),
+    .ADR0(n0085[2]),
+    .ADR5(1'b1),
+    .O(\current_a[6]_current_b[6]_mux_8_OUT<2> )
+  );
+  X_LUT5 #(
+    .LOC ( "SLICE_X56Y155" ),
+    .INIT ( 32'hF3F3C0C0 ))
+  \Mmux_current_a[6]_current_b[6]_mux_8_OUT<0>11  (
+    .ADR4(n0086[0]),
+    .ADR2(n0085[0]),
+    .ADR1(GND_1_o_GND_1_o_equal_6_o),
+    .ADR3(1'b1),
+    .ADR0(1'b1),
+    .O(\current_a[6]_current_b[6]_mux_8_OUT<0> )
+  );
+  X_FF #(
+    .LOC ( "SLICE_X44Y162" ),
+    .INIT ( 1'b0 ))
+  current_a_1_C_1 (
+    .CE(VCC),
+    .CLK(\NlwBufferSignal_current_a_1_C_1/CLK ),
+    .I(\NlwBufferSignal_current_a_1_C_1/IN ),
+    .O(current_a_1_C_1_1348),
+    .RST(\reset_a[1]_AND_77_o_0 ),
+    .SET(GND)
+  );
+  X_FF #(
+    .LOC ( "SLICE_X48Y156" ),
+    .INIT ( 1'b0 ))
+  current_res_3 (
+    .CE(Mmux_next_a102_1343),
+    .CLK(\NlwBufferSignal_current_res_3/CLK ),
+    .I(\NlwBufferSignal_current_res_3/IN ),
+    .O(current_res[3]),
+    .RST(reset_IBUF_1344),
+    .SET(GND)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X48Y156" ),
+    .INIT ( 64'h00000000000A050F ))
+  Mmux_next_a1021 (
+    .ADR1(1'b1),
+    .ADR0(current_b_0_LDC_1405),
+    .ADR3(current_b_0_P_0_1340),
+    .ADR4(current_b_0_C_0_1406),
+    .ADR2(current_a_0),
+    .ADR5(GND_1_o_GND_1_o_OR_32_o_1339),
+    .O(Mmux_next_a102_1343)
+  );
+  X_FF #(
+    .LOC ( "SLICE_X48Y156" ),
+    .INIT ( 1'b0 ))
+  current_res_2 (
+    .CE(Mmux_next_a102_1343),
+    .CLK(\NlwBufferSignal_current_res_2/CLK ),
+    .I(\NlwBufferSignal_current_res_2/IN ),
+    .O(current_res[2]),
+    .RST(reset_IBUF_1344),
+    .SET(GND)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X42Y166" ),
+    .INIT ( 64'hFFFFAAAA55550000 ))
+  current_a_41 (
+    .ADR3(1'b1),
+    .ADR1(1'b1),
+    .ADR2(1'b1),
+    .ADR0(current_a_4_LDC_1420),
+    .ADR4(current_a_4_C_4_0),
+    .ADR5(current_a_4_P_4_1373),
+    .O(current_a_4)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X42Y166" ),
+    .INIT ( 64'hFF1DFFFF1D001D1D ))
+  \current_b[6]_current_a[6]_LessThan_14_o1_SW1  (
+    .ADR1(current_b_5_LDC_1380),
+    .ADR0(current_b_5_C_5_1381),
+    .ADR2(current_b_5_P_5_1382),
+    .ADR5(current_a_5),
+    .ADR4(current_b_4),
+    .ADR3(current_a_4),
+    .O(N12)
+  );
+  X_LUT6 #(
+    .LOC ( "SLICE_X44Y163" ),
+    .INIT ( 64'hCCCCCCCCCEAAC4AA ))
+  Mmux_next_b12_SW4 (
+    .ADR0(current_b_6_P_6_0),
+    .ADR1(current_b_5),
+    .ADR3(current_b_0),
+    .ADR2(current_a_6),
+    .ADR4(N16),
+    .ADR5(GND_1_o_GND_1_o_equal_6_o),
+    .O(N31)
+  );
+  X_FF #(
+    .LOC ( "SLICE_X48Y157" ),
+    .INIT ( 1'b0 ))
+  current_res_1 (
+    .CE(Mmux_next_a102_1343),
+    .CLK(\NlwBufferSignal_current_res_1/CLK ),
+    .I(\NlwBufferSignal_current_res_1/IN ),
+    .O(current_res[1]),
+    .RST(reset_IBUF_1344),
+    .SET(GND)
+  );
+  X_FF #(
+    .LOC ( "SLICE_X48Y157" ),
+    .INIT ( 1'b1 ))
+  current_res_0 (
+    .CE(Mmux_next_a102_1343),
+    .CLK(\NlwBufferSignal_current_res_0/CLK ),
+    .I(1'b0),
+    .O(current_res[0]),
+    .SET(reset_IBUF_1344),
+    .RST(GND)
+  );
+  X_FF #(
+    .LOC ( "SLICE_X45Y162" ),
     .INIT ( 1'b1 ))
   current_a_0_P_0 (
     .CE(VCC),
     .CLK(\NlwBufferSignal_current_a_0_P_0/CLK ),
     .I(\NlwBufferSignal_current_a_0_P_0/IN ),
-    .O(current_a_0_P_0_1438),
+    .O(current_a_0_P_0_1350),
     .SET(\reset_a[0]_AND_78_o ),
     .RST(GND)
   );
-  X_BUF   \NlwBufferBlock_res_2/CLK  (
-    .I(GND_1_o_GND_1_o_OR_32_o_1328),
-    .O(\NlwBufferSignal_res_2/CLK )
+  X_LUT6 #(
+    .LOC ( "SLICE_X45Y162" ),
+    .INIT ( 64'hFFFFF0F00F0F0000 ))
+  current_a_11 (
+    .ADR0(1'b1),
+    .ADR1(1'b1),
+    .ADR3(1'b1),
+    .ADR2(current_a_1_LDC_1347),
+    .ADR4(current_a_1_C_1_1348),
+    .ADR5(current_a_1_P_1_1349),
+    .O(current_a_1)
   );
-  X_BUF   \NlwBufferBlock_res_2/IN  (
-    .I(\current_a[7]_current_b[7]_mux_8_OUT<2>_0 ),
-    .O(\NlwBufferSignal_res_2/IN )
+  X_FF #(
+    .LOC ( "SLICE_X45Y163" ),
+    .INIT ( 1'b1 ))
+  current_b_1_P_1 (
+    .CE(VCC),
+    .CLK(\NlwBufferSignal_current_b_1_P_1/CLK ),
+    .I(\NlwBufferSignal_current_b_1_P_1/IN ),
+    .O(current_b_1_P_1_1320),
+    .SET(\reset_b[1]_AND_90_o ),
+    .RST(GND)
   );
-  X_BUF   \NlwBufferBlock_res_3/CLK  (
-    .I(GND_1_o_GND_1_o_OR_32_o_1328),
-    .O(\NlwBufferSignal_res_3/CLK )
+  X_LUT6 #(
+    .LOC ( "SLICE_X45Y163" ),
+    .INIT ( 64'hCCCCCCCCEFAA40AA ))
+  Mmux_next_b12_SW1 (
+    .ADR0(current_b_6_C_6_1385),
+    .ADR1(current_b_5),
+    .ADR3(current_b_0),
+    .ADR2(current_a_6),
+    .ADR4(N16),
+    .ADR5(GND_1_o_GND_1_o_equal_6_o),
+    .O(N28)
   );
-  X_BUF   \NlwBufferBlock_res_3/IN  (
-    .I(\current_a[7]_current_b[7]_mux_8_OUT<3>_0 ),
-    .O(\NlwBufferSignal_res_3/IN )
+  X_BUF   \current_a_2_LDC/current_a_2_LDC_CMUX_Delay  (
+    .I(n0088[6]),
+    .O(\n0088<6>_0 )
   );
-  X_BUF   \NlwBufferBlock_current_b_0_LDC/CLK  (
-    .I(\reset_b[0]_AND_92_o ),
-    .O(\NlwBufferSignal_current_b_0_LDC/CLK )
+  X_BUF   \current_a_2_LDC/current_a_2_LDC_BMUX_Delay  (
+    .I(n0088[5]),
+    .O(\n0088<5>_0 )
   );
-  X_BUF   \NlwBufferBlock_current_a_0_LDC/CLK  (
-    .I(\reset_a[0]_AND_78_o ),
-    .O(\NlwBufferSignal_current_a_0_LDC/CLK )
+  X_BUF   \current_a_2_LDC/current_a_2_LDC_AMUX_Delay  (
+    .I(n0088[4]),
+    .O(\n0088<4>_0 )
   );
-  X_BUF   \NlwBufferBlock_current_a_3_LDC/CLK  (
-    .I(\reset_a[3]_AND_72_o ),
-    .O(\NlwBufferSignal_current_a_3_LDC/CLK )
+  X_LATCHE #(
+    .LOC ( "SLICE_X42Y164" ),
+    .INIT ( 1'b0 ))
+  current_a_2_LDC (
+    .GE(VCC),
+    .CLK(\NlwBufferSignal_current_a_2_LDC/CLK ),
+    .I(1'b1),
+    .O(current_a_2_LDC_1392),
+    .RST(\reset_a[2]_AND_75_o_0 ),
+    .SET(GND)
   );
-  X_BUF   \NlwBufferBlock_current_a_4_LDC/CLK  (
-    .I(\reset_a[4]_AND_70_o ),
-    .O(\NlwBufferSignal_current_a_4_LDC/CLK )
+  X_LUT6 #(
+    .LOC ( "SLICE_X42Y164" ),
+    .INIT ( 64'hFF00FFE2FF001D00 ))
+  \current_b[6]_current_a[6]_LessThan_14_o21_SW5_F  (
+    .ADR3(current_b_1),
+    .ADR2(current_b_6_P_6_0),
+    .ADR1(current_b_6_LDC_1384),
+    .ADR4(current_a_6),
+    .ADR0(current_b_6_C_6_1385),
+    .ADR5(N18),
+    .O(N58)
   );
-  X_BUF   \NlwBufferBlock_current_b_6_LDC/CLK  (
-    .I(\reset_b[6]_AND_80_o ),
-    .O(\NlwBufferSignal_current_b_6_LDC/CLK )
+  X_CARRY4 #(
+    .LOC ( "SLICE_X42Y164" ))
+  \Msub_n0088_xor<6>  (
+    .CI(Msub_n0088_cy[3]),
+    .CYINIT(1'b0),
+    .CO({\NLW_Msub_n0088_xor<6>_CO[3]_UNCONNECTED , \NLW_Msub_n0088_xor<6>_CO[2]_UNCONNECTED , \NLW_Msub_n0088_xor<6>_CO[1]_UNCONNECTED , 
+\NLW_Msub_n0088_xor<6>_CO[0]_UNCONNECTED }),
+    .DI({\NLW_Msub_n0088_xor<6>_DI[3]_UNCONNECTED , \NLW_Msub_n0088_xor<6>_DI[2]_UNCONNECTED , \NlwBufferSignal_Msub_n0088_xor<6>/DI<1> , 
+\NlwBufferSignal_Msub_n0088_xor<6>/DI<0> }),
+    .O({\NLW_Msub_n0088_xor<6>_O[3]_UNCONNECTED , n0088[6], n0088[5], n0088[4]}),
+    .S({\NLW_Msub_n0088_xor<6>_S[3]_UNCONNECTED , \Msub_n0088_lut<6>1_1075 , Msub_n0088_lut[5], Msub_n0088_lut[4]})
   );
-  X_BUF   \NlwBufferBlock_current_a_1_LDC/CLK  (
-    .I(\reset_a[1]_AND_76_o ),
-    .O(\NlwBufferSignal_current_a_1_LDC/CLK )
+  X_LUT6 #(
+    .LOC ( "SLICE_X42Y164" ),
+    .INIT ( 64'hFA50369CC96305AF ))
+  \Msub_n0088_lut<6>1  (
+    .ADR0(current_a_6_LDC_1355),
+    .ADR3(current_a_6_P_6_1357),
+    .ADR5(current_b_6_C_6_1385),
+    .ADR1(current_b_6_LDC_1384),
+    .ADR4(current_b_6_P_6_0),
+    .ADR2(current_a_6_C_6_1356),
+    .O(\Msub_n0088_lut<6>1_1075 )
   );
-  X_BUF   \NlwBufferBlock_current_a_4_P_4/CLK  (
-    .I(clk_BUFGP),
-    .O(\NlwBufferSignal_current_a_4_P_4/CLK )
+  X_LUT6 #(
+    .LOC ( "SLICE_X42Y164" ),
+    .INIT ( 64'hF3A6590CC0956A3F ))
+  \Msub_n0088_lut<5>  (
+    .ADR1(current_b_5_LDC_1380),
+    .ADR0(current_a_5_LDC_1333),
+    .ADR3(current_a_5_C_5_1334),
+    .ADR4(current_a_5_P_5_0),
+    .ADR2(current_b_5_P_5_1382),
+    .ADR5(current_b_5_C_5_1381),
+    .O(Msub_n0088_lut[5])
   );
-  X_BUF   \NlwBufferBlock_current_a_4_P_4/IN  (
-    .I(next_a[4]),
-    .O(\NlwBufferSignal_current_a_4_P_4/IN )
+  X_LUT6 #(
+    .LOC ( "SLICE_X42Y164" ),
+    .INIT ( 64'hF359C06AA60C953F ))
+  \Msub_n0088_lut<4>  (
+    .ADR0(current_b_4_LDC_1330),
+    .ADR1(current_a_4_LDC_1420),
+    .ADR4(current_a_4_C_4_0),
+    .ADR2(current_a_4_P_4_1373),
+    .ADR3(current_b_4_P_4_1332),
+    .ADR5(current_b_4_C_4_1331),
+    .O(Msub_n0088_lut[4])
   );
-  X_BUF   \NlwBufferBlock_current_a_2_LDC/CLK  (
-    .I(\reset_a[2]_AND_74_o ),
-    .O(\NlwBufferSignal_current_a_2_LDC/CLK )
+  X_BUF   \current_a[6]_current_b[6]_mux_8_OUT<5>/current_a[6]_current_b[6]_mux_8_OUT<5>_BMUX_Delay  (
+    .I(\current_a[6]_current_b[6]_mux_8_OUT<4> ),
+    .O(\current_a[6]_current_b[6]_mux_8_OUT<4>_0 )
   );
-  X_BUF   \NlwBufferBlock_current_b_4_LDC/CLK  (
-    .I(\reset_b[4]_AND_84_o ),
-    .O(\NlwBufferSignal_current_b_4_LDC/CLK )
+  X_BUF   \current_a[6]_current_b[6]_mux_8_OUT<5>/current_a[6]_current_b[6]_mux_8_OUT<5>_AMUX_Delay  (
+    .I(\current_a[6]_current_b[6]_mux_8_OUT<7> ),
+    .O(\current_a[6]_current_b[6]_mux_8_OUT<7>_0 )
   );
-  X_BUF   \NlwBufferBlock_res_0/CLK  (
-    .I(GND_1_o_GND_1_o_OR_32_o_1328),
-    .O(\NlwBufferSignal_res_0/CLK )
+  X_LUT6 #(
+    .LOC ( "SLICE_X56Y156" ),
+    .INIT ( 64'hF0CCF0CCF0CCF0CC ))
+  \Mmux_current_a[6]_current_b[6]_mux_8_OUT<5>11  (
+    .ADR0(1'b1),
+    .ADR4(1'b1),
+    .ADR3(GND_1_o_GND_1_o_equal_6_o),
+    .ADR1(n0086[5]),
+    .ADR2(n0085[5]),
+    .ADR5(1'b1),
+    .O(\current_a[6]_current_b[6]_mux_8_OUT<5> )
   );
-  X_BUF   \NlwBufferBlock_res_0/IN  (
-    .I(\current_a[7]_current_b[7]_mux_8_OUT<0>_0 ),
-    .O(\NlwBufferSignal_res_0/IN )
+  X_LUT5 #(
+    .LOC ( "SLICE_X56Y156" ),
+    .INIT ( 32'hAAFFAA00 ))
+  \Mmux_current_a[6]_current_b[6]_mux_8_OUT<4>11  (
+    .ADR4(n0086[4]),
+    .ADR0(n0085[4]),
+    .ADR3(GND_1_o_GND_1_o_equal_6_o),
+    .ADR2(1'b1),
+    .ADR1(1'b1),
+    .O(\current_a[6]_current_b[6]_mux_8_OUT<4> )
   );
-  X_BUF   \NlwBufferBlock_res_1/CLK  (
-    .I(GND_1_o_GND_1_o_OR_32_o_1328),
-    .O(\NlwBufferSignal_res_1/CLK )
+  X_LUT6 #(
+    .LOC ( "SLICE_X56Y156" ),
+    .INIT ( 64'hAFA0AFA0AFA0AFA0 ))
+  \Mmux_current_a[6]_current_b[6]_mux_8_OUT<6>11  (
+    .ADR4(1'b1),
+    .ADR1(1'b1),
+    .ADR2(GND_1_o_GND_1_o_equal_6_o),
+    .ADR3(n0086[6]),
+    .ADR0(n0085[6]),
+    .ADR5(1'b1),
+    .O(\current_a[6]_current_b[6]_mux_8_OUT<6> )
   );
-  X_BUF   \NlwBufferBlock_res_1/IN  (
-    .I(\current_a[7]_current_b[7]_mux_8_OUT<1> ),
-    .O(\NlwBufferSignal_res_1/IN )
+  X_LUT5 #(
+    .LOC ( "SLICE_X56Y156" ),
+    .INIT ( 32'hFCFC0C0C ))
+  \Mmux_current_a[6]_current_b[6]_mux_8_OUT<7>11  (
+    .ADR1(n0086[7]),
+    .ADR4(n0085[7]),
+    .ADR2(GND_1_o_GND_1_o_equal_6_o),
+    .ADR3(1'b1),
+    .ADR0(1'b1),
+    .O(\current_a[6]_current_b[6]_mux_8_OUT<7> )
+  );
+  X_BUF   \NlwBufferBlock_Msub_n0089_cy<3>/DI<0>  (
+    .I(current_b_01_1404),
+    .O(\NlwBufferSignal_Msub_n0089_cy<3>/DI<0> )
+  );
+  X_BUF   \NlwBufferBlock_Msub_n0089_cy<3>/DI<1>  (
+    .I(current_b_1),
+    .O(\NlwBufferSignal_Msub_n0089_cy<3>/DI<1> )
+  );
+  X_BUF   \NlwBufferBlock_Msub_n0089_cy<3>/DI<2>  (
+    .I(current_b_2),
+    .O(\NlwBufferSignal_Msub_n0089_cy<3>/DI<2> )
+  );
+  X_BUF   \NlwBufferBlock_Msub_n0089_cy<3>/DI<3>  (
+    .I(current_b_3),
+    .O(\NlwBufferSignal_Msub_n0089_cy<3>/DI<3> )
+  );
+  X_BUF   \NlwBufferBlock_clk_BUFGP/BUFG/IN  (
+    .I(\clk_BUFGP/IBUFG_1316 ),
+    .O(\NlwBufferSignal_clk_BUFGP/BUFG/IN )
   );
   X_BUF   \NlwBufferBlock_Msub_n0088_cy<3>/DI<0>  (
     .I(current_a_0),
@@ -4241,57 +4051,285 @@ current_res[5], current_res[4], current_res[3], current_res[2], current_res[1], 
     .I(current_a_3),
     .O(\NlwBufferSignal_Msub_n0088_cy<3>/DI<3> )
   );
-  X_BUF   \NlwBufferBlock_res_6/CLK  (
-    .I(GND_1_o_GND_1_o_OR_32_o_1328),
-    .O(\NlwBufferSignal_res_6/CLK )
+  X_BUF   \NlwBufferBlock_res_1/CLK  (
+    .I(GND_1_o_GND_1_o_OR_32_o_1339),
+    .O(\NlwBufferSignal_res_1/CLK )
   );
-  X_BUF   \NlwBufferBlock_res_6/IN  (
-    .I(\current_a[7]_current_b[7]_mux_8_OUT<6> ),
-    .O(\NlwBufferSignal_res_6/IN )
-  );
-  X_BUF   \NlwBufferBlock_res_7/CLK  (
-    .I(GND_1_o_GND_1_o_OR_32_o_1328),
-    .O(\NlwBufferSignal_res_7/CLK )
-  );
-  X_BUF   \NlwBufferBlock_res_7/IN  (
-    .I(\current_a[7]_current_b[7]_mux_8_OUT<7>_0 ),
-    .O(\NlwBufferSignal_res_7/IN )
-  );
-  X_BUF   \NlwBufferBlock_Msub_n0089_cy<3>/DI<0>  (
-    .I(current_b_01_1463),
-    .O(\NlwBufferSignal_Msub_n0089_cy<3>/DI<0> )
-  );
-  X_BUF   \NlwBufferBlock_Msub_n0089_cy<3>/DI<1>  (
-    .I(current_b_1),
-    .O(\NlwBufferSignal_Msub_n0089_cy<3>/DI<1> )
-  );
-  X_BUF   \NlwBufferBlock_Msub_n0089_cy<3>/DI<2>  (
-    .I(current_b_2),
-    .O(\NlwBufferSignal_Msub_n0089_cy<3>/DI<2> )
-  );
-  X_BUF   \NlwBufferBlock_Msub_n0089_cy<3>/DI<3>  (
-    .I(current_b_3),
-    .O(\NlwBufferSignal_Msub_n0089_cy<3>/DI<3> )
-  );
-  X_BUF   \NlwBufferBlock_res_4/CLK  (
-    .I(GND_1_o_GND_1_o_OR_32_o_1328),
-    .O(\NlwBufferSignal_res_4/CLK )
-  );
-  X_BUF   \NlwBufferBlock_res_4/IN  (
-    .I(\current_a[7]_current_b[7]_mux_8_OUT<4> ),
-    .O(\NlwBufferSignal_res_4/IN )
-  );
-  X_BUF   \NlwBufferBlock_clk_BUFGP/BUFG/IN  (
-    .I(\clk_BUFGP/IBUFG_1380 ),
-    .O(\NlwBufferSignal_clk_BUFGP/BUFG/IN )
+  X_BUF   \NlwBufferBlock_res_1/IN  (
+    .I(\current_a[6]_current_b[6]_mux_8_OUT<1> ),
+    .O(\NlwBufferSignal_res_1/IN )
   );
   X_BUF   \NlwBufferBlock_res_5/CLK  (
-    .I(GND_1_o_GND_1_o_OR_32_o_1328),
+    .I(GND_1_o_GND_1_o_OR_32_o_1339),
     .O(\NlwBufferSignal_res_5/CLK )
   );
   X_BUF   \NlwBufferBlock_res_5/IN  (
-    .I(\current_a[7]_current_b[7]_mux_8_OUT<5> ),
+    .I(\current_a[6]_current_b[6]_mux_8_OUT<5> ),
     .O(\NlwBufferSignal_res_5/IN )
+  );
+  X_BUF   \NlwBufferBlock_res_6/CLK  (
+    .I(GND_1_o_GND_1_o_OR_32_o_1339),
+    .O(\NlwBufferSignal_res_6/CLK )
+  );
+  X_BUF   \NlwBufferBlock_res_6/IN  (
+    .I(\current_a[6]_current_b[6]_mux_8_OUT<6> ),
+    .O(\NlwBufferSignal_res_6/IN )
+  );
+  X_BUF   \NlwBufferBlock_res_2/CLK  (
+    .I(GND_1_o_GND_1_o_OR_32_o_1339),
+    .O(\NlwBufferSignal_res_2/CLK )
+  );
+  X_BUF   \NlwBufferBlock_res_2/IN  (
+    .I(\current_a[6]_current_b[6]_mux_8_OUT<2> ),
+    .O(\NlwBufferSignal_res_2/IN )
+  );
+  X_BUF   \NlwBufferBlock_res_3/CLK  (
+    .I(GND_1_o_GND_1_o_OR_32_o_1339),
+    .O(\NlwBufferSignal_res_3/CLK )
+  );
+  X_BUF   \NlwBufferBlock_res_3/IN  (
+    .I(\current_a[6]_current_b[6]_mux_8_OUT<3>_0 ),
+    .O(\NlwBufferSignal_res_3/IN )
+  );
+  X_BUF   \NlwBufferBlock_res_4/CLK  (
+    .I(GND_1_o_GND_1_o_OR_32_o_1339),
+    .O(\NlwBufferSignal_res_4/CLK )
+  );
+  X_BUF   \NlwBufferBlock_res_4/IN  (
+    .I(\current_a[6]_current_b[6]_mux_8_OUT<4>_0 ),
+    .O(\NlwBufferSignal_res_4/IN )
+  );
+  X_BUF   \NlwBufferBlock_res_7/CLK  (
+    .I(GND_1_o_GND_1_o_OR_32_o_1339),
+    .O(\NlwBufferSignal_res_7/CLK )
+  );
+  X_BUF   \NlwBufferBlock_res_7/IN  (
+    .I(\current_a[6]_current_b[6]_mux_8_OUT<7>_0 ),
+    .O(\NlwBufferSignal_res_7/IN )
+  );
+  X_BUF   \NlwBufferBlock_current_b_5_LDC/CLK  (
+    .I(\reset_b[5]_AND_82_o ),
+    .O(\NlwBufferSignal_current_b_5_LDC/CLK )
+  );
+  X_BUF   \NlwBufferBlock_current_b_6_LDC/CLK  (
+    .I(\reset_b[6]_AND_80_o ),
+    .O(\NlwBufferSignal_current_b_6_LDC/CLK )
+  );
+  X_BUF   \NlwBufferBlock_res_0/CLK  (
+    .I(GND_1_o_GND_1_o_OR_32_o_1339),
+    .O(\NlwBufferSignal_res_0/CLK )
+  );
+  X_BUF   \NlwBufferBlock_res_0/IN  (
+    .I(\current_a[6]_current_b[6]_mux_8_OUT<0>_0 ),
+    .O(\NlwBufferSignal_res_0/IN )
+  );
+  X_BUF   \NlwBufferBlock_current_b_6_P_6/CLK  (
+    .I(clk_BUFGP),
+    .O(\NlwBufferSignal_current_b_6_P_6/CLK )
+  );
+  X_BUF   \NlwBufferBlock_current_b_6_P_6/IN  (
+    .I(next_b[6]),
+    .O(\NlwBufferSignal_current_b_6_P_6/IN )
+  );
+  X_BUF   \NlwBufferBlock_current_a_5_LDC/CLK  (
+    .I(\reset_a[5]_AND_68_o ),
+    .O(\NlwBufferSignal_current_a_5_LDC/CLK )
+  );
+  X_BUF   \NlwBufferBlock_current_b_4_LDC/CLK  (
+    .I(\reset_b[4]_AND_84_o ),
+    .O(\NlwBufferSignal_current_b_4_LDC/CLK )
+  );
+  X_BUF   \NlwBufferBlock_current_a_6_LDC/CLK  (
+    .I(\reset_a[6]_AND_66_o ),
+    .O(\NlwBufferSignal_current_a_6_LDC/CLK )
+  );
+  X_BUF   \NlwBufferBlock_current_b_0_LDC/CLK  (
+    .I(\reset_b[0]_AND_92_o ),
+    .O(\NlwBufferSignal_current_b_0_LDC/CLK )
+  );
+  X_BUF   \NlwBufferBlock_current_a_6_C_6/CLK  (
+    .I(clk_BUFGP),
+    .O(\NlwBufferSignal_current_a_6_C_6/CLK )
+  );
+  X_BUF   \NlwBufferBlock_current_a_6_C_6/IN  (
+    .I(next_a[6]),
+    .O(\NlwBufferSignal_current_a_6_C_6/IN )
+  );
+  X_BUF   \NlwBufferBlock_current_b_6_C_6/CLK  (
+    .I(clk_BUFGP),
+    .O(\NlwBufferSignal_current_b_6_C_6/CLK )
+  );
+  X_BUF   \NlwBufferBlock_current_b_2_C_2/CLK  (
+    .I(clk_BUFGP),
+    .O(\NlwBufferSignal_current_b_2_C_2/CLK )
+  );
+  X_BUF   \NlwBufferBlock_current_b_2_C_2/IN  (
+    .I(next_b[2]),
+    .O(\NlwBufferSignal_current_b_2_C_2/IN )
+  );
+  X_BUF   \NlwBufferBlock_current_b_1_LDC/CLK  (
+    .I(\reset_b[1]_AND_90_o ),
+    .O(\NlwBufferSignal_current_b_1_LDC/CLK )
+  );
+  X_BUF   \NlwBufferBlock_current_b_2_LDC/CLK  (
+    .I(\reset_b[2]_AND_88_o ),
+    .O(\NlwBufferSignal_current_b_2_LDC/CLK )
+  );
+  X_BUF   \NlwBufferBlock_current_b_2_P_2/CLK  (
+    .I(clk_BUFGP),
+    .O(\NlwBufferSignal_current_b_2_P_2/CLK )
+  );
+  X_BUF   \NlwBufferBlock_current_b_2_P_2/IN  (
+    .I(next_b[2]),
+    .O(\NlwBufferSignal_current_b_2_P_2/IN )
+  );
+  X_BUF   \NlwBufferBlock_current_b_3_LDC/CLK  (
+    .I(\reset_b[3]_AND_86_o ),
+    .O(\NlwBufferSignal_current_b_3_LDC/CLK )
+  );
+  X_BUF   \NlwBufferBlock_current_a_0_LDC/CLK  (
+    .I(\reset_a[0]_AND_78_o ),
+    .O(\NlwBufferSignal_current_a_0_LDC/CLK )
+  );
+  X_BUF   \NlwBufferBlock_current_a_6_P_6/CLK  (
+    .I(clk_BUFGP),
+    .O(\NlwBufferSignal_current_a_6_P_6/CLK )
+  );
+  X_BUF   \NlwBufferBlock_current_b_5_P_5/CLK  (
+    .I(clk_BUFGP),
+    .O(\NlwBufferSignal_current_b_5_P_5/CLK )
+  );
+  X_BUF   \NlwBufferBlock_current_a_5_C_5/CLK  (
+    .I(clk_BUFGP),
+    .O(\NlwBufferSignal_current_a_5_C_5/CLK )
+  );
+  X_BUF   \NlwBufferBlock_current_a_5_C_5/IN  (
+    .I(next_a[5]),
+    .O(\NlwBufferSignal_current_a_5_C_5/IN )
+  );
+  X_BUF   \NlwBufferBlock_current_a_4_LDC/CLK  (
+    .I(\reset_a[4]_AND_70_o ),
+    .O(\NlwBufferSignal_current_a_4_LDC/CLK )
+  );
+  X_BUF   \NlwBufferBlock_current_a_5_P_5/CLK  (
+    .I(clk_BUFGP),
+    .O(\NlwBufferSignal_current_a_5_P_5/CLK )
+  );
+  X_BUF   \NlwBufferBlock_current_a_5_P_5/IN  (
+    .I(next_a[5]),
+    .O(\NlwBufferSignal_current_a_5_P_5/IN )
+  );
+  X_BUF   \NlwBufferBlock_current_b_0_C_0/CLK  (
+    .I(clk_BUFGP),
+    .O(\NlwBufferSignal_current_b_0_C_0/CLK )
+  );
+  X_BUF   \NlwBufferBlock_current_a_4_P_4/CLK  (
+    .I(clk_BUFGP),
+    .O(\NlwBufferSignal_current_a_4_P_4/CLK )
+  );
+  X_BUF   \NlwBufferBlock_current_a_4_P_4/IN  (
+    .I(next_a[4]),
+    .O(\NlwBufferSignal_current_a_4_P_4/IN )
+  );
+  X_BUF   \NlwBufferBlock_current_a_1_LDC/CLK  (
+    .I(\reset_a[1]_AND_76_o ),
+    .O(\NlwBufferSignal_current_a_1_LDC/CLK )
+  );
+  X_BUF   \NlwBufferBlock_current_a_1_P_1/CLK  (
+    .I(clk_BUFGP),
+    .O(\NlwBufferSignal_current_a_1_P_1/CLK )
+  );
+  X_BUF   \NlwBufferBlock_current_b_1_C_1/CLK  (
+    .I(clk_BUFGP),
+    .O(\NlwBufferSignal_current_b_1_C_1/CLK )
+  );
+  X_BUF   \NlwBufferBlock_current_b_1_C_1/IN  (
+    .I(next_b[1]),
+    .O(\NlwBufferSignal_current_b_1_C_1/IN )
+  );
+  X_BUF   \NlwBufferBlock_current_b_5_C_5/CLK  (
+    .I(clk_BUFGP),
+    .O(\NlwBufferSignal_current_b_5_C_5/CLK )
+  );
+  X_BUF   \NlwBufferBlock_current_b_5_C_5/IN  (
+    .I(next_b[5]),
+    .O(\NlwBufferSignal_current_b_5_C_5/IN )
+  );
+  X_BUF   \NlwBufferBlock_Msub_n0089_xor<6>/DI<0>  (
+    .I(current_b_4),
+    .O(\NlwBufferSignal_Msub_n0089_xor<6>/DI<0> )
+  );
+  X_BUF   \NlwBufferBlock_Msub_n0089_xor<6>/DI<1>  (
+    .I(current_b_5),
+    .O(\NlwBufferSignal_Msub_n0089_xor<6>/DI<1> )
+  );
+  X_BUF   \NlwBufferBlock_current_a_3_C_3/CLK  (
+    .I(clk_BUFGP),
+    .O(\NlwBufferSignal_current_a_3_C_3/CLK )
+  );
+  X_BUF   \NlwBufferBlock_current_a_3_C_3/IN  (
+    .I(next_a[3]),
+    .O(\NlwBufferSignal_current_a_3_C_3/IN )
+  );
+  X_BUF   \NlwBufferBlock_current_a_3_LDC/CLK  (
+    .I(\reset_a[3]_AND_72_o ),
+    .O(\NlwBufferSignal_current_a_3_LDC/CLK )
+  );
+  X_BUF   \NlwBufferBlock_current_b_0_P_0/CLK  (
+    .I(clk_BUFGP),
+    .O(\NlwBufferSignal_current_b_0_P_0/CLK )
+  );
+  X_BUF   \NlwBufferBlock_current_b_0_P_0/IN  (
+    .I(next_b[0]),
+    .O(\NlwBufferSignal_current_b_0_P_0/IN )
+  );
+  X_BUF   \NlwBufferBlock_current_b_3_C_3/CLK  (
+    .I(clk_BUFGP),
+    .O(\NlwBufferSignal_current_b_3_C_3/CLK )
+  );
+  X_BUF   \NlwBufferBlock_current_b_3_C_3/IN  (
+    .I(next_b[3]),
+    .O(\NlwBufferSignal_current_b_3_C_3/IN )
+  );
+  X_BUF   \NlwBufferBlock_current_a_2_C_2/CLK  (
+    .I(clk_BUFGP),
+    .O(\NlwBufferSignal_current_a_2_C_2/CLK )
+  );
+  X_BUF   \NlwBufferBlock_current_a_3_P_3/CLK  (
+    .I(clk_BUFGP),
+    .O(\NlwBufferSignal_current_a_3_P_3/CLK )
+  );
+  X_BUF   \NlwBufferBlock_current_a_3_P_3/IN  (
+    .I(next_a[3]),
+    .O(\NlwBufferSignal_current_a_3_P_3/IN )
+  );
+  X_BUF   \NlwBufferBlock_current_a_0_C_0/CLK  (
+    .I(clk_BUFGP),
+    .O(\NlwBufferSignal_current_a_0_C_0/CLK )
+  );
+  X_BUF   \NlwBufferBlock_current_a_4_C_4/CLK  (
+    .I(clk_BUFGP),
+    .O(\NlwBufferSignal_current_a_4_C_4/CLK )
+  );
+  X_BUF   \NlwBufferBlock_current_a_4_C_4/IN  (
+    .I(next_a[4]),
+    .O(\NlwBufferSignal_current_a_4_C_4/IN )
+  );
+  X_BUF   \NlwBufferBlock_current_b_3_P_3/CLK  (
+    .I(clk_BUFGP),
+    .O(\NlwBufferSignal_current_b_3_P_3/CLK )
+  );
+  X_BUF   \NlwBufferBlock_current_b_3_P_3/IN  (
+    .I(next_b[3]),
+    .O(\NlwBufferSignal_current_b_3_P_3/IN )
+  );
+  X_BUF   \NlwBufferBlock_current_a_2_P_2/CLK  (
+    .I(clk_BUFGP),
+    .O(\NlwBufferSignal_current_a_2_P_2/CLK )
+  );
+  X_BUF   \NlwBufferBlock_current_a_2_P_2/IN  (
+    .I(next_a[2]),
+    .O(\NlwBufferSignal_current_a_2_P_2/IN )
   );
   X_BUF   \NlwBufferBlock_current_b_4_P_4/CLK  (
     .I(clk_BUFGP),
@@ -4309,6 +4347,38 @@ current_res[5], current_res[4], current_res[3], current_res[2], current_res[1], 
     .I(next_b[4]),
     .O(\NlwBufferSignal_current_b_4_C_4/IN )
   );
+  X_BUF   \NlwBufferBlock_current_res_7/CLK  (
+    .I(clk_BUFGP),
+    .O(\NlwBufferSignal_current_res_7/CLK )
+  );
+  X_BUF   \NlwBufferBlock_current_res_7/IN  (
+    .I(current_res[6]),
+    .O(\NlwBufferSignal_current_res_7/IN )
+  );
+  X_BUF   \NlwBufferBlock_current_res_6/CLK  (
+    .I(clk_BUFGP),
+    .O(\NlwBufferSignal_current_res_6/CLK )
+  );
+  X_BUF   \NlwBufferBlock_current_res_6/IN  (
+    .I(current_res[5]),
+    .O(\NlwBufferSignal_current_res_6/IN )
+  );
+  X_BUF   \NlwBufferBlock_current_res_5/CLK  (
+    .I(clk_BUFGP),
+    .O(\NlwBufferSignal_current_res_5/CLK )
+  );
+  X_BUF   \NlwBufferBlock_current_res_5/IN  (
+    .I(current_res[4]),
+    .O(\NlwBufferSignal_current_res_5/IN )
+  );
+  X_BUF   \NlwBufferBlock_current_res_4/CLK  (
+    .I(clk_BUFGP),
+    .O(\NlwBufferSignal_current_res_4/CLK )
+  );
+  X_BUF   \NlwBufferBlock_current_res_4/IN  (
+    .I(current_res[3]),
+    .O(\NlwBufferSignal_current_res_4/IN )
+  );
   X_BUF   \NlwBufferBlock_current_a_1_C_1/CLK  (
     .I(clk_BUFGP),
     .O(\NlwBufferSignal_current_a_1_C_1/CLK )
@@ -4317,249 +4387,33 @@ current_res[5], current_res[4], current_res[3], current_res[2], current_res[1], 
     .I(next_a[1]),
     .O(\NlwBufferSignal_current_a_1_C_1/IN )
   );
-  X_BUF   \NlwBufferBlock_current_b_3_C_3/CLK  (
-    .I(clk_BUFGP),
-    .O(\NlwBufferSignal_current_b_3_C_3/CLK )
-  );
-  X_BUF   \NlwBufferBlock_current_b_3_C_3/IN  (
-    .I(next_b[3]),
-    .O(\NlwBufferSignal_current_b_3_C_3/IN )
-  );
-  X_BUF   \NlwBufferBlock_current_b_3_LDC/CLK  (
-    .I(\reset_b[3]_AND_86_o ),
-    .O(\NlwBufferSignal_current_b_3_LDC/CLK )
-  );
-  X_BUF   \NlwBufferBlock_current_a_1_P_1/CLK  (
-    .I(clk_BUFGP),
-    .O(\NlwBufferSignal_current_a_1_P_1/CLK )
-  );
-  X_BUF   \NlwBufferBlock_current_a_1_P_1/IN  (
-    .I(next_a[1]),
-    .O(\NlwBufferSignal_current_a_1_P_1/IN )
-  );
-  X_BUF   \NlwBufferBlock_current_a_3_C_3/CLK  (
-    .I(clk_BUFGP),
-    .O(\NlwBufferSignal_current_a_3_C_3/CLK )
-  );
-  X_BUF   \NlwBufferBlock_current_a_2_P_2/CLK  (
-    .I(clk_BUFGP),
-    .O(\NlwBufferSignal_current_a_2_P_2/CLK )
-  );
-  X_BUF   \NlwBufferBlock_current_a_2_P_2/IN  (
-    .I(next_a[2]),
-    .O(\NlwBufferSignal_current_a_2_P_2/IN )
-  );
-  X_BUF   \NlwBufferBlock_current_b_0_P_0/CLK  (
-    .I(clk_BUFGP),
-    .O(\NlwBufferSignal_current_b_0_P_0/CLK )
-  );
-  X_BUF   \NlwBufferBlock_current_a_2_C_2/CLK  (
-    .I(clk_BUFGP),
-    .O(\NlwBufferSignal_current_a_2_C_2/CLK )
-  );
-  X_BUF   \NlwBufferBlock_current_a_5_C_5/CLK  (
-    .I(clk_BUFGP),
-    .O(\NlwBufferSignal_current_a_5_C_5/CLK )
-  );
-  X_BUF   \NlwBufferBlock_current_a_5_C_5/IN  (
-    .I(next_a[5]),
-    .O(\NlwBufferSignal_current_a_5_C_5/IN )
-  );
-  X_BUF   \NlwBufferBlock_current_b_1_LDC/CLK  (
-    .I(\reset_b[1]_AND_90_o ),
-    .O(\NlwBufferSignal_current_b_1_LDC/CLK )
-  );
-  X_BUF   \NlwBufferBlock_current_a_5_LDC/CLK  (
-    .I(\reset_a[5]_AND_68_o ),
-    .O(\NlwBufferSignal_current_a_5_LDC/CLK )
-  );
-  X_BUF   \NlwBufferBlock_current_a_4_C_4/CLK  (
-    .I(clk_BUFGP),
-    .O(\NlwBufferSignal_current_a_4_C_4/CLK )
-  );
-  X_BUF   \NlwBufferBlock_current_a_4_C_4/IN  (
-    .I(next_a[4]),
-    .O(\NlwBufferSignal_current_a_4_C_4/IN )
-  );
-  X_BUF   \NlwBufferBlock_current_res_0/CLK  (
-    .I(clk_BUFGP),
-    .O(\NlwBufferSignal_current_res_0/CLK )
-  );
-  X_BUF   \NlwBufferBlock_current_a_3_P_3/CLK  (
-    .I(clk_BUFGP),
-    .O(\NlwBufferSignal_current_a_3_P_3/CLK )
-  );
-  X_BUF   \NlwBufferBlock_current_a_3_P_3/IN  (
-    .I(next_a[3]),
-    .O(\NlwBufferSignal_current_a_3_P_3/IN )
-  );
-  X_BUF   \NlwBufferBlock_Msub_n0089_xor<7>/DI<0>  (
-    .I(current_b_4),
-    .O(\NlwBufferSignal_Msub_n0089_xor<7>/DI<0> )
-  );
-  X_BUF   \NlwBufferBlock_Msub_n0089_xor<7>/DI<1>  (
-    .I(current_b_5),
-    .O(\NlwBufferSignal_Msub_n0089_xor<7>/DI<1> )
-  );
-  X_BUF   \NlwBufferBlock_Msub_n0089_xor<7>/DI<2>  (
-    .I(current_b_6),
-    .O(\NlwBufferSignal_Msub_n0089_xor<7>/DI<2> )
-  );
-  X_BUF   \NlwBufferBlock_current_b_6_P_6/CLK  (
-    .I(clk_BUFGP),
-    .O(\NlwBufferSignal_current_b_6_P_6/CLK )
-  );
-  X_BUF   \NlwBufferBlock_current_b_6_P_6/IN  (
-    .I(next_b[6]),
-    .O(\NlwBufferSignal_current_b_6_P_6/IN )
-  );
-  X_BUF   \NlwBufferBlock_current_b_1_P_1/CLK  (
-    .I(clk_BUFGP),
-    .O(\NlwBufferSignal_current_b_1_P_1/CLK )
-  );
-  X_BUF   \NlwBufferBlock_current_b_1_P_1/IN  (
-    .I(next_b[1]),
-    .O(\NlwBufferSignal_current_b_1_P_1/IN )
-  );
-  X_BUF   \NlwBufferBlock_current_a_5_P_5/CLK  (
-    .I(clk_BUFGP),
-    .O(\NlwBufferSignal_current_a_5_P_5/CLK )
-  );
-  X_BUF   \NlwBufferBlock_current_a_5_P_5/IN  (
-    .I(next_a[5]),
-    .O(\NlwBufferSignal_current_a_5_P_5/IN )
-  );
-  X_BUF   \NlwBufferBlock_current_a_6_P_6/CLK  (
-    .I(clk_BUFGP),
-    .O(\NlwBufferSignal_current_a_6_P_6/CLK )
-  );
-  X_BUF   \NlwBufferBlock_current_a_6_P_6/IN  (
-    .I(next_a[6]),
-    .O(\NlwBufferSignal_current_a_6_P_6/IN )
-  );
-  X_BUF   \NlwBufferBlock_current_b_5_P_5/CLK  (
-    .I(clk_BUFGP),
-    .O(\NlwBufferSignal_current_b_5_P_5/CLK )
-  );
-  X_BUF   \NlwBufferBlock_current_b_2_LDC/CLK  (
-    .I(\reset_b[2]_AND_88_o ),
-    .O(\NlwBufferSignal_current_b_2_LDC/CLK )
-  );
-  X_BUF   \NlwBufferBlock_current_b_0_C_0/CLK  (
-    .I(clk_BUFGP),
-    .O(\NlwBufferSignal_current_b_0_C_0/CLK )
-  );
-  X_BUF   \NlwBufferBlock_current_b_0_C_0/IN  (
-    .I(next_b[0]),
-    .O(\NlwBufferSignal_current_b_0_C_0/IN )
-  );
-  X_BUF   \NlwBufferBlock_current_b_5_C_5/CLK  (
-    .I(clk_BUFGP),
-    .O(\NlwBufferSignal_current_b_5_C_5/CLK )
-  );
-  X_BUF   \NlwBufferBlock_current_b_5_C_5/IN  (
-    .I(next_b[5]),
-    .O(\NlwBufferSignal_current_b_5_C_5/IN )
-  );
-  X_BUF   \NlwBufferBlock_current_a_6_C_6/CLK  (
-    .I(clk_BUFGP),
-    .O(\NlwBufferSignal_current_a_6_C_6/CLK )
-  );
-  X_BUF   \NlwBufferBlock_current_a_6_C_6/IN  (
-    .I(next_a[6]),
-    .O(\NlwBufferSignal_current_a_6_C_6/IN )
-  );
-  X_BUF   \NlwBufferBlock_current_b_2_C_2/CLK  (
-    .I(clk_BUFGP),
-    .O(\NlwBufferSignal_current_b_2_C_2/CLK )
-  );
-  X_BUF   \NlwBufferBlock_current_b_2_C_2/IN  (
-    .I(next_b[2]),
-    .O(\NlwBufferSignal_current_b_2_C_2/IN )
-  );
-  X_BUF   \NlwBufferBlock_current_b_5_LDC/CLK  (
-    .I(\reset_b[5]_AND_82_o ),
-    .O(\NlwBufferSignal_current_b_5_LDC/CLK )
-  );
-  X_BUF   \NlwBufferBlock_Msub_n0088_xor<7>/DI<0>  (
-    .I(current_a_4),
-    .O(\NlwBufferSignal_Msub_n0088_xor<7>/DI<0> )
-  );
-  X_BUF   \NlwBufferBlock_Msub_n0088_xor<7>/DI<1>  (
-    .I(current_a_5),
-    .O(\NlwBufferSignal_Msub_n0088_xor<7>/DI<1> )
-  );
-  X_BUF   \NlwBufferBlock_Msub_n0088_xor<7>/DI<2>  (
-    .I(current_a_6),
-    .O(\NlwBufferSignal_Msub_n0088_xor<7>/DI<2> )
-  );
-  X_BUF   \NlwBufferBlock_current_b_3_P_3/CLK  (
-    .I(clk_BUFGP),
-    .O(\NlwBufferSignal_current_b_3_P_3/CLK )
-  );
-  X_BUF   \NlwBufferBlock_current_b_3_P_3/IN  (
-    .I(next_b[3]),
-    .O(\NlwBufferSignal_current_b_3_P_3/IN )
-  );
-  X_BUF   \NlwBufferBlock_current_a_6_LDC/CLK  (
-    .I(\reset_a[6]_AND_66_o ),
-    .O(\NlwBufferSignal_current_a_6_LDC/CLK )
-  );
-  X_BUF   \NlwBufferBlock_current_b_2_P_2/CLK  (
-    .I(clk_BUFGP),
-    .O(\NlwBufferSignal_current_b_2_P_2/CLK )
-  );
-  X_BUF   \NlwBufferBlock_current_b_2_P_2/IN  (
-    .I(next_b[2]),
-    .O(\NlwBufferSignal_current_b_2_P_2/IN )
-  );
-  X_BUF   \NlwBufferBlock_current_b_6_C_6/CLK  (
-    .I(clk_BUFGP),
-    .O(\NlwBufferSignal_current_b_6_C_6/CLK )
-  );
-  X_BUF   \NlwBufferBlock_current_a_0_C_0/CLK  (
-    .I(clk_BUFGP),
-    .O(\NlwBufferSignal_current_a_0_C_0/CLK )
-  );
-  X_BUF   \NlwBufferBlock_current_a_0_C_0/IN  (
-    .I(next_a[0]),
-    .O(\NlwBufferSignal_current_a_0_C_0/IN )
-  );
-  X_BUF   \NlwBufferBlock_current_res_4/CLK  (
-    .I(clk_BUFGP),
-    .O(\NlwBufferSignal_current_res_4/CLK )
-  );
   X_BUF   \NlwBufferBlock_current_res_3/CLK  (
     .I(clk_BUFGP),
     .O(\NlwBufferSignal_current_res_3/CLK )
+  );
+  X_BUF   \NlwBufferBlock_current_res_3/IN  (
+    .I(current_res[2]),
+    .O(\NlwBufferSignal_current_res_3/IN )
   );
   X_BUF   \NlwBufferBlock_current_res_2/CLK  (
     .I(clk_BUFGP),
     .O(\NlwBufferSignal_current_res_2/CLK )
   );
+  X_BUF   \NlwBufferBlock_current_res_2/IN  (
+    .I(current_res[1]),
+    .O(\NlwBufferSignal_current_res_2/IN )
+  );
   X_BUF   \NlwBufferBlock_current_res_1/CLK  (
     .I(clk_BUFGP),
     .O(\NlwBufferSignal_current_res_1/CLK )
   );
-  X_BUF   \NlwBufferBlock_current_res_7/CLK  (
-    .I(clk_BUFGP),
-    .O(\NlwBufferSignal_current_res_7/CLK )
+  X_BUF   \NlwBufferBlock_current_res_1/IN  (
+    .I(current_res[0]),
+    .O(\NlwBufferSignal_current_res_1/IN )
   );
-  X_BUF   \NlwBufferBlock_current_res_6/CLK  (
+  X_BUF   \NlwBufferBlock_current_res_0/CLK  (
     .I(clk_BUFGP),
-    .O(\NlwBufferSignal_current_res_6/CLK )
-  );
-  X_BUF   \NlwBufferBlock_current_res_5/CLK  (
-    .I(clk_BUFGP),
-    .O(\NlwBufferSignal_current_res_5/CLK )
-  );
-  X_BUF   \NlwBufferBlock_current_b_1_C_1/CLK  (
-    .I(clk_BUFGP),
-    .O(\NlwBufferSignal_current_b_1_C_1/CLK )
-  );
-  X_BUF   \NlwBufferBlock_current_b_1_C_1/IN  (
-    .I(next_b[1]),
-    .O(\NlwBufferSignal_current_b_1_C_1/IN )
+    .O(\NlwBufferSignal_current_res_0/CLK )
   );
   X_BUF   \NlwBufferBlock_current_a_0_P_0/CLK  (
     .I(clk_BUFGP),
@@ -4569,11 +4423,31 @@ current_res[5], current_res[4], current_res[3], current_res[2], current_res[1], 
     .I(next_a[0]),
     .O(\NlwBufferSignal_current_a_0_P_0/IN )
   );
-  X_ONE   NlwBlock_stein_gcd_VCC (
-    .O(VCC)
+  X_BUF   \NlwBufferBlock_current_b_1_P_1/CLK  (
+    .I(clk_BUFGP),
+    .O(\NlwBufferSignal_current_b_1_P_1/CLK )
+  );
+  X_BUF   \NlwBufferBlock_current_b_1_P_1/IN  (
+    .I(next_b[1]),
+    .O(\NlwBufferSignal_current_b_1_P_1/IN )
+  );
+  X_BUF   \NlwBufferBlock_current_a_2_LDC/CLK  (
+    .I(\reset_a[2]_AND_74_o ),
+    .O(\NlwBufferSignal_current_a_2_LDC/CLK )
+  );
+  X_BUF   \NlwBufferBlock_Msub_n0088_xor<6>/DI<0>  (
+    .I(current_a_4),
+    .O(\NlwBufferSignal_Msub_n0088_xor<6>/DI<0> )
+  );
+  X_BUF   \NlwBufferBlock_Msub_n0088_xor<6>/DI<1>  (
+    .I(current_a_5),
+    .O(\NlwBufferSignal_Msub_n0088_xor<6>/DI<1> )
   );
   X_ZERO   NlwBlock_stein_gcd_GND (
     .O(GND)
+  );
+  X_ONE   NlwBlock_stein_gcd_VCC (
+    .O(VCC)
   );
 endmodule
 

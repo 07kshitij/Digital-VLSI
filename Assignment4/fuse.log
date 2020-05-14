@@ -7,31 +7,31 @@ Analyzing Verilog file "D:/VLSI/Assignment4/netgen/par/stein_gcd_timesim.v" into
 Analyzing Verilog file "D:/VLSI/Assignment4/test_stein_gcd.v" into library work
 Starting static elaboration
 Completed static elaboration
-Compiling module latchsre
-Compiling module X_LATCHE
+Compiling module X_BUF
+Compiling module X_DSP48E1(ACASCREG=0,ADREG=0,ALU...
+Compiling module X_LUT6(INIT=64'b1111010100111001...
+Compiling module X_ONE
+Compiling module X_CARRY4
 Compiling module X_OPAD
 Compiling module X_OBUF
+Compiling module X_CKBUF
 Compiling module X_IPAD
 Compiling module X_ZERO
 Compiling module X_IBUF_INTERMDISABLE_TPWRGT(LOC=...
-Compiling module X_BUF
-Compiling module X_LUT6(INIT=64'b1111111100000000...
-Compiling module X_LUT5(INIT=32'b1111000011110000...
+Compiling module latchsre
+Compiling module X_LATCHE
+Compiling module X_LUT5(INIT=32'b0101010101010101...
 Compiling module ffsrce
 Compiling module X_FF(INIT=1'b1)
-Compiling module X_ONE
-Compiling module X_CARRY4
-Compiling module X_DSP48E1(ACASCREG=0,ADREG=0,ALU...
-Compiling module X_CKBUF
+Compiling module X_FF
 Compiling module mux
 Compiling module X_MUX2
-Compiling module X_FF
 Compiling module stein_gcd
 Compiling module test_stein_gcd
 Compiling module glbl
 Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
-Compiled 265 Verilog Units
+Compiled 255 Verilog Units
 Built simulation executable D:/VLSI/Assignment4/test_stein_gcd_isim_par.exe
-Fuse Memory Usage: 46216 KB
-Fuse CPU Usage: 1280 ms
+Fuse Memory Usage: 45596 KB
+Fuse CPU Usage: 1327 ms

@@ -11,3 +11,112 @@ map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -re
 par -w -intstyle ise -ol high -mt off stein_gcd_map.ncd stein_gcd.ncd stein_gcd.pcf 
 trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml stein_gcd.twx stein_gcd.ncd -o stein_gcd.twr stein_gcd.pcf 
 netgen -intstyle ise -s 3  -pcf stein_gcd.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim stein_gcd.ncd stein_gcd_timesim.v 
+xst -intstyle ise -ifn "D:/VLSI/Assignment4/stein_gcd.xst" -ofn "D:/VLSI/Assignment4/stein_gcd.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 stein_gcd.ngc stein_gcd.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o stein_gcd_map.ncd stein_gcd.ngd stein_gcd.pcf 
+par -w -intstyle ise -ol high -mt off stein_gcd_map.ncd stein_gcd.ncd stein_gcd.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml stein_gcd.twx stein_gcd.ncd -o stein_gcd.twr stein_gcd.pcf 
+netgen -intstyle ise -s 3  -pcf stein_gcd.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim stein_gcd.ncd stein_gcd_timesim.v 
+xst -intstyle ise -ifn "D:/VLSI/Assignment4/stein_gcd.xst" -ofn "D:/VLSI/Assignment4/stein_gcd.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 stein_gcd.ngc stein_gcd.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o stein_gcd_map.ncd stein_gcd.ngd stein_gcd.pcf 
+par -w -intstyle ise -ol high -mt off stein_gcd_map.ncd stein_gcd.ncd stein_gcd.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml stein_gcd.twx stein_gcd.ncd -o stein_gcd.twr stein_gcd.pcf 
+netgen -intstyle ise -s 3  -pcf stein_gcd.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim stein_gcd.ncd stein_gcd_timesim.v 
+xst -intstyle ise -ifn "D:/VLSI/Assignment4/stein_gcd.xst" -ofn "D:/VLSI/Assignment4/stein_gcd.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 stein_gcd.ngc stein_gcd.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o stein_gcd_map.ncd stein_gcd.ngd stein_gcd.pcf 
+par -w -intstyle ise -ol high -mt off stein_gcd_map.ncd stein_gcd.ncd stein_gcd.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml stein_gcd.twx stein_gcd.ncd -o stein_gcd.twr stein_gcd.pcf 
+netgen -intstyle ise -s 3  -pcf stein_gcd.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim stein_gcd.ncd stein_gcd_timesim.v 
+xst -intstyle ise -ifn "D:/VLSI/Assignment4/stein_gcd.xst" -ofn "D:/VLSI/Assignment4/stein_gcd.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 stein_gcd.ngc stein_gcd.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o stein_gcd_map.ncd stein_gcd.ngd stein_gcd.pcf 
+par -w -intstyle ise -ol high -mt off stein_gcd_map.ncd stein_gcd.ncd stein_gcd.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml stein_gcd.twx stein_gcd.ncd -o stein_gcd.twr stein_gcd.pcf 
+netgen -intstyle ise -s 3  -pcf stein_gcd.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim stein_gcd.ncd stein_gcd_timesim.v 
+xst -intstyle ise -ifn "D:/VLSI/Assignment4/stein_gcd.xst" -ofn "D:/VLSI/Assignment4/stein_gcd.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 stein_gcd.ngc stein_gcd.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o stein_gcd_map.ncd stein_gcd.ngd stein_gcd.pcf 
+par -w -intstyle ise -ol high -mt off stein_gcd_map.ncd stein_gcd.ncd stein_gcd.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml stein_gcd.twx stein_gcd.ncd -o stein_gcd.twr stein_gcd.pcf 
+netgen -intstyle ise -s 3  -pcf stein_gcd.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim stein_gcd.ncd stein_gcd_timesim.v 
+xst -intstyle ise -ifn "D:/VLSI/Assignment4/stein_gcd.xst" -ofn "D:/VLSI/Assignment4/stein_gcd.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 stein_gcd.ngc stein_gcd.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o stein_gcd_map.ncd stein_gcd.ngd stein_gcd.pcf 
+par -w -intstyle ise -ol high -mt off stein_gcd_map.ncd stein_gcd.ncd stein_gcd.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml stein_gcd.twx stein_gcd.ncd -o stein_gcd.twr stein_gcd.pcf 
+netgen -intstyle ise -s 3  -pcf stein_gcd.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim stein_gcd.ncd stein_gcd_timesim.v 
+xst -intstyle ise -ifn "D:/VLSI/Assignment4/stein_gcd.xst" -ofn "D:/VLSI/Assignment4/stein_gcd.syr" 
+xst -intstyle ise -ifn "D:/VLSI/Assignment4/stein_gcd.xst" -ofn "D:/VLSI/Assignment4/stein_gcd.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 stein_gcd.ngc stein_gcd.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o stein_gcd_map.ncd stein_gcd.ngd stein_gcd.pcf 
+par -w -intstyle ise -ol high -mt off stein_gcd_map.ncd stein_gcd.ncd stein_gcd.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml stein_gcd.twx stein_gcd.ncd -o stein_gcd.twr stein_gcd.pcf 
+netgen -intstyle ise -s 3  -pcf stein_gcd.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim stein_gcd.ncd stein_gcd_timesim.v 
+xst -intstyle ise -ifn "D:/VLSI/Assignment4/stein_gcd.xst" -ofn "D:/VLSI/Assignment4/stein_gcd.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 stein_gcd.ngc stein_gcd.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o stein_gcd_map.ncd stein_gcd.ngd stein_gcd.pcf 
+par -w -intstyle ise -ol high -mt off stein_gcd_map.ncd stein_gcd.ncd stein_gcd.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml stein_gcd.twx stein_gcd.ncd -o stein_gcd.twr stein_gcd.pcf 
+netgen -intstyle ise -s 3  -pcf stein_gcd.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim stein_gcd.ncd stein_gcd_timesim.v 
+xst -intstyle ise -ifn "D:/VLSI/Assignment4/stein_gcd.xst" -ofn "D:/VLSI/Assignment4/stein_gcd.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 stein_gcd.ngc stein_gcd.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o stein_gcd_map.ncd stein_gcd.ngd stein_gcd.pcf 
+par -w -intstyle ise -ol high -mt off stein_gcd_map.ncd stein_gcd.ncd stein_gcd.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml stein_gcd.twx stein_gcd.ncd -o stein_gcd.twr stein_gcd.pcf 
+netgen -intstyle ise -s 3  -pcf stein_gcd.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim stein_gcd.ncd stein_gcd_timesim.v 
+xst -intstyle ise -ifn "D:/VLSI/Assignment4/stein_gcd.xst" -ofn "D:/VLSI/Assignment4/stein_gcd.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 stein_gcd.ngc stein_gcd.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o stein_gcd_map.ncd stein_gcd.ngd stein_gcd.pcf 
+par -w -intstyle ise -ol high -mt off stein_gcd_map.ncd stein_gcd.ncd stein_gcd.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml stein_gcd.twx stein_gcd.ncd -o stein_gcd.twr stein_gcd.pcf 
+netgen -intstyle ise -s 3  -pcf stein_gcd.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim stein_gcd.ncd stein_gcd_timesim.v 
+xst -intstyle ise -ifn "D:/VLSI/Assignment4/stein_gcd.xst" -ofn "D:/VLSI/Assignment4/stein_gcd.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 stein_gcd.ngc stein_gcd.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o stein_gcd_map.ncd stein_gcd.ngd stein_gcd.pcf 
+par -w -intstyle ise -ol high -mt off stein_gcd_map.ncd stein_gcd.ncd stein_gcd.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml stein_gcd.twx stein_gcd.ncd -o stein_gcd.twr stein_gcd.pcf 
+netgen -intstyle ise -s 3  -pcf stein_gcd.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim stein_gcd.ncd stein_gcd_timesim.v 
+xst -intstyle ise -ifn "D:/VLSI/Assignment4/stein_gcd.xst" -ofn "D:/VLSI/Assignment4/stein_gcd.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 stein_gcd.ngc stein_gcd.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o stein_gcd_map.ncd stein_gcd.ngd stein_gcd.pcf 
+par -w -intstyle ise -ol high -mt off stein_gcd_map.ncd stein_gcd.ncd stein_gcd.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml stein_gcd.twx stein_gcd.ncd -o stein_gcd.twr stein_gcd.pcf 
+netgen -intstyle ise -s 3  -pcf stein_gcd.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim stein_gcd.ncd stein_gcd_timesim.v 
+xst -intstyle ise -ifn "D:/VLSI/Assignment4/stein_gcd.xst" -ofn "D:/VLSI/Assignment4/stein_gcd.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 stein_gcd.ngc stein_gcd.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o stein_gcd_map.ncd stein_gcd.ngd stein_gcd.pcf 
+par -w -intstyle ise -ol high -mt off stein_gcd_map.ncd stein_gcd.ncd stein_gcd.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml stein_gcd.twx stein_gcd.ncd -o stein_gcd.twr stein_gcd.pcf 
+netgen -intstyle ise -s 3  -pcf stein_gcd.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim stein_gcd.ncd stein_gcd_timesim.v 
+xst -intstyle ise -ifn "D:/VLSI/Assignment4/stein_gcd.xst" -ofn "D:/VLSI/Assignment4/stein_gcd.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 stein_gcd.ngc stein_gcd.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o stein_gcd_map.ncd stein_gcd.ngd stein_gcd.pcf 
+par -w -intstyle ise -ol high -mt off stein_gcd_map.ncd stein_gcd.ncd stein_gcd.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml stein_gcd.twx stein_gcd.ncd -o stein_gcd.twr stein_gcd.pcf 
+netgen -intstyle ise -s 3  -pcf stein_gcd.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim stein_gcd.ncd stein_gcd_timesim.v 
+xst -intstyle ise -ifn "D:/VLSI/Assignment4/stein_gcd.xst" -ofn "D:/VLSI/Assignment4/stein_gcd.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 stein_gcd.ngc stein_gcd.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o stein_gcd_map.ncd stein_gcd.ngd stein_gcd.pcf 
+par -w -intstyle ise -ol high -mt off stein_gcd_map.ncd stein_gcd.ncd stein_gcd.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml stein_gcd.twx stein_gcd.ncd -o stein_gcd.twr stein_gcd.pcf 
+netgen -intstyle ise -s 3  -pcf stein_gcd.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim stein_gcd.ncd stein_gcd_timesim.v 
+xst -intstyle ise -ifn "D:/VLSI/Assignment4/stein_gcd.xst" -ofn "D:/VLSI/Assignment4/stein_gcd.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 stein_gcd.ngc stein_gcd.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o stein_gcd_map.ncd stein_gcd.ngd stein_gcd.pcf 
+par -w -intstyle ise -ol high -mt off stein_gcd_map.ncd stein_gcd.ncd stein_gcd.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml stein_gcd.twx stein_gcd.ncd -o stein_gcd.twr stein_gcd.pcf 
+netgen -intstyle ise -s 3  -pcf stein_gcd.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim stein_gcd.ncd stein_gcd_timesim.v 
+xst -intstyle ise -ifn "D:/VLSI/Assignment4/stein_gcd.xst" -ofn "D:/VLSI/Assignment4/stein_gcd.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 stein_gcd.ngc stein_gcd.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o stein_gcd_map.ncd stein_gcd.ngd stein_gcd.pcf 
+par -w -intstyle ise -ol high -mt off stein_gcd_map.ncd stein_gcd.ncd stein_gcd.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml stein_gcd.twx stein_gcd.ncd -o stein_gcd.twr stein_gcd.pcf 
+netgen -intstyle ise -s 3  -pcf stein_gcd.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim stein_gcd.ncd stein_gcd_timesim.v 
+xst -intstyle ise -ifn "D:/VLSI/Assignment4/stein_gcd.xst" -ofn "D:/VLSI/Assignment4/stein_gcd.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc7a100t-csg324-3 stein_gcd.ngc stein_gcd.ngd  
+map -intstyle ise -p xc7a100t-csg324-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o stein_gcd_map.ncd stein_gcd.ngd stein_gcd.pcf 
+par -w -intstyle ise -ol high -mt off stein_gcd_map.ncd stein_gcd.ncd stein_gcd.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml stein_gcd.twx stein_gcd.ncd -o stein_gcd.twr stein_gcd.pcf 
+netgen -intstyle ise -s 3  -pcf stein_gcd.pcf -sdf_anno true -sdf_path "netgen/par" -insert_glbl true -insert_pp_buffers true -w -dir netgen/par -ofmt verilog -sim stein_gcd.ncd stein_gcd_timesim.v 
