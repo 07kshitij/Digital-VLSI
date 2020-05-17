@@ -2,9 +2,9 @@ Command line:
    test_gcd_isim_beh.exe
      -simmode  gui
      -simrunnum  0
-     -socket  51524
+     -socket  56838
 
-Thu May 14 19:44:06 2020
+Sun May 17 14:30:54 2020
 
 
  Elaboration Time: 0.03125 sec
@@ -21,9 +21,9 @@ Thu May 14 19:44:06 2020
  Total Scalar Nets and Variables : 196
 Total Line Count : 118
 
- Total Simulation Time: 0.046875 sec
+ Total Simulation Time: 0.0625 sec
 
  Current Memory Usage: 5160.01 Meg
 
-Thu May 14 19:44:11 2020
+Sun May 17 14:30:58 2020
 
